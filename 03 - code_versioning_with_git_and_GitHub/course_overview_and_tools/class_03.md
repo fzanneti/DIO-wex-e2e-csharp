@@ -1,12 +1,14 @@
-Introdução ao Versionamento de Código com Git e GitHub
-📘 Visão Geral do Curso e Ferramentas
+# **Introdução ao Versionamento de Código com Git e GitHub**
+
+### **Visão geral do curso e ferramentas**
+
 Nesta trilha, você vai aprender a controlar versões do seu código utilizando Git e GitHub — ferramentas essenciais no mundo do desenvolvimento de software moderno.
 
 Objetivos do módulo:
 Compreender o que é versionamento de código.
 
 Aprender os conceitos fundamentais do Git.
-
+   
 Entender como o GitHub complementa o Git.
 
 Praticar comandos básicos com confiança.
