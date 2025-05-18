@@ -36,7 +36,7 @@ O Git funciona como um sistema de checkpoints:
 
 ### Comandos
 ```bash
-git add arquivo.txt     # Adiciona um arquivo
+git add arquivo.txt                 # Adiciona um arquivo
 git commit -m "mensagem do commit"  # Salva alterações com descrição
 ```
 
