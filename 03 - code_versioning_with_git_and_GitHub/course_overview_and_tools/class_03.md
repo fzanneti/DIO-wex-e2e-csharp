@@ -114,3 +114,7 @@ Compreender o funcionamento básico do Git e do GitHub é essencial para qualque
 - [GitHub Learning Lab (exercícios práticos)](https://github-com.translate.goog/apps/github-learning-lab?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc)
 
 ---
+
+##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
+
+---
