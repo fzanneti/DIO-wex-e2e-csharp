@@ -8,7 +8,7 @@ No universo do desenvolvimento de software, dominar conceitos teóricos é essen
 
 ## Por Que os Desafios São Tão Valiosos?
 
-### 1. Aplicação Real dos Conceitos
+### 1. Aplicação real dos conceitos
 
 Estudar Git, C#, .NET, ou qualquer linguagem é o primeiro passo. Mas aplicar isso na prática é o que solidifica o aprendizado.
 
