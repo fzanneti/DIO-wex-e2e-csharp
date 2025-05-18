@@ -122,8 +122,8 @@ O sistema de compilação do .NET permite portabilidade, segurança e performanc
 
 ## **Materiais Complementares**
 
-Documentação oficial: https://learn.microsoft.com/pt-br/dotnet/
-Livro gratuito da Microsoft: https://docs.microsoft.com/dotnet/standard/
-Canal do YouTube da DIO: https://www.youtube.com/@digitalinnovationone
+Documentação oficial: https://learn.microsoft.com/pt-br/dotnet/  
+Livro gratuito da Microsoft: https://docs.microsoft.com/dotnet/standard/  
+Canal do YouTube da DIO: https://www.youtube.com/@digitalinnovationone  
 
 > ###### **Seção criada por:** *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
