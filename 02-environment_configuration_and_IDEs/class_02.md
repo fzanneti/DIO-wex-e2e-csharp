@@ -117,3 +117,9 @@ Você agora entende a importância das IDEs, a diferença entre SDK e Runtime, e
 * [Curso gratuito de C# e .NET na DIO](https://web.digitalinnovation.one/)
 * [JetBrains Rider](https://www.jetbrains.com/rider/)
 * [Como configurar o VS Code para .NET](https://www.youtube.com/watch?v=oyJIGeEYb8Y)
+
+---
+
+##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
+
+---
