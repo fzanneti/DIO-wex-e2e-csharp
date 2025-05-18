@@ -11,6 +11,7 @@ Repositório educacional criado para apoiar estudantes e novos profissionais que
 - 💻 Exemplos de código comentados  
 - 📊 Tabelas e diagramas explicativos  
 - 🔗 Links para materiais complementares
+- 🔧 Versionamento de Código com Git e GitHub
 
 ## ✨ Objetivo
 
