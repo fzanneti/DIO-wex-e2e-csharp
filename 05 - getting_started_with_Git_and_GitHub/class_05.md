@@ -70,6 +70,74 @@ git pull origin main    # Atualiza com o servidor remoto
 
 ## Trabalhando com Branches
 
+### **Diferença entre main e master no GitHub**
+> - São nomes de branches
+Tanto main quanto master são nomes dados ao branch principal de um repositório Git.
+Ou seja, é como se fosse a "linha do tempo" principal onde o desenvolvimento do projeto acontece.
+
+#### **Mas por que tem dois nomes?**
+- **Antes (padrão antigo):** ````master```` - 
+Antigamente, o Git criava o primeiro branch com o nome master por padrão.   
+Isso vem desde a criação do Git, lá em 2005.
+
+- **Hoje (padrão novo):** ````main```` - 
+A partir de 2020, o GitHub (e depois o Git) mudou o padrão para main.  
+Motivo: tornar o Git mais inclusivo. O termo “master” pode ter conotações ruins, especialmente relacionadas à escravidão. A mudança foi parte de um movimento maior por linguagem mais neutra.
+
+---
+
+### **Na prática, o que muda pra você?**
+
+**Pouca coisa, mas vale saber:**
+|Situação|Branch padrão|
+|:---:|:---:|
+|Repositórios antigos (antes de 2020)|master|
+|Repositórios novos (após 2020)|main|
+
+**Você pode mudar o nome?**	  
+- Sim! É só renomear o branch
+
+**Como saber qual é o branch principal?**
+ - Vai no repositório no GitHub.
+ - Lá em cima, onde aparece o nome da branch, você verá ````main````, ````master```` ou outro nome.
+- A default branch geralmente é a que tem uma **marquinha escrito "default"** do lado.
+
+---
+
+### **Dica prática (terminal):**
+
+Se você clonou um repositório e quer saber qual é o branch principal:
+
+````bash
+git branch -a
+````
+
+Ou veja o *HEAD* com:
+
+````bash
+cat .git/HEAD
+````
+
+### **Quer mudar de ````master```` para ````main````?**
+
+Dá pra fazer isso, passo a passo:
+
+1. Renomeia a branch local:
+````bash
+git branch -m master main
+````
+
+2. Atualiza o branch remoto:
+
+````bash
+git push origin -u main
+````
+
+3. No GitHub:
+- Vai em Settings do repositório.
+- Na seção Branches, muda o branch padrão pra main.
+- Depois disso, pode deletar ````master```` se quiser.
+
 ### Conceitos
 Branches permitem trabalhar em funcionalidades separadas sem mexer no código principal.
 
