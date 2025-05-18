@@ -149,3 +149,7 @@ git push -u origin master
 - [Como usar chaves SSH com GitHub](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh)
 
 ---
+
+##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
+
+---
