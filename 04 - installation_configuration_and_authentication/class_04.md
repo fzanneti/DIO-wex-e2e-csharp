@@ -1,12 +1,12 @@
 # **Instalando, Configurando e Autenticando o Git**
 
-### **Introdução**
+#### **Introdução**
 
 Antes de usar Git e GitHub com eficiência, você precisa instalar e configurar corretamente o ambiente local. Nesta aula, vamos aprender como instalar o Git, fazer sua configuração inicial e autenticar sua máquina com o GitHub de forma segura.
 
 ---
 
-### **Instalação do Git**
+#### **Instalação do Git**
 
 **No Windows:**
 - Acesse o site oficial: 👉 https://git-scm.com/download/win
@@ -30,11 +30,11 @@ sudo apt install git
 git --version
 ```
 
-> *Verifique se o Git foi instalado corretamente com o comando ```git --version.```*
+*Verifique se o Git foi instalado corretamente com o comando ```git --version.```*
 
 ---
 
-### **Configurando o Git**
+#### **Configurando o Git**
 
 Depois de instalar, defina seu nome de usuário e e-mail e eles aparecerão em cada commit.
 
@@ -48,11 +48,11 @@ Verifique as configurações com:
 ```bash
 git config --list
 ```
-> *Essa configuração é como "assinar" seus códigos com sua identidade.*
+*Essa configuração é como "assinar" seus códigos com sua identidade.*
 
 ---
 
-### **Autenticando via Token (HTTPS)**
+#### **Autenticando via Token (HTTPS)**
 
 GitHub **não permite mais login com senha** via HTTPS.  
 Use um token de acesso pessoal (PAT).
@@ -77,7 +77,7 @@ git push origin main
 
 ---
 
-### **Autenticando via Chave SSH (Recomendado)**
+#### **Autenticando via Chave SSH (Recomendado)**
 
 Mais segura e prática. Ideal para quem usa GitHub com frequência.
 
@@ -117,7 +117,7 @@ Hi seu_usuario! You've successfully authenticated.
 
 ---
 
-### **Comparativo: Token vs SSH**
+#### **Comparativo: Token vs SSH**
 
 |Autenticação|Vantagem|Ideal para...|
 |:---:|:---:|:---:|
@@ -136,13 +136,15 @@ git remote add origin git@github.com:seuusuario/repositorio.git
 git push -u origin master
 ````
 
+---
+
 **Conclusão**
 
-> Instalar e configurar o Git corretamente é o primeiro passo para um versionamento eficiente. Com a autenticação segura via Token ou SSH, você garante integridade e praticidade ao interagir com o GitHub. Na próxima aula, aprenderemos fluxos de trabalho com branch, merge, pull, e push.
+Instalar e configurar o Git corretamente é o primeiro passo para um versionamento eficiente. Com a autenticação segura via Token ou SSH, você garante integridade e praticidade ao interagir com o GitHub. Na próxima aula, aprenderemos fluxos de trabalho com branch, merge, pull, e push.
 
 ---
 
-### **Materiais Complementares**
+#### **Materiais Complementares**
 
 - [Documentação Oficial do Git](https://git-scm.com/doc)
 - [Autenticação via token no GitHub](https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
@@ -151,5 +153,3 @@ git push -u origin master
 ---
 
 ##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
-
----

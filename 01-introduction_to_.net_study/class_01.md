@@ -1,20 +1,18 @@
 # **Introdução ao .NET**
 
----
-
 A plataforma .NET, desenvolvida pela Microsoft, é um ambiente de desenvolvimento que permite criar aplicações para Windows, web, nuvem, mobile, e até IoT. Seu principal objetivo é fornecer uma base comum e unificada para o desenvolvimento em diferentes linguagens, com destaque para o C#.
 
 ---
 
-### **Conceitos principais**
+#### **Conceitos principais**
 
-> - **.NET** é um ecossistema que inclui ferramentas, bibliotecas e runtime (tempo de execução).
-> - É **multiplataforma:** roda no Windows, Linux e macOS.
-> - Suporta várias linguagens como C#, F# e VB.NET.
+- **.NET** é um ecossistema que inclui ferramentas, bibliotecas e runtime (tempo de execução).
+- É **multiplataforma:** roda no Windows, Linux e macOS.
+- Suporta várias linguagens como C#, F# e VB.NET.
 
 ---
 
-### **Linha do tempo do .NET**
+#### **Linha do tempo do .NET**
 
 |Ano|Evento Importante|
 |:---:|:---:|
@@ -27,32 +25,32 @@ A plataforma .NET, desenvolvida pela Microsoft, é um ambiente de desenvolviment
 
 ---
 
-### **Conclusão**
+#### **Conclusão**
 
 O .NET passou de um framework limitado ao Windows para uma plataforma poderosa e multiplataforma, ideal para aplicações modernas.
 
 ---
 
-## **Diferença entre .NET Framework e .NET (Core/5+)**
+### **Diferença entre .NET Framework e .NET (Core/5+)**
 
-### **.NET Framework**
+#### **.NET Framework**
 
-> - Criado em 2002.
-> - Suporte apenas para Windows.
-> - Usado principalmente em aplicações desktop corporativas e ASP.NET Web Forms.
-
----
-
-### **.NET Core / .NET (5 e superior)**
-
-> - Multiplataforma.
-> - Código aberto (open-source).
-> - Melhor performance.
-> - Suporte ativo da comunidade.
+- Criado em 2002.
+- Suporte apenas para Windows.
+- Usado principalmente em aplicações desktop corporativas e ASP.NET Web Forms.
 
 ---
 
-### **Tabela Comparativa**
+#### **.NET Core / .NET (5 e superior)**
+
+- Multiplataforma.
+- Código aberto (open-source).
+- Melhor performance.
+- Suporte ativo da comunidade.
+
+---
+
+#### **Tabela Comparativa**
 
 |Recurso|.NET Framework|.NET Core / .NET 5+|
 |:---:|:---:|:---:|
@@ -64,13 +62,13 @@ O .NET passou de um framework limitado ao Windows para uma plataforma poderosa e
 
 ---
 
-### **Conclusão**
+#### **Conclusão**
 
 Se você está começando hoje, foque no **.NET 6** ou superior. O .NET Framework ainda é usado, mas não receberá mais evoluções significativas. Ele permanece em modo de manutenção, ou seja:
 
-> - Recebe atualizações de segurança e correções críticas.
-> - Não receberá novos recursos ou grandes melhorias de performance.
-> - Continua sendo suportado em sistemas Windows que dependem de aplicações legadas.
+- Recebe atualizações de segurança e correções críticas.
+- Não receberá novos recursos ou grandes melhorias de performance.
+- Continua sendo suportado em sistemas Windows que dependem de aplicações legadas.
 
 A Microsoft incentiva a migração para o .NET 6+ (ou superior), que é o futuro da plataforma. O .NET moderno é multiplataforma, open source, com melhor performance e mais recursos.
 
@@ -78,21 +76,19 @@ A Microsoft incentiva a migração para o .NET 6+ (ou superior), que é o futuro
 
 ---
 
-## **Compiladores e Transpiladores no .NET**
+### **Compiladores e Transpiladores no .NET**
 
-### **Conceitos**
+#### **Conceitos**
 
-> - **Compilador:** transforma o código-fonte em código intermediário (CIL - Common Intermediate Language).
-> - **CLR (Common Language Runtime):** executa o CIL em tempo de execução.
-> - **Transpilador:** converte código de uma linguagem para outra com comportamento semelhante (menos comum em .NET, mas usado para interoperabilidade).
+- **Compilador:** transforma o código-fonte em código intermediário (CIL - Common Intermediate Language).
+- **CLR (Common Language Runtime):** executa o CIL em tempo de execução.
+- **Transpilador:** converte código de uma linguagem para outra com comportamento semelhante (menos comum em .NET, mas usado para interoperabilidade).
 
-## **Funcionamento do Compilador .NET**
+#### **Funcionamento do Compilador .NET**
 
 1. Você escreve código em C#.
 2. O compilador converte esse código em **CIL**.
 3. O **CLR** interpreta e executa esse código CIL na máquina.
-
----
 
 ```~~~c#
 
@@ -110,17 +106,17 @@ class Program
 
 ```
 
-Esse código será transformado em CIL e executado pelo CLR.
+> Esse código será transformado em CIL e executado pelo CLR.
 
 ---
 
-## **Conclusão**
+#### **Conclusão**
 
 O sistema de compilação do .NET permite portabilidade, segurança e performance ao transformar código C# em um formato intermediário executável em diferentes sistemas.
 
 ---
 
-## **Materiais Complementares**
+#### **Materiais Complementares**
 
 Documentação oficial: https://learn.microsoft.com/pt-br/dotnet/  
 Livro gratuito da Microsoft: https://docs.microsoft.com/dotnet/standard/  

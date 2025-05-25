@@ -1,18 +1,21 @@
 # Versionamento de Código com Git e GitHub
 
-## Introdução
+#### Introdução
+
 Este módulo mostra como começar a trabalhar com Git e GitHub na prática. Aqui você aprenderá a criar, clonar, modificar e gerenciar repositórios locais e remotos. Também verá como usar branches para isolar funcionalidades, resolver conflitos e colaborar com eficiência.
 
 ---
 
-## Criando e Clonando Repositórios
+### Criando e Clonando Repositórios
 
-### Conceitos
+#### Conceitos
+
 - Um **repositório** é onde o código-fonte é armazenado.
 - **Clonar** é copiar um repositório remoto para seu computador.
 - **Criar** é iniciar um repositório do zero.
 
-### Comandos principais
+#### Comandos principais
+
 ```bash
 # Criar um novo repositório local
 git init
@@ -21,20 +24,23 @@ git init
 git clone https://github.com/usuario/repositorio.git
 ```
 
-### Dica
+#### Dica
+
 Use `git status` com frequência para saber o que está acontecendo no seu repositório.
 
 ---
 
-## Salvando Alterações no Repositório Local
+### Salvando Alterações no Repositório Local
 
-### Conceitos
+#### Conceitos
+
 O Git funciona como um sistema de checkpoints:
 1. Você modifica arquivos.
 2. Usa `git add` para preparar.
 3. Usa `git commit` para salvar.
 
-### Comandos
+#### Comandos
+
 ```bash
 git add arquivo.txt                 # Adiciona um arquivo
 git commit -m "mensagem do commit"  # Salva alterações com descrição
@@ -42,9 +48,9 @@ git commit -m "mensagem do commit"  # Salva alterações com descrição
 
 ---
 
-## Desfazendo Alterações
+### Desfazendo Alterações
 
-### Situações comuns e como resolver
+#### Situações comuns e como resolver
 
 | Situação                             | Comando                                       |
 |-------------------------------------|-----------------------------------------------|
@@ -52,30 +58,33 @@ git commit -m "mensagem do commit"  # Salva alterações com descrição
 | Desfazer arquivos adicionados com add | `git reset nome_arquivo`                   |
 | Desfazer último commit (não enviado) | `git reset --soft HEAD~1`                    |
 
-> ⚠️ Evite usar `reset --hard` sem entender, ele apaga dados.
+⚠️ Evite usar `reset --hard` sem entender, ele apaga dados.
 
 ---
 
-## Enviando e Baixando do Repositório Remoto
+### Enviando e Baixando do Repositório Remoto
 
-### Comandos Essenciais
+#### Comandos Essenciais
+
 ```bash
 git push origin main    # Envia commits locais
 git pull origin main    # Atualiza com o servidor remoto
 ```
 
-> `origin` é o nome padrão do repositório remoto. `main` é o nome do branch principal.
+`origin` é o nome padrão do repositório remoto. `main` é o nome do branch principal.
 
 ---
 
-## Trabalhando com Branches
+### Trabalhando com Branches
 
-### **Diferença entre main e master no GitHub**
-> - São nomes de branches
+#### **Diferença entre main e master no GitHub**
+
+- São nomes de branches
 Tanto main quanto master são nomes dados ao branch principal de um repositório Git.
 Ou seja, é como se fosse a "linha do tempo" principal onde o desenvolvimento do projeto acontece.
 
 #### **Mas por que tem dois nomes?**
+
 - **Antes (padrão antigo):** ````master```` - 
 Antigamente, o Git criava o primeiro branch com o nome master por padrão.   
 Isso vem desde a criação do Git, lá em 2005.
@@ -86,7 +95,7 @@ Motivo: tornar o Git mais inclusivo. O termo “master” pode ter conotações 
 
 ---
 
-### **Na prática, o que muda pra você?**
+#### **Na prática, o que muda pra você?**
 
 **Pouca coisa, mas vale saber:**
 |Situação|Branch padrão|
@@ -104,7 +113,7 @@ Motivo: tornar o Git mais inclusivo. O termo “master” pode ter conotações 
 
 ---
 
-### **Dica prática (terminal):**
+#### **Dica prática (terminal):**
 
 Se você clonou um repositório e quer saber qual é o branch principal:
 
@@ -118,7 +127,7 @@ Ou veja o *HEAD* com:
 cat .git/HEAD
 ````
 
-### **Quer mudar de ````master```` para ````main````?**
+#### **Quer mudar de ````master```` para ````main````?**
 
 Dá pra fazer isso, passo a passo:
 
@@ -138,10 +147,12 @@ git push origin -u main
 - Na seção Branches, muda o branch padrão pra main.
 - Depois disso, pode deletar ````master```` se quiser.
 
-### Conceitos
+#### Conceitos
+
 Branches permitem trabalhar em funcionalidades separadas sem mexer no código principal.
 
-### Comandos Básicos
+#### Comandos Básicos
+
 ```bash
 git branch nome-branch         # Cria uma nova branch
 git checkout nome-branch       # Troca para a branch
@@ -180,11 +191,15 @@ git commit -m "resolve conflito"
 ---
 
 ## Conclusão
+
 Agora você tem as ferramentas básicas para trabalhar com versionamento de código em projetos reais. Continue praticando e utilize sempre o GitHub como vitrine e controle do seu trabalho.
 
 ### Recursos adicionais
+
 - [Git - Livro oficial (em português)](https://git-scm.com/book/pt-br/v2)
 - [Guia de Git da Digital Innovation One](https://www.youtube.com/watch?v=UBAX-13g8OM)
 - [GitHub Docs](https://docs.github.com/pt)
 
 ---
+
+##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
