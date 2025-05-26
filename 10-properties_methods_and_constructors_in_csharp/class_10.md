@@ -46,6 +46,136 @@ public int Idade
 
 ---
 
+### 🧠 O Que Está Acontecendo Aqui?
+
+#### 🎯 Objetivo:
+
+Criar uma **propriedade chamada `Idade`** que permita **acessar** (ler) e **definir** (escrever) a idade de uma pessoa, **com uma validação** que impede que valores negativos sejam atribuídos.
+
+---
+
+### 🔍 Linha por Linha
+
+#### 🟩 `public int Idade`
+
+* `public` → A propriedade será visível para qualquer classe.
+* `int` → O tipo da propriedade é inteiro.
+* `Idade` → Nome da propriedade que representa a idade da pessoa.
+
+> Até aqui, estamos apenas **declarando uma propriedade pública chamada `Idade`, do tipo `int`**.
+
+---
+
+#### 🔵 `{ get { return idade; } ... }`
+
+Este é o **acessador de leitura** (`get`).
+
+* `get` permite que o valor atual da idade seja **lido de fora da classe**.
+
+* Dentro do `get`, temos:
+
+  ```csharp
+  return idade;
+  ```
+
+* Isso quer dizer que ao **chamar `pessoa.Idade` em outro lugar do código**, será retornado o **valor armazenado na variável interna `idade`**.
+
+### 🔴 `{ set { if (value >= 0) idade = value; } }`
+
+Este é o **acessador de escrita** (`set`).
+
+* O `set` é usado para **atribuir um valor à propriedade**.
+* `value` é uma **palavra-chave especial** dentro do `set` que representa **o valor que está sendo atribuído à propriedade**.
+
+> Exemplo:
+>
+> ```csharp
+> pessoa.Idade = 25;
+> ```
+>
+> Nesse caso, `value` dentro do `set` será 25.
+
+* A linha:
+
+  ```csharp
+  if (value >= 0) idade = value;
+  ```
+
+  faz o seguinte:
+
+  * **Verifica** se o valor fornecido é maior ou igual a 0.
+  * Se for, **atribui esse valor à variável privada `idade`**.
+  * Se não for, **ignora a atribuição** (protegendo o dado).
+
+---
+
+## 🧩 Mas de onde vem `idade`?
+
+O código está usando um **campo privado interno** chamado `idade`. Ele **precisa ser declarado antes da propriedade**, assim:
+
+```csharp
+private int idade;
+```
+
+> Assim, `idade` é o **dado "cru"**, e `Idade` é a **interface segura e controlada para trabalhar com esse dado**.
+
+---
+
+## ✅ Por Que Usar Isso?
+
+* Evita dados inválidos (como `-5` anos).
+* Encapsula a lógica de acesso: quem usa a classe não precisa saber como a validação acontece.
+* Permite que, futuramente, você altere a lógica interna sem quebrar o código que usa a propriedade.
+
+---
+
+## 🔁 Exemplo Completo
+
+```csharp
+public class Pessoa
+{
+    private int idade;
+
+    public int Idade
+    {
+        get { return idade; }
+        set 
+        {
+            if (value >= 0) idade = value;
+        }
+    }
+}
+```
+
+### Uso no código:
+
+```csharp
+Pessoa p = new Pessoa();
+p.Idade = 30;
+Console.WriteLine(p.Idade); // Saída: 30
+
+p.Idade = -5;
+Console.WriteLine(p.Idade); // Ainda 30, pois -5 foi ignorado
+```
+
+---
+
+## 🧱 Alternativas com Expressões Simples (a partir do C# 6)
+
+Se não precisar de validação:
+
+```csharp
+public int Idade { get; set; }
+```
+
+Ou somente leitura:
+
+```csharp
+public int Idade { get; } = 18;
+```
+
+---
+
 ### ⚙️ Métodos
 
 #### ✨ Criando um Método
