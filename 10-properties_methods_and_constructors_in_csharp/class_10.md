@@ -80,7 +80,7 @@ Este é o **acessador de leitura** (`get`).
 
 * Isso quer dizer que ao **chamar `pessoa.Idade` em outro lugar do código**, será retornado o **valor armazenado na variável interna `idade`**.
 
-### 🔴 `{ set { if (value >= 0) idade = value; } }`
+#### 🔴 `{ set { if (value >= 0) idade = value; } }`
 
 Este é o **acessador de escrita** (`set`).
 
@@ -109,7 +109,7 @@ Este é o **acessador de escrita** (`set`).
 
 ---
 
-## 🧩 Mas de onde vem `idade`?
+#### 🧩 Mas de onde vem `idade`?
 
 O código está usando um **campo privado interno** chamado `idade`. Ele **precisa ser declarado antes da propriedade**, assim:
 
@@ -121,7 +121,7 @@ private int idade;
 
 ---
 
-## ✅ Por Que Usar Isso?
+#### ✅ Por Que Usar Isso?
 
 * Evita dados inválidos (como `-5` anos).
 * Encapsula a lógica de acesso: quem usa a classe não precisa saber como a validação acontece.
@@ -129,7 +129,7 @@ private int idade;
 
 ---
 
-## 🔁 Exemplo Completo
+#### 🔁 Exemplo Completo
 
 ```csharp
 public class Pessoa
@@ -147,7 +147,7 @@ public class Pessoa
 }
 ```
 
-### Uso no código:
+#### Uso no código:
 
 ```csharp
 Pessoa p = new Pessoa();
@@ -160,7 +160,7 @@ Console.WriteLine(p.Idade); // Ainda 30, pois -5 foi ignorado
 
 ---
 
-## 🧱 Alternativas com Expressões Simples (a partir do C# 6)
+#### 🧱 Alternativas com Expressões Simples (a partir do C# 6)
 
 Se não precisar de validação:
 
