@@ -139,3 +139,4 @@ Compreender operações, atribuições e conversões é fundamental para escreve
 
 ---
 
+##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
