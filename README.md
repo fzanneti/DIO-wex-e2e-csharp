@@ -59,8 +59,8 @@ O repositório está estruturado em **pastas por tema**, com arquivos `.md` que 
 **Fabio Zanneti**
 Profissional com mais de 10 anos de experiência em Compras e Fiscal, atualmente em transição de carreira para tecnologia com foco em .NET, C#, IA e projetos criativos.
 
-🔗 [GitHub](https://github.com/fzanneti)
-🎯 [LinkedIn](https://www.linkedin.com/in/fzanneti/)
+🔗 [GitHub - fzanneti](https://github.com/fzanneti)  
+🎯 [LinkedIn - fzanneti](https://www.linkedin.com/in/fzanneti/)
 
 ---
 
