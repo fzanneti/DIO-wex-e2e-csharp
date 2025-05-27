@@ -103,3 +103,5 @@ Console.WriteLine($"Raiz quadrada de 25 é {raiz}");
 Operadores aritméticos são essenciais no dia a dia da programação. Entender como aplicá-los e usá-los com as funções da biblioteca Math oferece uma base sólida para cálculos e manipulação de dados numéricos. Experimente criar novos métodos na Calculadora com base nessas funções!
 
 ---
+
+##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
