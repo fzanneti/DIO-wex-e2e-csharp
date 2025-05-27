@@ -161,8 +161,10 @@ dotnet run --project ./NomeDoProjeto
 
 ---
 
-## ✅ Conclusão
+#### ✅ Conclusão
 
 Entender a organização de um programa em C# e como gerenciar múltiplos projetos numa solução é essencial para criar aplicações profissionais. Além disso, dominar os comandos no terminal e entender as diferenças entre versões do .NET ajuda a ganhar agilidade e fazer escolhas conscientes.
 
 ---
+
+##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
