@@ -37,8 +37,10 @@ public class Calculadora
 
 #### Exemplo de uso:
 
+```csharp
 var calc = new Calculadora();
 Console.WriteLine(calc.Somar(4, 5)); // Saída: 9
+```
 
 ---
 
@@ -46,8 +48,10 @@ Console.WriteLine(calc.Somar(4, 5)); // Saída: 9
 
 Para calcular potências (ex: 2³ = 8), usamos a função Math.Pow():
 
+```csharp
 double resultado = Math.Pow(2, 3); // 8
 Console.WriteLine($"2 elevado a 3 é {resultado}");
+```
 
 ---
 
@@ -55,14 +59,16 @@ Console.WriteLine($"2 elevado a 3 é {resultado}");
 
 O C# fornece funções trigonométricas através da classe Math. Todos os métodos trabalham em radianos.
 
+```csharp
 double angulo = Math.PI / 2; // 90 graus em radianos
 double seno = Math.Sin(angulo);       // 1
 double cosseno = Math.Cos(angulo);    // 0
 double tangente = Math.Tan(angulo);   // Infinito (muito alto)
 
 Console.WriteLine($"Seno: {seno}, Cosseno: {cosseno}, Tangente: {tangente}");
+```
 
-> Para converter de graus para radianos: Math.PI * graus / 180.
+> Para converter de graus para radianos: ```Math.PI * graus / 180```.
 
 ---
 
@@ -70,12 +76,14 @@ Console.WriteLine($"Seno: {seno}, Cosseno: {cosseno}, Tangente: {tangente}");
 
 Esses operadores servem para aumentar ou diminuir o valor de uma variável em 1.
 
+```csharp
 int x = 5;
 x++; // Agora x é 6
 x--; // Agora x é 5 novamente
 
 ++x; // incrementa antes de usar
 --x; // decrementa antes de usar
+```
 
 ---
 
@@ -83,8 +91,10 @@ x--; // Agora x é 5 novamente
 
 Para obter a raiz quadrada de um número, use Math.Sqrt():
 
+```csharp
 double raiz = Math.Sqrt(25); // 5
 Console.WriteLine($"Raiz quadrada de 25 é {raiz}");
+```
 
 ---
 
