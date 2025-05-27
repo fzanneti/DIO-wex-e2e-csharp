@@ -194,7 +194,4 @@ Dominar estruturas de repetição é essencial para programar de forma eficiente
 
 ---
 
-**Criado por:** [Fabio Zanneti](https://github.com/fzanneti)
-📚 Material de apoio para o curso **WEX - End to End Engineering** da DIO.
-
----
+##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
