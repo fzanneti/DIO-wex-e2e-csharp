@@ -1,15 +1,12 @@
-Claro, Fabio! Aqui está o conteúdo formatado em Markdown (.md), pronto para ser usado no seu repositório do GitHub:
-
-
----
-
 # 🧮 Operadores Aritméticos em C#
 
-## Introdução aos Operadores Aritméticos
+#### Introdução aos Operadores Aritméticos
 
 Em C#, operadores aritméticos são símbolos usados para realizar cálculos matemáticos. Eles funcionam com tipos numéricos como `int`, `double`, `float`, entre outros. São fundamentais para qualquer aplicação que envolva matemática.
 
-### Principais operadores:
+---
+
+#### Principais operadores:
 
 | Operador | Operação         | Exemplo       |
 |----------|------------------|----------------|
@@ -21,7 +18,7 @@ Em C#, operadores aritméticos são símbolos usados para realizar cálculos mat
 
 ---
 
-## Criando a Nossa Classe Calculadora
+#### Criando a Nossa Classe Calculadora
 
 Vamos criar uma classe simples que implementa essas operações básicas:
 
@@ -34,26 +31,27 @@ public class Calculadora
     public double Dividir(double a, double b) => b != 0 ? a / b : throw new DivideByZeroException();
     public double Modulo(double a, double b) => a % b;
 }
+```
 
-Exemplo de uso:
+---
+
+#### Exemplo de uso:
 
 var calc = new Calculadora();
 Console.WriteLine(calc.Somar(4, 5)); // Saída: 9
 
-
 ---
 
-Usando Potência
+#### Usando Potência
 
 Para calcular potências (ex: 2³ = 8), usamos a função Math.Pow():
 
 double resultado = Math.Pow(2, 3); // 8
 Console.WriteLine($"2 elevado a 3 é {resultado}");
 
-
 ---
 
-Funções Trigonométricas
+#### Funções Trigonométricas
 
 O C# fornece funções trigonométricas através da classe Math. Todos os métodos trabalham em radianos.
 
@@ -66,12 +64,9 @@ Console.WriteLine($"Seno: {seno}, Cosseno: {cosseno}, Tangente: {tangente}");
 
 > Para converter de graus para radianos: Math.PI * graus / 180.
 
-
-
-
 ---
 
-Incremento e Decremento
+#### Incremento e Decremento
 
 Esses operadores servem para aumentar ou diminuir o valor de uma variável em 1.
 
@@ -82,25 +77,19 @@ x--; // Agora x é 5 novamente
 ++x; // incrementa antes de usar
 --x; // decrementa antes de usar
 
-
 ---
 
-Calculando Raiz Quadrada
+#### Calculando Raiz Quadrada
 
 Para obter a raiz quadrada de um número, use Math.Sqrt():
 
 double raiz = Math.Sqrt(25); // 5
 Console.WriteLine($"Raiz quadrada de 25 é {raiz}");
 
-
 ---
 
-Conclusão
+#### Conclusão
 
 Operadores aritméticos são essenciais no dia a dia da programação. Entender como aplicá-los e usá-los com as funções da biblioteca Math oferece uma base sólida para cálculos e manipulação de dados numéricos. Experimente criar novos métodos na Calculadora com base nessas funções!
 
-
 ---
-
-Se quiser, posso gerar esse `.md` como arquivo para você subir direto no seu repositório. Deseja isso?
-
