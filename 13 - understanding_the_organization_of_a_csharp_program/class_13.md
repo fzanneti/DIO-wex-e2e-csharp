@@ -144,8 +144,10 @@ Ao trabalhar com projetos múltiplos ou soluções, é essencial entender como n
 ---
 
 📂 **Repositório oficial do SDK .NET:**
-[https://github.com/dotnet](https://github.com/dotnet)
+[https://github.com/dotnet](https://github.com/dotnet)  
 📚 **Documentação oficial da Microsoft:**
 [https://learn.microsoft.com/dotnet](https://learn.microsoft.com/dotnet)
 
 ---
+
+##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
