@@ -119,3 +119,4 @@ public double CalcularDesconto(double valor, double porcentagem)
 
 ---
 
+##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
