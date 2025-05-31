@@ -30,6 +30,13 @@ namespace codification.models.DataTypes
 
             Console.WriteLine($"");
 
+            /* 
+                Exemplo de uso do tipo DateTime
+            */
+            DateTime dataAtual = DateTime.Now;
+            Console.WriteLine($"Verificação em {dataAtual.ToString("dd/MM/yyyy - HH:mm")} - método DateTime.");
+
+            Console.WriteLine($"");
         }
 
     }
