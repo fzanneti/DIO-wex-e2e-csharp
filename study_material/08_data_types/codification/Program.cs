@@ -11,6 +11,6 @@ DataTypes tiposDeDados = new DataTypes
 
 tiposDeDados.Nome = "João";
 tiposDeDados.Idade = 30;
-tiposDeDados.Altura = 1.75;
+tiposDeDados.Altura = 1.70;
 tiposDeDados.Salario = 2500.00M;                 
 tiposDeDados.Apresentar();
