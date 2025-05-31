@@ -32,6 +32,7 @@ namespace codification.models.DataTypes
 
             /* 
                 Exemplo de uso do tipo DateTime
+                ToString é utilizado para formatar os dados para exibição em texto.
             */
             DateTime dataAtual = DateTime.Now;
             Console.WriteLine($"Verificação em {dataAtual.ToString("dd/MM/yyyy - HH:mm")} - método DateTime.");
