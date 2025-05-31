@@ -1,4 +1,4 @@
-﻿using codification.models;
+﻿using codification.models.Pessoa;
 
 Pessoa pessoa = new Pessoa
 {
