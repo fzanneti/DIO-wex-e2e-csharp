@@ -1,10 +1,10 @@
-﻿using project_1_building_a_parking_system_with_csharp.services; // Importa o namespace do serviço EstacionamentoService.
+﻿using project_1_building_a_parking_system_with_csharp.services; // Importa o namespace do serviço ParkingServices.
 
 class Program
 {
     static void Main(string[] args) // Método principal que serve como ponto de entrada do programa.
     {
-        EstacionamentoService estacionamento = new EstacionamentoService(); // Instancia o serviço de estacionamento para gerenciar veículos.
+        ParkingServices estacionamento = new ParkingServices(); // Instancia o serviço de estacionamento para gerenciar veículos.
 
         while (true) // Loop infinito para exibir o menu até que o usuário escolha sair.
         {   

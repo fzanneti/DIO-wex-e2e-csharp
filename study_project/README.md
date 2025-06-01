@@ -1,4 +1,4 @@
-# 🚗 Sistema de Estacionamento com C# (.NET)
+# 🚗 Sistema de project_1_building_a_parking_system_with_csharp com C# (.NET)
 
 ### 📘 Visão Geral do Projeto
 
@@ -19,25 +19,19 @@ Desenvolver um sistema console simples, porém estruturado, para gerenciar a ent
 
 > O projeto segue princípios de boas práticas, com separação de responsabilidades, legibilidade e foco em manutenção. A estrutura é a seguinte:
 
-/Estacionamento
-│
-├── /Estacionamento                         # Diretório principal do projeto
-│   ├── Models                              # Contém as classes de domínio
-│   │   └── Veiculo.cs
-│   │
-│   ├── Services                            # Contém a lógica de negócio
-│   │   └── EstacionamentoService.cs
-│   │
-│   ├── Utils                               # Classes auxiliares (opcional, não implementado)
-│   │   └── ValidadorPlaca.cs
-│   │
-│   └── Program.cs                          # Ponto de entrada do programa
-│
-├── Estacionamento.sln                      # Solução do projeto
-├── Estacionamento.csproj                   # Arquivo de projeto especificando o .NET 9.0
-└── README.md                               # Descrição do projeto
-
-```
+| **Caminho**|**Descrição** |
+|--------------------------------------|----------------------------------------------------|
+| 📁 `/project_1_building_a_parking_system_with_csharp`|Diretório principal do projeto|
+| 📂 `/project_1_building_a_parking_system_with_csharp/Models`|Contém as classes de domínio|
+| 📄 `/project_1_building_a_parking_system_with_csharp/Models/Vehicles.cs`|Define a entidade Veículo (placa e hora de entrada)|
+| 📂 `/project_1_building_a_parking_system_with_csharp/Services`|Contém a lógica de negócio|
+| 📄 `/project_1_building_a_parking_system_with_csharp/Services/ParkingServices.cs`|Gerencia operações do estacionamento|
+| 📂 `/project_1_building_a_parking_system_with_csharp/Utils`|Classes auxiliares (opcional, não implementado)|
+| 📄 `/project_1_building_a_parking_system_with_csharp/Utils/ValidadorPlaca.cs` |Planejado para validação de placas (não implementado)|
+| 📄 `/project_1_building_a_parking_system_with_csharp/Program.cs`|Ponto de entrada do programa|
+| 📄 `project_1_building_a_parking_system_with_csharp.sln`|Arquivo de solução do projeto|
+| 📄 `project_1_building_a_parking_system_with_csharp.csproj`|Arquivo de projeto, configurado para .NET 9.0 |
+| 📄 `README.md`|Documentação do projeto|
 
 ---
 
@@ -80,9 +74,9 @@ dotnet run
 
 ---
 
-## 💡 Planejamento Inicial
+### 💡 Planejamento Inicial
 
-### 💭 Casos de Uso
+#### 💭 Casos de Uso
 
 1. **Entrada de Veículo**
    - Entrada: Placa do veículo.
@@ -101,6 +95,7 @@ dotnet run
 ---
 
 ### 📚 Classes Implementadas
+
 #### 🔹 `Veiculo.cs`
 ```csharp
 public class Veiculo
@@ -117,9 +112,9 @@ public class Veiculo
 ```
 - Representa um veículo com placa e hora de entrada.
 
-#### 🔹 `EstacionamentoService.cs`
+#### 🔹 `ParkingServices.cs`
 ```csharp
-public class EstacionamentoService
+public class ParkingServices
 {
     private decimal precoInicial = 5;
     private decimal precoPorHora = 2;
@@ -135,10 +130,14 @@ public class EstacionamentoService
 ```
 - Gerencia a lógica de negócio, incluindo adição, remoção, listagem, alteração de preços e exibição da tabela de preços.
 
+---
+
 #### 🔹 `ValidadorPlaca.cs` (Opcional, não implementado)
 - Planejado para validar formatos de placa (ex.: `^[A-Z]{3}-[0-9]{4}$`), mas não implementado na versão atual.
 
-### 💻 Interface no Console (`Program.cs`)
+---
+
+#### 💻 Interface no Console (`Program.cs`)
 - Exibe um menu com as opções:
   1. Adicionar Veículo
   2. Remover Veículo (exibe lista de veículos antes da remoção)
@@ -150,18 +149,24 @@ public class EstacionamentoService
 - Limpa a tela antes de cada menu ou interação (usando `Console.Clear()`).
 - Pausa após cada ação (usando `Console.ReadKey()`) para permitir a visualização dos resultados.
 
-### 🚀 Atualizações Recentes
+---
+
+#### 🚀 Atualizações Recentes
 - Atualizado o framework para .NET 9.0.
 - Adicionada opção para alterar o preço inicial e preço por hora, com exibição dos valores anterior e atual.
 - Implementada exibição da tabela de preços.
 - Adicionada listagem de veículos ao selecionar a opção de remoção, facilitando a escolha da placa.
 - Interface aprimorada com limpeza de tela antes de cada interação e pausa para visualização de resultados.
 
-## 📈 Próximos Passos
+---
+
+#### 📈 Próximos Passos
 - Implementar `ValidadorPlaca.cs` para validar formatos de placa.
 - Adicionar tratamento de placas duplicadas ao adicionar veículos.
 - Refatorar para suportar persistência de dados (ex.: salvar em arquivo).
 - Adicionar testes unitários para validar a lógica de negócio.
 - Melhorar a interface do console com formatação avançada (ex.: cores ou tabelas).
+
+---
 
 **Seção criada por: Fabio Zanneti - Projeto: WEX - End to End Engineering - Guia de estudos.**

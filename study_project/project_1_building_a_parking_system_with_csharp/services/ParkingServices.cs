@@ -5,7 +5,7 @@ using project_1_building_a_parking_system_with_csharp.models;
 
 namespace project_1_building_a_parking_system_with_csharp.services
 {
-    public class EstacionamentoService
+    public class ParkingServices
     {
         private List<Veiculo> veiculos = new List<Veiculo>(); // Lista para armazenar os veículos estacionados.
         private decimal precoInicial = 5; // Preço inicial fixo cobrado ao estacionar o veículo.
