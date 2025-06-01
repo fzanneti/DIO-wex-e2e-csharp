@@ -4,60 +4,64 @@
 
 #### 🎯 Objetivo
 
-Desenvolver um sistema console simples, porém estruturado, para gerenciar a entrada e saída de veículos em um estacionamento. O sistema permitirá:
+Desenvolver um sistema console simples, porém estruturado, para gerenciar a entrada e saída de veículos em um estacionamento. O sistema permite:
 
-* Cadastro de veículos
-* Remoção (saída) de veículos
-* Cálculo de tempo estacionado e valor a pagar
-* Listagem de veículos presentes
+- Cadastro de veículos
+- Remoção (saída) de veículos com cálculo do tempo estacionado e valor a pagar
+- Listagem de veículos presentes
+- Alteração do preço inicial e do preço por hora
+- Exibição da tabela de preços
+- Exibição da lista de veículos ao solicitar a remoção
 
 ---
 
 #### 🧱 Arquitetura e Organização
 
-> Esse projeto será criado com base nos princípios de **boas práticas**, separação de responsabilidades e foco em legibilidade e manutenção.
+> O projeto segue princípios de boas práticas, com separação de responsabilidades, legibilidade e foco em manutenção. A estrutura é a seguinte:
 
-```
 /Estacionamento
 │
-├── /Estacionamento                          # Diretório principal do projeto
-│   ├── Models                               # Contém as classes de domínio
+├── /Estacionamento                         # Diretório principal do projeto
+│   ├── Models                              # Contém as classes de domínio
 │   │   └── Veiculo.cs
 │   │
-│   ├── Services                             # Contém a lógica de negócio
+│   ├── Services                            # Contém a lógica de negócio
 │   │   └── EstacionamentoService.cs
 │   │
-│   ├── Utils                                # Classes auxiliares (opcional)
+│   ├── Utils                               # Classes auxiliares (opcional, não implementado)
 │   │   └── ValidadorPlaca.cs
 │   │
-│   └── Program.cs                           # Ponto de entrada do programa
+│   └── Program.cs                          # Ponto de entrada do programa
 │
-├── Estacionamento.sln                       # Solução do projeto
-└── README.md                                # Descrição do projeto
+├── Estacionamento.sln                      # Solução do projeto
+├── Estacionamento.csproj                   # Arquivo de projeto especificando o .NET 9.0
+└── README.md                               # Descrição do projeto
+
 ```
 
 ---
 
 #### 📋 Requisitos Funcionais
 
-1. O sistema deve permitir registrar a entrada de um veículo.
-2. O sistema deve permitir remover um veículo, solicitando a placa e calculando o valor a pagar.
-3. O sistema deve exibir uma lista de veículos atualmente no estacionamento.
-4. O sistema deve tratar erros como:
-
-   * Placa não encontrada ao remover
-   * Placa duplicada ao adicionar
-   * Formato inválido de entrada
-5. O sistema deve utilizar um modelo de valor fixo + valor por hora (ex: R\$ 5 fixo + R\$ 2 por hora).
+- Registrar a entrada de um veículo com placa e hora de entrada.
+- Remover um veículo pela placa, exibindo a lista de veículos estacionados antes da remoção, calculando o tempo estacionado e o valor a pagar.
+- Exibir a lista de veículos atualmente no estacionamento.
+- Alterar o preço inicial e o preço por hora, exibindo os valores anterior e atual.
+- Exibir a tabela de preços com os valores atuais.
+- Tratar erros, como:
+  - Placa não encontrada ao remover.
+  - Entrada inválida (ex.: valores não numéricos para preços).
+- Utilizar um modelo de cobrança com valor fixo + valor por hora (ex.: R$ 5 fixo + R$ 2 por hora).
 
 ---
 
 #### 🧪 Requisitos Não Funcionais
 
-* O sistema deve ser desenvolvido em C# com .NET 6 ou superior.
-* O sistema deve rodar em modo console.
-* O código deve ser modularizado.
-* O código deve ser comentado e fácil de entender.
+- Desenvolvido em C# com .NET 9.0.
+- Interface em modo console com tela limpa após cada interação.
+- Código modularizado com separação de responsabilidades.
+- Código comentado e fácil de entender.
+- Pausa após exibição de resultados para visualização antes de limpar a tela.
 
 ---
 
@@ -65,12 +69,12 @@ Desenvolver um sistema console simples, porém estruturado, para gerenciar a ent
 
 #### Pré-requisitos:
 
-* [.NET 6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
-* Git
+- .NET 9.0 SDK
+- Git
 
 ```bash
-git clone https://github.com/seu-usuario/Estacionamento.git
-cd Estacionamento
+git clone https://github.com/seu_usuario/wex_e2e_csharp/tree/main/study_project/project_1_building_a_parking_system_with_csharp
+cd project_1_building_a_parking_system_with_csharp
 dotnet run
 ```
 
@@ -80,29 +84,24 @@ dotnet run
 
 ### 💭 Casos de Uso
 
-#### ✅ Entrada de Veículo
-
-* Entrada do usuário: placa do veículo
-* Validação da placa
-* Armazenamento em uma lista com a hora de entrada
-
-#### ✅ Saída de Veículo
-
-* Entrada do usuário: placa
-* Busca da placa na lista
-* Cálculo de valor total
-* Remoção da lista
-
-#### ✅ Listagem
-
-* Mostra todas as placas e horários de entrada
+1. **Entrada de Veículo**
+   - Entrada: Placa do veículo.
+   - Ação: Armazena a placa e a hora de entrada em uma lista.
+2. **Saída de Veículo**
+   - Entrada: Placa do veículo.
+   - Ação: Exibe a lista de veículos, busca a placa, calcula o tempo estacionado e o valor total, remove o veículo da lista.
+3. **Listagem de Veículos**
+   - Ação: Exibe todas as placas e horários de entrada dos veículos estacionados.
+4. **Alteração de Preços**
+   - Entrada: Novo valor para preço inicial ou preço por hora.
+   - Ação: Altera o valor, exibe o preço anterior e o atual, com validação para valores não negativos.
+5. **Exibição da Tabela de Preços**
+   - Ação: Mostra os valores atuais do preço inicial e preço por hora.
 
 ---
 
-### 📚 Classes Planejadas
-
+### 📚 Classes Implementadas
 #### 🔹 `Veiculo.cs`
-
 ```csharp
 public class Veiculo
 {
@@ -116,9 +115,9 @@ public class Veiculo
     }
 }
 ```
+- Representa um veículo com placa e hora de entrada.
 
 #### 🔹 `EstacionamentoService.cs`
-
 ```csharp
 public class EstacionamentoService
 {
@@ -129,70 +128,40 @@ public class EstacionamentoService
     public void AdicionarVeiculo(string placa) { /* lógica */ }
     public void RemoverVeiculo(string placa) { /* lógica */ }
     public void ListarVeiculos() { /* lógica */ }
+    public void AlterarPrecoInicial(decimal novoPreco) { /* lógica */ }
+    public void AlterarPrecoPorHora(decimal novoPreco) { /* lógica */ }
+    public void ExibirTabelaPrecos() { /* lógica */ }
 }
 ```
+- Gerencia a lógica de negócio, incluindo adição, remoção, listagem, alteração de preços e exibição da tabela de preços.
 
-#### 🔹 `ValidadorPlaca.cs` (Opcional)
+#### 🔹 `ValidadorPlaca.cs` (Opcional, não implementado)
+- Planejado para validar formatos de placa (ex.: `^[A-Z]{3}-[0-9]{4}$`), mas não implementado na versão atual.
 
-```csharp
-public static class ValidadorPlaca
-{
-    public static bool PlacaValida(string placa)
-    {
-        return Regex.IsMatch(placa, "^[A-Z]{3}-[0-9]{4}$");
-    }
-}
-```
+### 💻 Interface no Console (`Program.cs`)
+- Exibe um menu com as opções:
+  1. Adicionar Veículo
+  2. Remover Veículo (exibe lista de veículos antes da remoção)
+  3. Listar Veículos
+  4. Alterar Preço Inicial
+  5. Alterar Preço por Hora
+  6. Exibir Tabela de Preços
+  7. Sair
+- Limpa a tela antes de cada menu ou interação (usando `Console.Clear()`).
+- Pausa após cada ação (usando `Console.ReadKey()`) para permitir a visualização dos resultados.
 
----
+### 🚀 Atualizações Recentes
+- Atualizado o framework para .NET 9.0.
+- Adicionada opção para alterar o preço inicial e preço por hora, com exibição dos valores anterior e atual.
+- Implementada exibição da tabela de preços.
+- Adicionada listagem de veículos ao selecionar a opção de remoção, facilitando a escolha da placa.
+- Interface aprimorada com limpeza de tela antes de cada interação e pausa para visualização de resultados.
 
-#### 💻 Interface no Console (`Program.cs`)
+## 📈 Próximos Passos
+- Implementar `ValidadorPlaca.cs` para validar formatos de placa.
+- Adicionar tratamento de placas duplicadas ao adicionar veículos.
+- Refatorar para suportar persistência de dados (ex.: salvar em arquivo).
+- Adicionar testes unitários para validar a lógica de negócio.
+- Melhorar a interface do console com formatação avançada (ex.: cores ou tabelas).
 
-```csharp
-while (true)
-{
-    Console.Clear();
-    Console.WriteLine("Estacionamento WEX");
-    Console.WriteLine("1 - Adicionar veículo");
-    Console.WriteLine("2 - Remover veículo");
-    Console.WriteLine("3 - Listar veículos");
-    Console.WriteLine("4 - Sair");
-    Console.Write("Opção: ");
-
-    var opcao = Console.ReadLine();
-    switch(opcao)
-    {
-        case "1":
-            // adicionar
-            break;
-        case "2":
-            // remover
-            break;
-        case "3":
-            // listar
-            break;
-        case "4":
-            return;
-        default:
-            Console.WriteLine("Opção inválida");
-            break;
-    }
-
-    Console.WriteLine("Pressione uma tecla para continuar...");
-    Console.ReadKey();
-}
-```
-
----
-
-#### 🚀 Próximos passos
-
-1. Criar repositório `Estacionamento`
-2. Subir estrutura com `Program.cs`, `Models`, `Services`
-3. Implementar classes com base nesse planejamento
-4. Documentar cada parte com comentários
-5. Refatorar se necessário
-
----
-
-##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
+**Seção criada por: Fabio Zanneti - Projeto: WEX - End to End Engineering - Guia de estudos.**
