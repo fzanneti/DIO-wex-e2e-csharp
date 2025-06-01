@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using System.Linq; 
 using System.Threading.Tasks;
 
-namespace codification.models // Namespace para organizar o código
+namespace codification.Models // Namespace para agrupar as classes relacionadas a pessoas
 {
     /* 
         public é o modificador de acesso não tem restrições de acesso, permitindo que a classe seja acessada de qualquer lugar
         private é o modificador de acesso que tem restrições de acesso, permitindo que o campo ou método seja acessado apenas dentro da própria classe
     */
-    public class Pessoa 
+    public class Pessoa
     {
-
         /*
             get recebe o valor da propriedade
             set atribui o valor da propriedade
@@ -20,10 +19,10 @@ namespace codification.models // Namespace para organizar o código
         private string _sobrenome; // Campo privado para armazenar o sobrenome
         private int _idade; // Campo privado para armazenar a idade
 
-        
         public string Nome
         {
             get => _nome.ToUpper(); // Bodyexpression "=>" deve ser usado para propriedades simples, aqui converte o nome para maiúsculas ao obter o valor
+
             set // Define o nome com validação
             {
                 if (value.Length > 3) // Verifica se o nome tem mais de 3 caracteres
@@ -37,10 +36,10 @@ namespace codification.models // Namespace para organizar o código
             }
         }
 
-        
         public string Sobrenome
         {
             get => _sobrenome.ToUpper(); // Bodyexpression "=>" deve ser usado para propriedades simples, aqui converte o sobrenome para maiúsculas ao obter o valor
+
             set
             {
                 if (value.Length > 3) // Verifica se o nome tem mais de 3 caracteres
@@ -53,9 +52,13 @@ namespace codification.models // Namespace para organizar o código
                 }
             }
         }
+
         // Propriedade NomeCompleto que combina Nome e Sobrenome    
+
         public string NomeCompleto => $"{Nome} {Sobrenome}";// Propriedade somente leitura que retorna o nome completo concatenando Nome e Sobrenome
-        // public string NomeCompleto { get => $"{Nome} {Sobrenome}"; } // A linha acima é uma versão alternativa usando expressão de corpo (body expression) para a propriedade NomeCompleto, qual é mais concisa e direta.
+
+        // public string NomeCompleto { get => $"{Nome} {Sobrenome}"; } 
+        // A linha acima é uma versão alternativa usando expressão de corpo (body expression) para a propriedade NomeCompleto, qual é mais concisa e direta.
 
         public int Idade // Propriedade Idade com validação
         {
@@ -63,20 +66,20 @@ namespace codification.models // Namespace para organizar o código
 
             set
             {
-                if (value < 0) // Verifica se a idade é negativa
+                if (value < 0 || value > 120) // Verifica se a idade está dentro de um intervalo válido
                 {
-                    throw new Exception("A idade não pode ser negativa."); // Lança uma exceção se a idade for negativa
+                    throw new Exception("Idade inválida. Deve ser entre 0 e 120 anos."); // Lança uma exceção se a idade for inválida
                 }
 
                 _idade = value; // Atribui o valor à variável privada _idade
             }
         }
 
-
         public void Apresentar()
         {
-            Console.Clear();
-            Console.WriteLine($"Nome: {NomeCompleto} / Idade: {Idade}");
+            Console.Clear(); // Limpa o console antes de apresentar a pessoa
+            Console.WriteLine($"Olá, meu nome é {NomeCompleto} e tenho {Idade} anos."); // Exibe uma mensagem de apresentação com o nome completo e a idade da pessoa
         }
     }
-}   
+
+}
