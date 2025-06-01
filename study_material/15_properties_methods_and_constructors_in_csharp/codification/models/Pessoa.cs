@@ -12,9 +12,45 @@ namespace codification.Models // Namespace para agrupar as classes relacionadas 
     public class Pessoa
     {
         /*
+        Construtor padrão sem parâmetros, que deve ser sempre chamado pelo nome da classe seguido de parênteses.
+        Não há limites para o número de construtores que uma classe pode ter, mas é comum ter pelo menos um construtor padrão.
+        Construtores devem iniciar os campos da classe ou executar alguma lógica de inicialização quando uma nova instância da classe é criada.
+        */
+        public Pessoa()
+        {
+            /*
+            Este construtor é chamado quando uma nova instância de Pessoa é criada sem passar nenhum parâmetro.
+            Ele pode ser usado para inicializar valores padrão, se necessário.
+            */
+        }
+
+        public Pessoa(string nome, string sobrenome) // Construtor com parâmetros para inicializar Nome e Sobrenome
+        {
+            Nome = nome;
+            /*
+                Atribui o valor do parâmetro nome à propriedade Nome
+                Equivale a:
+                public string Nome { get; set; }
+            */
+            Sobrenome = sobrenome;
+            /* 
+                Atribui o valor do parâmetro sobrenome à propriedade Sobrenome
+                Equivale a:
+                public string Sobrenome { get; set; }
+
+                Os construtores recebem os valores padrões para as propriedades Nome e Sobrenome
+                e podem ser usados para criar instâncias da classe Pessoa com esses valores já definidos.
+                Exemplo de uso:
+                Pessoa p1 = new Pessoa(nome: "João", sobrenome: "Carvalho");
+                Isso cria uma nova instância de Pessoa com o nome "João" e sobrenome "Carvalho".
+            */
+        }
+
+        /*
             get recebe o valor da propriedade
             set atribui o valor da propriedade
         */
+
         private string _nome; // Campo privado para armazenar o nome
         private string _sobrenome; // Campo privado para armazenar o sobrenome
         private int _idade; // Campo privado para armazenar a idade
