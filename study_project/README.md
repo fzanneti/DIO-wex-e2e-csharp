@@ -97,6 +97,7 @@ dotnet run
 ### 📚 Classes Implementadas
 
 #### 🔹 `Veiculo.cs`
+   
 ```csharp
 public class Veiculo
 {
@@ -113,6 +114,7 @@ public class Veiculo
 - Representa um veículo com placa e hora de entrada.
 
 #### 🔹 `ParkingServices.cs`
+   
 ```csharp
 public class ParkingServices
 {
@@ -133,19 +135,22 @@ public class ParkingServices
 ---
 
 #### 🔹 `ValidadorPlaca.cs` (Opcional, não implementado)
+   
 - Planejado para validar formatos de placa (ex.: `^[A-Z]{3}-[0-9]{4}$`), mas não implementado na versão atual.
 
 ---
 
 #### 💻 Interface no Console (`Program.cs`)
+   
 - Exibe um menu com as opções:
-  1. Adicionar Veículo
-  2. Remover Veículo (exibe lista de veículos antes da remoção)
-  3. Listar Veículos
-  4. Alterar Preço Inicial
-  5. Alterar Preço por Hora
-  6. Exibir Tabela de Preços
-  7. Sair
+1. Adicionar Veículo
+2. Remover Veículo (exibe lista de veículos antes da remoção)
+3. Listar Veículos
+4. Alterar Preço Inicial
+5. Alterar Preço por Hora
+6. Exibir Tabela de Preços
+7. Sair
+   
 - Limpa a tela antes de cada menu ou interação (usando `Console.Clear()`).
 - Pausa após cada ação (usando `Console.ReadKey()`) para permitir a visualização dos resultados.
 
