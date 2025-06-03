@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("codification")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a02cd81c761348fe5ddc5b7ab8a82294e9ebdf6b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5f01482c249ed47653f9532db4c77a51ab193cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("codification")]
 [assembly: System.Reflection.AssemblyTitleAttribute("codification")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
