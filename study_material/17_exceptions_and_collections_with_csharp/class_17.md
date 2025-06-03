@@ -189,15 +189,4 @@ Você agora aprendeu:
 
 ---
 
-📂 Repositório mantido por: [Fabio Zanneti](https://github.com/seu-usuario)
-💻 Projeto de estudos em C# com foco profissional e didático.
-
----
-
-🧠 **Dica bônus**: Experimente criar um mini sistema que use fila para simular uma fila de atendimento, e pilha para navegar entre páginas de um sistema!
-
-```
-
----
-
 ##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
