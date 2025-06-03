@@ -1,53 +1,62 @@
-# ⚙️ Exceções e Coleções em C#
+# 💡 Exceções e Coleções em C#
 
-Neste módulo, exploramos dois conceitos fundamentais em C#: o tratamento de **exceções** (erros que ocorrem em tempo de execução) e o uso de **coleções**, como filas, pilhas e dicionários. Esses recursos são essenciais para garantir **resiliência e organização** na manipulação de dados e processos da aplicação.
-
----
-
-#### 💥 Introdução - Exceções
-
-Exceções ocorrem quando o programa encontra um erro em tempo de execução. Por exemplo:
-
-- Arquivo não encontrado
-- Divisão por zero
-- Dados mal formatados
-
-Em C#, exceções são objetos derivados da classe `Exception`.
+Este material faz parte do repositório de estudos em C# e tem como objetivo apresentar de forma **clara, prática e didática** como funcionam os conceitos de **exceções** (erros) e **coleções** (estruturas para armazenar dados) na linguagem C#.
 
 ---
 
-#### 📁 Realizando a Leitura de um Arquivo
+#### 📌 O que você vai aprender
+
+- O que são exceções e como tratá-las  
+- Como ler arquivos com segurança  
+- Como criar e tratar erros personalizados  
+- O que são e como usar filas, pilhas e dicionários  
+- Práticas profissionais de programação defensiva  
+
+---
+
+### 💥 Exceções em C#
+
+#### 🔹 O que são exceções?
+
+São **erros que ocorrem em tempo de execução**, ou seja, enquanto o programa está rodando. Elas interrompem o fluxo normal da aplicação, e por isso precisam ser **tratadas com cuidado**.
+
+---
+
+#### 📁 Lendo arquivos com segurança
 
 ```csharp
 try
 {
     string conteudo = File.ReadAllText("arquivo.txt");
+    Console.WriteLine("Conteúdo do arquivo:");
     Console.WriteLine(conteudo);
 }
-catch (FileNotFoundException ex)
+catch (FileNotFoundException)
 {
-    Console.WriteLine("Arquivo não encontrado.");
+    Console.WriteLine("Erro: Arquivo não encontrado.");
 }
 ````
 
+✔️ Aqui usamos `try-catch` para capturar o erro se o arquivo não existir, evitando que o programa pare de funcionar.
+
 ---
 
-#### 🚨 Disparando uma Exceção
-
-Você pode lançar uma exceção personalizada usando `throw`.
+#### 🚨 Criando nossos próprios erros
 
 ```csharp
-int idade = -1;
+int idade = -5;
 
 if (idade < 0)
-    throw new ArgumentException("Idade não pode ser negativa.");
+{
+    throw new ArgumentException("A idade não pode ser negativa.");
+}
 ```
+
+✔️ `throw` lança uma exceção personalizada, útil para validar regras de negócio.
 
 ---
 
-#### 🛠️ Tratando uma Exceção
-
-Utilizamos blocos `try`, `catch` e `finally` para capturar erros e continuar a execução:
+#### 🛡️ Tratando erros com `try-catch`
 
 ```csharp
 try
@@ -56,154 +65,138 @@ try
 }
 catch (FormatException)
 {
-    Console.WriteLine("Formato inválido.");
+    Console.WriteLine("Erro: Valor inserido não é um número válido.");
 }
 ```
 
----
-
-#### 🎯 Exceção Genérica e Específica
-
-* **Genérica:** captura qualquer tipo de erro.
-
-```csharp
-catch (Exception ex)
-{
-    Console.WriteLine("Erro genérico: " + ex.Message);
-}
-```
-
-* **Específica:** captura erros específicos, como `IndexOutOfRangeException`.
+✔️ Evita que a aplicação trave ao tentar converter um valor inválido.
 
 ---
 
-#### 🔚 Entendendo o Bloco Finally
-
-Executa sempre, mesmo se houver exceção.
+#### 🧩 Exceção Genérica vs Específica
 
 ```csharp
 try
 {
-    // código
+    // Código propenso a erro
 }
-catch
+catch (Exception ex) // genérica
 {
-    // tratamento
+    Console.WriteLine($"Erro genérico: {ex.Message}");
+}
+```
+
+✔️ Sempre que possível, use exceções específicas (`FormatException`, `FileNotFoundException`, etc.) para um tratamento mais preciso.
+
+---
+
+#### 🔚 Bloco finally
+
+```csharp
+try
+{
+    // Operações com risco de erro
 }
 finally
 {
-    Console.WriteLine("Encerrando operação...");
+    Console.WriteLine("Esta linha será executada sempre, com ou sem erro.");
 }
 ```
 
+✔️ Ideal para liberar recursos, como fechar arquivos, conexões, etc.
+
 ---
 
-#### 🧨 Usando o Throw
-
-Permite repassar a exceção para outro ponto do código:
+#### ↪️ Reutilizando exceções com `throw`
 
 ```csharp
 try
 {
-    throw new InvalidOperationException("Operação inválida.");
+    throw new InvalidOperationException("Operação não permitida.");
 }
-catch (Exception ex)
+catch (InvalidOperationException ex)
 {
-    Console.WriteLine("Erro: " + ex.Message);
-    throw; // relança
+    Console.WriteLine("Tratando erro...");
+    throw; // repassa para outro nível do sistema
 }
 ```
 
 ---
 
-#### 📦 Introdução a Filas (`Queue<T>`)
+### 📦 Coleções em C\#
 
-Estrutura do tipo **FIFO** (First In, First Out).
+Coleções são estruturas que permitem **armazenar, organizar e manipular dados** de forma eficiente.
+
+---
+
+#### 🔁 Fila (`Queue<T>`) – Primeiro que entra, primeiro que sai (FIFO)
 
 ```csharp
 Queue<string> fila = new Queue<string>();
-fila.Enqueue("João");
-fila.Enqueue("Maria");
+fila.Enqueue("Cliente 1");
+fila.Enqueue("Cliente 2");
 
-Console.WriteLine(fila.Dequeue()); // João
+Console.WriteLine(fila.Dequeue()); // Saída: Cliente 1
 ```
+
+✔️ Ideal para sistemas de atendimento, impressão, etc.
 
 ---
 
-#### 🛠️ Fila na Prática
-
-```csharp
-Queue<string> atendimento = new Queue<string>();
-atendimento.Enqueue("Cliente 1");
-atendimento.Enqueue("Cliente 2");
-
-while (atendimento.Count > 0)
-{
-    Console.WriteLine($"Atendendo: {atendimento.Dequeue()}");
-}
-```
-
----
-
-#### 🧱 Introdução a Pilhas (`Stack<T>`)
-
-Estrutura do tipo **LIFO** (Last In, First Out).
+#### 🧱 Pilha (`Stack<T>`) – Último que entra, primeiro que sai (LIFO)
 
 ```csharp
 Stack<string> pilha = new Stack<string>();
-pilha.Push("Livro 1");
-pilha.Push("Livro 2");
+pilha.Push("Página 1");
+pilha.Push("Página 2");
 
-Console.WriteLine(pilha.Pop()); // Livro 2
+Console.WriteLine(pilha.Pop()); // Saída: Página 2
 ```
+
+✔️ Muito usada em navegação (voltar páginas), controle de estados, etc.
 
 ---
 
-#### 🧪 Pilha na Prática
+#### 📘 Dicionário (`Dictionary<TKey, TValue>`)
+
+Estrutura chave-valor. Permite associar uma chave a um valor.
 
 ```csharp
-Stack<string> historico = new Stack<string>();
-historico.Push("Página 1");
-historico.Push("Página 2");
+Dictionary<string, int> notas = new Dictionary<string, int>();
+notas["Fabio"] = 10;
+notas["Ana"] = 9;
 
-while (historico.Count > 0)
-{
-    Console.WriteLine($"Voltando para: {historico.Pop()}");
-}
+Console.WriteLine(notas["Fabio"]); // Saída: 10
 ```
 
 ---
 
-#### 📘 Introdução ao Dictionary
-
-Armazena pares **chave-valor**.
+#### ✏️ Alterando e Removendo valores
 
 ```csharp
-Dictionary<string, int> alunos = new Dictionary<string, int>();
-alunos["Fabio"] = 10;
-alunos["Ana"] = 9;
-
-Console.WriteLine(alunos["Ana"]); // 9
+notas["Ana"] = 8; // altera
+notas.Remove("Fabio"); // remove
 ```
 
 ---
 
-#### ✏️ Removendo e Alterando Elementos
+### ✅ Encerramento
 
-```csharp
-alunos["Ana"] = 8; // altera
-alunos.Remove("Fabio"); // remove
-```
+Você agora aprendeu:
+
+✔️ Como proteger seu código contra falhas (exceções)
+✔️ Como usar coleções para manipular dados de forma estruturada e eficiente
 
 ---
 
-#### ✅ Finalização
+📂 Repositório mantido por: [Fabio Zanneti](https://github.com/seu-usuario)
+💻 Projeto de estudos em C# com foco profissional e didático.
 
-O domínio de **tratamento de exceções** e o uso de **coleções genéricas** é essencial para criar aplicações C#:
+---
 
-* Mais seguras
-* Menos propensas a falhas
-* Mais fáceis de manter e evoluir
+🧠 **Dica bônus**: Experimente criar um mini sistema que use fila para simular uma fila de atendimento, e pilha para navegar entre páginas de um sistema!
+
+```
 
 ---
 
