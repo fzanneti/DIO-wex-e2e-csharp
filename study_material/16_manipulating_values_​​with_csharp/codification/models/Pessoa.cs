@@ -114,7 +114,7 @@ namespace codification.Models // Namespace para agrupar as classes relacionadas 
         public void Apresentar()
         {
             Console.Clear(); // Limpa o console antes de apresentar a pessoa
-            Console.WriteLine($"Olá, meu nome é {NomeCompleto} e tenho {Idade} anos."); // Exibe uma mensagem de apresentação com o nome completo e a idade da pessoa
+            Console.WriteLine($"Olá, meu nome é {NomeCompleto} e tenho {Idade} anos.\n"); // Exibe uma mensagem de apresentação com o nome completo e a idade da pessoa
         }
     }
 
