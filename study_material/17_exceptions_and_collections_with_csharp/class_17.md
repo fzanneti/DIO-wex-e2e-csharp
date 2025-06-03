@@ -184,7 +184,7 @@ notas.Remove("Fabio"); // remove
 
 Você agora aprendeu:
 
-✔️ Como proteger seu código contra falhas (exceções)
+✔️ Como proteger seu código contra falhas (exceções).  
 ✔️ Como usar coleções para manipular dados de forma estruturada e eficiente
 
 ---
