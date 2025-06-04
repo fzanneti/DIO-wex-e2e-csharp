@@ -137,5 +137,3 @@ Profissional com mais de 10 anos de experiência nas áreas de Compras e Fiscal.
 ---
 
 ##### 📌 Este repositório faz parte da jornada de aprendizado e transição profissional do autor. É mantido com muito estudo, dedicação e amor pela tecnologia.
-
----
