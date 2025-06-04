@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Documents\\wex_e2e_csharp\\study_material\\17_exceptions_and_collections_with_csharp\\codification\\codification.csproj": {}
+    "C:\\Users\\fzann\\OneDrive\\Documentos\\projects\\wex_e2e_csharp\\study_material\\17_exceptions_and_collections_with_csharp\\codification\\codification.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Documents\\wex_e2e_csharp\\study_material\\17_exceptions_and_collections_with_csharp\\codification\\codification.csproj": {
+    "C:\\Users\\fzann\\OneDrive\\Documentos\\projects\\wex_e2e_csharp\\study_material\\17_exceptions_and_collections_with_csharp\\codification\\codification.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\wex_e2e_csharp\\study_material\\17_exceptions_and_collections_with_csharp\\codification\\codification.csproj",
+        "projectUniqueName": "C:\\Users\\fzann\\OneDrive\\Documentos\\projects\\wex_e2e_csharp\\study_material\\17_exceptions_and_collections_with_csharp\\codification\\codification.csproj",
         "projectName": "codification",
-        "projectPath": "C:\\Users\\user\\Documents\\wex_e2e_csharp\\study_material\\17_exceptions_and_collections_with_csharp\\codification\\codification.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\wex_e2e_csharp\\study_material\\17_exceptions_and_collections_with_csharp\\codification\\obj\\",
+        "projectPath": "C:\\Users\\fzann\\OneDrive\\Documentos\\projects\\wex_e2e_csharp\\study_material\\17_exceptions_and_collections_with_csharp\\codification\\codification.csproj",
+        "packagesPath": "C:\\Users\\fzann\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fzann\\OneDrive\\Documentos\\projects\\wex_e2e_csharp\\study_material\\17_exceptions_and_collections_with_csharp\\codification\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\fzann\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -41,8 +41,8 @@
         "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
