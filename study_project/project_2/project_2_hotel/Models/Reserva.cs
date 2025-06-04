@@ -1,43 +1,34 @@
-using System;
-using System.Collections.Generic;
-
-namespace project_2_hotel.models
+namespace project_2_hotel.Models
 {
     public class Reserva
     {
-        public List<Pessoa> Hospedes { get; set; } = new List<Pessoa>();
+        public int Id { get; set; }
+        public Hospede Hospede { get; set; }
         public Suite Suite { get; set; }
-        public int DiasReservados { get; set; }
+        public int Dias { get; set; }
+        public decimal CustoTotal { get; set; }
 
-        public Reserva(int diasReservados)
+        public Reserva(int id, Hospede hospede, Suite suite, int dias)
         {
-            DiasReservados = diasReservados;
-        }
-
-        public void CadastrarHospedes(List<Pessoa> hospedes)
-        {
-            if (hospedes.Count <= Suite.Capacidade)
-                Hospedes = hospedes;
-            else
-                throw new Exception("Número de hóspedes excede a capacidade da suíte.");
-        }
-
-        public void CadastrarSuite(Suite suite)
-        {
+            Id = id;
+            Hospede = hospede;
             Suite = suite;
+            Dias = dias;
+            CustoTotal = CalcularCusto();
+            Suite.Disponivel = false;
         }
 
-        public int ObterQuantidadeHospedes()
+        public decimal CalcularCusto()
         {
-            return Hospedes.Count;
+            decimal custo = Dias * Suite.PrecoDiaria;
+            if (Dias >= 10)
+                custo *= 0.9m; // Aplica 10% de desconto
+            return custo;
         }
 
-        public decimal CalcularValorDiaria()
+        public override string ToString()
         {
-            decimal valor = DiasReservados * Suite.ValorDiaria;
-            if (DiasReservados >= 10)
-                valor *= 0.9M;
-            return valor;
+            return $"Reserva ID: {Id}, Hóspede: {Hospede.Nome} {Hospede.Sobrenome}, Suíte: {Suite.Nome}, Dias: {Dias}, Custo: R${CustoTotal:F2}";
         }
     }
 }

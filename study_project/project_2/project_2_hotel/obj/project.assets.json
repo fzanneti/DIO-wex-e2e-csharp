@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\fzann\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fzann\\OneDrive\\Documentos\\projects\\wex_e2e_csharp\\study_project\\project_2\\project_2_hotel\\project_2_hotel.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\wex_e2e_csharp\\study_project\\project_2\\project_2_hotel\\project_2_hotel.csproj",
       "projectName": "project_2_hotel",
-      "projectPath": "C:\\Users\\fzann\\OneDrive\\Documentos\\projects\\wex_e2e_csharp\\study_project\\project_2\\project_2_hotel\\project_2_hotel.csproj",
-      "packagesPath": "C:\\Users\\fzann\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fzann\\OneDrive\\Documentos\\projects\\wex_e2e_csharp\\study_project\\project_2\\project_2_hotel\\obj\\",
+      "projectPath": "C:\\Users\\user\\Documents\\wex_e2e_csharp\\study_project\\project_2\\project_2_hotel\\project_2_hotel.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Documents\\wex_e2e_csharp\\study_project\\project_2\\project_2_hotel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\fzann\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

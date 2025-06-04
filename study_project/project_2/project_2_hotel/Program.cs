@@ -1,143 +1,295 @@
-﻿using System;
-using project_2_hotel.models;
-using System.Collections.Generic;
-
-namespace project_2_hotel.models
+namespace project_2_hotel
 {
+    public class Hotel
+    {
+        private Dictionary<int, Hospede> hospedes;
+        private Dictionary<string, Suite> suites;
+        private Dictionary<int, Reserva> reservas;
+        private int proximoIdHospede;
+        private int proximoIdReserva;
+
+        public Hotel()
+        {
+            hospedes = new Dictionary<int, Hospede>();
+            suites = new Dictionary<string, Suite>();
+            reservas = new Dictionary<int, Reserva>();
+            proximoIdHospede = 1;
+            proximoIdReserva = 1;
+
+            // Inicializar suítes
+            InicializarSuites();
+        }
+
+        private void InicializarSuites()
+        {
+            suites.Add("Suíte Conforto", new Suite("Suíte Conforto", 450.00m, 2));
+            suites.Add("Suíte Luxo", new Suite("Suíte Luxo", 780.00m, 3));
+            suites.Add("Suíte Presidencial", new Suite("Suíte Presidencial", 2500.00m, 4));
+            suites.Add("Suíte Família", new Suite("Suíte Família", 950.00m, 5));
+            suites.Add("Suíte Executiva", new Suite("Suíte Executiva", 620.00m, 2));
+        }
+
+        public void CadastrarHospede()
+        {
+            try
+            {
+                Console.Write("Digite o nome do hóspede: ");
+                string nome = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(nome))
+                    throw new ArgumentException("Nome não pode ser vazio.");
+
+                Console.Write("Digite o sobrenome do hóspede: ");
+                string sobrenome = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(sobrenome))
+                    throw new ArgumentException("Sobrenome não pode ser vazio.");
+
+                Hospede hospede = new Hospede(proximoIdHospede, nome, sobrenome);
+                hospedes.Add(proximoIdHospede, hospede);
+                Console.WriteLine($"Hóspede {nome} {sobrenome} cadastrado com ID {proximoIdHospede}.");
+                proximoIdHospede++;
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine($"Erro: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro inesperado: {ex.Message}");
+            }
+        }
+
+        public void ListarHospedes()
+        {
+            if (hospedes.Count == 0)
+            {
+                Console.WriteLine("Nenhum hóspede cadastrado.");
+                return;
+            }
+
+            Console.WriteLine("\nLista de Hóspedes:");
+            foreach (var hospede in hospedes.Values)
+            {
+                Console.WriteLine(hospede);
+            }
+
+            try
+            {
+                Console.Write("\nDeseja excluir um hóspede? Digite o ID ou 0 para voltar: ");
+                if (int.TryParse(Console.ReadLine(), out int id) && id != 0)
+                {
+                    if (hospedes.ContainsKey(id))
+                    {
+                        // Verificar se o hóspede está em uma reserva ativa
+                        if (reservas.Any(r => r.Value.Hospede.Id == id))
+                        {
+                            Console.WriteLine("Não é possível excluir: hóspede possui reserva ativa.");
+                            return;
+                        }
+
+                        hospedes.Remove(id);
+                        Console.WriteLine("Hóspede excluído com sucesso.");
+                    }
+                    else
+                    {
+                        throw new KeyNotFoundException("ID de hóspede não encontrado.");
+                    }
+                }
+            }
+            catch (KeyNotFoundException ex)
+            {
+                Console.WriteLine($"Erro: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro inesperado: {ex.Message}");
+            }
+        }
+
+        public void ListarSuites()
+        {
+            Console.WriteLine("\nLista de Suítes:");
+            foreach (var suite in suites.Values)
+            {
+                Console.WriteLine(suite);
+            }
+
+            // Contagem de suítes disponíveis e não disponíveis
+            int disponiveis = suites.Values.Count(s => s.Disponivel);
+            int naoDisponiveis = suites.Values.Count(s => !s.Disponivel);
+            Console.WriteLine($"\nTotal de suítes disponíveis: {disponiveis}");
+            Console.WriteLine($"Total de suítes não disponíveis: {naoDisponiveis}");
+        }
+
+        public void RealizarReserva()
+        {
+            try
+            {
+                if (hospedes.Count == 0)
+                {
+                    Console.WriteLine("Nenhum hóspede cadastrado. Cadastre um hóspede primeiro.");
+                    return;
+                }
+
+                if (!suites.Values.Any(s => s.Disponivel))
+                {
+                    Console.WriteLine("Nenhuma suíte disponível.");
+                    return;
+                }
+
+                Console.WriteLine("\nHóspedes cadastrados:");
+                foreach (var hospede in hospedes.Values)
+                {
+                    Console.WriteLine(hospede);
+                }
+
+                Console.Write("Digite o ID do hóspede: ");
+                if (!int.TryParse(Console.ReadLine(), out int idHospede) || !hospedes.ContainsKey(idHospede))
+                    throw new KeyNotFoundException("ID de hóspede inválido.");
+
+                Console.WriteLine("\nSuítes disponíveis:");
+                foreach (var suite in suites.Values.Where(s => s.Disponivel))
+                {
+                    Console.WriteLine(suite);
+                }
+
+                Console.Write("Digite o nome da suíte: ");
+                string nomeSuite = Console.ReadLine();
+                if (!suites.ContainsKey(nomeSuite) || !suites[nomeSuite].Disponivel)
+                    throw new KeyNotFoundException("Suíte inválida ou não disponível.");
+
+                Console.Write("Digite o número de hóspedes na reserva: ");
+                if (!int.TryParse(Console.ReadLine(), out int numPessoas) || numPessoas <= 0)
+                    throw new ArgumentException("Número de hóspedes inválido.");
+
+                if (numPessoas > suites[nomeSuite].Capacidade)
+                    throw new InvalidOperationException("Capacidade da suíte excedida.");
+
+                Console.Write("Digite o número de dias: ");
+                if (!int.TryParse(Console.ReadLine(), out int dias) || dias <= 0)
+                    throw new ArgumentException("Número de dias inválido.");
+
+                Reserva reserva = new Reserva(proximoIdReserva, hospedes[idHospede], suites[nomeSuite], dias);
+                reservas.Add(proximoIdReserva, reserva);
+                Console.WriteLine($"Reserva realizada com sucesso! Custo total: R${reserva.CustoTotal:F2}");
+                proximoIdReserva++;
+            }
+            catch (KeyNotFoundException ex)
+            {
+                Console.WriteLine($"Erro: {ex.Message}");
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine($"Erro: {ex.Message}");
+            }
+            catch (InvalidOperationException ex)
+            {
+                Console.WriteLine($"Erro: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro inesperado: {ex.Message}");
+            }
+        }
+
+        public void ListarReservas()
+        {
+            if (reservas.Count == 0)
+            {
+                Console.WriteLine("Nenhuma reserva cadastrada.");
+                return;
+            }
+
+            Console.WriteLine("\nLista de Reservas:");
+            foreach (var reserva in reservas.Values)
+            {
+                Console.WriteLine(reserva);
+            }
+
+            try
+            {
+                Console.Write("\nDeseja encerrar uma reserva? Digite o ID ou 0 para voltar: ");
+                if (int.TryParse(Console.ReadLine(), out int id) && id != 0)
+                {
+                    if (reservas.ContainsKey(id))
+                    {
+                        var reserva = reservas[id];
+                        reserva.Suite.Disponivel = true; // Libera a suíte
+                        Console.WriteLine($"Reserva ID {id} encerrada. Custo total: R${reserva.CustoTotal:F2}");
+                        reservas.Remove(id);
+                    }
+                    else
+                    {
+                        throw new KeyNotFoundException("ID de reserva não encontrado.");
+                    }
+                }
+            }
+            catch (KeyNotFoundException ex)
+            {
+                Console.WriteLine($"Erro: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro inesperado: {ex.Message}");
+            }
+        }
+    }
+
+    // Classe principal do programa
     class Program
     {
-        static Dictionary<string, Pessoa> hospedes = new Dictionary<string, Pessoa>();
-        static Dictionary<string, Suite> suites = new Dictionary<string, Suite>();
-        static Dictionary<string, Reserva> reservas = new Dictionary<string, Reserva>();
-
-        static void Main()
+        static void Main(string[] args)
         {
+            Hotel hotel = new Hotel();
             while (true)
             {
                 Console.Clear();
                 Console.WriteLine("=== Sistema de Hospedagem ===");
                 Console.WriteLine("1. Cadastrar Hóspede");
-                Console.WriteLine("2. Cadastrar Suíte");
-                Console.WriteLine("3. Cadastrar Reserva");
-                Console.WriteLine("4. Visualizar Dados");
-                Console.WriteLine("5. Sair");
+                Console.WriteLine("2. Listar Hóspedes");
+                Console.WriteLine("3. Listar Suítes");
+                Console.WriteLine("4. Realizar Reserva");
+                Console.WriteLine("5. Listar Reservas");
+                Console.WriteLine("6. Sair");
                 Console.Write("Escolha uma opção: ");
-                var opcao = Console.ReadLine();
 
-                switch (opcao)
+                string opcao = Console.ReadLine();
+                Console.Clear();
+
+                try
                 {
-                    case "1":
-                        CadastrarHospede();
-                        break;
-                    case "2":
-                        CadastrarSuite();
-                        break;
-                    case "3":
-                        CadastrarReserva();
-                        break;
-                    case "4":
-                        VisualizarDados();
-                        break;
-                    case "5":
-                        return;
-                    default:
-                        Console.WriteLine("Opção inválida. Pressione Enter para continuar.");
-                        Console.ReadLine();
-                        break;
+                    switch (opcao)
+                    {
+                        case "1":
+                            hotel.CadastrarHospede();
+                            break;
+                        case "2":
+                            hotel.ListarHospedes();
+                            break;
+                        case "3":
+                            hotel.ListarSuites();
+                            break;
+                        case "4":
+                            hotel.RealizarReserva();
+                            break;
+                        case "5":
+                            hotel.ListarReservas();
+                            break;
+                        case "6":
+                            Console.WriteLine("Saindo...");
+                            return;
+                        default:
+                            Console.WriteLine("Opção inválida.");
+                            break;
+                    }
                 }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Erro inesperado: {ex.Message}");
+                }
+
+                Console.WriteLine("\nPressione qualquer tecla para continuar...");
+                Console.ReadKey();
             }
-        }
-
-        static void CadastrarHospede()
-        {
-            Console.Write("Nome: ");
-            string nome = Console.ReadLine();
-            Console.Write("Sobrenome: ");
-            string sobrenome = Console.ReadLine();
-            string chave = nome.ToLower() + sobrenome.ToLower();
-            hospedes[chave] = new Pessoa { Nome = nome, Sobrenome = sobrenome };
-            Console.WriteLine("Hóspede cadastrado com sucesso!");
-            Console.ReadLine();
-        }
-
-        static void CadastrarSuite()
-        {
-            Console.Write("Tipo da suíte: ");
-            string tipo = Console.ReadLine();
-            Console.Write("Capacidade: ");
-            int capacidade = int.Parse(Console.ReadLine());
-            Console.Write("Valor da diária: ");
-            decimal valor = decimal.Parse(Console.ReadLine());
-            suites[tipo.ToLower()] = new Suite { TipoSuite = tipo, Capacidade = capacidade, ValorDiaria = valor };
-            Console.WriteLine("Suíte cadastrada com sucesso!");
-            Console.ReadLine();
-        }
-
-        static void CadastrarReserva()
-        {
-            Console.Write("Informe o tipo da suíte: ");
-            string tipo = Console.ReadLine().ToLower();
-            if (!suites.ContainsKey(tipo))
-            {
-                Console.WriteLine("Suíte não encontrada.");
-                Console.ReadLine();
-                return;
-            }
-
-            Suite suiteSelecionada = suites[tipo];
-
-            Console.Write("Informe quantos hóspedes serão cadastrados: ");
-            int total = int.Parse(Console.ReadLine());
-            if (total > suiteSelecionada.Capacidade)
-            {
-                Console.WriteLine("Erro: número de hóspedes excede a capacidade da suíte.");
-                Console.ReadLine();
-                return;
-            }
-
-            List<Pessoa> listaHospedes = new List<Pessoa>();
-            for (int i = 0; i < total; i++)
-            {
-                Console.Write($"Nome do hóspede {i + 1}: ");
-                string nome = Console.ReadLine();
-                Console.Write("Sobrenome: ");
-                string sobrenome = Console.ReadLine();
-                string chave = nome.ToLower() + sobrenome.ToLower();
-                if (hospedes.ContainsKey(chave))
-                    listaHospedes.Add(hospedes[chave]);
-                else
-                    listaHospedes.Add(new Pessoa { Nome = nome, Sobrenome = sobrenome });
-            }
-
-            Console.Write("Dias reservados: ");
-            int dias = int.Parse(Console.ReadLine());
-
-            Reserva novaReserva = new Reserva(dias);
-            novaReserva.CadastrarSuite(suiteSelecionada);
-            novaReserva.CadastrarHospedes(listaHospedes);
-
-            string idReserva = Guid.NewGuid().ToString();
-            reservas[idReserva] = novaReserva;
-
-            Console.WriteLine($"Reserva cadastrada com sucesso! Total: R$ {novaReserva.CalcularValorDiaria()}");
-            Console.ReadLine();
-        }
-
-        static void VisualizarDados()
-        {
-            Console.WriteLine("--- Hóspedes ---");
-            foreach (var h in hospedes.Values)
-                Console.WriteLine($"{h.Nome} {h.Sobrenome}");
-
-            Console.WriteLine("--- Suítes ---");
-            foreach (var s in suites.Values)
-                Console.WriteLine($"{s.TipoSuite} - Capacidade: {s.Capacidade} - Valor Diária: R$ {s.ValorDiaria}");
-
-            Console.WriteLine("--- Reservas ---");
-            foreach (var r in reservas.Values)
-                Console.WriteLine($"Hospedes: {r.ObterQuantidadeHospedes()} - Dias: {r.DiasReservados} - Total: R$ {r.CalcularValorDiaria()}");
-
-            Console.ReadLine();
         }
     }
 }
