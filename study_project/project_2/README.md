@@ -12,7 +12,7 @@ Este repositório apresenta o projeto **Hospedagem / Hotelaria**, um aplicativo 
 
 #### ✅ Fundamentos do .NET e C#
 
-- **Plataforma .NET**: Introdução ao .NET 6.0, CLR, e compilação JIT.
+- **Plataforma .NET**: Introdução ao .NET 8.0
 - **C#**: Tipagem forte, sintaxe moderna, e integração com .NET.
 - **Estrutura do Projeto**: Uso de namespaces, classes, e interfaces.
 - **Exemplo**:
