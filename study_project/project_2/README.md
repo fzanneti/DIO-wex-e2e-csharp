@@ -6,7 +6,7 @@
 
 #### 📚 Conteúdo
 
-Este repositório apresenta o projeto **HotelSystem**, um aplicativo console em C# que gerencia hospedagens, suítes e reservas, com opção de usar `List` ou `Dictionary`. O conteúdo é organizado em módulos de aprendizado, com exemplos práticos e explicações.
+Este repositório apresenta o projeto **Hospedagem / Hotelaria**, um aplicativo console em C# que gerencia hospedagens, suítes e reservas, com opção de usar `List` ou `Dictionary`. O conteúdo é organizado em módulos de aprendizado, com exemplos práticos e explicações.
 
 ---
 
