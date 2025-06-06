@@ -1,6 +1,6 @@
 # 🧠 WEX End-to-End Engineering | Sistema de Hospedagem em .NET com C#
 
-**Repositório educacional criado para consolidar o aprendizado da plataforma .NET com C#, baseado no curso _WEX - End to End Engineering_ da [Digitaliza](https://www.digitaliza.com.br). Este projeto combina prática e teoria, demonstrando o uso de coleções `List` e `Dictionary` em um sistema de gerenciamento de hotel.**
+**Repositório educacional criado para consolidar o aprendizado da plataforma .NET com C#, baseado no curso _WEX - End to End Engineering_ da [DIO](https://web.dio.me). Este projeto combina prática e teoria, demonstrando o uso de coleções `List` e `Dictionary` em um sistema de gerenciamento de hotel.**
 
 ---
 
