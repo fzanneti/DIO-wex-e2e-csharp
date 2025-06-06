@@ -73,7 +73,6 @@ Este repositório apresenta o projeto **Hospedagem / Hotelaria**, um aplicativo 
   - `Hospede`: Armazena ID, Nome, Sobrenome.
   - `Suite`: Inclui ID, Nome, Preço Diária, Capacidade, Disponibilidade.
   - `Reserva`: Gerencia ID, Hóspede, Suíte, Dias, Custo Total.
-  - `IHotelRepository`: Interface para abstrair acesso a dados.
 
 - **Exemplo**:
 
@@ -92,7 +91,6 @@ Este repositório apresenta o projeto **Hospedagem / Hotelaria**, um aplicativo 
   }
   ```
 
-- **Herança/Interfaces**: Uso de `IHotelRepository` para suportar `List` e `Dictionary`.
 - **Encapsulamento**: Propriedades com validação no construtor.
 
 ---
