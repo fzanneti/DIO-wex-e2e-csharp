@@ -24,15 +24,6 @@ Este repositório apresenta o projeto **Hospedagem / Hotelaria**, um aplicativo 
 
 ---
 
-- **Tabela de Comparação**:
-  | Recurso          | .NET Framework | .NET 6.0       |
-  |------------------|----------------|----------------|
-  | Plataforma       | Apenas Windows | Cross-platform |
-  | Performance      | Boa            | Otimizada      |
-  | Suporte          | Até 2026     | Longo prazo    |
-
----
-
 - **Links**: [Documentação .NET](https://learn.microsoft.com/dotnet), [História do C#](https://learn.microsoft.com/csharp/tour-of-csharp).
 
 ---
