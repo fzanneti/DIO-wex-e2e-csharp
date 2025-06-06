@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using project_2_hotel_list.Services; // Importa os serviços de cadastro e reserva
+using project_2_hotel_list.Services;
 
 namespace project_2_hotel_list.Models
 {
@@ -19,7 +19,7 @@ namespace project_2_hotel_list.Models
             Sobrenome = sobrenome;
         }
 
-        public override string ToString()
+        public override string ToString() 
         {
             return $"ID: {Id}, Nome: {Nome} {Sobrenome}";
         }

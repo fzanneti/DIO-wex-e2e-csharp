@@ -25,7 +25,7 @@ namespace project_2_hotel_list.Models
 
         public override string ToString()
         {
-            return $"ID: {Id}, Suíte: {Nome}, Preço: R${PrecoDiaria:F2}, Capacidade: {Capacidade}, Disponível: {(Disponivel ? "Sim" : "Não")}";
+            return $"ID: {Id}, Suíte: {Nome}, Preço: R$ {PrecoDiaria:F2}, Capacidade: {Capacidade}, Disponível: {(Disponivel ? "Sim" : "Não")}";
         }
     }
 }

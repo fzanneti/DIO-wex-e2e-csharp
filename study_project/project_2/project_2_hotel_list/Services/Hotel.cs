@@ -260,7 +260,7 @@ namespace project_2_hotel_list.Services
 
             try
             {
-                Console.Write("\nDeseja encerrar uma reserva? Digite o ID ou 0 para voltar: ");
+                Console.Write("\nDeseja encerrar uma reserva?\nDigite o ID da reserva que deseja encerrar ou 0 para retornar: ");
                 if (int.TryParse(Console.ReadLine(), out int id) && id != 0)
                 {
                     Reserva reserva = reservas.Find(r => r.Id == id);

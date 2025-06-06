@@ -2,35 +2,36 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using project_2_hotel_dictionary.Models; // Importa os modelos Hospede, Suite e Reserva
+using project_2_hotel_dictionary.Models;
 
 namespace project_2_hotel_dictionary.Services
 {
     public class Hotel
     {
-        private Dictionary<int, Hospede> hospedes; // Armazena os hóspedes cadastrados
-        private Dictionary<string, Suite> suites; // Armazena as suítes disponíveis
-        private Dictionary<int, Reserva> reservas; // Armazena as reservas feitas
-        private int proximoIdHospede; // Próximo ID disponível para um hóspede
-        private int proximoIdReserva; // Próximo ID disponível para uma reserva
+        private Dictionary<int, Hospede> hospedes;
+        private Dictionary<string, Suite> suites;
+        private Dictionary<int, Reserva> reservas;
+        private int proximoIdHospede;
+        private int proximoIdReserva;
 
-        public Hotel() // Construtor da classe Hotel
+        public Hotel()
         {
-            hospedes = new Dictionary<int, Hospede>(); // Inicializa o dicionário de hóspedes
-            suites = new Dictionary<string, Suite>(); // Inicializa o dicionário de suítes
-            reservas = new Dictionary<int, Reserva>(); // Inicializa o dicionário de reservas
-            proximoIdHospede = 1; // Inicializa o próximo ID de hóspede
-            proximoIdReserva = 1; // Inicializa o próximo ID de reserva
-            InicializarSuites(); // Chama o método para inicializar as suítes disponíveis
+            hospedes = new Dictionary<int, Hospede>();
+            suites = new Dictionary<string, Suite>();
+            reservas = new Dictionary<int, Reserva>();
+            proximoIdHospede = 1;
+            proximoIdReserva = 1;
+            InicializarSuites();
         }
 
-        private void InicializarSuites() // Método para inicializar as suítes disponíveis no hotel
+        private void InicializarSuites()
         {
-            suites.Add("Suíte Conforto", new Suite("Suíte Conforto", 450.00m, 2)); // Adiciona uma suíte de conforto
-            suites.Add("Suíte Luxo", new Suite("Suíte Luxo", 780.00m, 3)); // Adiciona uma suíte de luxo    
-            suites.Add("Suíte Presidencial", new Suite("Suíte Presidencial", 2500.00m, 4)); // Adiciona uma suíte presidencial
-            suites.Add("Suíte Família", new Suite("Suíte Família", 950.00m, 5)); // Adiciona uma suíte familiar
-            suites.Add("Suíte Executiva", new Suite("Suíte Executiva", 620.00m, 2)); // Adiciona uma suíte executiva
+            // Modificado: Adiciona IDs às suítes
+            suites.Add("Suíte Conforto", new Suite(1, "Suíte Conforto", 450.00m, 2));
+            suites.Add("Suíte Luxo", new Suite(2, "Suíte Luxo", 780.00m, 3));
+            suites.Add("Suíte Presidencial", new Suite(3, "Suíte Presidencial", 2500.00m, 4));
+            suites.Add("Suíte Família", new Suite(4, "Suíte Família", 950.00m, 5));
+            suites.Add("Suíte Executiva", new Suite(5, "Suíte Executiva", 620.00m, 2));
         }
 
         private void ExibirTabela(string[] cabecalhos, int[] tamanhosColunas, IEnumerable<string[]> linhas)
@@ -136,9 +137,11 @@ namespace project_2_hotel_dictionary.Services
         public void ListarSuites()
         {
             Console.WriteLine("\nLista de Suítes:");
-            string[] cabecalhos = { "Nome", "Preço Diária", "Capacidade", "Disponível" };
-            int[] tamanhosColunas = { 20, 15, 10, 10 };
+            // Modificado: Adiciona coluna ID
+            string[] cabecalhos = { "ID", "Nome", "Preço Diária", "Capacidade", "Disponível" };
+            int[] tamanhosColunas = { 5, 20, 15, 10, 10 };
             var linhas = suites.Values.Select(s => new string[] {
+                s.Id.ToString(),
                 s.Nome,
                 $"R${s.PrecoDiaria:F2}",
                 s.Capacidade.ToString(),
@@ -179,9 +182,10 @@ namespace project_2_hotel_dictionary.Services
                     throw new KeyNotFoundException("ID de hóspede inválido.");
 
                 Console.WriteLine("\nSuítes disponíveis:");
-                string[] cabecalhosSuites = { "Nome", "Preço Diária", "Capacidade", "Disponível" };
-                int[] tamanhosColunasSuites = { 20, 15, 10, 10 };
+                string[] cabecalhosSuites = { "ID", "Nome", "Preço Diária", "Capacidade", "Disponível" };
+                int[] tamanhosColunasSuites = { 5, 20, 15, 10, 10 };
                 var linhasSuites = suites.Values.Where(s => s.Disponivel).Select(s => new string[] {
+                    s.Id.ToString(),
                     s.Nome,
                     $"R${s.PrecoDiaria:F2}",
                     s.Capacidade.ToString(),
@@ -189,23 +193,27 @@ namespace project_2_hotel_dictionary.Services
                 }).ToList();
                 ExibirTabela(cabecalhosSuites, tamanhosColunasSuites, linhasSuites);
 
-                Console.Write("Digite o nome da suíte: ");
-                string nomeSuite = Console.ReadLine();
-                if (!suites.ContainsKey(nomeSuite) || !suites[nomeSuite].Disponivel)
+                // Modificado: Seleção por ID
+                Console.Write("Digite o ID da suíte: ");
+                if (!int.TryParse(Console.ReadLine(), out int idSuite))
+                    throw new ArgumentException("ID da suíte inválido.");
+
+                Suite suiteSelecionada = suites.Values.FirstOrDefault(s => s.Id == idSuite && s.Disponivel);
+                if (suiteSelecionada == null)
                     throw new KeyNotFoundException("Suíte inválida ou não disponível.");
 
                 Console.Write("Digite o número de hóspedes na reserva: ");
                 if (!int.TryParse(Console.ReadLine(), out int numPessoas) || numPessoas <= 0)
                     throw new ArgumentException("Número de hóspedes inválido.");
 
-                if (numPessoas > suites[nomeSuite].Capacidade)
+                if (numPessoas > suiteSelecionada.Capacidade)
                     throw new InvalidOperationException("Capacidade da suíte excedida.");
 
                 Console.Write("Digite o número de dias: ");
                 if (!int.TryParse(Console.ReadLine(), out int dias) || dias <= 0)
                     throw new ArgumentException("Número de dias inválido.");
 
-                Reserva reserva = new Reserva(proximoIdReserva, hospedes[idHospede], suites[nomeSuite], dias);
+                Reserva reserva = new Reserva(proximoIdReserva, hospedes[idHospede], suiteSelecionada, dias);
                 reservas.Add(proximoIdReserva, reserva);
                 Console.WriteLine($"Reserva realizada com sucesso! Custo total: R${reserva.CustoTotal:F2}");
                 proximoIdReserva++;
@@ -250,7 +258,7 @@ namespace project_2_hotel_dictionary.Services
 
             try
             {
-                Console.Write("\nDeseja encerrar uma reserva? Digite o ID ou 0 para voltar: ");
+                Console.Write("\nDeseja encerrar uma reserva?\nDigite o ID da reserva que deseja encerrar ou 0 para retornar: ");
                 if (int.TryParse(Console.ReadLine(), out int id) && id != 0)
                 {
                     if (!reservas.ContainsKey(id))
