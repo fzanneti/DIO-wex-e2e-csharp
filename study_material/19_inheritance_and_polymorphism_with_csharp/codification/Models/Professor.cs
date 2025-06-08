@@ -9,7 +9,7 @@ namespace codification.Models
     {
         public decimal Salario { get; set; }
 
-        public void ApresentarProfessor()
+        public override void Apresentar()
         {
             Console.WriteLine($"O professor {Nome} {Sobrenome} tem {Idade} anos e recebe o salário de {Salario:C}");
         }

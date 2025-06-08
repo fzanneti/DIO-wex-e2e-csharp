@@ -10,9 +10,9 @@ namespace codification.Models
         public string Curso { get; set; }
         public int Matricula { get; set; }
 
-        public void ApresentarAluno()
+        public override void Apresentar()
         {
-            Console.WriteLine($"Eu sou aluno do curso de {Curso} e minha matrícula é {Matricula}.");   
+            Console.WriteLine($"Meu nome é {Nome} {Sobrenome}, tenho {Idade} anos e sou aluno do curso de {Curso} e minha matrícula é {Matricula}.");
         }
 
     }

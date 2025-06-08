@@ -13,9 +13,12 @@ namespace codification.Models
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
         public int Idade { get; set; }
-        public void Apresentar()
+    /*
+        Polimorfismo permite que objetos relacionados por herança exibam comportamentos diferentes para o mesmo método. Em C#, o uso de virtual na classe pai sinaliza que um método pode ser sobrescrito, enquanto override na classe filha fornece a nova implementação, garantindo que o comportamento correto seja executado em tempo de execução. Isso torna o código mais flexível e extensível.
+    */
+        public virtual void Apresentar()
         {
-            Console.WriteLine($"Olá, meu nome é {Nome} {Sobrenome} e tenho {Idade} anos.");
+            
         }
     }
 }
