@@ -78,49 +78,7 @@ public class Aluno : Pessoa
 
 ```
 
-Perfeito, Fabio! Aqui está o **complemento formatado em Markdown** do conteúdo sobre **Herança e Polimorfismo**, pronto para integrar o seu README principal do repositório `WEX End-to-End Engineering | Guia de Estudos em .NET com C#`.
-
-Você pode incluir este trecho logo após a seção de **Programação Orientada a Objetos**, como um "módulo expandido", ou deixá-lo em um arquivo separado e linkar a partir do índice.
-
 ---
-
-````markdown
----
-
-## 🧬 Herança e Polimorfismo com C#
-
-Dois pilares essenciais da Programação Orientada a Objetos (POO), **Herança** e **Polimorfismo**, são amplamente utilizados no desenvolvimento com C# e .NET.
-
-### 👣 Introdução à Herança
-
-A **herança** permite que uma classe herde atributos e métodos de outra, promovendo **reutilização de código** e **organização hierárquica**.
-
-- A classe base é a "mãe".
-- A classe derivada (ou filha) herda seus membros e pode ter funcionalidades próprias.
-
-#### Exemplo prático:
-
-```csharp
-public class Pessoa
-{
-    public string Nome { get; set; }
-
-    public void Apresentar()
-    {
-        Console.WriteLine($"Olá, eu sou {Nome}");
-    }
-}
-
-public class Aluno : Pessoa
-{
-    public string Curso { get; set; }
-
-    public void Estudar()
-    {
-        Console.WriteLine($"{Nome} está estudando {Curso}");
-    }
-}
-````
 
 ### 🔄 Polimorfismo em C\#
 
@@ -129,6 +87,7 @@ public class Aluno : Pessoa
 #### ✅ Polimorfismo em tempo de execução (via override):
 
 ```csharp
+
 public class Animal
 {
     public virtual void EmitirSom()
@@ -144,6 +103,7 @@ public class Cachorro : Animal
         Console.WriteLine("Au au!");
     }
 }
+
 ```
 
 #### Uso:
