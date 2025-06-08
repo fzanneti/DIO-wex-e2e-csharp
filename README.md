@@ -41,6 +41,128 @@ Este repositório contém resumos, exemplos e materiais complementares organizad
 
 ---
 
+### 🧬 Herança e Polimorfismo com C#
+
+Dois pilares essenciais da Programação Orientada a Objetos (POO), **Herança** e **Polimorfismo**, são amplamente utilizados no desenvolvimento com C# e .NET.
+
+#### 👣 Introdução à Herança
+
+A **herança** permite que uma classe herde atributos e métodos de outra, promovendo **reutilização de código** e **organização hierárquica**.
+
+- A classe base é a "mãe".
+- A classe derivada (ou filha) herda seus membros e pode ter funcionalidades próprias.
+
+#### Exemplo prático:
+
+```csharp
+
+public class Pessoa
+{
+    public string Nome { get; set; }
+
+    public void Apresentar()
+    {
+        Console.WriteLine($"Olá, eu sou {Nome}");
+    }
+}
+
+public class Aluno : Pessoa
+{
+    public string Curso { get; set; }
+
+    public void Estudar()
+    {
+        Console.WriteLine($"{Nome} está estudando {Curso}");
+    }
+}
+
+```
+
+Perfeito, Fabio! Aqui está o **complemento formatado em Markdown** do conteúdo sobre **Herança e Polimorfismo**, pronto para integrar o seu README principal do repositório `WEX End-to-End Engineering | Guia de Estudos em .NET com C#`.
+
+Você pode incluir este trecho logo após a seção de **Programação Orientada a Objetos**, como um "módulo expandido", ou deixá-lo em um arquivo separado e linkar a partir do índice.
+
+---
+
+````markdown
+---
+
+## 🧬 Herança e Polimorfismo com C#
+
+Dois pilares essenciais da Programação Orientada a Objetos (POO), **Herança** e **Polimorfismo**, são amplamente utilizados no desenvolvimento com C# e .NET.
+
+### 👣 Introdução à Herança
+
+A **herança** permite que uma classe herde atributos e métodos de outra, promovendo **reutilização de código** e **organização hierárquica**.
+
+- A classe base é a "mãe".
+- A classe derivada (ou filha) herda seus membros e pode ter funcionalidades próprias.
+
+#### Exemplo prático:
+
+```csharp
+public class Pessoa
+{
+    public string Nome { get; set; }
+
+    public void Apresentar()
+    {
+        Console.WriteLine($"Olá, eu sou {Nome}");
+    }
+}
+
+public class Aluno : Pessoa
+{
+    public string Curso { get; set; }
+
+    public void Estudar()
+    {
+        Console.WriteLine($"{Nome} está estudando {Curso}");
+    }
+}
+````
+
+### 🔄 Polimorfismo em C\#
+
+**Polimorfismo** significa "muitas formas". Ele permite que classes derivadas se comportem de maneira diferente, mesmo quando referenciadas por um tipo base.
+
+#### ✅ Polimorfismo em tempo de execução (via override):
+
+```csharp
+public class Animal
+{
+    public virtual void EmitirSom()
+    {
+        Console.WriteLine("Som genérico de animal");
+    }
+}
+
+public class Cachorro : Animal
+{
+    public override void EmitirSom()
+    {
+        Console.WriteLine("Au au!");
+    }
+}
+```
+
+#### Uso:
+
+```csharp
+
+Animal meuAnimal = new Cachorro();
+meuAnimal.EmitirSom(); // Saída: Au au!
+
+```
+
+#### 📌 Considerações
+
+* Herança deve ser usada quando há uma clara relação "é um(a)".
+* Polimorfismo facilita **substituição de implementações**, principalmente em listas genéricas e métodos polimórficos.
+* Evite heranças profundas. Prefira composição quando possível.
+
+---
+
 #### 📌 Manipulando valores com C#
 
 - 🔠 Concatenando strings e interpolação
