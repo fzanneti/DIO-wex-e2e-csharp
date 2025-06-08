@@ -334,8 +334,10 @@ class Program
 
         // TODO: Resultado: 
         
-
-        
+        if (filtrados.Count == 0)
+        {
+            Console.WriteLine("Nenhum nome encontrado");
+        }
         else
         {
             foreach (var nome in filtrados)
