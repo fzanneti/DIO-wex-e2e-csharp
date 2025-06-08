@@ -72,7 +72,6 @@ Se não houver despesas válidas, exibir: `"Sem despesas validas"`.
 
 ```
 
-5
 -10
 0
 100
@@ -98,7 +97,6 @@ Se não houver despesas válidas, exibir: `"Sem despesas validas"`.
 
 ```
 
-3
 -1
 0
 -20
