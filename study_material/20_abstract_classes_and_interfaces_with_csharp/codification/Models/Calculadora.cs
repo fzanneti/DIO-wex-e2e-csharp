@@ -2,10 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using codification.Models;
+using codification.Interfaces;
 
 namespace codification.Models
 {
-    public class Calculadora
+    public class Calculadora : ICalculadora
     {
         public int Somar(int num1, int num2)
         {

@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using codification.Interfaces;
+using codification.Models;
 
-namespace codification.interfaces
+namespace codification.Interfaces
 {
     public interface ICalculadora
     {
