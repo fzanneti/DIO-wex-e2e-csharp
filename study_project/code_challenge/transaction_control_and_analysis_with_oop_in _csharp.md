@@ -1,4 +1,6 @@
-# 💳 Desafio: Controle de Despesas com Cartão Corporativo (DIO .NET)
+# 🧠 Desafios: Controle e Análise de Transações com POO em C#
+
+### 💳 Desafio: Controle de Despesas com Cartão Corporativo (DIO .NET)
 
 #### 📘 Descrição
 
@@ -35,19 +37,79 @@ Complementar um programa em C# que:
 
 ```csharp
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+
 class CartaoCorporativo
 {
     public decimal Limite { get; }
     public List<decimal> Transacoes { get; }
 
-    public CartaoCorporativo(decimal limite);
-    public void AdicionarTransacao(decimal valor);
-    public decimal CalcularTotal();
-    public bool UltrapassouLimite();
-    public void ExibirResumo();
+    public CartaoCorporativo(decimal limite)
+    {
+        Limite = limite;
+        Transacoes = new List<decimal>();
+    }
+
+    public void AdicionarTransacao(decimal valor)
+    {
+        // TODO: adicione o valor à lista Transacoes
+        Transacoes.Add(valor);
+    }
+
+    public decimal CalcularTotal()
+    {
+        return Transacoes.Sum();
+    }
+
+    public bool UltrapassouLimite()
+    {
+        return CalcularTotal() > Limite;
+    }
+
+    public void ExibirResumo()
+    {
+        // TODO: imprima o total gasto com duas casas decimais
+        // e uma mensagem informando se o limite foi ultrapassado ou não
+        decimal total = CalcularTotal();
+        
+        Console.WriteLine($"Total gasto: {total:F2}");
+        
+        if (UltrapassouLimite())
+        {
+            Console.WriteLine("Limite ultrapassado");
+        }
+        else
+        {
+            Console.WriteLine("Limite OK");
+        }
+    }
 }
 
-````
+class Program
+{
+    static void Main()
+    {
+        decimal limite = decimal.Parse(Console.ReadLine());
+        int quantidade = int.Parse(Console.ReadLine());
+
+        var cartao = new CartaoCorporativo(limite);
+
+        for (int i = 0; i < quantidade; i++)
+        {
+            decimal valor = decimal.Parse(Console.ReadLine());
+            
+            // TODO: adicione a transação à instância do cartão
+            cartao.AdicionarTransacao(valor);
+        }
+
+        cartao.ExibirResumo();
+    }
+}
+
+```
 
 * `Limite`: valor máximo que pode ser gasto.
 * `Transacoes`: lista que armazena os valores das compras.
@@ -146,7 +208,7 @@ Este exercício reforça:
 
 ---
 
-# 🚨 Desafio: Analisador de Transações Suspeitas (DIO .NET)
+### 🚨 Desafio: Analisador de Transações Suspeitas (DIO .NET)
 
 #### 📋 Descrição
 
@@ -179,6 +241,88 @@ O programa deve receber o limite individual, o número de transações, e os val
 ### 📂 Estrutura do código
 
 #### Classe `AnalisadorDeTransacoes`
+
+```csharp
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+// TODO: Crie a Classe AnalisadorDeTransacoes:
+class AnalisadorDeTransacoes
+{
+
+    public decimal Limite { get; set; }  
+    
+    // TODO: Crie a lista para armazenar as transações realizadas:
+    public List<decimal> Transacoes { get; set; }
+    
+
+    public AnalisadorDeTransacoes(decimal limite)
+    {
+        Limite = limite;
+        Transacoes = new List<decimal>();
+    }
+
+    public void AdicionarTransacao(decimal valor)
+    {
+        // TODO: adicione a transação à lista Transacoes
+        Transacoes.Add(valor);
+    }
+
+    public List<decimal> ObterTransacoesSuspeitas()
+    {
+       
+        // TODO: retorne as transações que são superiores ao limite
+        return Transacoes.Where(t => t > Limite).ToList();
+    }
+
+    public void ExibirRelatorio()
+    {
+        var suspeitas = ObterTransacoesSuspeitas();
+        
+        // TODO: Implemente a condição if para retornar uma mensagem informando que não há transações suspeitas:
+        if (suspeitas.Count == 0)
+        {
+            Console.WriteLine("Nenhuma transacao suspeita encontrada");
+        }
+        else
+        {
+            decimal totalSuspeitas = suspeitas.Sum();
+            int numeroSuspeitas = suspeitas.Count();
+
+            string transacaoTexto = numeroSuspeitas == 1 ? "transacao suspeita" : "transacoes suspeitas";
+
+            // TODO: imprima o total das transações suspeitas com duas casas decimais
+            // e a quantidade de transações suspeitas
+            Console.WriteLine($"Transacoes suspeitas: {totalSuspeitas:F2}");
+            Console.WriteLine($"{numeroSuspeitas} {transacaoTexto}");
+        }
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        decimal limite = decimal.Parse(Console.ReadLine());  
+        int quantidade = int.Parse(Console.ReadLine());
+
+        var analisador = new AnalisadorDeTransacoes(limite);
+
+        for (int i = 0; i < quantidade; i++)
+        {
+            decimal valor = decimal.Parse(Console.ReadLine());
+            
+             // TODO: adicione a transação à instância do analisador
+             analisador.AdicionarTransacao(valor);
+        }
+
+        analisador.ExibirRelatorio();
+    }
+}
+
+```
 
 - Propriedades:
   - `decimal Limite` — limite máximo por transação.
@@ -276,3 +420,5 @@ Nenhuma transacao suspeita encontrada
 **Boa prática e bons estudos!** 💻🚀
 
 ---
+
+##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
