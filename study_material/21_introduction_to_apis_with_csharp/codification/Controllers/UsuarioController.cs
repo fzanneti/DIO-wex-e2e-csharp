@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 namespace codification.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class UsuarioController : ControllerBase
     {
         [HttpGet("ObterDataHoraAtual")]
