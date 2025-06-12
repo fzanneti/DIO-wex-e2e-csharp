@@ -10,7 +10,7 @@ namespace codification.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class UsuarioController : Controller
+    public class UsuarioController : ControllerBase
     {
         [HttpGet("ObterDataHoraAtual")]
         public IActionResult ObterDataHora()
