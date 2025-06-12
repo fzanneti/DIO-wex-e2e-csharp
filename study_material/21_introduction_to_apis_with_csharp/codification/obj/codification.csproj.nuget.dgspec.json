@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_material\\07_understanding_the_structure_of_a_project\\codification\\codification.csproj": {}
+    "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_material\\21_introduction_to_apis_with_csharp\\codification\\codification.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_material\\07_understanding_the_structure_of_a_project\\codification\\codification.csproj": {
+    "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_material\\21_introduction_to_apis_with_csharp\\codification\\codification.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_material\\07_understanding_the_structure_of_a_project\\codification\\codification.csproj",
+        "projectUniqueName": "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_material\\21_introduction_to_apis_with_csharp\\codification\\codification.csproj",
         "projectName": "codification",
-        "projectPath": "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_material\\07_understanding_the_structure_of_a_project\\codification\\codification.csproj",
+        "projectPath": "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_material\\21_introduction_to_apis_with_csharp\\codification\\codification.csproj",
         "packagesPath": "C:\\Users\\fzann\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_material\\07_understanding_the_structure_of_a_project\\codification\\obj\\",
+        "outputPath": "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_material\\21_introduction_to_apis_with_csharp\\codification\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fzann\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.16, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,6 +65,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
