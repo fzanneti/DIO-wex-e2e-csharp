@@ -4,19 +4,20 @@ Este módulo apresenta os fundamentos da programação orientada a objetos em C#
 
 ---
 
-#### 📍 Introdução ao Módulo
+### 📍 Introdução ao Módulo
 
 Em C#, as **classes** são moldes que representam entidades do mundo real. Para torná-las funcionais e interativas, usamos **propriedades** (dados), **métodos** (ações) e **construtores** (modo de criação de objetos). Esses recursos formam a base para escrever códigos reutilizáveis, claros e seguros.
 
 ---
 
-### 🏷️ Propriedades
+## 🏷️ Propriedades
 
-#### ✅ Introdução às Propriedades
+### ✅ Introdução às Propriedades
 
 As propriedades são membros de uma classe que funcionam como **acessadores de dados**. Elas encapsulam campos privados e controlam como os valores são lidos ou alterados.
 
 ```csharp
+
 public class Pessoa
 {
     private string nome;
@@ -27,13 +28,15 @@ public class Pessoa
         set { nome = value; }
     }
 }
+
 ```
 
-#### 🛠️ Propriedades na Prática
+### 🛠️ Propriedades na Prática
 
 Propriedades podem incluir regras de validação ou simplesmente delegar leitura e escrita direta ao campo interno:
 
 ```csharp
+
 public int Idade
 {
     get { return idade; }
@@ -42,21 +45,22 @@ public int Idade
         if (value >= 0) idade = value;
     }
 }
+
 ```
 
 ---
 
-### 🧠 O Que Está Acontecendo Aqui?
+## 🧠 O Que Está Acontecendo Aqui?
 
-#### 🎯 Objetivo:
+### 🎯 Objetivo:
 
 Criar uma **propriedade chamada `Idade`** que permita **acessar** (ler) e **definir** (escrever) a idade de uma pessoa, **com uma validação** que impede que valores negativos sejam atribuídos.
 
 ---
 
-### 🔍 Linha por Linha
+## 🔍 Linha por Linha
 
-#### 🟩 `public int Idade`
+### 🟩 `public int Idade`
 
 * `public` → A propriedade será visível para qualquer classe.
 * `int` → O tipo da propriedade é inteiro.
@@ -66,7 +70,7 @@ Criar uma **propriedade chamada `Idade`** que permita **acessar** (ler) e **defi
 
 ---
 
-#### 🔵 `{ get { return idade; } ... }`
+### 🔵 `{ get { return idade; } ... }`
 
 Este é o **acessador de leitura** (`get`).
 
@@ -75,12 +79,14 @@ Este é o **acessador de leitura** (`get`).
 * Dentro do `get`, temos:
 
   ```csharp
+
   return idade;
+
   ```
 
 * Isso quer dizer que ao **chamar `pessoa.Idade` em outro lugar do código**, será retornado o **valor armazenado na variável interna `idade`**.
 
-#### 🔴 `{ set { if (value >= 0) idade = value; } }`
+### 🔴 `{ set { if (value >= 0) idade = value; } }`
 
 Este é o **acessador de escrita** (`set`).
 
@@ -90,7 +96,9 @@ Este é o **acessador de escrita** (`set`).
 > Exemplo:
 >
 > ```csharp
+>
 > pessoa.Idade = 25;
+>
 > ```
 >
 > Nesse caso, `value` dentro do `set` será 25.
@@ -98,7 +106,9 @@ Este é o **acessador de escrita** (`set`).
 * A linha:
 
   ```csharp
+
   if (value >= 0) idade = value;
+  
   ```
 
   faz o seguinte:
@@ -109,19 +119,21 @@ Este é o **acessador de escrita** (`set`).
 
 ---
 
-#### 🧩 Mas de onde vem `idade`?
+### 🧩 Mas de onde vem `idade`?
 
 O código está usando um **campo privado interno** chamado `idade`. Ele **precisa ser declarado antes da propriedade**, assim:
 
 ```csharp
+
 private int idade;
+
 ```
 
 > Assim, `idade` é o **dado "cru"**, e `Idade` é a **interface segura e controlada para trabalhar com esse dado**.
 
 ---
 
-#### ✅ Por Que Usar Isso?
+### ✅ Por Que Usar Isso?
 
 * Evita dados inválidos (como `-5` anos).
 * Encapsula a lógica de acesso: quem usa a classe não precisa saber como a validação acontece.
@@ -129,9 +141,10 @@ private int idade;
 
 ---
 
-#### 🔁 Exemplo Completo
+### 🔁 Exemplo Completo
 
 ```csharp
+
 public class Pessoa
 {
     private int idade;
@@ -145,55 +158,65 @@ public class Pessoa
         }
     }
 }
+
 ```
 
-#### Uso no código:
+### Uso no código:
 
 ```csharp
+
 Pessoa p = new Pessoa();
 p.Idade = 30;
 Console.WriteLine(p.Idade); // Saída: 30
 
 p.Idade = -5;
 Console.WriteLine(p.Idade); // Ainda 30, pois -5 foi ignorado
+
 ```
 
 ---
 
-#### 🧱 Alternativas com Expressões Simples (a partir do C# 6)
+### 🧱 Alternativas com Expressões Simples (a partir do C# 6)
 
 Se não precisar de validação:
 
 ```csharp
+
 public int Idade { get; set; }
+
 ```
 
 Ou somente leitura:
 
 ```csharp
+
 public int Idade { get; } = 18;
+
 ```
 
 ---
 
-### ⚙️ Métodos
+## ⚙️ Métodos
 
-#### ✨ Criando um Método
+### ✨ Criando um Método
 
 Um método executa uma **ação**. É definido com um **tipo de retorno**, um nome e, opcionalmente, parâmetros.
 
 ```csharp
+
 public void ExibirNome()
 {
     Console.WriteLine("Nome: " + Nome);
 }
+
 ```
 
-#### 🔎 Validações no GET e SET
+### 🔎 Validações no GET e SET
 
 O `get` pode ser usado para **formatar ou calcular** o valor de retorno, e o `set` para **verificar regras de negócio** antes de alterar valores.
 
 ```csharp
+
 public string Email
 {
     get { return email.ToLower(); }
@@ -202,25 +225,29 @@ public string Email
         if (value.Contains("@")) email = value;
     }
 }
+
 ```
 
 ---
 
-#### 🧾 Body Expressions
+### 🧾 Body Expressions
 
 Uma forma simplificada de propriedades com `=>` (lambda), usada para propriedades simples e somente leitura.
 
 ```csharp
+
 public string NomeCompleto => $"{Nome} {Sobrenome}";
+
 ```
 
 ---
 
-#### 🧪 Validando a Propriedade Idade
+### 🧪 Validando a Propriedade Idade
 
 Exemplo prático de propriedade com validação:
 
 ```csharp
+
 private int idade;
 
 public int Idade
@@ -232,11 +259,12 @@ public int Idade
             idade = value;
     }
 }
+
 ```
 
 ---
 
-#### 🔐 Modificadores de Acesso
+### 🔐 Modificadores de Acesso
 
 Controlam a visibilidade dos membros de uma classe:
 
@@ -249,61 +277,70 @@ Controlam a visibilidade dos membros de uma classe:
 
 ---
 
-#### 🔒 Propriedades Somente Leitura
+### 🔒 Propriedades Somente Leitura
 
 Você pode definir uma propriedade que só pode ser lida, útil para dados imutáveis.
 
 ```csharp
+
 public string Codigo { get; } = Guid.NewGuid().ToString();
+
 ```
 
 ---
 
-#### ⚡ Introdução aos Métodos
+### ⚡ Introdução aos Métodos
 
 Métodos representam **comportamentos** de uma classe. Podem receber dados (parâmetros), retornar dados (tipo de retorno), e encapsular lógicas.
 
 ---
 
-#### 🧱 Implementando a Classe Curso
+### 🧱 Implementando a Classe Curso
 
 ```csharp
+
 public class Curso
 {
     public string Nome { get; set; }
     public List<string> Alunos { get; set; } = new List<string>();
 }
+
 ```
 
 ---
 
-#### 🔁 Tipo de Retorno
+### 🔁 Tipo de Retorno
 
 O tipo de retorno define o que o método irá devolver ao final da execução:
 
 ```csharp
+
 public int ObterQuantidadeAlunos()
 {
     return Alunos.Count;
 }
+
 ```
 
 ---
 
-#### 🧹 Método Remover
+### 🧹 Método Remover
 
 ```csharp
+
 public void RemoverAluno(string nome)
 {
     Alunos.Remove(nome);
 }
+
 ```
 
 ---
 
-#### 📋 Método Listar Alunos
+### 📋 Método Listar Alunos
 
 ```csharp
+
 public void ListarAlunos()
 {
     foreach (var aluno in Alunos)
@@ -311,28 +348,32 @@ public void ListarAlunos()
         Console.WriteLine(aluno);
     }
 }
+
 ```
 
 ---
 
-### 🏗️ Construtores
+## 🏗️ Construtores
 
-#### 🏁 Trabalhando com Construtores
+### 🏁 Trabalhando com Construtores
 
 O **construtor** é um método especial chamado automaticamente quando um objeto é criado.
 
 ```csharp
+
 public Curso(string nome)
 {
     Nome = nome;
 }
+
 ```
 
 ---
 
-#### 🛠️ Implementando o Construtor
+### 🛠️ Implementando o Construtor
 
 ```csharp
+
 public class Pessoa
 {
     public string Nome { get; set; }
@@ -342,6 +383,7 @@ public class Pessoa
         Nome = nome;
     }
 }
+
 ```
 
 ---
@@ -359,7 +401,7 @@ Esses conhecimentos são fundamentais para qualquer projeto em C#, especialmente
 
 ---
 
-#### 🔗 Referências
+### 🔗 Referências
 
 * [Documentação Oficial do C# (Microsoft)](https://learn.microsoft.com/pt-br/dotnet/csharp/)
 * [Guia de Estilo C#](https://learn.microsoft.com/pt-br/dotnet/csharp/fundamentals/coding-style/coding-conventions)
@@ -367,4 +409,5 @@ Esses conhecimentos são fundamentais para qualquer projeto em C#, especialmente
 
 ---
 
-##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
+##### ✍️ **Seção criada por:** *Fabio Zanneti*
+##### 🎯 Projeto: **WEX - End to End Engineering**

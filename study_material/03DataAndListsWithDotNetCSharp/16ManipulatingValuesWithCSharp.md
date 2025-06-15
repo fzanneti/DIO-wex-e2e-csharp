@@ -4,7 +4,7 @@ Este módulo apresenta as formas mais comuns e eficientes de **manipular valores
 
 ---
 
-#### 📌 Introdução - Manipulando Valores
+### 📌 Introdução - Manipulando Valores
 
 Em C#, os dados são frequentemente manipulados antes de serem exibidos, armazenados ou processados. Isso inclui:
 
@@ -15,138 +15,161 @@ Em C#, os dados são frequentemente manipulados antes de serem exibidos, armazen
 
 ---
 
-#### 🔤 Concatenando Strings
+### 🔤 Concatenando Strings
 
 A concatenação de strings é o processo de unir duas ou mais cadeias de texto.
 
 ```csharp
+
 string nome = "Fabio";
 string saudacao = "Olá, " + nome + "!";
 Console.WriteLine(saudacao); // Olá, Fabio!
-````
+
+```
 
 ---
 
-#### 🧩 Interpolação de Strings
+### 🧩 Interpolação de Strings
 
 Forma moderna, legível e segura de construir textos com variáveis embutidas.
 
 ```csharp
+
 string nome = "Fabio";
 int idade = 43;
 Console.WriteLine($"Olá, {nome}! Você tem {idade} anos.");
+
 ```
 
 ---
 
-#### 🔢 Ajustando a Numeração
+### 🔢 Ajustando a Numeração
 
 Você pode formatar números com casas decimais, separadores de milhar, ou alinhamento.
 
 ```csharp
+
 double valor = 1234.56;
 Console.WriteLine(valor.ToString("N2")); // 1.234,56
+
 ```
 
 ---
 
-#### ➕ Concatenação de Valores
+### ➕ Concatenação de Valores
 
 Você pode concatenar valores não textuais com strings usando o método `ToString()`:
 
 ```csharp
+
 int idade = 43;
 string mensagem = "Idade: " + idade.ToString();
+
 ```
 
 ---
 
-#### 💰 Formatando Valores Monetários
+### 💰 Formatando Valores Monetários
 
 Para exibir valores como moeda, use `"C"` com o `ToString()`.
 
 ```csharp
+
 decimal preco = 59.90M;
 Console.WriteLine(preco.ToString("C")); // R$ 59,90 (pt-BR)
+
 ```
 
 ---
 
-#### 🌍 Alterando a Localização do Código
+### 🌍 Alterando a Localização do Código
 
 A localização (`CultureInfo`) afeta como números e datas são formatados.
 
 ```csharp
+
 using System.Globalization;
 
 CultureInfo.CurrentCulture = new CultureInfo("en-US");
 decimal preco = 59.90M;
 Console.WriteLine(preco.ToString("C")); // $59.90
+
 ```
 
 ---
 
-#### 🌐 Alterando a Localização da Cultura
+### 🌐 Alterando a Localização da Cultura
 
 Além do `CurrentCulture`, podemos alterar a cultura de forma específica em uma chamada:
 
 ```csharp
+
 decimal preco = 1234.56M;
 Console.WriteLine(preco.ToString("C", new CultureInfo("ja-JP"))); // ￥1,234
+
 ```
 
 ---
 
-#### 🎯 Formatação Personalizada
+### 🎯 Formatação Personalizada
 
 Você pode criar máscaras personalizadas para exibição.
 
 ```csharp
+
 double numero = 1234.5678;
 Console.WriteLine(numero.ToString("000000.00")); // 001234.57
+
 ```
 
 ---
 
-#### 📈 Representando Porcentagem
+### 📈 Representando Porcentagem
 
 Para exibir como porcentagem:
 
 ```csharp
+
 double taxa = 0.256;
 Console.WriteLine(taxa.ToString("P")); // 25,60%
+
 ```
 
 ---
 
-#### 🗓️ Formatando o tipo DateTime
+### 🗓️ Formatando o tipo DateTime
 
 Datas e horas também possuem formatações próprias.
 
 ```csharp
+
 DateTime hoje = DateTime.Now;
 Console.WriteLine(hoje.ToString("dd/MM/yyyy HH:mm")); // 28/05/2025 14:35
+
 ```
 
 ---
 
-#### 🕒 Formatando Data e Hora
+### 🕒 Formatando Data e Hora
 
 Formatos comuns:
 
 ```csharp
+
 DateTime data = DateTime.Now;
 Console.WriteLine(data.ToString("D")); // quarta-feira, 28 de maio de 2025
 Console.WriteLine(data.ToString("t")); // 14:35
+
 ```
 
 ---
 
-#### 🧪 DateTime com TryParse
+### 🧪 DateTime com TryParse
 
 O método `TryParse` evita erros ao converter strings para `DateTime`.
 
 ```csharp
+
 string entrada = "28/05/2025";
 DateTime data;
 
@@ -158,15 +181,17 @@ else
 {
     Console.WriteLine("Data inválida!");
 }
+
 ```
 
 ---
 
-#### ✅ Validando o Retorno do TryParse
+### ✅ Validando o Retorno do TryParse
 
 Sempre que usar `TryParse`, valide o retorno booleano para evitar exceções:
 
 ```csharp
+
 string valor = "abc";
 int numero;
 
@@ -178,6 +203,7 @@ else
 {
     Console.WriteLine("Entrada inválida. Não é um número.");
 }
+
 ```
 
 ---
@@ -188,4 +214,5 @@ Manipular valores em C# vai além de converter números e datas. Trata-se de tor
 
 ---
 
-##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
+##### ✍️ **Seção criada por:** *Fabio Zanneti*
+##### 🎯 Projeto: **WEX - End to End Engineering**
