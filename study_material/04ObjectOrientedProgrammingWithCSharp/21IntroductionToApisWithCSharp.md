@@ -4,7 +4,7 @@ Este módulo apresenta os conceitos fundamentais de **APIs (Application Programm
 
 ---
 
-#### 📌 O que é uma API?
+### 📌 O que é uma API?
 
 Uma **API** é uma interface que permite que diferentes sistemas se comuniquem.  
 Ela define regras e formatos para **requisições** e **respostas**, geralmente via protocolo HTTP, utilizando padrões como:
@@ -16,7 +16,7 @@ Ela define regras e formatos para **requisições** e **respostas**, geralmente 
 
 ---
 
-#### 🎯 Exemplo: API de Feriados
+### 🎯 Exemplo: API de Feriados
 
 A [API Nager.Date](https://date.nager.at/) é um exemplo de API pública que fornece dados de feriados por país e ano.
 
@@ -46,7 +46,7 @@ A [API Nager.Date](https://date.nager.at/) é um exemplo de API pública que for
 
 ---
 
-#### 📑 Documentação e retornos
+### 📑 Documentação e retornos
 
 Uma boa API fornece **documentação clara** (Swagger, Postman ou markdown) com:
 
@@ -57,7 +57,7 @@ Uma boa API fornece **documentação clara** (Swagger, Postman ou markdown) com:
 
 ---
 
-#### 🧪 Exemplo de uso em C\#
+### 🧪 Exemplo de uso em C\#
 
 ```csharp
 
@@ -78,7 +78,7 @@ public class ApiFeriados
 
 ---
 
-#### 🐶 Usando a Dog API
+### 🐶 Usando a Dog API
 
 [Dog API](https://dog.ceo/dog-api/) é uma API pública que retorna imagens de cachorros aleatórios.
 
@@ -114,7 +114,7 @@ public async Task BuscarImagemAsync()
 
 ---
 
-#### ⚙️ Criando Nossa API com ASP.NET Core
+### ⚙️ Criando Nossa API com ASP.NET Core
 
 1. Crie um novo projeto Web API no Visual Studio ou via CLI:
 
@@ -132,7 +132,7 @@ dotnet new webapi -n MinhaApiExemplo
 
 ---
 
-#### 🧭 Criando a Controller
+### 🧭 Criando a Controller
 
 ```csharp
 
@@ -152,7 +152,7 @@ public class ProdutosController : ControllerBase
 
 ---
 
-#### 🔀 Entendendo as Rotas
+### 🔀 Entendendo as Rotas
 
 A rota `"api/[controller]"` será automaticamente substituída por `"api/produtos"`.
 
@@ -166,7 +166,7 @@ Você também pode configurar rotas manualmente:
 
 ---
 
-#### 📥 Endpoint com Parâmetros
+### 📥 Endpoint com Parâmetros
 
 ```csharp
 
@@ -183,7 +183,7 @@ public IActionResult BuscarPorId(int id)
 
 ---
 
-#### ✅ Encerramento
+### ✅ Encerramento
 
 * Uma API permite comunicação entre sistemas de forma simples e segura.
 * Em C#, usamos **ASP.NET Core** para criar APIs REST com estrutura limpa e robusta.
@@ -199,4 +199,5 @@ public IActionResult BuscarPorId(int id)
 
 ---
 
-##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
+##### ✍️ **Seção criada por:** *Fabio Zanneti*
+##### 🎯 Projeto: **WEX - End to End Engineering**

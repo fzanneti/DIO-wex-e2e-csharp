@@ -4,18 +4,18 @@ Este material tem como objetivo apresentar, de forma objetiva e prática, os con
 
 ---
 
-#### 🧭 Introdução
+### 🧭 Introdução
 
 Com a crescente complexidade dos sistemas, técnicas que organizam o código e o tornam mais legível, reutilizável e fácil de manter são essenciais.  
 A Programação Orientada a Objetos (POO) é um paradigma que visa modelar o software baseado em "objetos" do mundo real.
 
 ---
 
-#### 🧠 Introdução à Programação Orientada a Objetos (POO)
+### 🧠 Introdução à Programação Orientada a Objetos (POO)
 
 A POO permite que o código seja organizado em **classes**, que são moldes para **objetos**. Cada objeto encapsula **dados** (atributos) e **comportamentos** (métodos).
 
-#### 🧱 Pilares da POO
+### 🧱 Pilares da POO
 
 1. **Abstração** – foca no que é essencial, omitindo detalhes desnecessários.
 2. **Encapsulamento** – protege os dados internos de acesso direto e não autorizado.
@@ -24,7 +24,7 @@ A POO permite que o código seja organizado em **classes**, que são moldes para
 
 ---
 
-#### 🧬 Tipos de Paradigmas de Programação
+### 🧬 Tipos de Paradigmas de Programação
 
 | Paradigma           | Característica Principal                                  |
 |---------------------|-----------------------------------------------------------|
@@ -35,7 +35,7 @@ A POO permite que o código seja organizado em **classes**, que são moldes para
 
 ---
 
-#### 🧩 Introdução à Abstração
+### 🧩 Introdução à Abstração
 
 **Abstração** é o processo de representar entidades do mundo real com classes, focando apenas nos **atributos** e **comportamentos essenciais**.
 
@@ -44,7 +44,7 @@ Você não precisa modelar o RG do hóspede ou a cor das cortinas da suíte, ape
 
 ---
 
-#### 🛠️ Abstração na prática (C#)
+### 🛠️ Abstração na prática (C#)
 
 ```csharp
 
@@ -65,7 +65,7 @@ public class Hospede
 
 ---
 
-#### 🧱 Introdução ao Encapsulamento
+### 🧱 Introdução ao Encapsulamento
 
 **Encapsulamento** significa **ocultar os detalhes internos** de implementação e expor apenas o necessário.
 A ideia é proteger os dados e garantir que sejam acessados ou modificados apenas por métodos controlados.
@@ -74,7 +74,7 @@ A ideia é proteger os dados e garantir que sejam acessados ou modificados apena
 
 ---
 
-#### 🔐 Encapsulamento na prática (C#)
+### 🔐 Encapsulamento na prática (C#)
 
 ```csharp
 
@@ -110,4 +110,5 @@ Estes conceitos estão presentes no dia a dia de qualquer sistema orientado a ob
 
 ---
 
-##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
+##### ✍️ **Seção criada por:** *Fabio Zanneti*
+##### 🎯 Projeto: **WEX - End to End Engineering**

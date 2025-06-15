@@ -4,7 +4,7 @@ Neste módulo vamos entender conceitos fundamentais da Programação Orientada a
 
 ---
 
-#### 📌 Introdução: Classe Abstrata
+### 📌 Introdução: Classe Abstrata
 
 Uma **classe abstrata** é uma classe que **não pode ser instanciada** diretamente. Ela serve como **modelo base** para outras classes e pode conter métodos com ou sem implementação.
 
@@ -12,7 +12,7 @@ Uma **classe abstrata** é uma classe que **não pode ser instanciada** diretame
 
 ---
 
-#### 🛠️ Classe Abstrata na Prática
+### 🛠️ Classe Abstrata na Prática
 
 ```csharp
 
@@ -37,7 +37,7 @@ public class Gato : Animal
 
 ---
 
-#### 🔁 Construtor por Herança
+### 🔁 Construtor por Herança
 
 Mesmo sendo abstrata, a classe base **pode ter construtores**, que serão executados pelas classes filhas através da chamada `base()`:
 
@@ -61,13 +61,13 @@ public class Aluno : Pessoa
 
 ---
 
-#### 🔒 Introdução: Classe Selada
+### 🔒 Introdução: Classe Selada
 
 Uma **classe selada (sealed)** **não pode ser herdada**. Ela garante que nenhuma outra classe estenda sua implementação, sendo usada por **motivos de segurança, performance ou integridade da lógica**.
 
 ---
 
-#### 🧪 Classe Selada na Prática
+### 🧪 Classe Selada na Prática
 
 ```csharp
 
@@ -85,7 +85,7 @@ public sealed class Relatorio
 
 ---
 
-#### 🚫 Método Selado na Prática
+### 🚫 Método Selado na Prática
 
 Você também pode **selar apenas um método** dentro de uma hierarquia com `sealed override`.
 
@@ -110,7 +110,7 @@ public class PDFColorido : PDF
 
 ---
 
-#### 👤 Introdução: Classe Object
+### 👤 Introdução: Classe Object
 
 Toda classe em C# herda **implícita ou explicitamente da classe `object`**, a **base de todos os tipos no .NET**.
 
@@ -123,7 +123,7 @@ Ela fornece métodos como:
 
 ---
 
-#### 🧪 Classe Object na Prática
+### 🧪 Classe Object na Prática
 
 ```csharp
 
@@ -146,7 +146,7 @@ Console.WriteLine(p.ToString()); // Saída: Produto: Caderno
 
 ---
 
-#### 📢 Introdução: Interfaces
+### 📢 Introdução: Interfaces
 
 Uma **interface** é um **contrato** que define **quais membros uma classe deve implementar**, sem fornecer lógica.
 
@@ -158,7 +158,7 @@ Diferente de uma classe abstrata:
 
 ---
 
-#### 💼 Interface na Prática
+### 💼 Interface na Prática
 
 ```csharp
 
@@ -179,7 +179,7 @@ public class EmailService : INotificavel
 
 ---
 
-#### 🧩 Método Padrão na Interface (C# 8+)
+### 🧩 Método Padrão na Interface (C# 8+)
 
 Desde o C# 8, **interfaces podem ter implementações padrão** com `default`:
 
@@ -218,4 +218,5 @@ public class Logger : ILog { }
 
 ---
 
-##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
+##### ✍️ **Seção criada por:** *Fabio Zanneti*
+##### 🎯 Projeto: **WEX - End to End Engineering**

@@ -4,7 +4,7 @@ Este documento apresenta, de forma clara e objetiva, dois dos pilares fundamenta
 
 ---
 
-#### 🧱 Introdução à Herança
+### 🧱 Introdução à Herança
 
 Herança é o mecanismo que permite **reutilizar código**.  
 Uma classe pode herdar **atributos e métodos** de outra, formando uma **relação hierárquica** entre elas.
@@ -16,7 +16,7 @@ Uma classe pode herdar **atributos e métodos** de outra, formando uma **relaç�
 
 ---
 
-#### 🛠️ Herança na prática
+### 🛠️ Herança na prática
 
 ```csharp
 
@@ -44,7 +44,7 @@ public class Aluno : Pessoa
 
 ### ✅ A classe `Aluno` herda o atributo `Nome` e o método `Apresentar` da classe `Pessoa`.
 
-#### 📝 Uso:
+### 📝 Uso:
 
 ```csharp
 
@@ -58,7 +58,7 @@ aluno.Estudar();    // Fabio está estudando C# Avançado
 
 ---
 
-#### ⚠️ Considerações finais sobre herança
+### ⚠️ Considerações finais sobre herança
 
 * **Evite heranças profundas** (muitas camadas) — elas dificultam a manutenção.
 * Prefira **herança apenas quando existe uma clara relação "é um(a)"**.
@@ -66,7 +66,7 @@ aluno.Estudar();    // Fabio está estudando C# Avançado
 
 ---
 
-#### 🧠 Introdução ao Polimorfismo
+### 🧠 Introdução ao Polimorfismo
 
 Polimorfismo significa **"muitas formas"**.
 Na prática, permite que objetos derivados de uma mesma classe base possam se comportar de formas diferentes ao sobrescrever métodos.
@@ -80,7 +80,7 @@ Existem dois tipos principais:
 
 ---
 
-#### 🔄 Polimorfismo em tempo de execução (via herança)
+### 🔄 Polimorfismo em tempo de execução (via herança)
 
 Usamos a palavra-chave `virtual` para permitir que um método seja sobrescrito com `override`:
 
@@ -110,9 +110,10 @@ public class Gato : Animal
 }
 ```
 
-#### 📝 Uso com polimorfismo:
+### 📝 Uso com polimorfismo:
 
 ```csharp
+
 List<Animal> animais = new List<Animal>
 {
     new Cachorro(),
@@ -124,6 +125,7 @@ foreach (var animal in animais)
 {
     animal.EmitirSom(); 
 }
+
 ```
 
 🔁 Saída:
@@ -141,7 +143,7 @@ Som genérico de animal
 
 ---
 
-#### ✅ Considerações finais sobre polimorfismo
+### ✅ Considerações finais sobre polimorfismo
 
 * Permite **flexibilidade** e **extensibilidade** do código.
 * Ideal quando usamos **listas genéricas** ou **interfaces**.
@@ -156,4 +158,5 @@ Esses conceitos são amplamente usados em frameworks, bibliotecas e aplicações
 
 ---
 
-##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
+##### ✍️ **Seção criada por:** *Fabio Zanneti*
+##### 🎯 Projeto: **WEX - End to End Engineering**
