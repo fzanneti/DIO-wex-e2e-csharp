@@ -195,13 +195,35 @@ DELETE FROM Clientes WHERE Id = 2;
 
 ### 🧠 Estudando Tipos de Dados
 
-| Tipo SQL        | Descrição                      | Exemplo      |
-| --------------- | ------------------------------ | ------------ |
-| `INT`           | Número inteiro                 | 1, 100, -50  |
-| `VARCHAR(100)`  | Texto variável                 | 'João'       |
-| `DATE`          | Data                           | '2025-06-15' |
-| `DECIMAL(10,2)` | Decimal com casas decimais     | 199.90       |
-| `BIT`           | Booleano (0 = falso, 1 = true) | 1            |
+## 📚 Tabela de Tipos de Dados no SQL Server
+
+| Tipo SQL            | Descrição                                                                 | Exemplos                     | Observações                                 |
+|---------------------|---------------------------------------------------------------------------|------------------------------|---------------------------------------------|
+| `INT`               | Número inteiro com sinal (positivo/negativo)                             | 0, 10, -200                  | Ocupa 4 bytes                               |
+| `BIGINT`            | Número inteiro muito grande                                               | 9223372036854775807          | Ocupa 8 bytes                               |
+| `SMALLINT`          | Número inteiro menor                                                      | -32.768 a 32.767             | Ocupa 2 bytes                               |
+| `TINYINT`           | Apenas números positivos de 0 a 255                                       | 0, 255                       | Ocupa 1 byte                                |
+| `DECIMAL(p,s)`      | Número decimal com precisão e escala (p = total de dígitos, s = casas decimais) | 12345.67 (`DECIMAL(7,2)`)    | Usado para valores monetários               |
+| `FLOAT`             | Números com ponto flutuante (alta precisão)                              | 3.14159265359                | Aproximado, menos preciso que `DECIMAL`     |
+| `REAL`              | Versão mais leve do `FLOAT`                                               | 3.14                         | Ocupa menos espaço                          |
+| `BIT`               | Valor booleano (0 ou 1)                                                   | 1 (verdadeiro), 0 (falso)    | Ideal para flags e ativa/inativa            |
+| `CHAR(n)`           | Texto de comprimento fixo                                                 | 'FABIO     '                 | Preenche com espaços até o tamanho `n`      |
+| `VARCHAR(n)`        | Texto de comprimento variável                                             | 'Fabio'                      | Mais eficiente em espaço                    |
+| `TEXT`              | Texto longo (descontinuado em versões recentes)                          | -                            | Substituído por `VARCHAR(MAX)`              |
+| `VARCHAR(MAX)`      | Texto muito longo (até 2GB)                                               | -                            | Usado para textos extensos, ex: artigos     |
+| `DATE`              | Armazena somente a data (YYYY-MM-DD)                                     | '2025-06-15'                 | Sem hora                                    |
+| `DATETIME`          | Armazena data e hora (precisão de 3 milissegundos)                       | '2025-06-15 14:30:00'        | Usado amplamente                            |
+| `DATETIME2`         | Versão aprimorada do `DATETIME` (maior precisão)                         | '2025-06-15 14:30:00.1234567'| Melhor desempenho e uso recomendado         |
+| `TIME`              | Apenas o horário (sem a data)                                             | '14:30:00'                   | Ideal para agendamentos                     |
+| `UNIQUEIDENTIFIER`  | Identificador único global (UUID)                                        | '6F9619FF-8B86-D011-B42D-00C04FC964FF' | Muito usado como chave primária alternativa |
+
+---
+
+📌 **Dicas**:
+- Prefira `VARCHAR` ao invés de `CHAR` para textos que variam de tamanho.
+- Use `DECIMAL` para valores financeiros (evita erros de arredondamento).
+- `BIT` é perfeito para representar verdadeiro/falso ou ligado/desligado.
+- `DATETIME2` é recomendado para novos projetos em vez de `DATETIME`.
 
 ---
 
