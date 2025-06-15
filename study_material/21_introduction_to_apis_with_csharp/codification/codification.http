@@ -1,6 +1,0 @@
-@codification_HostAddress = http://localhost:5296
-
-GET {{codification_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
