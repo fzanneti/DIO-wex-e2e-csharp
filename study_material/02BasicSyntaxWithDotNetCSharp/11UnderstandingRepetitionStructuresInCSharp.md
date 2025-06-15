@@ -4,7 +4,7 @@ Este material é parte da trilha de estudos em C#, abordando as principais **est
 
 ---
 
-#### 📌 Índice
+### 📌 Índice
 
 - Introdução às Estruturas de Repetição  
 - Estrutura `for`  
@@ -15,7 +15,7 @@ Este material é parte da trilha de estudos em C#, abordando as principais **est
 
 ---
 
-#### 🧠 Introdução - Estrutura de Repetição
+### 🧠 Introdução - Estrutura de Repetição
 
 Uma **estrutura de repetição** permite executar um trecho de código diversas vezes, controlando esse processo com **condições lógicas**.
 
@@ -28,22 +28,27 @@ Essas estruturas são muito usadas em laços, contagens, buscas, validações, l
 
 ---
 
-#### 🔂 Introdução ao `for`
+### 🔂 Introdução ao `for`
 
 O `for` é ideal quando você sabe **exatamente o número de vezes que o loop deve rodar**.
 
-#### Exemplo:
+### Exemplo:
+
 ```csharp
+
 for (int i = 0; i < 5; i++)
 {
     Console.WriteLine($"Valor de i: {i}");
 }
-````
+
+```
 
 ### Estrutura:
 
 ```csharp
+
 for (inicialização; condição; incremento)
+
 ```
 
 * `inicialização`: define o valor inicial do contador.
@@ -52,7 +57,7 @@ for (inicialização; condição; incremento)
 
 ---
 
-#### 🐞 Debugando o `for`
+### 🐞 Debugando o `for`
 
 Durante o debug, você pode observar:
 
@@ -64,13 +69,14 @@ Ideal para ver como o fluxo se comporta passo a passo.
 
 ---
 
-#### 🔁 Introdução ao `while`
+### 🔁 Introdução ao `while`
 
 O `while` executa um bloco de código **enquanto a condição for verdadeira**. Ideal para situações onde **não sabemos quantas vezes a repetição será feita**.
 
-#### Exemplo:
+### Exemplo:
 
 ```csharp
+
 int contador = 0;
 
 while (contador < 5)
@@ -78,11 +84,12 @@ while (contador < 5)
     Console.WriteLine($"Contador: {contador}");
     contador++;
 }
+
 ```
 
 ---
 
-#### 🐞 Debugando o `while`
+### 🐞 Debugando o `while`
 
 No modo de depuração (debug), você consegue observar:
 
@@ -92,53 +99,59 @@ No modo de depuração (debug), você consegue observar:
 
 ---
 
-#### 🚫 Interrompendo o Fluxo de Execução
+### 🚫 Interrompendo o Fluxo de Execução
 
 Duas instruções muito úteis:
 
 * `break`: encerra o loop imediatamente.
 * `continue`: pula para a próxima iteração.
 
-#### Exemplo com `break`:
+### Exemplo com `break`:
 
 ```csharp
+
 for (int i = 0; i < 10; i++)
 {
     if (i == 5) break;
     Console.WriteLine(i);
 }
+
 ```
 
-#### Exemplo com `continue`:
+### Exemplo com `continue`:
 
 ```csharp
+
 for (int i = 0; i < 10; i++)
 {
     if (i % 2 == 0) continue;
     Console.WriteLine(i);
 }
+
 ```
 
 ---
 
-#### 🔄 Introdução ao `do while`
+### 🔄 Introdução ao `do while`
 
 A estrutura `do while` é similar ao `while`, mas garante que o bloco será **executado pelo menos uma vez**, pois a condição é verificada **depois da execução**.
 
-#### Exemplo:
+### Exemplo:
 
 ```csharp
+
 int i = 0;
 do
 {
     Console.WriteLine($"i: {i}");
     i++;
 } while (i < 5);
+
 ```
 
 ---
 
-#### 🐞 Debugando o `do while`
+### 🐞 Debugando o `do while`
 
 Ao debugar, note que:
 
@@ -147,13 +160,14 @@ Ao debugar, note que:
 
 ---
 
-#### 🧮 Construindo um Menu Interativo
+### 🧮 Construindo um Menu Interativo
 
 Menus interativos utilizam loops para **repetir a exibição de opções até que o usuário deseje sair**.
 
-#### Exemplo:
+### Exemplo:
 
 ```csharp
+
 int opcao;
 do
 {
@@ -171,19 +185,22 @@ do
     }
 
 } while(opcao != 0);
+
 ```
 
 ---
 
-#### ♻️ Refatorando o Menu
+### ♻️ Refatorando o Menu
 
 Com o tempo, esse menu pode ser **refatorado em métodos**, tornando o código mais limpo, modular e reutilizável.
 
-#### Dica:
+### Dica:
 
 ```csharp
+
 static void ExibirData() => Console.WriteLine(DateTime.Now.ToShortDateString());
 static void ExibirHora() => Console.WriteLine(DateTime.Now.ToShortTimeString());
+
 ```
 
 ---
@@ -194,4 +211,5 @@ Dominar estruturas de repetição é essencial para programar de forma eficiente
 
 ---
 
-##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
+##### ✍️ **Seção criada por:** *Fabio Zanneti*
+##### 🎯 Projeto: **WEX - End to End Engineering**

@@ -155,6 +155,5 @@ Agora você:
 
 ---
 
-> ##### ✍️ **Seção criada por:** *Fabio Zanneti*
-> ##### 🎯 Projeto: **WEX - End to End Engineering**
-> ##### 📁 *Guia de estudos estruturado para GitHub*
+##### ✍️ **Seção criada por:** *Fabio Zanneti*
+##### 🎯 Projeto: **WEX - End to End Engineering**

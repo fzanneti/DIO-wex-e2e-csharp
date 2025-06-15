@@ -4,19 +4,21 @@ Entenda como funcionam os operadores de atribuição, conversão de tipos e boas
 
 ---
 
-#### ✅ Introdução - Operador de Atribuição
+### ✅ Introdução - Operador de Atribuição
 
 Em C#, o **operador de atribuição** é usado para armazenar valores em variáveis. O símbolo `=` é utilizado para essa operação:
 
 ```csharp
+
 int idade = 30;
+
 ```
 
 Isso significa: “A variável ````idade```` recebe o valor ````30````”. Atenção: isso não é uma **igualdade**, mas sim uma **atribuição de valor**.
 
 ---
 
-#### ➕ Combinando Operadores
+### ➕ Combinando Operadores
 
 É possível combinar operadores aritméticos com o de atribuição. Esses são chamados de **operadores de atribuição compostos**:
 
@@ -32,7 +34,7 @@ Esses atalhos deixam o código mais limpo e fácil de ler.
 
 ---
 
-#### 🔄 Convertendo Tipos de Variáveis em C#
+### 🔄 Convertendo Tipos de Variáveis em C#
 
 Em C#, é comum precisar **converter valores entre tipos diferentes**, como:
 
@@ -44,33 +46,39 @@ Existem **três formas principais** de fazer essa conversão:
 
 ---
 
-#### ⚠️ Cast Implícito e Explícito
+### ⚠️ Cast Implícito e Explícito
 
 * **Cast Implícito:** Quando não há perda de informação:
 
 ```csharp
+
 int x = 10;
 double y = x; // cast implícito
+
 ```
 
 * **Cast Explícito:** Quando pode haver perda de dados. Exige sintaxe com `(tipo)`:
 
 ```csharp
+
 double a = 9.8;
 int b = (int)a; // b = 9 (trunca a parte decimal)
+
 ```
 
 ---
 
-#### 🔹 1. Conversão Implícita
+### 🔹 1. Conversão Implícita
 
 A conversão **implícita** ocorre automaticamente **quando não há risco de perda de dados**. Isso geralmente acontece de um tipo **menor** para um tipo **maior**.
 
 ```csharp
+
 int numero = 42;
 double valor = numero;  // Conversão implícita (int para double)
 
 Console.WriteLine(valor);  // Saída: 42.0
+
 ```
 
 ✅ **Seguro e direto.**
@@ -78,15 +86,17 @@ Console.WriteLine(valor);  // Saída: 42.0
 
 ---
 
-#### 🔹 2. Conversão Explícita (Cast)
+### 🔹 2. Conversão Explícita (Cast)
 
 Já a conversão **explícita** (também chamada de *casting*) **precisa ser indicada pelo programador**. É usada quando **pode haver perda de dados**, como de `double` para `int`.
 
 ```csharp
+
 double valor = 10.75;
 int inteiro = (int)valor;  // Cast explícito: perde a parte decimal
 
 Console.WriteLine(inteiro);  // Saída: 10
+
 ```
 
 ✅ Controlada e direta.
@@ -100,15 +110,17 @@ Esses métodos são usados principalmente para converter **strings em tipos num�
 
 ---
 
-#### ✅ `Convert`
+### ✅ `Convert`
 
 Converte com validação de tipo. É seguro contra `null`, mas lança exceções se o conteúdo da string for inválido.
 
 ```csharp
+
 string texto = "123";
 int numero = Convert.ToInt32(texto);
 
 Console.WriteLine(numero);  // Saída: 123
+
 ```
 
 * Aceita `null` (retorna 0).
@@ -116,15 +128,17 @@ Console.WriteLine(numero);  // Saída: 123
 
 ---
 
-#### ✅ `Parse`
+### ✅ `Parse`
 
 Converte a string **se o conteúdo for válido**. Mais direto, porém **não aceita `null` e lança exceção se inválido.**
 
 ```csharp
+
 string texto = "456";
 int numero = int.Parse(texto);
 
 Console.WriteLine(numero);  // Saída: 456
+
 ```
 
 * Mais rápido que `Convert`.
@@ -132,11 +146,12 @@ Console.WriteLine(numero);  // Saída: 456
 
 ---
 
-#### ✅ `TryParse`
+### ✅ `TryParse`
 
 Forma **segura** de tentar converter sem lançar exceções. Ideal para validar entrada do usuário.
 
 ```csharp
+
 string texto = "abc";
 int numero;
 
@@ -146,6 +161,7 @@ if (sucesso)
     Console.WriteLine(numero);
 else
     Console.WriteLine("Conversão falhou");
+
 ```
 
 * **Não quebra o programa.**
@@ -154,7 +170,7 @@ else
 
 ---
 
-#### 📌 Tabela Comparativa
+### 📌 Tabela Comparativa
 
 | Método   | Aceita null | Lança exceção | Recomendado para            |
 | -------- | ----------- | ------------- | --------------------------- |
@@ -176,7 +192,7 @@ Saber **quando e como converter tipos de variáveis** evita erros comuns e deixa
 
 ---
 
-#### ⚖️ Diferença entre `Convert` e `Parse`
+### ⚖️ Diferença entre `Convert` e `Parse`
 
 | Característica      | `Convert`                    | `Parse`                               |
 | ------------------- | ---------------------------- | ------------------------------------- |
@@ -188,20 +204,22 @@ Use `Convert` quando não tiver certeza se o valor pode ser `null`. Use `Parse` 
 
 ---
 
-#### 🧾 Conversão para String
+### 🧾 Conversão para String
 
 Qualquer tipo pode ser convertido para `string` usando o método `.ToString()`:
 
 ```csharp
+
 int idade = 30;
 string texto = idade.ToString(); // "30"
+
 ```
 
 É muito útil para exibir valores em telas, logs ou mensagens.
 
 ---
 
-#### ⏱️ Ordem dos Operadores
+### ⏱️ Ordem dos Operadores
 
 A ordem das operações em C# segue as mesmas regras da matemática:
 
@@ -213,22 +231,27 @@ A ordem das operações em C# segue as mesmas regras da matemática:
 Exemplo:
 
 ```csharp
+
 int resultado = 10 + 2 * 5; // resultado = 20
+
 ```
 
 Se quiser somar antes, use parênteses:
 
 ```csharp
+
 int resultado = (10 + 2) * 5; // resultado = 60
+
 ```
 
 ---
 
-#### 🛡️ Convertendo de Maneira Segura
+### 🛡️ Convertendo de Maneira Segura
 
 Use `TryParse` para evitar erros quando uma conversão pode falhar:
 
 ```csharp
+
 string entrada = "abc";
 int numero;
 
@@ -238,6 +261,7 @@ if (sucesso)
     Console.WriteLine($"Valor convertido: {numero}");
 else
     Console.WriteLine("Conversão falhou.");
+    
 ```
 
 Esse padrão é muito usado em validações de entrada.
@@ -261,7 +285,7 @@ Neste material, você aprenderá a utilizar operadores condicionais em C# para c
 
 ---
 
-#### ✅ Introdução - Operadores Condicionais
+### ✅ Introdução - Operadores Condicionais
 
 Operadores condicionais permitem que o código **tome decisões** com base em uma condição. São fundamentais em qualquer linguagem de programação.
 
@@ -283,11 +307,12 @@ Esses operadores são usados dentro de estruturas de controle como `if`, `else` 
 
 ---
 
-#### 🧪 Operador Condicional na Prática
+### 🧪 Operador Condicional na Prática
 
 Exemplo simples com `if`:
 
 ```csharp
+
 int idade = 18;
 
 if (idade >= 18)
@@ -298,11 +323,13 @@ else
 {
     Console.WriteLine("Menor de idade");
 }
-````
+
+```
 
 Exemplo com operador lógico:
 
 ```csharp
+
 bool temCarteira = true;
 int idade = 19;
 
@@ -310,11 +337,12 @@ if (idade >= 18 && temCarteira)
 {
     Console.WriteLine("Pode dirigir");
 }
+
 ```
 
 ---
 
-#### 🔍 Debugando Operador Condicional
+### 🔍 Debugando Operador Condicional
 
 Debugar é **observar passo a passo o que o programa está fazendo**. No Visual Studio:
 
@@ -327,11 +355,12 @@ Isso ajuda a identificar por que uma lógica não está funcionando como o esper
 
 ---
 
-#### 🧱 If Aninhado
+### 🧱 If Aninhado
 
 Um **if aninhado** é um `if` dentro de outro `if`, usado quando temos **decisões mais complexas**:
 
 ```csharp
+
 int nota = 85;
 
 if (nota >= 70)
@@ -349,17 +378,19 @@ else
 {
     Console.WriteLine("Reprovado");
 }
+
 ```
 
 **Dica:** se houver muitos `ifs` aninhados, considere usar `else if` ou `switch`.
 
 ---
 
-#### 🎚️ Aprendendo o Switch Case
+### 🎚️ Aprendendo o Switch Case
 
 O `switch` é uma estrutura usada quando temos **várias opções de comparação para a mesma variável**. Exemplo:
 
 ```csharp
+
 string dia = "quarta";
 
 switch (dia)
@@ -377,9 +408,10 @@ switch (dia)
         Console.WriteLine("Dia inválido");
         break;
 }
+
 ```
 
-#### Quando usar `switch`:
+### Quando usar `switch`:
 
 * Quando há **múltiplas comparações iguais** com uma única variável.
 * Quando deseja **melhor organização** do que muitos `else if`.
@@ -403,7 +435,7 @@ Operadores condicionais são essenciais para implementar **lógica de decisão**
 
 ---
 
-#### ✅ Introdução - Operadores Lógicos
+### ✅ Introdução - Operadores Lógicos
 
 Operadores lógicos são usados para **combinar ou modificar expressões booleanas** (que retornam verdadeiro ou falso). Eles são essenciais para realizar **comparações múltiplas** dentro de uma mesma estrutura condicional (`if`, `while`, etc.).
 
@@ -415,11 +447,12 @@ Operadores lógicos são usados para **combinar ou modificar expressões boolean
 
 ---
 
-#### 🔸 Operador OR (`||`) na prática
+### 🔸 Operador OR (`||`) na prática
 
 O operador `||` (OU) retorna **true se pelo menos uma condição for verdadeira**.
 
 ```csharp
+
 int idade = 16;
 bool acompanhado = true;
 
@@ -431,7 +464,8 @@ else
 {
     Console.WriteLine("Entrada negada");
 }
-````
+
+```
 
 Neste exemplo, mesmo que `idade` seja menor que 18, o fato de estar **acompanhado** permite a entrada.
 
@@ -454,6 +488,7 @@ O operador `&&` (E lógico) é usado quando **todas as condições precisam ser 
 Exemplo prático:
 
 ```csharp
+
 int idade = 20;
 bool temIngresso = true;
 
@@ -465,6 +500,7 @@ else
 {
     Console.WriteLine("Não pode entrar");
 }
+
 ```
 
 Se qualquer uma das duas condições for falsa, a mensagem de negação será exibida.
@@ -477,23 +513,25 @@ Se qualquer uma das duas condições for falsa, a mensagem de negação será ex
 
 ---
 
-#### ✅ Introdução - Operador NOT
+### ✅ Introdução - Operador NOT
 
 O operador `!` (NOT) **inverte o valor lógico** de uma expressão. É útil quando você quer verificar se algo **não** é verdadeiro.
 
 ---
 
-#### 🔸 Operador NOT (`!`) na prática
+### 🔸 Operador NOT (`!`) na prática
 
 Exemplo:
 
 ```csharp
+
 bool conectado = false;
 
 if (!conectado)
 {
     Console.WriteLine("Você está offline");
 }
+
 ```
 
 Nesse caso, `!conectado` será `true`, já que `conectado` é `false`.
@@ -501,12 +539,14 @@ Nesse caso, `!conectado` será `true`, já que `conectado` é `false`.
 Outro exemplo comum:
 
 ```csharp
+
 bool temPermissao = false;
 
 if (!temPermissao)
 {
     Console.WriteLine("Acesso negado");
 }
+
 ```
 
 ---
@@ -523,4 +563,5 @@ Os operadores lógicos permitem escrever **decisões mais completas e inteligent
 
 ---
 
-##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
+##### ✍️ **Seção criada por:** *Fabio Zanneti*
+##### 🎯 Projeto: **WEX - End to End Engineering**

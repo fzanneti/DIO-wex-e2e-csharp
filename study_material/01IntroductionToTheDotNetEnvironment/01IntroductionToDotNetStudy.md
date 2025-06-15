@@ -135,6 +135,5 @@ Com isso, você pode escrever em C# e rodar sua aplicação em diversos sistemas
 
 ---
 
-> ##### ✍️ **Seção criada por:** *Fabio Zanneti*
-> ##### 🎯 Projeto: **WEX - End to End Engineering**
-> ##### 📁 *Guia de estudos estruturado e padronizado para repositório GitHub*
+##### ✍️ **Seção criada por:** *Fabio Zanneti*
+##### 🎯 Projeto: **WEX - End to End Engineering**

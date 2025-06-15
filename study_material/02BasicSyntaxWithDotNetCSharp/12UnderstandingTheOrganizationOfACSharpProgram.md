@@ -4,7 +4,7 @@ Este material apresenta a **estrutura fundamental de um programa em C#**, além 
 
 ---
 
-#### 📌 Índice
+### 📌 Índice
 
 - Estrutura de um programa C#  
 - Criando nosso novo projeto  
@@ -15,11 +15,12 @@ Este material apresenta a **estrutura fundamental de um programa em C#**, além 
 
 ---
 
-#### 🧠 Estrutura de um Programa C#
+### 🧠 Estrutura de um Programa C#
 
 Um programa básico em C# possui os seguintes elementos:
 
 ```csharp
+
 using System;
 
 namespace MeuPrograma
@@ -32,9 +33,10 @@ namespace MeuPrograma
         }
     }
 }
-````
 
-#### Componentes:
+```
+
+### Componentes:
 
 * `using`: diretivas de namespace (bibliotecas).
 * `namespace`: agrupador lógico para organização do código.
@@ -44,12 +46,14 @@ namespace MeuPrograma
 
 ---
 
-#### 🚀 Criando Nosso Novo Projeto
+### 🚀 Criando Nosso Novo Projeto
 
 Para criar um novo projeto via terminal, execute:
 
 ```bash
+
 dotnet new console -n NomeDoProjeto
+
 ```
 
 * `dotnet new console`: cria um projeto do tipo console.
@@ -58,62 +62,76 @@ dotnet new console -n NomeDoProjeto
 👉 Após criar, acesse a pasta:
 
 ```bash
+
 cd NomeDoProjeto
+
 ```
 
 ---
 
-#### 🗂️ Organizando e Referenciando Projetos
+### 🗂️ Organizando e Referenciando Projetos
 
 Em soluções maiores, é comum dividir o projeto em **camadas** (ex: domínio, aplicação, UI). Para isso:
 
-#### Criar uma solução:
+### Criar uma solução:
 
 ```bash
+
 dotnet new sln -n MinhaSolucao
+
 ```
 
-#### Adicionar projetos:
+### Adicionar projetos:
 
 ```bash
+
 dotnet new classlib -n Projeto.Dominio
 dotnet new console -n Projeto.UI
+
 ```
 
-#### Adicionar à solução:
+### Adicionar à solução:
 
 ```bash
+
 dotnet sln MinhaSolucao.sln add Projeto.Dominio/Projeto.Dominio.csproj
 dotnet sln MinhaSolucao.sln add Projeto.UI/Projeto.UI.csproj
+
 ```
 
-#### Fazer referência entre projetos:
+### Fazer referência entre projetos:
 
 ```bash
+
 dotnet add Projeto.UI/Projeto.UI.csproj reference Projeto.Dominio/Projeto.Dominio.csproj
+
 ```
 
 ---
 
-#### 🧱 Criando um Projeto .NET 5 e .NET 6
+## 🧱 Criando um Projeto .NET 5 e .NET 6
 
-#### Projeto .NET 5:
+### Projeto .NET 5:
 
 ```bash
+
 dotnet new console -n ProjetoNet5 --framework net5.0
+
 ```
 
-#### Projeto .NET 6:
+### Projeto .NET 6:
 
 ```bash
+
 dotnet new console -n ProjetoNet6 --framework net6.0
+
 ```
 
 Você também pode editar manualmente o `.csproj` para alterar a versão do framework, se necessário.
 
 ---
 
-#### 🔍 Comparando .NET 5 vs .NET 6
+### 🔍 Comparando .NET 5 vs .NET 6
 
 | Característica       | .NET 5              | .NET 6 (LTS)                    |
 | -------------------- | ------------------- | ------------------------------- |
@@ -123,40 +141,48 @@ Você também pode editar manualmente o `.csproj` para alterar a versão do fram
 | Minimal API          | Não disponível      | Disponível                      |
 | Estabilidade         | Versão de transição | Versão estável e recomendada    |
 
-#### Exemplo com sintaxe minimalista no .NET 6:
+### Exemplo com sintaxe minimalista no .NET 6:
 
 ```csharp
+
 Console.WriteLine("Olá, mundo!");
+
 ```
 
 ---
 
-#### 🖥️ Entendendo o Caminho no Terminal
+### 🖥️ Entendendo o Caminho no Terminal
 
 É essencial estar na pasta correta ao rodar comandos com o `dotnet`.
 
-#### Dicas:
+### Dicas:
 
 * Use `cd` para navegar entre pastas.
 * Use `ls` (Linux/macOS) ou `dir` (Windows) para listar arquivos.
 * Se estiver em dúvida, use:
 
 ```bash
+
 dotnet --info
+
 ```
 
 Para verificar a versão do SDK e caminhos instalados.
 
-#### Rodar projeto:
+### Rodar projeto:
 
 ```bash
+
 dotnet run
+
 ```
 
 Certifique-se de estar dentro da pasta do projeto ou aponte o caminho correto com:
 
 ```bash
+
 dotnet run --project ./NomeDoProjeto
+
 ```
 
 ---
@@ -167,4 +193,5 @@ Entender a organização de um programa em C# e como gerenciar múltiplos projet
 
 ---
 
-##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
+##### ✍️ **Seção criada por:** *Fabio Zanneti*
+##### 🎯 Projeto: **WEX - End to End Engineering**

@@ -219,6 +219,5 @@ O C# possui uma estrutura clara e bem definida para organizar projetos. Aprender
 
 ---
 
-> ##### ✍️ **Seção criada por:** *Fabio Zanneti*
-> ##### 🎯 Projeto: **WEX - End to End Engineering**
-> ##### 📁 *Guia de estudos com foco em estrutura de código e boas práticas*
+##### ✍️ **Seção criada por:** *Fabio Zanneti*
+##### 🎯 Projeto: **WEX - End to End Engineering**
