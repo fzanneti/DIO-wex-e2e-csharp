@@ -421,4 +421,5 @@ Nenhuma transacao suspeita encontrada
 
 ---
 
-##### Seção criada por: *Fabio Zanneti - Projeto: WEX - End to End Engineering* - Guia de estudos.
+##### ✍️ **Seção criada por:** *Fabio Zanneti*
+##### 🎯 Projeto: **WEX - End to End Engineering**
