@@ -407,6 +407,180 @@ O Cassandra é ideal para aplicações que precisam:
 
 ---
 
+## 🧰 Redis – Banco de Dados Chave-Valor  
+
+### 🧠 O que é o Redis?
+
+O **Redis** (Remote Dictionary Server) é um banco de dados NoSQL do tipo **chave-valor** e armazenado em memória. Ele é extremamente rápido e amplamente usado para:
+
+- Cache de dados
+- Armazenar sessões de usuários
+- Filas e publicações/assinaturas (pub/sub)
+- Contadores, listas, conjuntos e mais
+
+> 🔧 Redis é mais que um cache — é uma **estrutura de dados em memória**, simples e poderosa.
+
+---
+
+### 🧩 Como funciona o modelo chave-valor?
+
+- **Chave (key)**: identificador único
+- **Valor (value)**: qualquer tipo de dado (string, lista, hash, set, etc.)
+
+```text
+
+chave: "usuario:101"
+valor: "{ nome: 'Fabio', idade: 43 }"
+
+```
+
+---
+
+### 🚀 Vantagens do Redis
+
+|Recurso|	Benefício|
+|---|---|
+|In-memory (na RAM)	|Acesso ultra-rápido aos dados|
+|Tipos de dados avançados	Listas, hashes, sets, sorted sets|Persistência opcional	|Pode salvar dados em disco mesmo sendo memória|
+Escalável e leve	Ideal para sistemas de alto desempenho|Suporte a Pub/Sub	|Comunicação entre serviços em tempo real|
+
+
+
+---
+
+🔌 Instalação do Redis
+
+🔹 Local (via Docker)
+
+docker run --name redis -p 6379:6379 -d redis
+
+🔹 Cloud (Redis Cloud Gratuito)
+
+1. Acesse: https://redis.com/try-free
+
+
+2. Crie um cluster gratuito
+
+
+3. Copie a string de conexão
+
+
+
+
+---
+
+🔍 Comandos Básicos no Redis CLI
+
+redis-cli
+
+🔹 Armazenar valor
+
+SET usuario:101 "Fabio"
+
+🔹 Buscar valor
+
+GET usuario:101
+
+🔹 Expiração de chave
+
+SET codigo:123456 "validado"
+EXPIRE codigo:123456 60
+
+
+---
+
+💻 Integração com C# (.NET)
+
+🔹 Instalar pacote NuGet
+
+dotnet add package StackExchange.Redis
+
+🔹 Conectar e usar o Redis
+
+using StackExchange.Redis;
+
+var redis = ConnectionMultiplexer.Connect("localhost"); // ou Redis Cloud URI
+var db = redis.GetDatabase();
+
+// SET
+db.StringSet("usuario:101", "Fabio");
+
+// GET
+string nome = db.StringGet("usuario:101");
+Console.WriteLine($"Nome: {nome}");
+
+
+---
+
+📦 Outros tipos de dados suportados
+
+Tipo	Exemplo de Uso
+
+String	Valores simples e JSONs
+Hash	Objetos (ex: usuario:102 => nome, idade)
+List	Filas e histórico
+Set	Conjuntos sem repetição
+Sorted Set	Rankings com pontuação
+Pub/Sub	Comunicação em tempo real entre serviços
+
+
+
+---
+
+🧪 Testando Online – Redis Playground
+
+Você pode testar comandos Redis no navegador:
+
+🔗 https://try.redis.io/
+
+
+---
+
+🔐 Exemplo com Expiração e Sessão
+
+db.StringSet("sessao:fabio", "ativo", TimeSpan.FromMinutes(30));
+
+> 🔁 Ideal para sessões expiráveis sem precisar de banco tradicional.
+
+
+
+
+---
+
+🧠 Quando usar Redis?
+
+Armazenar sessões de login
+
+Cache de resultados de queries
+
+Fila de tarefas assíncronas
+
+Contadores e notificações
+
+Controle de acesso e rate-limit
+
+
+
+---
+
+✅ Conclusão
+
+O Redis é essencial em sistemas de alta performance, sendo leve, rápido e extremamente útil para aplicações .NET. Mesmo com estrutura simples, permite resolver problemas complexos de cache, tempo real e persistência temporária.
+
+
+---
+
+📁 Repositório:
+Se este conteúdo te ajudou, ⭐ deixe sua estrela no repositório e compartilhe com a comunidade!
+
+---
+
+Se quiser, Fabio, posso te montar um mini projeto ASP.NET com Redis para armazenar sessões ou cache de dados em C#. Posso seguir com isso?
+
+
+
+---
+
 ## 🍃 MongoDB com C# – Introdução e Instalação
 
 ### 🛠️ Instalando o MongoDB Driver
