@@ -231,8 +231,6 @@ O Neo4j é uma excelente ferramenta para aplicações .NET que demandam modelage
 ---
 
 ## 📊 Apache Cassandra – Banco de Dados Colunar  
-**Bootcamp: WEX - End to End Engineering**  
-**Plataforma: DIO | Foco: NoSQL para aplicações .NET**
 
 ### 📘 O que é o Cassandra?
 
