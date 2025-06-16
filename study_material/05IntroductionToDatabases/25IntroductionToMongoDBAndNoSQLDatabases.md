@@ -441,8 +441,10 @@ valor: "{ nome: 'Fabio', idade: 43 }"
 |Recurso|	Benefício|
 |---|---|
 |In-memory (na RAM)	|Acesso ultra-rápido aos dados|
-|Tipos de dados avançados	Listas, hashes, sets, sorted sets|Persistência opcional	|Pode salvar dados em disco mesmo sendo memória|
-Escalável e leve	Ideal para sistemas de alto desempenho|Suporte a Pub/Sub	|Comunicação entre serviços em tempo real|
+|Tipos de dados avançados	| Listas, hashes, sets, sorted sets|
+|Persistência opcional	|Pode salvar dados em disco mesmo sendo memória|
+|Escalável e leve	|Ideal para sistemas de alto desempenho|
+|Suporte a Pub/Sub	|Comunicação entre serviços em tempo real|
 
 
 
