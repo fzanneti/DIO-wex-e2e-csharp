@@ -21,8 +21,6 @@ O termo **NoSQL (Not Only SQL)** refere-se a bancos de dados que **não utilizam
 
 ## 🔗 Neo4j e Bancos de Dados Orientados a Grafos
 
----
-
 ### 🧠 O que são Bancos de Dados em Grafos?
 
 Um **banco de dados orientado a grafos** representa dados como **nós (nodes), arestas (relationships)** e **propriedades**, espelhando relações reais entre entidades.
@@ -229,6 +227,185 @@ O Neo4j é uma excelente ferramenta para aplicações .NET que demandam modelage
 - Alta expressividade
 - Performance para dados conectados
 - Uma nova abordagem para modelar o mundo real
+
+---
+
+## 📊 Apache Cassandra – Banco de Dados Colunar  
+**Bootcamp: WEX - End to End Engineering**  
+**Plataforma: DIO | Foco: NoSQL para aplicações .NET**
+
+### 📘 O que é o Cassandra?
+
+O **Apache Cassandra** é um **banco de dados NoSQL distribuído baseado em colunas**, projetado para lidar com grandes volumes de dados em ambientes distribuídos com alta disponibilidade e performance.
+
+> 🔧 Ideal para **grandes aplicações que exigem escalabilidade horizontal**, como IoT, redes sociais e serviços de streaming.
+
+---
+
+### 🧩 Modelo Colunar vs Relacional
+
+| Relacional (SQL)          | Colunar (Cassandra)             |
+|---------------------------|---------------------------------|
+| Linhas com colunas fixas  | Colunas agrupadas por família   |
+| Escalabilidade vertical   | Escalabilidade horizontal       |
+| Rígido e estruturado      | Flexível e tolerante a falhas   |
+| JOINs e relações fortes   | Sem JOIN, foco em consultas rápidas por chave |
+
+---
+
+### 🧱 Estrutura de Dados do Cassandra
+
+- **Keyspace**: Equivalente ao “banco de dados” em SQL
+- **Table**: Armazena os dados, organizada por **famílias de colunas**
+- **Partition Key**: Define onde os dados serão armazenados no cluster
+- **Clustering Columns**: Organiza os dados dentro da partição
+
+### Exemplo:
+
+```text
+
+Keyspace: usuarios_app
+
+Tabela: usuarios
+    - id (partition key)
+    - nome
+    - email
+    - data_criacao
+
+```
+
+---
+
+### 🚀 Vantagens do Cassandra
+
+|Recurso|	Benefício|
+|---|---|
+|Alta escalabilidade	|Distribui os dados horizontalmente em múltiplos nós|
+|Tolerância a falhas	|Dados replicados automaticamente (sem ponto único de falha)|
+|Esquema flexível	Adição de colunas sem necessidade de alterar toda a tabela|
+Escritas rápidas	Projetado para grandes volumes de escrita|
+
+---
+
+## 🛠️ Instalando o Cassandra (Ambiente Local)
+
+### 🐳 Usando Docker (opcional)
+
+```bash
+
+docker run --name cassandra -p 9042:9042 -d cassandra
+
+```
+
+Ou:
+
+1. Baixe em: https://cassandra.apache.org/_/download.html
+2. Extraia e execute os scripts (bin/cassandra)
+
+---
+
+### 🧪 Testando com CQL (Cassandra Query Language)
+
+🔹 Criando um Keyspace
+
+```Sql
+
+CREATE KEYSPACE usuarios_app WITH replication = {
+  'class': 'SimpleStrategy',
+  'replication_factor': 1
+};
+
+```
+
+🔹 Criando uma Tabela
+
+```Sql
+
+USE usuarios_app;
+
+CREATE TABLE usuarios (
+  id UUID PRIMARY KEY,
+  nome TEXT,
+  email TEXT,
+  data_criacao TIMESTAMP
+);
+
+```
+
+🔹 Inserindo Dados
+
+```Sql
+
+INSERT INTO usuarios (id, nome, email, data_criacao)
+VALUES (uuid(), 'Fabio', 'fabio@email.com', toTimestamp(now()));
+
+```
+
+🔹 Consultando Dados
+
+
+```Sql
+
+SELECT * FROM usuarios;
+
+```
+
+---
+
+### 🧪 Testar sem instalar nada – Cassandra Playground
+
+Você pode testar o CQL direto no navegador em plataformas como:
+
+🔗 https://www.killercoda.com/cassandra
+🔗 https://www.datastax.com/astra
+
+### 💡 Dica:
+
+Use o DataStax Astra (versão cloud gratuita do Cassandra), ideal para praticar sem setup local.
+
+---
+
+### 💻 Integração com .NET (C#)
+
+🔹 Instalar o Driver
+
+```bash
+
+dotnet add package CassandraCSharpDriver
+
+```
+
+🔹 Exemplo de Conexão
+
+```csharp
+
+using Cassandra;
+
+var cluster = Cluster.Builder()
+    .AddContactPoint("127.0.0.1") // ou IP da Astra Cloud
+    .Build();
+
+var session = cluster.Connect("usuarios_app");
+
+var rs = session.Execute("SELECT * FROM usuarios");
+
+foreach (var row in rs)
+{
+    Console.WriteLine($"{row["nome"]} - {row["email"]}");
+}
+
+```
+
+---
+
+### 🧠 Considerações Finais
+
+O Cassandra é ideal para aplicações que precisam:
+
+- Armazenar muito volume de dados
+- Suportar escritas frequentes
+- Alta disponibilidade e resiliência
+- Trabalhar com consulta rápida por chave primária
 
 ---
 
