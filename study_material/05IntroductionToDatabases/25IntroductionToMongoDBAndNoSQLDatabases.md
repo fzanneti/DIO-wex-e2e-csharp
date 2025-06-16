@@ -8,7 +8,7 @@ O termo **NoSQL (Not Only SQL)** refere-se a bancos de dados que **não utilizam
 
 ---
 
-## 🧩 Tipos de Bancos de Dados NoSQL
+### 🧩 Tipos de Bancos de Dados NoSQL
 
 | Tipo             | Descrição                                | Exemplos                |
 |------------------|-------------------------------------------|-------------------------|
@@ -222,7 +222,7 @@ await result.ForEachAsync(record =>
 
 ---
 
-####✅ Conclusão
+#### ✅ Conclusão
 
 O Neo4j é uma excelente ferramenta para aplicações .NET que demandam modelagem de relações complexas. Com integração simples via C# e consultas com Cypher, ele oferece:
 
