@@ -280,8 +280,8 @@ Tabela: usuarios
 |---|---|
 |Alta escalabilidade	|Distribui os dados horizontalmente em múltiplos nós|
 |Tolerância a falhas	|Dados replicados automaticamente (sem ponto único de falha)|
-|Esquema flexível	Adição de colunas sem necessidade de alterar toda a tabela|
-Escritas rápidas	Projetado para grandes volumes de escrita|
+|Esquema flexível	|Adição de colunas sem necessidade de alterar toda a tabela|
+Escritas rápidas|	Projetado para grandes volumes de escrita|
 
 ---
 
