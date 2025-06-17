@@ -191,14 +191,6 @@ public IActionResult BuscarPorId(int id)
 
 ---
 
-#### 🚀 Recomendações Finais
-
-* Use ferramentas como **Postman**, **Insomnia** e **Swagger** para testar suas APIs.
-* Sempre valide as entradas e trate exceções para evitar erros inesperados.
-* Siga boas práticas de versionamento (ex: `/api/v1/produtos`) para evoluir sua API com estabilidade.
-
----
-
 ## 📘 Links Complementares de Estudo
 
 Aqui estão alguns materiais gratuitos e de qualidade para reforçar os conhecimentos sobre APIs REST com C# e ASP.NET Core:
@@ -240,6 +232,14 @@ Aqui estão alguns materiais gratuitos e de qualidade para reforçar os conhecim
 
 - [Top 10 REST API Best Practices](https://www.freecodecamp.org/news/rest-api-best-practices/)
   > Artigo com dicas práticas para estruturar melhor suas APIs.
+
+---
+
+### 🚀 Recomendações Finais
+
+* Use ferramentas como **Postman**, **Insomnia** e **Swagger** para testar suas APIs.
+* Sempre valide as entradas e trate exceções para evitar erros inesperados.
+* Siga boas práticas de versionamento (ex: `/api/v1/produtos`) para evoluir sua API com estabilidade.
 
 ---
 
