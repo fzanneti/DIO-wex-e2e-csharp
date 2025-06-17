@@ -199,5 +199,49 @@ public IActionResult BuscarPorId(int id)
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti*
-##### 🎯 Projeto: **WEX - End to End Engineering**
+## 📘 Links Complementares de Estudo
+
+Aqui estão alguns materiais gratuitos e de qualidade para reforçar os conhecimentos sobre APIs REST com C# e ASP.NET Core:
+
+### 🎓 Cursos e Tutoriais Gratuitos
+
+- [Criando Web APIs com ASP.NET Core - Microsoft Learn](https://learn.microsoft.com/pt-br/training/modules/build-web-api-aspnet-core/)
+  > Curso oficial da Microsoft com passo a passo para criar APIs REST com ASP.NET Core.
+
+- [Curso Web API com .NET Core 6 (Balta.io)](https://www.youtube.com/watch?v=3nLuucv3rkE)
+  > Curso gratuito no YouTube do Balta explicando como montar uma API REST do zero com .NET 6.
+
+- [Web API RESTful com ASP.NET Core - DevAprender](https://www.youtube.com/watch?v=IufAwzGE2C8)
+  > Tutorial prático explicando como criar e consumir APIs em C# com ASP.NET Core.
+
+### 📚 Documentações Oficiais
+
+- [Documentação ASP.NET Core Web API](https://learn.microsoft.com/pt-br/aspnet/core/web-api/?view=aspnetcore-8.0)
+  > Tudo sobre criação de APIs REST com ASP.NET Core.
+
+- [Referência da Classe ControllerBase (Microsoft)](https://learn.microsoft.com/pt-br/dotnet/api/microsoft.aspnetcore.mvc.controllerbase?view=aspnetcore-8.0)
+  > Documentação da base para criação de controladores de API no ASP.NET.
+
+### 📦 Ferramentas e Testes de API
+
+- [Postman](https://www.postman.com/)
+  > Ferramenta essencial para testar endpoints de API de forma visual.
+
+- [Insomnia](https://insomnia.rest/)
+  > Alternativa ao Postman para testes de APIs, leve e intuitiva.
+
+- [Swagger UI (Swashbuckle)](https://learn.microsoft.com/pt-br/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-8.0&tabs=visual-studio)
+  > Como documentar e testar sua API de forma interativa com Swagger.
+
+### 💡 Extras Interessantes
+
+- [RESTful API Design - Best Practices](https://restfulapi.net/)
+  > Guia completo com boas práticas no design de APIs REST.
+
+- [Top 10 REST API Best Practices](https://www.freecodecamp.org/news/rest-api-best-practices/)
+  > Artigo com dicas práticas para estruturar melhor suas APIs.
+
+---
+
+> ✍️ **Seção criada por:** *Fabio Zanneti*
+> 🎯 Projeto: **WEX - End to End Engineering**
