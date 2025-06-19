@@ -103,12 +103,12 @@ public double CalcularDesconto(double valor, double porcentagem)
 
 ---
 
-### ✅ Considerações Finais
+#### ✅ Considerações Finais
 
-* 🟢 **Use comentários com moderação**. Um código bem escrito deve ser, por si só, fácil de entender.
-* 🔵 **Comente intenções, não implementações óbvias**.
-* 🟡 **Evite comentários desatualizados**, eles são mais prejudiciais do que não comentar.
-* 🔴 **Nunca use comentários para justificar "gambiarras"** — o ideal é refatorar.
+- 🟢 **Use comentários com moderação**. Um código bem escrito deve ser, por si só, fácil de entender.
+- 🔵 **Comente intenções, não implementações óbvias**.
+- 🟡 **Evite comentários desatualizados**, eles são mais prejudiciais do que não comentar.
+- 🔴 **Nunca use comentários para justificar "gambiarras"** — o ideal é refatorar.
 
 ---
 
@@ -131,5 +131,73 @@ public double CalcularDesconto(double valor, double porcentagem)
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti*
-##### 🎯 Projeto: **WEX - End to End Engineering**
+Top demais, Fabio! Esse tema **“Comentários e Boas Práticas em C#”** é ouro pra mostrar que você escreve código limpo, organizado e fácil de entender — qualidade que todo recrutador ou dev experiente valoriza.
+
+Segue o material em `.md`, pronto pra ser colado no seu repositório no GitHub.
+
+---
+
+### 🔗 **Comentários e Boas Práticas em C#**
+
+````md
+## 💬 Comentários e Boas Práticas em C#
+
+Comentários bem usados tornam o código mais legível, explicam decisões e facilitam a manutenção. Mas cuidado: excesso ou uso errado pode atrapalhar mais do que ajudar.
+
+---
+
+### 🗒️ Tipos de Comentários em C#
+
+#### ✅ Comentário de Linha
+```csharp
+// Isso é um comentário de linha
+int idade = 30; // Armazena a idade da pessoa
+````
+
+#### ✅ Comentário de Bloco
+
+```csharp
+/*
+Esse é um comentário de bloco.
+Pode ocupar múltiplas linhas.
+*/
+```
+
+#### ✅ Comentário de Documentação XML
+
+Usado para gerar documentação automática.
+
+```csharp
+/// <summary>
+/// Soma dois números inteiros
+/// </summary>
+/// <param name="a">Primeiro número</param>
+/// <param name="b">Segundo número</param>
+/// <returns>Soma dos dois números</returns>
+public int Somar(int a, int b)
+{
+    return a + b;
+}
+```
+
+---
+
+## 📚 Material de apoio
+
+### 🎓 Vídeos e Aulas Gratuitas
+
+* [Boas práticas de código em C# – Balta.io](https://www.youtube.com/watch?v=GS5jFfwQ5yI)
+* [Dicas de comentários e organização – DevAprender](https://www.youtube.com/watch?v=wuDnAtdzWgc)
+* [Código limpo com C# – CFBCursos](https://www.youtube.com/watch?v=l1xWXFDw7bw)
+
+---
+
+### 📚 Leitura Complementar
+
+* [Guia de Estilo para C# – Microsoft](https://learn.microsoft.com/pt-br/dotnet/csharp/fundamentals/coding-style/coding-conventions)
+* [Clean Code com C# – Medium](https://medium.com/@danieloliveira/clean-code-com-c-dicas-pr%C3%A1ticas-6ffb2c275f7a)
+* [Boas práticas de desenvolvimento – Alura](https://www.alura.com.br/artigos/boas-praticas-codigo-limpo)
+
+---
+
+##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
