@@ -148,5 +148,4 @@ C# oferece uma gama poderosa de tipos para lidar com qualquer situação — da 
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti*
-##### 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
