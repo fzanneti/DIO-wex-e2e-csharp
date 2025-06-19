@@ -66,7 +66,7 @@ O .NET passou de um framework limitado ao Windows para uma plataforma poderosa e
 
 ---
 
-#### **Conclusão**
+#### ✅ **Conclusão**
 
 Se você está começando hoje, foque no **.NET 6** ou superior. O .NET Framework ainda é usado, mas não receberá mais evoluções significativas. Ele permanece em modo de manutenção, ou seja:
 
@@ -135,5 +135,4 @@ Com isso, você pode escrever em C# e rodar sua aplicação em diversos sistemas
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti*
-##### 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ **Seção criada por:** *Fabio Zanneti*   🎯 Projeto: **WEX - End to End Engineering**
