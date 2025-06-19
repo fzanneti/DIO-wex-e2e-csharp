@@ -187,8 +187,6 @@ JOIN Atores ON ElencoFilme.IdAtor = Atores.Id;
 
 ---
 
----
-
 ### 🔗 Relacionamento das Tabelas
 
 * **Filmes** (Id)
