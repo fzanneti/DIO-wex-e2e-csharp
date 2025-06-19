@@ -212,14 +212,13 @@ Aqui estão alguns materiais gratuitos e de qualidade para reforçar os conhecim
 
 #### ✅ Encerramento
 
-* Uma API permite comunicação entre sistemas de forma simples e segura.
-* Em C#, usamos **ASP.NET Core** para criar APIs REST com estrutura limpa e robusta.
-* A prática de consumir e criar APIs ajuda no desenvolvimento web, mobile, IoT, integrações e mais.
-* Use ferramentas como **Postman**, **Insomnia** e **Swagger** para testar suas APIs.
-* Sempre valide as entradas e trate exceções para evitar erros inesperados.
-* Siga boas práticas de versionamento (ex: `/api/v1/produtos`) para evoluir sua API com estabilidade.
+- Uma API permite comunicação entre sistemas de forma simples e segura.
+- Em C#, usamos **ASP.NET Core** para criar APIs REST com estrutura limpa e robusta.
+- A prática de consumir e criar APIs ajuda no desenvolvimento web, mobile, IoT, integrações e mais.
+- Use ferramentas como **Postman**, **Insomnia** e **Swagger** para testar suas APIs.
+- Sempre valide as entradas e trate exceções para evitar erros inesperados.
+- Siga boas práticas de versionamento (ex: `/api/v1/produtos`) para evoluir sua API com estabilidade.
 
 ---
 
-> ✍️ **Seção criada por:** *Fabio Zanneti*   
-> 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
