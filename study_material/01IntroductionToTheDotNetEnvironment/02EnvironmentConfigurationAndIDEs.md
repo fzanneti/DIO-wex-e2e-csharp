@@ -137,81 +137,6 @@ dotnet run
 
 ---
 
-## 🛠️ IDEs e Configuração do Ambiente .NET
-
-Antes de começar a programar em C#, é importante configurar corretamente seu ambiente de desenvolvimento. A escolha da IDE e o uso do SDK do .NET influenciam diretamente sua produtividade e organização.
-
----
-
-## 💻 IDEs Recomendadas
-
-### 1. Visual Studio (Windows)
-
-- 🔗 [Download – Visual Studio 2022 Community](https://visualstudio.microsoft.com/pt-br/vs/community/)
-- ✔️ Ideal para projetos grandes e completos (Web, Desktop, API, etc.)
-- ⚙️ Instalar com a carga de trabalho: **“Desenvolvimento para .NET”**
-- Recursos:
-  - IntelliSense avançado
-  - Interface gráfica para gerenciamento de pacotes NuGet
-  - Debug poderoso
-  - Designer para WinForms/WPF
-
-### 2. Visual Studio Code (Windows, Linux, macOS)
-
-- 🔗 [Download – VS Code](https://code.visualstudio.com/)
-- 🔌 Extensão C#: [C# para VS Code – OmniSharp](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
-- ✔️ Leve, rápido e altamente customizável
-- Ideal para quem curte trabalhar com terminal, `.NET CLI`, e estrutura mais clean
-
-### 3. Rider (JetBrains – Pago)
-
-- 🔗 [Download – Rider](https://www.jetbrains.com/rider/)
-- IDE paga, com recursos avançados
-- Forte integração com ReSharper
-
----
-
-## 📦 Instalação do .NET SDK
-
-### 🔗 [Download – .NET SDK (Microsoft)](https://dotnet.microsoft.com/pt-br/download)
-
-- Versão recomendada: `.NET 8.0` (LTS)
-- Inclui:
-  - SDK (para desenvolvimento)
-  - Runtime (para executar aplicações)
-  - Ferramentas de linha de comando (`dotnet`)
-
-🧪 Após a instalação, verifique:
-```bash
-
-dotnet --version
-
-```
-
-Você verá algo como: `8.0.100`
-
----
-
-### ⚙️ Criando seu primeiro projeto
-
-**Via Terminal / CLI**:
-
-```bash
-
-dotnet new console -n MeuProjeto
-cd MeuProjeto
-dotnet run
-
-```
-
-**Via Visual Studio**:
-
-- Criar novo projeto → Aplicativo de Console (.NET Core ou .NET 8)
-- Escolher a pasta e o nome
-- Dar “Play” para compilar e executar
-
----
-
 ### 🎓 Vídeos e Tutoriais Gratuitos
 
 - [Instalando Visual Studio e .NET – DevAprender](https://www.youtube.com/watch?v=Wpv3AfU4P_A)
@@ -220,27 +145,10 @@ dotnet run
 
 ---
 
-### 📁 Estrutura básica criada com `dotnet new console`
-
-```plaintext
-
-MeuProjeto/
-│
-├── Program.cs        <- Ponto de entrada (Main ou top-level statements)
-├── MeuProjeto.csproj <- Arquivo de projeto
-└── bin/obj/          <- Pastas de build (automáticas)
-
-```
-
----
-
 ### 📌 Extras úteis
 
 - [Terminal integrado do VS Code](https://code.visualstudio.com/docs/editor/integrated-terminal)
 - [Extensões úteis no VS Code](https://marketplace.visualstudio.com/)
-  - C#
-  - NuGet Package Manager
-  - .NET Install Tool
 
 ---
 
