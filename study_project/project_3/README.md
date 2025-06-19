@@ -56,6 +56,10 @@ SELECT Nome, Ano FROM Filmes ORDER BY Ano ASC;
 
 ```
 
+<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_project/project_3/assets/images/querie2.jpg" alt="Querie 2" style="width: 600px;">
+
+---
+
 #### 3. Buscar pelo filme de volta para o futuro, trazendo o nome, ano e a duração
 
 ```sql
@@ -63,6 +67,10 @@ SELECT Nome, Ano FROM Filmes ORDER BY Ano ASC;
 SELECT Nome, Ano, Duracao FROM Filmes WHERE Nome = 'De Volta para o Futuro';
 
 ```
+
+<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_project/project_3/assets/images/querie3.jpg" alt="Querie 3" style="width: 600px;">
+
+---
 
 #### 4. Buscar os filmes lançados em 1997
 
@@ -72,6 +80,10 @@ SELECT Nome, Ano, Duracao FROM Filmes WHERE Ano = 1997;
 
 ```
 
+<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_project/project_3/assets/images/querie4.jpg" alt="Querie 4" style="width: 600px;">
+
+---
+
 #### 5. Buscar filmes lançados após 2000
 
 ```sql
@@ -79,6 +91,10 @@ SELECT Nome, Ano, Duracao FROM Filmes WHERE Ano = 1997;
 SELECT Nome, Ano, Duracao FROM Filmes WHERE Ano > 2000;
 
 ```
+
+<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_project/project_3/assets/images/querie5.jpg" alt="Querie 5" style="width: 600px;">
+
+---
 
 #### 6. Buscar os filmes com a duracao maior que 100 e menor que 150, ordenando pela duracao em ordem crescente
 
@@ -88,6 +104,10 @@ SELECT Nome, Ano, Duracao FROM Filmes WHERE Duracao > 100 AND Duracao < 150 ORDE
 
 ```
 
+<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_project/project_3/assets/images/querie6.jpg" alt="Querie 6" style="width: 600px;">
+
+---
+
 #### 7. Contagem de filmes por ano, ordenando por maior duração
 
 ```sql
@@ -95,6 +115,10 @@ SELECT Nome, Ano, Duracao FROM Filmes WHERE Duracao > 100 AND Duracao < 150 ORDE
 SELECT Ano, COUNT(*) AS ContagemDeFilmes, MAX(Duracao) AS MaiorDuracao FROM Filmes GROUP BY Ano ORDER BY MaiorDuracao DESC;
 
 ```
+
+<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_project/project_3/assets/images/querie7.jpg" alt="Querie 7" style="width: 600px;">
+
+---
 
 ####  8. Buscar os Atores do gênero masculino, retornando o PrimeiroNome, UltimoNome
 
@@ -104,13 +128,21 @@ SELECT PrimeiroNome, UltimoNome, Genero FROM Atores WHERE Genero = 'M';
 
 ```
 
-#### 9. Buscar os Atores do g�nero feminino, retornando o PrimeiroNome, UltimoNome, e ordenando pelo PrimeiroNome
+<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_project/project_3/assets/images/querie8.jpg" alt="Querie 8" style="width: 600px;">
+
+---
+
+#### 9. Buscar os Atores do gênero feminino, retornando o PrimeiroNome, UltimoNome, e ordenando pelo PrimeiroNome
 
 ```sql
 
 SELECT PrimeiroNome, UltimoNome, Genero FROM Atores WHERE Genero = 'F' ORDER BY PrimeiroNome ASC;
 
 ```
+
+<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_project/project_3/assets/images/querie9.jpg" alt="Querie 9" style="width: 600px;">
+
+---
 
 #### 10. Filme + Gênero
 
@@ -121,6 +153,10 @@ JOIN FilmesGenero ON Filmes.Id = FilmesGenero.IdFilme
 JOIN Generos ON FilmesGenero.IdGenero = Generos.Id;
 
 ```
+
+<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_project/project_3/assets/images/querie10.jpg" alt="Querie 10" style="width: 600px;">
+
+---
 
 #### 11. Buscar o nome do filme e o gênero do tipo "Mistério"
 
@@ -133,6 +169,10 @@ WHERE Genero = 'Mistério';
 
 ```
 
+<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_project/project_3/assets/images/queri11.jpg" alt="Querie 11" style="width: 600px;">
+
+---
+
 #### 12. Filme + Atores + Papel
 
 ```sql
@@ -142,6 +182,10 @@ JOIN ElencoFilme ON Filmes.Id = ElencoFilme.IdFilme
 JOIN Atores ON ElencoFilme.IdAtor = Atores.Id;
 
 ```
+
+<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_project/project_3/assets/images/querie12.jpg" alt="Querie 12" style="width: 600px;">
+
+---
 
 ---
 
