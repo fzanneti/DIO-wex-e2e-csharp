@@ -563,5 +563,4 @@ Os operadores lógicos permitem escrever **decisões mais completas e inteligent
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti*
-##### 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
