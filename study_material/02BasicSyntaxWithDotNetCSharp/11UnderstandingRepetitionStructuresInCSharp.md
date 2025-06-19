@@ -205,6 +205,56 @@ static void ExibirHora() => Console.WriteLine(DateTime.Now.ToShortTimeString());
 
 ---
 
+## 🔁 Links Complementares de Estudo – Estruturas de Repetição em C#
+
+As estruturas de repetição permitem executar blocos de código várias vezes, seja de forma controlada ou baseada em condições. Em C#, os principais laços são: `for`, `while`, `do-while` e `foreach`.
+
+---
+
+### 🎓 Vídeos e Aulas Gratuitas
+
+- [Estruturas de Repetição em C# – Curso Completo (CFBCursos)](https://www.youtube.com/watch?v=5vHThwFGeYs)
+  > Aula explicando `for`, `while`, `do-while`, `foreach` com exemplos simples e bem didáticos.
+- [Laços em C# – Balta.io](https://www.youtube.com/watch?v=PE5rxK7Yp5g)
+  > Vídeo curto, direto ao ponto, mostrando a diferença entre as estruturas de repetição.
+- [foreach no C# – DevAprender](https://www.youtube.com/watch?v=8mrYu4CZ41U)
+  > Aula prática sobre como percorrer coleções usando `foreach`.
+
+---
+
+### 📚 Documentação Oficial Microsoft
+
+- [`for` Loop – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/for)
+  > Documentação oficial da estrutura `for` com exemplos básicos e avançados.
+- [`while` Loop – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/while)
+  > Guia da estrutura `while`, ideal para repetição com condição.
+- [`do-while` Loop – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/do)
+  > Explicação sobre como usar `do-while` quando a condição deve ser verificada **após** a execução do bloco.
+- [`foreach` – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/foreach-in)
+  > Perfeito para iterar sobre arrays, listas e coleções genéricas.
+
+---
+
+### 🧠 Artigos e Explicações Técnicas
+
+- [Estruturas de Repetição em C# – DevMedia](https://www.devmedia.com.br/estruturas-de-repeticao-em-c/27995)
+  > Artigo introdutório com comparações, sintaxe e exemplos práticos.
+- [Diferença entre `for`, `foreach` e `while` – Alura](https://www.alura.com.br/artigos/csharp-for-foreach-while)
+  > Quando usar cada estrutura, com casos de uso bem explicados.
+- [Boas práticas ao usar laços – Medium](https://medium.com/@luizeduardohs/boas-pr%C3%A1ticas-em-la%C3%A7os-de-repeti%C3%A7%C3%A3o-no-c-e0a6bc8fdc7)
+  > Dicas de performance e clareza no uso dos loops.
+
+---
+
+### 💻 Ferramentas para Testes
+
+- [DotNetFiddle](https://dotnetfiddle.net/)
+  > Teste e experimente seus loops online com C#.
+- [LINQPad](https://www.linqpad.net/)
+  > Excelente pra testar coleções com `foreach`, LINQ e estruturas condicionais.
+
+---
+
 #### 📘 Conclusão
 
 Dominar estruturas de repetição é essencial para programar de forma eficiente e escalável. Entender como cada uma funciona e quando utilizar é um passo importante na sua evolução como desenvolvedor C#.

@@ -208,6 +208,56 @@ else
 
 ---
 
+## ⚙️ Links Complementares de Estudo – Manipulando Valores com C#
+
+Trabalhar bem com valores em C# significa dominar tipos primitivos, variáveis, operadores, conversões e expressões — tudo que você usa pra fazer a lógica acontecer.
+
+---
+
+### 🎓 Cursos e Vídeos Gratuitos
+
+- [Tipos de Dados e Variáveis em C# – Balta.io](https://www.youtube.com/watch?v=OdpntmqoyKs)
+  > Aula prática apresentando tipos como `int`, `double`, `bool`, `char` e como declarar variáveis.
+- [Operadores em C# – Curso em Vídeo](https://www.youtube.com/watch?v=ZoOe0NHS9jw)
+  > Explicação dos operadores aritméticos, relacionais e lógicos, com exemplos simples.
+- [Conversão de Tipos em C# – DevAprender](https://www.youtube.com/watch?v=jp5Q6MtUl_g)
+  > Como fazer casting, conversões implícitas e explícitas, além de usar `Convert` e `Parse`.
+
+---
+
+### 📚 Documentação Oficial Microsoft
+
+- [Tipos de Dados C# – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/builtin-types/built-in-types)
+  > Guia completo com tipos primitivos e seus tamanhos.
+- [Variáveis e Escopo – Microsoft Learn](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/inside-a-program/variables)
+  > Como declarar, inicializar e entender o escopo de variáveis.
+- [Operadores C# – Microsoft Learn](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/operators/)
+  > Listagem completa dos operadores disponíveis em C#.
+- [Conversões de Tipo e Casting](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
+  > Explicação oficial sobre como fazer conversões seguras e evitar erros.
+
+---
+
+### 🧠 Artigos Técnicos e Explicações
+
+- [Entendendo Variáveis e Tipos em C# (DevMedia)](https://www.devmedia.com.br/entendendo-variaveis-e-tipos-de-dados-em-c/30506)
+  > Artigo detalhado para entender a fundo o que são variáveis e tipos.
+- [Conversão de Tipos em C# – Alura](https://www.alura.com.br/artigos/conversoes-de-tipos-em-c-sharp)
+  > Guia prático com exemplos de casting, `Parse` e `TryParse`.
+- [Operadores em C#: Guia Completo (Medium)](https://medium.com/@wilsonneto/operadores-em-c-75ccdfd9bb55)
+  > Explicação de operadores básicos e avançados, com exemplos claros.
+
+---
+
+### 💡 Extras
+
+- [DotNetFiddle](https://dotnetfiddle.net/)
+  > Ambiente online para testar manipulação de valores em C# rapidamente.
+- [LINQPad](https://www.linqpad.net/)
+  > Ferramenta para experimentar código C# sem projeto completo, ótima para testar expressões.
+
+---
+
 #### 🧠 Conclusão
 
 Manipular valores em C# vai além de converter números e datas. Trata-se de tornar a **interação com o usuário clara, precisa e amigável**, respeitando formatações regionais e evitando falhas no código com boas práticas como o uso de `TryParse`.

@@ -750,5 +750,90 @@ MongoDB é altamente integrado com C# e uma excelente escolha para aplicações 
 
 ---
 
+## 🔗 **Neo4j – Banco de Dados de Grafos**
+
+### 📘 Documentação e Guias
+
+- [Documentação Oficial (em inglês)](https://neo4j.com/docs/)
+- [Neo4j Cypher Manual (linguagem de consulta)](https://neo4j.com/docs/cypher-refcard/current/)
+- [Guia de introdução rápida](https://neo4j.com/developer/get-started/)
+- [Guia prático em português - Data Hackers](https://www.linkedin.com/pulse/introdu%C3%A7%C3%A3o-ao-neo4j-com-cypher-n%C3%A3o-%C3%A9-magia-%C3%A9-grafo-leonardo-cavalcante)
+
+### 🧪 Testar Online
+
+- [Neo4j Sandbox](https://sandbox.neo4j.com) *(não precisa instalar nada)*
+- [Playground com queries de filmes](https://neo4j.com/developer/example-project/)
+
+### 📦 Integração com C#/.NET
+
+- [Neo4jClient (biblioteca C#)](https://github.com/Readify/Neo4jClient)
+- [Exemplo de uso com .NET](https://neo4j.com/developer/dotnet/)
+
+---
+
+## 🔗 **Apache Cassandra – Banco de Dados Colunar**
+
+### 📘 Documentação e Guias
+
+- [Documentação Oficial](https://cassandra.apache.org/doc/latest/)
+- [CQL (Cassandra Query Language)](https://cassandra.apache.org/doc/latest/cql/)
+- [Curso Gratuito: Cassandra Essentials – DataStax](https://academy.datastax.com/courses/cassandra-essentials)
+- [Visão geral simplificada em português – Medium](https://medium.com/@souzamagno/introdu%C3%A7%C3%A3o-ao-banco-de-dados-cassandra-d0d63f632a98)
+
+### 🧪 Testar Online
+
+- [KillerCoda – Terminal interativo com Cassandra](https://www.killercoda.com/cassandra)
+- [DataStax Astra – Cassandra Cloud Gratuito](https://www.datastax.com/astra)
+
+### 📦 Integração com C#/.NET
+
+- [DataStax C# Driver](https://docs.datastax.com/en/developer/csharp-driver/)
+- [Repositório GitHub - Cassandra C# Driver](https://github.com/datastax/csharp-driver)
+
+---
+
+## 🔗 **Redis – Banco de Dados Chave-Valor em Memória**
+
+### 📘 Documentação e Guias
+
+- [Documentação Oficial Redis](https://redis.io/docs/)
+- [Comandos Redis com exemplos](https://redis.io/commands/)
+- [Guia Redis para desenvolvedores .NET](https://stackexchange.github.io/StackExchange.Redis/)
+- [Artigo introdutório em português – Dev.to](https://dev.to/melgaco/introducao-ao-redis-pt-br-1o5d)
+
+### 🧪 Testar Online
+
+- [Redis Playground Oficial](https://try.redis.io/)
+- [RedisInsight (ferramenta visual)](https://redis.com/redis-enterprise/redis-insight/)
+
+### 📦 Integração com C#/.NET
+
+- [StackExchange.Redis (biblioteca oficial para .NET)](https://github.com/StackExchange/StackExchange.Redis)
+- [Exemplos de uso no .NET Docs](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-dotnet-core-quickstart)
+
+---
+
+## 🔗 **MongoDB – Banco de Dados Orientado a Documentos**
+
+### 📘 Documentação e Guias
+
+- [MongoDB Docs Oficial](https://www.mongodb.com/docs/)
+- [MongoDB University (cursos gratuitos)](https://learn.mongodb.com/)
+- [Introdução ao MongoDB – Digital Innovation One](https://web.digitalinnovation.one/course/introducao-ao-mongodb/learning/8e316210-232b-4ab3-9ac7-eac0bc7c5b8b)
+- [Cheat Sheet MongoDB (inglês)](https://www.mongodb.com/developer/products/mongodb/cheat-sheet/)
+
+### 🧪 Testar Online
+
+- [MongoDB Atlas (Cloud gratuito)](https://www.mongodb.com/cloud/atlas/register)
+- [Playground no Compass](https://www.mongodb.com/products/compass)
+
+### 📦 Integração com C#/.NET
+
+- [MongoDB.Driver (NuGet oficial)](https://www.nuget.org/packages/MongoDB.Driver/)
+- [Documentação oficial MongoDB com C#](https://mongodb.github.io/mongo-csharp-driver/2.19/)
+- [Exemplo CRUD com MongoDB e C#](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app)
+
+---
+
 ##### ✍️ **Seção criada por:** *Fabio Zanneti*
 ##### 🎯 Projeto: **WEX - End to End Engineering**

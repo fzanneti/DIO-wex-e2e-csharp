@@ -165,6 +165,53 @@ Console.WriteLine(nomes.Count);  // Conta os itens
 nomes.Clear();               // Limpa a lista
 
 ```
+---
+
+## 📚 Links Complementares de Estudo – Arrays e Listas em C#
+
+Trabalhar com Arrays e Listas é essencial pra manipular conjuntos de dados em C#. Arrays são fixos e listas são dinâmicas, e entender a diferença e uso correto faz toda a diferença.
+
+---
+
+### 🎓 Cursos e Vídeos Gratuitos
+
+- [Arrays em C# – Curso em Vídeo](https://www.youtube.com/watch?v=KoJ8PfRpQBY)
+  > Explicação simples e prática sobre arrays: declaração, inicialização e acesso.
+- [Listas em C# (List<T>) – Balta.io](https://www.youtube.com/watch?v=SGvUu2hEqyA)
+  > Aula focada em listas genéricas, mostrando como adicionar, remover e percorrer itens.
+- [Arrays vs Listas em C# – DevAprender](https://www.youtube.com/watch?v=K6E1dEpCGdU)
+  > Aula comparativa explicando quando usar cada tipo e as vantagens.
+
+---
+
+### 📚 Documentação Oficial Microsoft
+
+- [Array Class – System.Array](https://learn.microsoft.com/pt-br/dotnet/api/system.array?view=net-8.0)
+  > Documentação oficial sobre arrays no C#.
+- [List<T> Class – System.Collections.Generic.List](https://learn.microsoft.com/pt-br/dotnet/api/system.collections.generic.list-1?view=net-8.0)
+  > Documentação da lista genérica com todos os métodos disponíveis.
+- [Como percorrer coleções em C# (foreach)](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/foreach-in)
+  > Guia para usar o `foreach` em arrays e listas.
+
+---
+
+### 🧠 Artigos e Explicações Técnicas
+
+- [Arrays e Listas em C# – DevMedia](https://www.devmedia.com.br/arrays-e-listas-em-c/28021)
+  > Artigo que explica as diferenças, com exemplos práticos.
+- [Diferença entre Array e List em C# (Medium)](https://medium.com/@jrodrigues/diferen%C3%A7a-entre-array-e-list-em-c-4a36f7d6b535)
+  > Explicação simples para entender quando usar cada estrutura.
+- [Manipulando Listas em C# (Alura)](https://www.alura.com.br/artigos/listas-em-csharp)
+  > Guia prático com métodos comuns como `Add`, `Remove`, `Find`.
+
+---
+
+### 💡 Ferramentas para Prática
+
+- [DotNetFiddle](https://dotnetfiddle.net/)
+  > Ambiente online para testar códigos com arrays e listas.
+- [LINQPad](https://www.linqpad.net/)
+  > Ideal para testar interações com coleções e LINQ rapidamente.
 
 ---
 

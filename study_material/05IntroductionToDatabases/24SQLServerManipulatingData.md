@@ -270,6 +270,60 @@ Imaginando a tabela `Clientes` e `Enderecos`:
 
 ---
 
+## 💾 Links Complementares de Estudo – SQL Server: Manipulando Dados
+
+Manipular dados é uma das habilidades mais fundamentais ao trabalhar com banco de dados. Isso inclui inserir, consultar, atualizar e excluir registros de forma segura e eficiente. Abaixo estão materiais gratuitos para dominar os principais comandos DML (Data Manipulation Language) no SQL Server.
+
+---
+
+### 🎓 Cursos e Aulas Gratuitas
+
+- [Manipulação de Dados no SQL Server – Bóson Treinamentos](https://www.youtube.com/playlist?list=PLucm8g_ezqNoeQ1n3Azc-5p_R7Y3tFUSP)
+  > Playlist com aulas práticas sobre comandos `INSERT`, `SELECT`, `UPDATE`, `DELETE`, `JOIN`, `WHERE`, `ORDER BY`, etc.
+- [Curso Completo de SQL Server – CFBCursos (DML)](https://www.youtube.com/watch?v=_OTU08AuvBY)
+  > Aulas sobre manipulação e consulta de dados, incluindo `GROUP BY`, `HAVING` e agregações (`COUNT`, `SUM`, etc.).
+- [Consultando Dados com T-SQL – Microsoft Learn](https://learn.microsoft.com/pt-br/training/modules/query-data-select-transact-sql/)
+  > Módulo oficial com exemplos e exercícios para consulta de dados usando T-SQL no SQL Server.
+
+---
+
+### 📚 Documentação Oficial Microsoft
+
+- [SELECT (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/queries/select-transact-sql)
+  > Guia completo do comando `SELECT`, com cláusulas como `WHERE`, `ORDER BY`, `TOP`, `JOIN`.
+- [INSERT (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/statements/insert-transact-sql)
+  > Sintaxe e exemplos para inserir dados em tabelas.
+- [UPDATE (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/statements/update-transact-sql)
+  > Modificando dados existentes com `UPDATE`.
+- [DELETE (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/statements/delete-transact-sql)
+  > Remoção de registros com segurança, incluindo uso de `WHERE`.
+- [INNER JOIN e OUTER JOIN – Explicação](https://learn.microsoft.com/pt-br/sql/t-sql/queries/from-transact-sql?view=sql-server-ver16)
+  > Como unir tabelas com `JOIN` e suas variações.
+
+---
+
+### 🧠 Artigos Técnicos e Exercícios
+
+- [Comandos SQL para Manipulação de Dados – DevMedia](https://www.devmedia.com.br/sql-insert-update-e-delete/24351)
+  > Explicações claras com exemplos e cenário prático de uso.
+- [Diferença entre INNER JOIN, LEFT JOIN e RIGHT JOIN (Blog da Alura)](https://www.alura.com.br/artigos/sql-joins-diferencas)
+  > Artigo ilustrado explicando os tipos de `JOIN` com esquemas visuais.
+- [SQL Practice – W3Schools](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all)
+  > Ambiente online para testar comandos SQL interativamente.
+
+---
+
+### 🧪 Ferramentas para Prática
+
+- [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms)
+  > Ferramenta oficial para executar comandos SQL Server localmente.
+- [DB Fiddle (com suporte a SQL Server)](https://www.db-fiddle.com/)
+  > Teste seus comandos online sem precisar instalar nada.
+- [SQLPad – Executando SQL no Navegador](https://sqlpad.io/)
+  > Ótima opção para ensinar e praticar comandos SQL interativamente.
+
+---
+
 #### ✅ Conclusão
 
 Com esses comandos, você já consegue:

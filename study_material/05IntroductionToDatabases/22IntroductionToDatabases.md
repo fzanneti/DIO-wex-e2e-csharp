@@ -101,6 +101,58 @@ Para projetos em C# e .NET, o **SQL Server** é altamente recomendado.
 
 ---
 
+## 🗃️ Links Complementares de Estudo – Introdução a Banco de Dados
+
+Bancos de dados são fundamentais em qualquer aplicação moderna. Entender bem os conceitos de tabelas, relacionamentos, SQL e NoSQL é o primeiro passo para trabalhar com persistência de dados. Abaixo estão materiais para te ajudar a entender desde os fundamentos até os primeiros comandos práticos.
+
+---
+
+### 🎓 Aulas e Cursos Gratuitos
+
+- [Curso de Banco de Dados para Iniciantes (Curso em Vídeo)](https://www.youtube.com/playlist?list=PLHz_AreHm4dmDP_VgNa8YG_5bhOUIpEMd)
+  > Explicação passo a passo de SQL, tabelas, comandos básicos e teoria relacional.
+- [Introdução a Banco de Dados – DevMedia](https://www.devmedia.com.br/introducao-a-banco-de-dados/38352)
+  > Um guia inicial com fundamentos teóricos sobre modelagem, tipos de dados, normalização e relacionamentos.
+- [Fundamentos de Banco de Dados – Microsoft Learn](https://learn.microsoft.com/pt-br/training/modules/introduction-to-data/)
+  > Módulo gratuito com explicações claras sobre dados estruturados, armazenamento e linguagens de consulta.
+
+---
+
+### 📚 Documentação e Ferramentas
+
+- [Documentação Oficial SQL (W3Schools)](https://www.w3schools.com/sql/)
+  > Um dos melhores guias interativos para aprender comandos SQL (`SELECT`, `INSERT`, `JOIN`, etc.).
+- [MySQL Documentation (pt-br)](https://dev.mysql.com/doc/)
+  > Documentação oficial para quem está usando MySQL (muito usado em cursos e projetos iniciais).
+- [PostgreSQL - Guia Rápido](https://www.postgresql.org/docs/current/tutorial-start.html)
+  > Comece a brincar com um banco de dados robusto e open source.
+- [DB Fiddle](https://www.db-fiddle.com/)
+  > Ambiente online para testar SQL sem instalar nada. Excelente para praticar.
+
+---
+
+### 📁 Conceitos Fundamentais
+
+- [Modelo Relacional de Dados – Alura Artigo](https://www.alura.com.br/artigos/modelo-relacional-dados)
+  > Explicação clara sobre como funciona o modelo de tabelas e relacionamentos.
+- [O que é SQL? E para que serve? (HostGator)](https://www.hostgator.com.br/blog/o-que-e-sql/)
+  > Visão geral bem simples sobre a linguagem SQL, ideal para iniciantes.
+- [Normalização de Dados – DevMedia](https://www.devmedia.com.br/normalizacao-de-dados/24310)
+  > Entenda como evitar redundância e garantir consistência nos seus bancos.
+
+---
+
+### 💡 Extras Interessantes
+
+- [SQLZoo – Exercícios interativos de SQL](https://sqlzoo.net/)
+  > Plataforma prática para treinar comandos SQL direto no navegador.
+- [DrawSQL – Ferramenta de Diagrama ER online](https://drawsql.app/)
+  > Para criar seus próprios esquemas de banco de dados com visual profissional.
+- [DBeaver – Cliente gráfico de Banco de Dados](https://dbeaver.io/)
+  > Ferramenta gratuita para conectar, visualizar e manipular dados em bancos locais ou remotos.
+
+---
+
 #### ✅ Conclusão
 
 Este módulo oferece a base essencial para quem está começando a trabalhar com **banco de dados no .NET**, preparando o terreno para usar **ORMs como Entity Framework** ou executar **comandos SQL diretamente**.

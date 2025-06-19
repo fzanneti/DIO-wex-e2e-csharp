@@ -151,6 +151,39 @@ Som genérico de animal
 
 ---
 
+## 🧬 Links Complementares de Estudo – Herança e Polimorfismo em C#
+
+Herança e polimorfismo são dois dos principais pilares da **Programação Orientada a Objetos (POO)**. São fundamentais para escrever código limpo, reutilizável e extensível em C#. Aqui estão materiais gratuitos e práticos para aprofundar nesse tema:
+
+### 🎓 Vídeos e Aulas Gratuitas
+
+- [Herança em C# - Curso POO Balta.io (YouTube)](https://www.youtube.com/watch?v=KTwE-cbdq5Y)
+  > Explicação didática sobre herança em C#, com exemplos práticos.
+- [Polimorfismo em C# - DevAprender](https://www.youtube.com/watch?v=mKCeu5ne7Xc)
+  > Aula objetiva sobre polimorfismo, mostrando a diferença entre sobrescrita e sobrecarga.
+- [POO em C# - Herança e Polimorfismo (CFBCursos)](https://www.youtube.com/watch?v=z-f7L_OZMEg)
+  > Curso gratuito abordando herança e polimorfismo de forma prática e com código ao vivo.
+
+### 📚 Documentação Oficial da Microsoft
+
+- [Herança (C#) – Microsoft Learn](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
+  > Explicação técnica sobre como funciona a herança em C# e suas regras.
+- [Polimorfismo – Microsoft Learn](https://learn.microsoft.com/pt-br/dotnet/fundamentals/code-analysis/quality-guidelines/ca2214)
+  > Explicação do comportamento de métodos virtuais, override, e base.
+- [Palavras-chave: `virtual`, `override`, `new` – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/override)
+  > Guia detalhado sobre como usar polimorfismo em métodos com `virtual` e `override`.
+
+### 🧠 Artigos e Leitura Técnica
+
+- [O que é Herança e Polimorfismo em C#? (DevMedia)](https://www.devmedia.com.br/entendendo-heranca-e-polimorfismo-em-c/25881)
+  > Explicações com exemplos simples e exercícios.
+- [Herança x Composição - Qual aplicar em C#? (TreinaWeb)](https://www.treinaweb.com.br/blog/heranca-ou-composicao-em-c)
+  > Um comparativo entre herança e composição – importante para entender os limites do uso da herança.
+- [Polimorfismo com exemplos simples - Medium](https://medium.com/@wilsonneto/polimorfismo-em-c-com-exemplos-1b5b18004f96)
+  > Artigo com exemplos práticos que mostram o poder do polimorfismo na reutilização de código.
+
+---
+
 #### 📘 Conclusão
 
 A combinação de **herança** e **polimorfismo** proporciona um código mais **modular, reutilizável e fácil de manter**.

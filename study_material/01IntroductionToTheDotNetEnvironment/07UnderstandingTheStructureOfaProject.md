@@ -207,6 +207,73 @@ int id = 35;
 
 ---
 
+## 🧭 Introdução – Entendendo a Estrutura de um Projeto em C#
+
+Ao criar um projeto em C#, especialmente com .NET, o Visual Studio ou o .NET CLI gera uma estrutura padrão de arquivos e pastas. Compreender o papel de cada parte facilita a organização, manutenção e escalabilidade do código.
+
+---
+
+### 🎓 Vídeos e Aulas Gratuitas
+
+- [Estrutura de Projeto C# .NET – Balta.io](https://www.youtube.com/watch?v=wvG6I7e1wQg)
+  > Entenda como funciona a organização padrão de um projeto C# moderno.
+
+- [Organização de um Projeto C# – DevAprender](https://www.youtube.com/watch?v=ehFCjQe7mcg)
+  > Aula mostrando os principais arquivos do projeto e como eles se relacionam.
+
+- [Criando Projeto C# com .NET CLI – Luiz Carlos Faria](https://www.youtube.com/watch?v=TC32f7A0ynE)
+  > Como estruturar um projeto pelo terminal e entender o que cada parte faz.
+
+---
+
+### 📚 Documentação Oficial Microsoft
+
+- [Estrutura de Projetos C# – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/core/project-sdk/overview)
+  > Visão geral da estrutura de arquivos e o que o SDK faz na criação.
+
+- [`Program.cs`, `Main()` e top-level statements](https://learn.microsoft.com/pt-br/dotnet/csharp/fundamentals/program-structure/program-structure)
+  > Diferença entre estrutura tradicional e moderna (`.NET 6+`).
+
+- [`csproj`: o arquivo de projeto](https://learn.microsoft.com/pt-br/dotnet/core/project-sdk/msbuild-props)
+  > Entenda o papel do `.csproj` e suas configurações principais.
+
+---
+
+### 🧠 Artigos Técnicos e Blogs
+
+- [Como funciona a estrutura de projeto no .NET – Medium](https://medium.com/@mariofs/estrutura-de-um-projeto-em-net-core-para-iniciantes-cf4f50a3f63b)
+  > Explicação didática para entender namespaces, pastas e boas práticas.
+
+- [Entendendo o Program.cs, Startup.cs e Appsettings.json](https://balta.io/blog/estrutura-de-um-projeto-dotnet)
+  > Como esses arquivos se conectam e o que cada um faz (foco em APIs e WebApps).
+
+- [Organização de pastas em projetos C# – TreinaWeb](https://www.treinaweb.com.br/blog/organizacao-de-projetos-em-csharp)
+  > Dicas sobre separação de responsabilidades e estrutura modular.
+
+---
+
+### 🗂️ O que geralmente compõe um projeto C#:
+
+| Arquivo/Pasta        | Função Principal                                                                 |
+|----------------------|-----------------------------------------------------------------------------------|
+| `Program.cs`         | Ponto de entrada do projeto (contém o método `Main()` ou top-level statements)    |
+| `Startup.cs`         | (Em APIs) Configura serviços e pipeline de execução                              |
+| `appsettings.json`   | Arquivo de configuração da aplicação (ex: connection string, chaves, etc)         |
+| `*.csproj`           | Arquivo que define o projeto, dependências e build settings                       |
+| `bin/` e `obj/`      | Pastas geradas automaticamente com os arquivos compilados                         |
+| `Properties/launchSettings.json` | Define configurações de execução (usado em debug local)               |
+| `Controllers/`, `Models/`, `Services/` | Organização comum em projetos MVC/API                            |
+
+---
+
+### 💻 Ferramentas para Testes
+
+- [Visual Studio 2022 Community](https://visualstudio.microsoft.com/pt-br/vs/community/)
+- [Visual Studio Code + C# Extension](https://code.visualstudio.com/docs/languages/dotnet)
+- [DotNet CLI (`dotnet new console`)](https://learn.microsoft.com/pt-br/dotnet/core/tools/dotnet-new)
+
+---
+
 #### ✅ Conclusão
 
 O C# possui uma estrutura clara e bem definida para organizar projetos. Aprender essas convenções desde o início te prepara para:

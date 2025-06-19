@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("project_1_building_a_parking_system_with_csharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b18951319145d78ed7aa568525b6a46252300b6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ae6928bf8e1a581a592d621c2dbe1cff07d9b7b")]
 [assembly: System.Reflection.AssemblyProductAttribute("project_1_building_a_parking_system_with_csharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("project_1_building_a_parking_system_with_csharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

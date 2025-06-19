@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Documents\\projects\\wex_e2e_csharp\\study_project\\project_2\\project_2_hotel_list\\project_2_hotel_list.csproj": {}
+    "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_project\\project_2\\project_2_hotel_list\\project_2_hotel_list.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Documents\\projects\\wex_e2e_csharp\\study_project\\project_2\\project_2_hotel_list\\project_2_hotel_list.csproj": {
+    "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_project\\project_2\\project_2_hotel_list\\project_2_hotel_list.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\projects\\wex_e2e_csharp\\study_project\\project_2\\project_2_hotel_list\\project_2_hotel_list.csproj",
+        "projectUniqueName": "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_project\\project_2\\project_2_hotel_list\\project_2_hotel_list.csproj",
         "projectName": "project_2_hotel_list",
-        "projectPath": "C:\\Users\\user\\Documents\\projects\\wex_e2e_csharp\\study_project\\project_2\\project_2_hotel_list\\project_2_hotel_list.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\projects\\wex_e2e_csharp\\study_project\\project_2\\project_2_hotel_list\\obj\\",
+        "projectPath": "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_project\\project_2\\project_2_hotel_list\\project_2_hotel_list.csproj",
+        "packagesPath": "C:\\Users\\fzann\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_project\\project_2\\project_2_hotel_list\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\fzann\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

@@ -112,6 +112,50 @@ Console.WriteLine($"Raiz quadrada de 25 é {raiz}");
 
 ---
 
+## ➕ Links Complementares de Estudo – Operadores Aritméticos em C#
+
+Operadores aritméticos são fundamentais em C# para realizar cálculos simples ou composições mais complexas dentro de expressões matemáticas e lógicas. Dominar esses operadores é base para qualquer algoritmo.
+
+---
+
+### 🎓 Aulas e Vídeos Gratuitos
+
+- [Operadores Aritméticos em C# – Balta.io](https://www.youtube.com/watch?v=OdpntmqoyKs)
+  > Aula explicando operadores como `+`, `-`, `*`, `/`, `%` com exemplos práticos.
+- [Operadores C# – DevAprender](https://www.youtube.com/watch?v=ZoOe0NHS9jw)
+  > Vídeo mostrando operadores aritméticos, relacionais e lógicos com aplicação em código.
+- [Curso C# Básico – CFBCursos (Operadores)](https://www.youtube.com/watch?v=x5BzU9aHtxw)
+  > Aulas com exercícios simples, direto ao ponto para iniciantes.
+
+---
+
+### 📚 Documentação Oficial Microsoft
+
+- [Operadores Aritméticos – C# Docs](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/operators/arithmetic-operators)
+  > Guia completo sobre operadores `+`, `-`, `*`, `/`, `%` e como funcionam internamente.
+- [Tabela Geral de Operadores – Microsoft](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/operators/)
+  > Todos os operadores em C#, incluindo aritméticos, lógicos, relacionais e bit a bit.
+
+---
+
+### 🧠 Artigos Técnicos e Explicações
+
+- [Entendendo Operadores Aritméticos – DevMedia](https://www.devmedia.com.br/operadores-aritmeticos-no-c/30044)
+  > Artigo com vários exemplos e explicações para cada operador.
+- [Diferença entre / e % (divisão e módulo)](https://www.alura.com.br/artigos/entendendo-o-uso-do-operador-de-resto-em-csharp)
+  > Importante entender como o `%` funciona para identificar restos de divisões.
+
+---
+
+### 💻 Ferramentas para Testes
+
+- [DotNetFiddle](https://dotnetfiddle.net/)
+  > Ideal para testar expressões aritméticas rapidamente online.
+- [LINQPad](https://www.linqpad.net/)
+  > Teste qualquer cálculo em tempo real sem criar um projeto completo.
+
+---
+
 #### ✅ Conclusão
 
 Operadores aritméticos são **base da programação matemática**. Dominar o uso de operadores básicos, combinados com funções da classe `Math`, te dá uma boa base para:

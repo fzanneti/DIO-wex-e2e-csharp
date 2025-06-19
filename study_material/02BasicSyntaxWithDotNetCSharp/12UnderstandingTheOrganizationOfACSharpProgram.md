@@ -187,6 +187,45 @@ dotnet run --project ./NomeDoProjeto
 
 ---
 
+## 🧩 Links Complementares de Estudo – Conhecendo a Organização de um Programa C#
+
+Um programa em C# é composto por uma estrutura clara: namespaces, classes, métodos e a famosa função `Main()`. Entender essa organização ajuda a escrever código limpo e escalável.
+
+---
+
+### 🎓 Aulas e Vídeos Gratuitos
+
+- [Entendendo a Estrutura de um Programa C# – Balta.io](https://www.youtube.com/watch?v=wvG6I7e1wQg)
+  > Aula explicando como um programa C# é organizado: namespaces, `using`, `Main()` e classes.
+- [C# Básico – Organização do Código (Curso em Vídeo)](https://www.youtube.com/watch?v=khSmERkmQ2E)
+  > Explicação visual da estrutura de um programa e como o Visual Studio organiza os arquivos.
+- [Como funciona a Main() em C# – DevAprender](https://www.youtube.com/watch?v=t3zlhYV6yyw)
+  > Detalhamento sobre o ponto de entrada do programa (`Main`) e sua sintaxe moderna.
+
+---
+
+### 📚 Documentação Oficial Microsoft
+
+- [Estrutura de Programa em C# – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/csharp/fundamentals/program-structure/program-structure)
+  > Explicação completa da organização padrão de um projeto em C#.
+- [Método Main – ponto de entrada de um app C#](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/main-and-command-args/)
+  > Tudo sobre `static void Main(string[] args)` e suas variações.
+- [Namespaces em C#](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/namespaces/)
+  > O que são namespaces e como organizar classes dentro deles.
+
+---
+
+### 🧠 Artigos Técnicos
+
+- [Como funciona um programa em C# – DevMedia](https://www.devmedia.com.br/como-funciona-um-programa-em-c/30508)
+  > Explicações passo a passo sobre a estrutura de um projeto C#.
+- [Program.cs, Main e Estrutura Moderna no .NET 6/7/8 (Medium)](https://medium.com/@cristinabarbosa/a-nova-estrutura-de-programa-no-net-6-7-e-8-3c4373c3a3e7)
+  > Como a estrutura mudou nas versões mais novas com top-level statements (sem `Main()` explícita).
+- [Arquitetura de Pastas e Organização de Projetos C# – TreinaWeb](https://www.treinaweb.com.br/blog/organizacao-de-projetos-em-csharp)
+  > Dicas para manter o projeto limpo e escalável.
+
+---
+
 #### ✅ Conclusão
 
 Entender a organização de um programa em C# e como gerenciar múltiplos projetos numa solução é essencial para criar aplicações profissionais. Além disso, dominar os comandos no terminal e entender as diferenças entre versões do .NET ajuda a ganhar agilidade e fazer escolhas conscientes.

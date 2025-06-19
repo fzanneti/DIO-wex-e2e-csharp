@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Documents\\projects\\wex_e2e_csharp\\study_project\\project_1\\project_1_building_a_parking_system_with_csharp\\project_1_building_a_parking_system_with_csharp.csproj": {}
+    "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_project\\project_1\\project_1_building_a_parking_system_with_csharp\\project_1_building_a_parking_system_with_csharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Documents\\projects\\wex_e2e_csharp\\study_project\\project_1\\project_1_building_a_parking_system_with_csharp\\project_1_building_a_parking_system_with_csharp.csproj": {
+    "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_project\\project_1\\project_1_building_a_parking_system_with_csharp\\project_1_building_a_parking_system_with_csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\projects\\wex_e2e_csharp\\study_project\\project_1\\project_1_building_a_parking_system_with_csharp\\project_1_building_a_parking_system_with_csharp.csproj",
+        "projectUniqueName": "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_project\\project_1\\project_1_building_a_parking_system_with_csharp\\project_1_building_a_parking_system_with_csharp.csproj",
         "projectName": "project_1_building_a_parking_system_with_csharp",
-        "projectPath": "C:\\Users\\user\\Documents\\projects\\wex_e2e_csharp\\study_project\\project_1\\project_1_building_a_parking_system_with_csharp\\project_1_building_a_parking_system_with_csharp.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\projects\\wex_e2e_csharp\\study_project\\project_1\\project_1_building_a_parking_system_with_csharp\\obj\\",
+        "projectPath": "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_project\\project_1\\project_1_building_a_parking_system_with_csharp\\project_1_building_a_parking_system_with_csharp.csproj",
+        "packagesPath": "C:\\Users\\fzann\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_project\\project_1\\project_1_building_a_parking_system_with_csharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\fzann\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"

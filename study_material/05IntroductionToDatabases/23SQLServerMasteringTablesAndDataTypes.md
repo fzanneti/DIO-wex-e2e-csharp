@@ -242,6 +242,56 @@ CREATE TABLE Produtos (
 
 ---
 
+## 🗄️ Links Complementares de Estudo – SQL Server: Dominando Tabelas e Tipos de Dados
+
+Compreender os **tipos de dados**, **estruturas de tabelas** e boas práticas de modelagem é essencial para desenvolver soluções eficientes com SQL Server. Aqui estão links e materiais de apoio para aprofundar no tema:
+
+---
+
+### 🎓 Aulas e Tutoriais Gratuitos
+
+- [SQL Server para Iniciantes – Curso Completo (CFBCursos)](https://www.youtube.com/playlist?list=PLx4x_zx8csUj3IbPQ4_X5jis_SkCol3eC)
+  > Curso completo no YouTube com foco em comandos DDL e estruturação de tabelas.
+- [Tipos de Dados e Tabelas no SQL Server – Bóson Treinamentos](https://www.youtube.com/watch?v=5FKJwD7tyQU)
+  > Explicação objetiva sobre os tipos de dados mais utilizados no SQL Server.
+- [Introdução ao SQL Server – Microsoft Learn](https://learn.microsoft.com/pt-br/training/modules/intro-to-sql-server/)
+  > Curso oficial da Microsoft com fundamentos sobre tabelas, colunas e tipos de dados.
+
+---
+
+### 📚 Documentação Oficial Microsoft
+
+- [Tipos de Dados (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/data-types/data-types-transact-sql)
+  > Lista completa dos tipos de dados suportados no SQL Server, com descrição e exemplos.
+- [CREATE TABLE (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/statements/create-table-transact-sql)
+  > Guia oficial sobre a sintaxe para criar tabelas, constraints e propriedades avançadas.
+- [CAST e CONVERT – Tratamento de Tipos](https://learn.microsoft.com/pt-br/sql/t-sql/functions/cast-and-convert-transact-sql)
+  > Como converter tipos de dados corretamente no SQL Server.
+
+---
+
+### 📘 Artigos Técnicos e Blogs
+
+- [Tipos de Dados no SQL Server – DevMedia](https://www.devmedia.com.br/sql-server-tipos-de-dados/40456)
+  > Comparação entre tipos de dados (`VARCHAR`, `CHAR`, `INT`, `DECIMAL`, etc.), com exemplos reais.
+- [Melhores práticas na criação de tabelas – Blog da Alura](https://www.alura.com.br/artigos/como-definir-campos-tabelas-banco-dados)
+  > Dicas práticas para evitar erros comuns ao definir colunas e tipos.
+- [Diferença entre VARCHAR e NVARCHAR (Blog SQLServerCentral)](https://www.sqlservercentral.com/articles/nvarchar-vs-varchar-which-to-use)
+  > Um detalhe importante para lidar com acentuação e idiomas diferentes.
+
+---
+
+### 🧪 Ferramentas e Ambientes para Testes
+
+- [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms)
+  > Ferramenta oficial da Microsoft para gerenciar bancos SQL Server localmente ou em rede.
+- [Azure SQL (Gratuito por tempo limitado)](https://learn.microsoft.com/pt-br/azure/azure-sql/)
+  > Ideal para testar soluções em nuvem com SQL Server.
+- [DB Fiddle (com suporte parcial a SQL Server)](https://www.db-fiddle.com/)
+  > Plataforma online para testar estruturas e comandos SQL sem precisar instalar nada.
+
+---
+
 #### ✅ Conclusão
 
 Este módulo fornece o essencial para **manipular tabelas e dados no SQL Server**, base para qualquer aplicação .NET que dependa de persistência de dados.

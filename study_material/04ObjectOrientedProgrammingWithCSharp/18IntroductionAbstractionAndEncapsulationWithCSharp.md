@@ -102,6 +102,44 @@ public class ContaBancaria
 
 ---
 
+## 🎯 Links Complementares de Estudo – Introdução, Abstração e Encapsulamento em C#
+
+Os pilares da Programação Orientada a Objetos (POO) começam com:
+- **Introdução à POO**
+- **Abstração**
+- **Encapsulamento**
+
+Dominar esses conceitos permite criar sistemas mais seguros, organizados e reutilizáveis. Aqui estão conteúdos gratuitos e objetivos para aprofundar nesses fundamentos usando C#:
+
+### 🎓 Aulas e Cursos Gratuitos
+
+- [POO em C# – Introdução e Conceitos (Balta.io)](https://www.youtube.com/watch?v=KhzGSHNhnbI)
+  > Curso introdutório que apresenta os fundamentos da orientação a objetos em C# com foco em boas práticas.
+- [Abstração e Encapsulamento – CFBCursos (YouTube)](https://www.youtube.com/watch?v=Da0RtgZsMQs)
+  > Explicação prática com exemplos no Visual Studio mostrando como aplicar encapsulamento e abstração no dia a dia.
+- [Curso POO Completo – DevAprender](https://www.youtube.com/watch?v=JLf9qU9KKuk)
+  > Curso completo com foco nos 4 pilares da POO com C#: encapsulamento, herança, abstração e polimorfismo.
+
+### 📚 Documentação Oficial da Microsoft
+
+- [Programação Orientada a Objetos – C# Microsoft Learn](https://learn.microsoft.com/pt-br/dotnet/csharp/fundamentals/tutorials/oop)
+  > Guia completo com todos os pilares da POO e exemplos de código prático em C#.
+- [Modificadores de Acesso – private, public, protected](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
+  > Documento oficial explicando como funciona o encapsulamento com modificadores de acesso.
+- [Propriedades em C# (`get`, `set`)](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/using-properties)
+  > Como usar `get` e `set` para aplicar encapsulamento corretamente em classes C#.
+
+### 🧠 Artigos Técnicos e Explicações
+
+- [POO em C# – Entendendo Abstração e Encapsulamento (DevMedia)](https://www.devmedia.com.br/poo-em-c-introducao-a-encapsulamento-e-abstracao/18801)
+  > Artigo com analogias simples, exemplos reais e código em C#.
+- [Encapsulamento e Abstração: Diferenças e Aplicações – TreinaWeb](https://www.treinaweb.com.br/blog/entendendo-o-encapsulamento-e-a-abstracao-na-orientacao-a-objetos)
+  > Explica quando usar cada um dos conceitos e como isso impacta o design do software.
+- [Diferença entre Abstração e Encapsulamento (Medium)](https://medium.com/@wilsonneto/entendendo-a-diferen%C3%A7a-entre-abstra%C3%A7%C3%A3o-e-encapsulamento-6f1438a09f29)
+  > Comparativo entre os dois pilares com exemplos simples.
+
+---
+
 #### ✅ Conclusão
 
 Abstração e Encapsulamento são **fundamentos essenciais** para qualquer desenvolvedor que deseja escrever **código limpo, seguro e reutilizável**.
