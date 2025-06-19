@@ -240,5 +240,4 @@ Estudar a fundo o uso de **classes abstratas** e **interfaces** é essencial par
 
 ---
 
-> ✍️ **Seção criada por:** *Fabio Zanneti*   
-> 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
