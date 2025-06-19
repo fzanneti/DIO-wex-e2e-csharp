@@ -169,7 +169,7 @@ WHERE Genero = 'Mistério';
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_project/project_3/assets/images/queri11.jpg" alt="Querie 11" style="width: 600px;">
+<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_project/project_3/assets/images/querie11.jpg" alt="Querie 11" style="width: 600px;">
 
 ---
 
