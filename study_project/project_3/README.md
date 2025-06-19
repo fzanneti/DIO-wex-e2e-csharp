@@ -44,7 +44,7 @@ SELECT Nome, Ano FROM Filmes;
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_project/project_3/assets/images/querie1.jpg" alt="Querie 1" style="max-width: 400px;">
+<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_project/project_3/assets/images/querie1.jpg" alt="Querie 1" style="max-width: 300px;">
 
 ---
 
