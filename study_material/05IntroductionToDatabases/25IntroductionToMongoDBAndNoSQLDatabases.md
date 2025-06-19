@@ -835,5 +835,4 @@ MongoDB é altamente integrado com C# e uma excelente escolha para aplicações 
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti*
-##### 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
