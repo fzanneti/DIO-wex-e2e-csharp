@@ -221,6 +221,6 @@ Profissional com mais de 10 anos de experiência nas áreas de Compras e Fiscal.
 📁 **Repositório:**  
 Se este conteúdo foi útil, ⭐ marque este repositório e compartilhe!
 
-##### 📌 Este repositório faz parte da jornada de aprendizado e transição profissional do autor. É mantido com muito estudo, dedicação e amor pela tecnologia.
-##### ✍️ **Criado por:** *Fabio Zanneti*
-##### 🎯 Projeto: **WEX - End to End Engineering**
+##### 📌 Este repositório faz parte da jornada de aprendizado e transição profissional do autor. É mantido com muito estudo, dedicação e amor pela tecnologia.  
+
+##### ✍️ **Criado por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**

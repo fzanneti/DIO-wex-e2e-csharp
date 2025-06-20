@@ -139,4 +139,4 @@ Estes conceitos estão presentes no dia a dia de qualquer sistema orientado a ob
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ **Criado por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
