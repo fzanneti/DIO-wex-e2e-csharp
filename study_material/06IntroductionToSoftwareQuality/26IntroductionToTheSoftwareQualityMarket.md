@@ -210,7 +210,6 @@ Investir na carreira de QA é uma excelente escolha para quem busca se desenvolv
 ### 📌 Recomendação de Estudo Complementar
 
 - [Documentação ISTQB](https://www.istqb.org/)
-- [Livro "Lessons Learned in Software Testing"](https://www.amazon.com.br/dp/0471081124)
 - [QA StackExchange (fórum)](https://sqa.stackexchange.com/)
 - [O que é QA? Salários e Transição de Carreira para TI - YouTube](https://www.youtube.com/watch?v=-zrTGgoVM-Q&utm_source=chatgpt.com)
 - [Quality Assurance: como ingressar na carreira mais bem paga em TI](https://itsmoney.com.br/noticias/qa-quality-assurance-carreira?utm_source=chatgpt.com)
@@ -235,7 +234,6 @@ Investir na carreira de QA é uma excelente escolha para quem busca se desenvolv
 - [Everything you should know about QA in software development: The beginner’s guide | by Concise Software | Medium](https://medium.com/@concisesoftware/everything-you-should-know-about-qa-in-software-development-the-beginners-guide-3e7afacf607c) 
 - [Estudo_profissoes_emergentes_-_giz_ufrgs_e_senai.pdf (portaldaindustria.com.br)](https://static.portaldaindustria.com.br/media/filer_public/b7/5a/b75af326-9c36-49e7-b298-1b9f0a3d4938/estudo_profissoes_emergentes_-_giz_ufrgs_e_senai.pdf)
 - [Quality Assurance (QA) e sua importância no desenvolvimento de software | Blog TreinaWeb](https://www.treinaweb.com.br/blog/quality-assurance-qa-e-sua-importancia-no-desenvolvimento-de-software)
-- [A importância da qualidade de software na vida das pessoas - WarmUP (warmupweb.com.br)](https://warmupweb.com.br/2021/01/08/a-importancia-da-qualidade-de-software-na-vida-das-pessoas/)
 
 ---
 
