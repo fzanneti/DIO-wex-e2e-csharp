@@ -4,23 +4,25 @@
 
 ---
 
-#### 📚 Conteúdo
+### 📚 Conteúdo
 
 Este repositório apresenta o projeto **Hospedagem / Hotelaria**, um aplicativo console em C# que gerencia hospedagens, suítes e reservas, com opção de usar `List` ou `Dictionary`. O conteúdo é organizado em módulos de aprendizado, com exemplos práticos e explicações.
 
 ---
 
-#### ✅ Fundamentos do .NET e C#
+### ✅ Fundamentos do .NET e C#
 
 - **Plataforma .NET**: Introdução ao .NET 8.0
 - **C#**: Tipagem forte, sintaxe moderna, e integração com .NET.
 - **Estrutura do Projeto**: Uso de namespaces, classes, e interfaces.
 - **Exemplo**:
 
-  ```csharp
-  CultureInfo.CurrentCulture = new CultureInfo("pt-BR"); // Define formatação brasileira
-  Console.WriteLine(500.50m.ToString("C")); // Saída: R$ 500,50
-  ```
+```csharp
+
+CultureInfo.CurrentCulture = new CultureInfo("pt-BR"); // Define formatação brasileira
+Console.WriteLine(500.50m.ToString("C")); // Saída: R$ 500,50
+
+```
 
 ---
 
@@ -28,45 +30,53 @@ Este repositório apresenta o projeto **Hospedagem / Hotelaria**, um aplicativo 
 
 ---
 
-#### 🧪 Sintaxe e Lógica de Programação
+### 🧪 Sintaxe e Lógica de Programação
 
 - **Variáveis e Tipos**:
 
-  ```csharp
-  int id = 1;
-  string nome = "João";
-  decimal preco = 450.00m;
-  ```
+```csharp
+
+int id = 1;
+string nome = "João";
+decimal preco = 450.00m;
+
+```
 
 - **Condicionais**:
 
-  ```csharp
-  if (dias >= 10)
-      custo *= 0.9m; // Aplica desconto
-  ```
+```csharp
+  
+if (dias >= 10)
+  custo *= 0.9m; // Aplica desconto
+
+```
 
 - **Laços**:
 
-  ```csharp
-  foreach (var h in hospedes)
-      Console.WriteLine(h.ToString());
-  ```
+```csharp
+  
+foreach (var h in hospedes)
+  Console.WriteLine(h.ToString());
+
+```
 
 - **Métodos**:
 
-  ```csharp
-  private decimal CalcularCusto()
-  {
-      decimal custo = Dias * Suite.PrecDiaria;
-      return Dias >= 10 ? custo * 0.9m : custo;
-  }
-  ```
+```csharp
+
+private decimal CalcularCusto()
+{
+  decimal custo = Dias * Suite.PrecDiaria;
+  return Dias >= 10 ? custo * 0.9m : custo;
+}
+  
+```
 
 - **Aplicação**: O menu interativo usa `switch` para navegar pelas opções, e validações garantem entradas seguras.
 
 ---
 
-#### 🏗️ Programação Orientada a Objetos
+### 🏗️ Programação Orientada a Objetos
 
 - **Classes**:
 
@@ -76,46 +86,54 @@ Este repositório apresenta o projeto **Hospedagem / Hotelaria**, um aplicativo 
 
 - **Exemplo**:
 
-  ```csharp
-  public class Hospede
-  {
-      public int Id { get; set; }
-      public string Nome { get; set; }
-      public string Sobrenome { get; set; }
-      public Hospede(int id, string nome, string sobrenome)
-      {
-          Id = id;
-          Nome = nome;
-          Sobrenome = sobrenome;
-      }
-  }
-  ```
+```csharp
+
+public class Hospede
+{
+  public int Id { get; set; }
+  public string Nome { get; set; }
+  public string Sobrenome { get; set; }
+  public Hospede(int id, string nome, string sobrenome)
+    {
+      Id = id;
+      Nome = nome;
+      Sobrenome = sobrenome;
+    }
+}
+
+```
 
 - **Encapsulamento**: Propriedades com validação no construtor.
 
 ---
 
-#### 📌 Manipulando Valores com C#
+### 📌 Manipulando Valores com C#
 
 - **Formatação Monetária**:
 
-  ```csharp
+```csharp
+
   Console.WriteLine(s.PrecioDiaria.ToString("C2", new CultureInfo("pt-BR"))); // Saída: R$450,00
-  ```
+
+```
 
 - **Validação de Entradas**:
 
-  ```csharp
-  if (!int.TryParse(Console.ReadLine(), out int id))
-      throw new ArgumentException("ID inválido.");
-  ```
+```csharp
+ 
+if (!int.TryParse(Console.ReadLine(), out int id))
+  throw new ArgumentException("ID inválido.");
+
+```
 
 - **Cultura**:
 
-  ```csharp
-  CultureInfo cultura = new CultureInfo("pt-BR");
-  Console.WriteLine(custo.ToString("C2", cultura)); // Saída: R$2250,00
-  ```
+```csharp
+
+CultureInfo cultura = new CultureInfo("pt-BR");
+Console.WriteLine(custo.ToString("C2", cultura)); // Saída: R$2250,00
+
+```
 
 - **Aplicação**: Preços formatados em reais, validação de números inteiros e decimais.
 
@@ -125,17 +143,19 @@ Este repositório apresenta o projeto **Hospedagem / Hotelaria**, um aplicativo 
 
 - **Bloco `try-catch`**:
 
-  ```csharp
-  try
+```csharp
+
+try
   {
-      if (!int.TryParse(Console.ReadLine(), out int id))
-          throw new ArgumentException("ID inválido.");
+    if (!int.TryParse(Console.ReadLine(), out int id))
+      throw new ArgumentException("ID inválido.");
   }
   catch (ArgumentException ex)
   {
-          Console.WriteLine($"Erro: {ex.Message}");
-      }
-  ```
+    Console.WriteLine($"Erro: {ex.Message}");
+  }
+
+```
 
 - **Exceções Específicas**:
 
@@ -145,21 +165,23 @@ Este repositório apresenta o projeto **Hospedagem / Hotelaria**, um aplicativo 
 
 - **Exportação CSV**:
 
-  ```csharp
-  try
+```csharp
+
+try
+{
+  using (var writer = new StreamWriter("hospedes.csv"))
   {
-      using (var writer = new StreamWriter("hospedes.csv"))
-      {
-          writer.WriteLine("ID,Nome,Sobrenome");
-          foreach (var h in hospedes)
-              writer.WriteLine($"{h.Id},{h.Nome},{h.Sobrenome}");
-      }
+    writer.WriteLine("ID,Nome,Sobrenome");
+    foreach (var h in hospedes)
+    writer.WriteLine($"{h.Id},{h.Nome},{h.Sobrenome}");
   }
-  catch (IOException)
-  {
-          Console.WriteLine("Erro ao acessar o arquivo hospedes.csv.");
-      }
-  ```
+}
+catch (IOException)
+{
+  Console.WriteLine("Erro ao acessar o arquivo hospedes.csv.");
+}
+
+```
 
 ---
 
@@ -170,22 +192,28 @@ Este repositório apresenta o projeto **Hospedagem / Hotelaria**, um aplicativo 
   - Usada em `HotelListRepository`.
   - Busca linear (O(n)).
   - Exemplo:
-    ```csharp
-    List<Hospede> hospedes = new List<Hospede>();
-    hospedes.Add(new Hospede(1, "João", "Silva"));
-    var hospede = hospedes.Find(h => h.Id == 1);
-    ```
+
+```csharp
+
+List<Hospede> hospedes = new List<Hospede>();
+hospedes.Add(new Hospede(1, "João", "Silva"));
+var hospede = hospedes.Find(h => h.Id == 1);
+
+```
 
 - **Dictionary**:
 
   - Usada em `HotelDictionaryRepository`.
   - Busca por chave (O(1)).
   - Exemplo:
-    ```csharp
-    Dictionary<int, Hospede> hospedes = new Dictionary<int, Hospede>();
-    hospedes.Add(1, new Hospede(1, "Maria", "Oliveira"));
-    var hospede = hospedes[1];
-    ```
+
+```csharp
+
+Dictionary<int, Hospede> hospedes = new Dictionary<int, Hospede>();
+hospedes.Add(1, new Hospede(1, "Maria", "Oliveira"));
+var hospede = hospedes[1];
+
+```
 
 - **Comparação**:
 
@@ -198,97 +226,7 @@ Este repositório apresenta o projeto **Hospedagem / Hotelaria**, um aplicativo 
 
 ---
 
-#### 🧾 Versionamento de Código
-
-- **Git/GitHub**:
-
-  ```bash
-  git clone https://github.com/fzanneti/wex_e2e_csharp/tree/main/study_project
-  git add .
-  git commit -m "Adiciona funcionalidade de hospedagem com List/Dictionary"
-  git push origin main
-  ```
-
-- **Boas Práticas**:
-
-  - Commits claros e frequentes.
-  - Uso de branches para novas funcionalidades.
-  - Pull requests para revisão colaborativa.
-
----
-
-#### 🛠️ Projetos Práticos e Desafios Técnicos
-
-- **Projeto: HotelSystem**
-
-  - **Descrição**: Aplicativo console que simula um sistema de hotel, permitindo:
-    - Cadastrar/listar/excluir hóspedes.
-    - Listar suítes com seleção por ID.
-    - Realizar/encerrar reservas com cálculo de custo e desconto.
-    - Exportar hóspedes para CSV.
-    - Exibir dados em tabelas formatadas.
-
-  Exemplo **Exemplo de Saída**:
-
-    #### Lista de Hóspedes
-
-    ```
-    +-------+----------------------+----------------------+
-    | ID    | Nome                 | Sobrenome            |
-    +-------+----------------------+----------------------+
-    | 1     | João                 | Silva                |
-    | 2     | Maria                | Oliveira             |
-    +-------+----------------------+----------------------+
-    ```
-
-    #### Lista de Suítes
-
-    ```
-    +-------+----------------------+-----------------+------------+------------+
-    | ID    | Nome                 | Preço Diária    | Capacidade | Disponível |
-    +-------+----------------------+-----------------+------------+------------+
-    | 1    | Suíte Conforto       | R$450,00       | 2          | Sim        |
-    | 2     | Suíte Luxo         | R$780,00         | 3 em R$     | Sim        |
-    | 3     | Suíte Preço Diária   | R$2500,00   | 4          | Sim        |
-    | 4     | Suíte Família       | R$950,00       | 5          | Sim        |
-    | 5     | Suíte Executiva    | R$620,00       | 2          | Sim        |
-    +-------+----------------------+-----------------+------------+------------+
-    ```
-
-    #### Lista de Reservas
-
-    ```
-    +-------+------------------------------+--------------------+-------+-----------------+
-    | ID    | Hóspede                      | Suíte             | Dias  | Custo Total     |
-    +-------+------------------------------+--------------------+-------+-----------------+
-    | 1     | João Silva                  | Suí te Conforto     | 5     | R$2250,00       |
-    | 2     | Maria Oliveira             | Suíte Luxo         | 12    | R$8424,00       |
-    +-------+------------------------------+--------------------+-------+-----------------++
-    ```
-
-- **Como Executar**:
-
-  ```bash
-  git clone https://github.com/fzanneti/HotelSystem.git
-  cd HotelSystem/src
-  dotnet run
-  ```
-  - Escolha entre `List` ou `Dictionary` na inicialização.
-  - Siga o menu interativo.
-
-- **Captura de Tela**:
-
-  ![Tabela de Suítes](https://github.com/Hospede/docs/images/suites.png)
-
-- **Desafios**:
-
-  - Comparear desempenho entre `List` e `Dictionary` com cronômetro.
-  - Adicione validação de datas para reservas.
-  - Implemente interface gráfica simples.
-
----
-
-#### ✨ Objetivo
+### ✨ Objetivo
 
 - Fornecer um projeto prático que consolide fundamentos de C# e .NET.
 - Demonstrar habilidades em POO, coleções, e tratamento de erros.
@@ -297,7 +235,7 @@ Este repositório apresenta o projeto **Hospedagem / Hotelaria**, um aplicativo 
 
 ---
 
-#### 🚀 Para quem é este projeto?
+### 🚀 Para quem é este projeto?
 
 - 🧑‍💻 Iniciantes em .NET e C#.
 - 🎓 Alunos do curso WEX - End-to-End Engineering.
@@ -307,7 +245,7 @@ Este repositório apresenta o projeto **Hospedagem / Hotelaria**, um aplicativo 
 
 ---
 
-#### 🔗 Links Úteis
+### 🔗 Links Úteis
 
 - [Documentação Oficial .NET](https://learn.microsoft.com/dotnet)
 - [Canal da Digitaliza](https://www.youtube.com/@digitaliza)
@@ -316,7 +254,7 @@ Este repositório apresenta o projeto **Hospedagem / Hotelaria**, um aplicativo 
 
 ---
 
-#### Licença
+### Licença
 [MIT License](LICENSE)
 
 ---
