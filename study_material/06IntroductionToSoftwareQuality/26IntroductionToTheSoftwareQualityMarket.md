@@ -124,8 +124,8 @@ QA não é apenas técnica — é também postura. Algumas características impo
 ### 🚀 Como ingressar na área de QA (Quality Assurance)
 
 - **O que é QA, salários e transição de carreira** (vídeo explicativo):
-  “O que é QA - Uma das profissões que mais paga dentro da área de TI” ([youtube.com][1])
-- **Guia de como entrar no mercado de QA (pt-br)**: mostra os passos iniciais, formações e práticas necessárias ([itsmoney.com.br][2])
+  [“O que é QA - Uma das profissões que mais paga dentro da área de TI”](https://youtu.be/DksqTKr1hDs?si=A8g7h0GZ7MZLq6tS)
+- **Guia de como entrar no mercado de QA (pt-br)**: [mostra os passos iniciais, formações e práticas necessárias.](https://itsmoney.com.br/noticias/qa-quality-assurance-carreira)
 
 ---
 
