@@ -189,15 +189,15 @@ JOIN Atores ON ElencoFilme.IdAtor = Atores.Id;
 
 ### 🔗 Relacionamento das Tabelas
 
-* **Filmes** (Id)
-  └─ 1\:N com **FilmesGenero** (IdFilme)
-  └─ 1\:N com **ElencoFilme** (IdFilme)
+* **Filmes** (Id)   
+  └─ 1\:N com **FilmesGenero** (IdFilme)   
+  └─ 1\:N com **ElencoFilme** (IdFilme)   
 
-* **Generos** (Id)
-  └─ 1\:N com **FilmesGenero** (IdGenero)
+* **Generos** (Id)   
+  └─ 1\:N com **FilmesGenero** (IdGenero)   
 
-* **Atores** (Id)
-  └─ 1\:N com **ElencoFilme** (IdAtor)
+* **Atores** (Id)   
+  └─ 1\:N com **ElencoFilme** (IdAtor)   
 
 ---
 
