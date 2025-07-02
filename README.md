@@ -8,143 +8,181 @@ Repositório educacional criado para apoiar estudantes e novos profissionais que
 
 Este repositório contém resumos, exemplos e materiais complementares organizados por módulos de estudo e prática com C#:
 
-### ✅ Fundamentos do .NET e da linguagem C\#
-
-- 🕰️ Linha do tempo da plataforma .NET
-- 🔍 Diferença entre .NET Framework e .NET moderno (.NET 5, 6, 7, etc.)
-- ⚙️ Compiladores, CLR, transpiladores e arquitetura .NET
-- 💻 Exemplos de código comentados
-- 📊 Tabelas e diagramas explicativos
+### ✅ Fundamentos do .NET e da linguagem C#
+- 🕰️ Linha do tempo da plataforma .NET  
+- 🔍 Diferenças entre .NET Framework e .NET moderno (.NET 5, 6, 7...)  
+- ⚙️ Compiladores, CLR, transpiladores e arquitetura .NET  
+- 💻 Exemplos de código comentado  
+- 📊 Tabelas e diagramas explicativos  
 - 🔗 Links para materiais complementares e artigos
 
 ### 🧪 Sintaxe e lógica de programação
-
-- Variáveis, tipos primitivos e estruturas básicas
-- Operadores aritméticos, relacionais e lógicos
-- Condicionais (if, else, switch)
-- Laços de repetição (for, while, do while)
-- Métodos e parâmetros
-- Funções com retorno e sem retorno
-- Escopo de variáveis
+- Variáveis, tipos primitivos e estruturas básicas  
+- Operadores aritméticos, relacionais e lógicos  
+- Condicionais (`if`, `else`, `switch`)  
+- Laços de repetição (`for`, `while`, `do while`)  
+- Métodos e parâmetros  
+- Escopo de variáveis  
+- Funções com e sem retorno  
 
 ### 🏗️ Programação Orientada a Objetos
+- Classes, objetos, herança e encapsulamento  
+- Métodos e propriedades  
+- Construtores  
+- Modificadores de acesso  
+- Boas práticas com POO  
 
-- Conceitos de classe, objeto, herança e encapsulamento
-- Métodos e propriedades
-- Construtores
-- Modificadores de acesso
-- Boas práticas com POO
+### 🧬 Herança e Polimorfismo com C#
+- Introdução à Herança  
+- Polimorfismo via `override`  
+- Boas práticas: composição vs herança  
 
-### 🧬 Herança e Polimorfismo com C\#
-
-- Introdução à Herança
-- Polimorfismo em tempo de execução (via `override`)
-- Boas práticas (relações "é um(a)", substituição, composição vs herança)
-
-### 📌 Manipulando valores com C\#
-
-- 🔠 Concatenando strings e interpolação
-- 🔢 Ajustando numeração e casas decimais
-- 💰 Formatando valores monetários
-- 🌍 Alterando localização e cultura do sistema
-- 🧮 Representando porcentagens
-- 📅 Trabalhando com DateTime
-
-  - Formatando datas e horas
-  - Validando com TryParse
-  - Formatação personalizada com culturas diferentes
+### 📌 Manipulando Valores
+- 🔠 Interpolação de strings  
+- 🔢 Ajustes de casas decimais e numeração  
+- 💰 Formatação monetária  
+- 🌍 Localização e cultura do sistema  
+- 📅 `DateTime`: formatação, validação e culturas
 
 ### ❗ Tratamento de Exceções
+- Blocos `try`, `catch`, `finally`  
+- Exceções específicas e genéricas  
+- Disparo de erros com `throw`  
+- Leitura de arquivos com tratamento  
+- Boas práticas em validações
 
-- Introdução a exceções
-- Bloco try, catch e finally
-- Exceções específicas e genéricas
-- Disparando erros com throw
-- Lendo arquivos com tratamento de erro
-- Boas práticas com validações
-
-### 📦 Coleções em C\#
-
-- Queue (Fila): primeiro a entrar, primeiro a sair (FIFO)
-- Stack (Pilha): último a entrar, primeiro a sair (LIFO)
-- Dictionary: estrutura chave/valor
-- Adicionando, removendo e atualizando elementos
-- Acessando elementos com segurança
-- Casos de uso práticos
-
-### 🧾 Versionamento de Código
-
-- Git e GitHub para controle de versões
-- Criação e navegação por branches
-- Clonagem e commit de projetos
-- Pull requests e colaboração em equipe
-
-### 🛠️ Projetos Práticos e Desafios Técnicos
-
-- Simulador de estacionamento com C#
-- Manipulação de arquivos com tratamento de exceções
-- Console Apps com entrada e saída de dados
-- Aplicações com collections (pilha, fila, dicionário)
+### 📦 Coleções em C#
+- `Queue` (Fila) – FIFO  
+- `Stack` (Pilha) – LIFO  
+- `Dictionary` – chave/valor  
+- Adição, remoção, atualização e acesso seguro  
+- Casos práticos
 
 ---
 
-### ✨ Objetivo
+## 🛠️ Projetos Práticos e Desafios Técnicos
 
-Este guia foi criado para facilitar o aprendizado técnico com explicações simples e diretas, oferecendo:
-
-✔️ Estudo com foco em fundamentos e prática real
-✔️ Consulta rápida para revisão de conteúdos
-✔️ Base sólida para evoluir com confiança no .NET e C#
-✔️ Preparação para resolver desafios técnicos com clareza
+- Simulador de estacionamento com C#  
+- Manipulação de arquivos com exceções  
+- Console Apps com entrada e saída de dados  
+- Exercícios com collections (`Queue`, `Stack`, `Dictionary`)
 
 ---
 
-### 🚀 Para quem é este projeto?
+## ✨ Objetivo
+
+Este guia foi criado para facilitar o aprendizado técnico com explicações simples e diretas. Ele oferece:
+
+- ✔️ Estudo com foco em fundamentos e prática real  
+- ✔️ Consulta rápida para revisão de conteúdos  
+- ✔️ Base sólida para evoluir com confiança no .NET e C#  
+- ✔️ Preparação para desafios técnicos com clareza
+
+---
+
+## 🚀 Para quem é este projeto?
 
 Este material é ideal para:
 
-- 🧑‍💻 Iniciantes em .NET e C#
-- 🎓 Alunos do curso WEX - End to End Engineering
-- 🔁 Profissionais em transição de carreira
-- 📚 Estudantes que desejam reforçar fundamentos e prática
-- 🧠 Autodidatas em busca de material organizado e didático
+- 🧑‍💻 Iniciantes em .NET e C#  
+- 🎓 Alunos do curso WEX - End to End Engineering  
+- 🔁 Profissionais em transição de carreira  
+- 📚 Estudantes que desejam reforçar fundamentos  
+- 🧠 Autodidatas em busca de material organizado
 
 ---
 
 ## 📦 Repositórios Complementares
 
-### 📘 Banco de Dados Relacional com SQL Server
+### 📘 Banco de Dados Relacional (SQL Server)
+- Modelo de banco com tabelas de filmes, gêneros e atores  
+- 12 consultas SQL com `JOIN`, `GROUP BY`, `WHERE`  
+- Scripts completos e explicações didáticas  
 
-* Modelo de banco com tabelas de filmes, gêneros e atores
-* 12 consultas SQL que abordam seleção, junções, agrupamento e filtros
-* Scripts completos com estrutura de tabelas e dados
-* Explicação didática dos `JOINs` utilizados
+### 📗 Banco de Dados Não Relacional
 
-## 📗 Banco de Dados Não Relacional
+#### 🔹 MongoDB
+- Modelo orientado a documentos  
+- Comandos CRUD básicos  
+- Ferramentas: MongoDB Atlas, Compass  
 
-### 🔹 MongoDB
+#### 🔹 Redis (Chave-Valor)
+- Comandos: `GET`, `SET`, `INCR`, `DEL`  
+- Casos práticos: cache, contadores  
+- Exemplo com StackExchange.Redis  
 
-* Modelo orientado a documentos
-* Sintaxe básica e exemplos de comandos CRUD
-* Ferramenta: MongoDB Atlas e MongoDB Compass
+#### 🔹 Cassandra (Colunar)
+- Sintaxe CQL: `CREATE TABLE`, `INSERT`, `SELECT`  
+- Testes com Cassandra Playground  
 
-### 🔹 Redis (Chave-Valor)
+#### 🔹 Neo4j (Grafos)
+- Consultas com Cypher  
+- Criação de grafos com `MATCH`, `CREATE`, `RETURN`  
+- Testes com Neo4j Sandbox  
 
-* Operações com comandos simples (GET, SET, INCR, DEL)
-* Casos de uso práticos como cache e contadores
-* Exemplo usando StackExchange.Redis em C#
+---
 
-### 🔹 Cassandra (Orientado a Colunas)
+## 🧭 Currículo Completo – Bootcamp WEX End-to-End Engineering
 
-* Introdução ao CQL (Cassandra Query Language)
-* Comandos: CREATE TABLE, INSERT, SELECT
-* Ferramenta de testes: Cassandra Playground
+Trilha de estudos baseada no conteúdo da DIO, organizada por módulos:
 
-### 🔹 Neo4j (Banco de Grafos)
+### 📌 Módulo 1 – Introdução ao Ambiente .NET
+- Introdução à Experiência WEX - End to End Engineering
+- Introdução ao .NET
+- IDEs e Configuração de Ambiente .NET
+- Versionamento de Código com Git e GitHub
+- Criando Portfólio e Projeto Open Source
+- Mentoria: Live de Lançamento
 
-* Linguagem Cypher para modelagem de nós e relações
-* Exemplos: criação de grafos e consultas com MATCH
-* Ferramenta de testes: Neo4j Sandbox
+### 🧪 Módulo 2 – Sintaxe Básica com .NET C#
+- Sintaxe e Tipos de Dados
+- Tipos de Operadores
+- Operadores Aritméticos
+- Estruturas de Repetição
+- Organização de Programas
+- Arrays e Listas
+- Comentários e Boas Práticas
+- Projeto: Sistema de Estacionamento
+
+### 🗂️ Módulo 3 – Dados e Listas com .NET C#
+- Propriedades, Métodos e Construtores
+- Manipulando Valores
+- Exceções e Coleções
+- Projeto: Sistema de Hospedagem
+- Desafio: Filtros e Validações
+
+### 🧱 Módulo 4 – Programação Orientada a Objetos (POO)
+- Abstração e Encapsulamento
+- Herança e Polimorfismo
+- Classes Abstratas e Interfaces
+- Projeto: Sistema de Celular com POO
+- Desafio: Transações com POO
+- Introdução às APIs com C#
+
+### 🛢️ Módulo 5 – Banco de Dados
+- Introdução a Banco de Dados
+- SQL Server: Tabelas, Tipos e Manipulação
+- MongoDB e NoSQL
+- Projeto: Consultas Relacionais
+
+### 🧪 Módulo 6 – Qualidade de Software
+- Mercado de QA
+- Fundamentos de Qualidade
+- Desafio: Testes Manuais Funcionais
+- Fundamentos da Automação de Testes
+
+### 🐳 Módulo 7 – Contêineres com Docker
+- Instalação e primeiros passos
+- Armazenamento, logs e rede
+- Dockerfile e Docker Compose
+- Projeto: Aplicação Web com Docker
+- Introdução a Kubernetes
+
+### ☁️ Módulo 8 – Cloud com AWS
+- Fundamentos de Nuvem
+- Infraestrutura AWS
+- Computação, Redes e Storage AWS
+- Projeto: Redução de Custos com AWS
 
 ---
 
@@ -157,10 +195,13 @@ Este material é ideal para:
 
 ---
 
-#### 📁 Repositório mantido com muito estudo, dedicação e amor pela tecnologia. Se este conteúdo foi útil, ⭐ marque este repositório e compartilhe!
-##### ✍️ Criado por: Fabio Zanneti 
-Profissional com mais de 10 anos de experiência nas áreas de Compras e Fiscal. Atualmente em transição de carreira para a tecnologia, focado em .NET, C#, Inteligência Artificial e projetos criativos.
-##### 🎯 Projeto: WEX - End to End Engineering
+#### ❤️ Sobre este Repositório
 
-🔗 GitHub: [fzanneti](https://github.com/fzanneti)
-🎯 LinkedIn: [fzanneti](https://linkedin.com/in/fzanneti)
+Este repositório foi construído com muito estudo, dedicação e amor pela tecnologia.  
+Se este conteúdo foi útil, ⭐ marque este repositório e compartilhe com outros aprendizes!
+
+---
+
+##### ✍️ Criado por: Fabio Zanneti 🎯 Projeto: WEX - End to End Engineering
+##### 🔗 GitHub: [fzanneti](https://github.com/fzanneti)
+##### 🎯 LinkedIn: [fzanneti](https://linkedin.com/in/fzanneti)
