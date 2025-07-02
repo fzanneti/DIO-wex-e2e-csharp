@@ -208,6 +208,4 @@ Se este conteúdo foi útil, ⭐ marque este repositório e compartilhe com outr
 
 ---
 
-##### ✍️ Criado por: Fabio Zanneti 🎯 Projeto: WEX - End to End Engineering
-##### 🔗 GitHub: [fzanneti](https://github.com/fzanneti)
-##### 🎯 LinkedIn: [fzanneti](https://linkedin.com/in/fzanneti)
+##### ✍️ Criado por: Fabio Zanneti - 🎯 Projeto: WEX - End to End Engineering - 🔗 GitHub: [fzanneti](https://github.com/fzanneti) - LinkedIn: [fzanneti](https://linkedin.com/in/fzanneti)
