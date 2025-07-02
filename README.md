@@ -2,6 +2,12 @@
 
 Repositório educacional criado para apoiar estudantes e novos profissionais que estão aprendendo sobre a plataforma .NET com foco em C#, com base no curso WEX - End to End Engineering da Digital Innovation One (DIO).
 
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub last commit](https://img.shields.io/github/last-commit/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![GitHub license](https://img.shields.io/github/license/fzanneti/wex-e2e-csharp)
+
 ---
 
 ## 📚 Conteúdo
@@ -189,7 +195,7 @@ Trilha de estudos baseada no conteúdo da DIO, organizada por módulos:
 ### 🔗 Links úteis
 
 * [Documentação Oficial do .NET (Microsoft)](https://learn.microsoft.com/dotnet/)
-* [Canal da DIO no YouTube](https://www.youtube.com/c/dio)
+* [Canal da DIO no YouTube](https://www.youtube.com/@diomakethechange)
 * [Artigo: Evolução do .NET](https://learn.microsoft.com/pt-br/dotnet/fundamentals/)
 * [GitHub DIO - Desafios](https://github.com/digitalinnovationone/)
 
