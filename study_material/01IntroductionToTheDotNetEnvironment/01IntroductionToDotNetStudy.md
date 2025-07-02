@@ -4,6 +4,11 @@ A plataforma **.NET**, desenvolvida pela **Microsoft**, é um ambiente robusto e
 
 Seu foco principal é oferecer uma base unificada e moderna para desenvolvimento em diversas linguagens — com destaque para o **C#**.
 
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+
 ---
 
 ### 🧠 Conceitos Principais
@@ -131,7 +136,6 @@ Com isso, você pode escrever em C# e rodar sua aplicação em diversos sistemas
 
 * 📘 [Documentação oficial da Microsoft](https://learn.microsoft.com/pt-br/dotnet/)
 * 📖 [Livro gratuito da Microsoft](https://docs.microsoft.com/dotnet/standard/)
-* ▶️ [Canal oficial da DIO no YouTube](https://www.youtube.com/@digitalinnovationone)
 
 ---
 
