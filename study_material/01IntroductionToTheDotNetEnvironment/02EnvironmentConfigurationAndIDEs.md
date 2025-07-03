@@ -1,5 +1,15 @@
 # 🛠️ IDEs e Configuração do Ambiente .NET
 
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
+
+---
+
 ### 🎯 Introdução
 
 Antes de escrever seu primeiro código em **C#**, você precisa configurar seu ambiente de desenvolvimento.
@@ -137,7 +147,7 @@ dotnet run
 
 ---
 
-### 🎓 Vídeos e Tutoriais Gratuitos
+#### 🎓 Vídeos e Tutoriais Gratuitos
 
 - [Instalando Visual Studio e .NET – DevAprender](https://www.youtube.com/watch?v=Wpv3AfU4P_A)
 - [Configurando o VS Code para C# – Balta.io](https://www.youtube.com/watch?v=lK4NWT4z4aE)
@@ -145,7 +155,7 @@ dotnet run
 
 ---
 
-### 📌 Extras úteis
+#### 📌 Extras úteis
 
 - [Terminal integrado do VS Code](https://code.visualstudio.com/docs/editor/integrated-terminal)
 - [Extensões úteis no VS Code](https://marketplace.visualstudio.com/)
@@ -164,4 +174,6 @@ Agora você:
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Projeto: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
