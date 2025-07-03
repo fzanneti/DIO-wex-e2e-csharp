@@ -149,9 +149,10 @@ dotnet run
 
 #### 🎓 Vídeos e Tutoriais Gratuitos
 
-- [Instalando Visual Studio e .NET – DevAprender](https://www.youtube.com/watch?v=Wpv3AfU4P_A)
-- [Configurando o VS Code para C# – Balta.io](https://www.youtube.com/watch?v=lK4NWT4z4aE)
-- [Usando o .NET CLI na prática – Luiz Carlos Faria](https://www.youtube.com/watch?v=TC32f7A0ynE)
+- [Instalando Visual Studio](https://www.youtube.com/watch?v=s5bi_8y6bLQ)
+- [IDE p/ C#](https://www.youtube.com/watch?v=LwGXtxDSmeg)
+- [Configurando VS Code com C# .Net SDK](https://www.youtube.com/watch?v=YEtisxQugew)
+- [Domine o .NET CLI com Esses 5 Comandos Essenciais!](https://www.youtube.com/watch?v=0H-K_-E6hRM)
 
 ---
 
