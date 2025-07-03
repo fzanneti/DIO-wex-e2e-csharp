@@ -12,7 +12,7 @@ Repositório educacional criado para apoiar estudantes e novos profissionais que
 
 ---
 
-## 📚 Conteúdo
+### 📚 Conteúdo
 
 Este repositório contém resumos, exemplos e materiais complementares organizados por módulos de estudo e prática com C#:
 
@@ -66,9 +66,7 @@ Este repositório contém resumos, exemplos e materiais complementares organizad
 - Adição, remoção, atualização e acesso seguro  
 - Casos práticos
 
----
-
-## 🛠️ Projetos Práticos e Desafios Técnicos
+### 🛠️ Projetos Práticos e Desafios Técnicos
 
 - Simulador de estacionamento com C#  
 - Manipulação de arquivos com exceções  
@@ -77,7 +75,7 @@ Este repositório contém resumos, exemplos e materiais complementares organizad
 
 ---
 
-## ✨ Objetivo
+### ✨ Objetivo
 
 Este guia foi criado para facilitar o aprendizado técnico com explicações simples e diretas. Ele oferece:
 
@@ -88,7 +86,7 @@ Este guia foi criado para facilitar o aprendizado técnico com explicações sim
 
 ---
 
-## 🚀 Para quem é este projeto?
+### 🚀 Para quem é este projeto?
 
 Este material é ideal para:
 
@@ -100,30 +98,30 @@ Este material é ideal para:
 
 ---
 
-## 📦 Repositórios Complementares
+### 📦 Repositórios Complementares
 
 ### 📘 Banco de Dados Relacional (SQL Server)
 - Modelo de banco com tabelas de filmes, gêneros e atores  
 - 12 consultas SQL com `JOIN`, `GROUP BY`, `WHERE`  
 - Scripts completos e explicações didáticas  
 
-### 📗 Banco de Dados Não Relacional
+## 📗 Banco de Dados Não Relacional
 
-#### 🔹 MongoDB
+### 🔹 MongoDB
 - Modelo orientado a documentos  
 - Comandos CRUD básicos  
 - Ferramentas: MongoDB Atlas, Compass  
 
-#### 🔹 Redis (Chave-Valor)
+### 🔹 Redis (Chave-Valor)
 - Comandos: `GET`, `SET`, `INCR`, `DEL`  
 - Casos práticos: cache, contadores  
 - Exemplo com StackExchange.Redis  
 
-#### 🔹 Cassandra (Colunar)
+### 🔹 Cassandra (Colunar)
 - Sintaxe CQL: `CREATE TABLE`, `INSERT`, `SELECT`  
 - Testes com Cassandra Playground  
 
-#### 🔹 Neo4j (Grafos)
+### 🔹 Neo4j (Grafos)
 - Consultas com Cypher  
 - Criação de grafos com `MATCH`, `CREATE`, `RETURN`  
 - Testes com Neo4j Sandbox  
@@ -194,12 +192,12 @@ Trilha de estudos baseada no conteúdo da DIO, organizada por módulos:
 
 ---
 
-### 🔗 Links úteis
+#### 🔗 Links úteis
 
-* [Documentação Oficial do .NET (Microsoft)](https://learn.microsoft.com/dotnet/)
-* [Canal da DIO no YouTube](https://www.youtube.com/@diomakethechange)
-* [Artigo: Evolução do .NET](https://learn.microsoft.com/pt-br/dotnet/fundamentals/)
-* [GitHub DIO - Desafios](https://github.com/digitalinnovationone/)
+- [Documentação Oficial do .NET (Microsoft)](https://learn.microsoft.com/dotnet/)
+- [Canal da DIO no YouTube](https://www.youtube.com/@diomakethechange)
+- [Artigo: Evolução do .NET](https://learn.microsoft.com/pt-br/dotnet/fundamentals/)
+- [GitHub DIO - Desafios](https://github.com/digitalinnovationone/)
 
 ---
 
@@ -210,4 +208,7 @@ Se este conteúdo foi útil, ⭐ marque este repositório e compartilhe com outr
 
 ---
 
-##### ✍️ Criado por: Fabio Zanneti - 🎯 Projeto: WEX - End to End Engineering - 🔗 GitHub: [fzanneti](https://github.com/fzanneti) - LinkedIn: [fzanneti](https://linkedin.com/in/fzanneti)
+##### ✍️ Criado por: Fabio Zanneti - 🎯 Projeto: WEX - End to End Engineering
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
+
