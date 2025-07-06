@@ -23,7 +23,7 @@ cd /DesafioWEXDockerCompose/JarbasBot
 
 ---
 
-### 📝 Crie o arquivo `Dockerfile`
+### 📝 Crie o arquivo 🐳 `Dockerfile`
 
 ```bash
 
@@ -37,7 +37,7 @@ Cole o conteúdo abaixo:
 
 # Etapa 1: build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /app
+WORKDIR /src
 
 # Copia tudo
 COPY . ./
@@ -45,17 +45,17 @@ COPY . ./
 # Restaura as dependências
 RUN dotnet restore
 
-# Compila o projeto
-RUN dotnet publish -c Release -o out
+# Publica o app em modo Release
+RUN dotnet publish -c Release -o /app/publish
 
 # Etapa 2: runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 
 # Copia os arquivos compilados da etapa anterior
-COPY --from=build /app/out .
+COPY --from=build /app/publish .
 
-# Expõe a porta padrão da API
+# Define a porta da aplicação
 ENV ASPNETCORE_URLS=http://+:80
 
 # Executa o JarbasBot
@@ -65,14 +65,16 @@ ENTRYPOINT ["dotnet", "JarbasBot.dll"]
 
 ---
 
-### 💡 O que esse Dockerfile faz?
+### 💡 O que esse `Dockerfile` faz?
 
-| Etapa        | O que faz                                  |
-| ------------ | ------------------------------------------ |
-| `build`      | Compila seu projeto com o SDK              |
-| `runtime`    | Usa imagem mais leve só com ASP.NET        |
-| `COPY`       | Move o build final pra dentro do container |
-| `ENTRYPOINT` | Define o comando pra iniciar sua API       |
+| Etapa        | Descrição                                                                 |
+|--------------|---------------------------------------------------------------------------|
+| `build`      | Utiliza a imagem SDK do .NET para restaurar dependências e compilar o projeto em modo Release. |
+| `publish`    | Gera os arquivos otimizados para produção em uma pasta separada (`/app/publish`). |
+| `runtime`    | Usa uma imagem mais enxuta (ASP.NET Runtime) para rodar apenas o necessário, reduzindo o tamanho do container. |
+| `COPY`       | Copia apenas os arquivos publicados (já compilados) para a imagem final, garantindo leveza e desempenho. |
+| `ENV`        | Define a URL padrão onde a aplicação escutará requisições HTTP dentro do container (`http://+:80`). |
+| `ENTRYPOINT` | Inicia a aplicação executando o assembly gerado (`JarbasBot.dll`).        |
 
 ---
 
@@ -80,14 +82,21 @@ ENTRYPOINT ["dotnet", "JarbasBot.dll"]
 
 ```
 
-DesafioWEXDockerCompose/
-├── html/
+/DesafioWEXDockerCompose
+├── docker-compose.yml
+├── html/             
 │   └── index.html
-├── JarbasBot/
-│   ├── Controllers/
-│   ├── Program.cs
-│   ├── Dockerfile ✅
-│   └── ...
+└── JarbasBot/            
+    ├── Controllers/
+    │   └── ChatController.cs
+    ├── Models/
+    │   └── ChatRequest.cs
+    │   └── ChatResponse.cs
+    ├── Services/
+    │   └── OpenAiService.cs
+    ├── Program.cs
+    ├── JarbasBot.csproj
+    └── Dockerfile
 
 ```
 
@@ -137,10 +146,34 @@ services:
     container_name: jarbasbot-api
     ports:
       - "5000:80"
+    env_file:
+      - .env
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      # API KEY pode ser usada aqui futuramente:
-      # - OPENAI_API_KEY=xxxxxx
+      - ASPNETCORE_ENVIRONMENT=Production
+
+```
+
+---
+
+### ✅ Etapa 1 – Criar conta no OpenRouter.ai
+
+1. Acesse: [https://openrouter.ai](https://openrouter.ai)
+2. Clique em **“Sign in”**
+3. Faça login com sua conta Google ou GitHub
+4. Vá em: [https://openrouter.ai/keys](https://openrouter.ai/keys)
+5. Clique em **“Create a new key”**
+6. Copie sua chave (formato: `or-xxxxxxxxxxxx`)
+
+> ⚠️ Guarde essa chave com segurança. Vamos usar ela no `.env`.
+
+---
+
+### Criar o .env
+
+```bash
+
+# Inclua sua chave API
+OPENAI_API_KEY=sk-or-********
 
 ```
 
@@ -152,7 +185,9 @@ Na raiz do projeto:
 
 ```bash
 
-docker-compose up --build
+docker-compose down --volumes --remove-orphans
+docker-compose build --no-cache
+docker-compose up
 
 ```
 
@@ -169,8 +204,8 @@ jarbasbot-api - Running
 
 ### 🌐 Agora acesse:
 
-* `http://localhost:8080` → Página HTML do desafio
-* `http://localhost:5000/swagger` → API do JarbasBot pronta para interagir
+* `http://ip:8080` → Página HTML do desafio
+* `http://ip:5000/swagger` → API do JarbasBot pronta para interagir
 
 ---
 

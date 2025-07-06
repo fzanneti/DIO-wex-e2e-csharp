@@ -75,52 +75,72 @@ namespace JarbasBot.Models
 
 ```csharp
 
-using System.Net.Http.Headers;
-using System.Text;
-using System.Text.Json;
-using JarbasBot.Models;
-
-namespace JarbasBot.Services
+public async Task<string> AskJarbas(string pergunta)
 {
-    public class OpenAiService
+    if (string.IsNullOrWhiteSpace(pergunta))
     {
-        private readonly HttpClient _httpClient;
-        private readonly string _apiKey;
+        return "Ô meu, manda uma pergunta direito aí!";
+    }
 
-        public OpenAiService(HttpClient httpClient)
+    var requestBody = new
+    {
+        model = "meta-llama/llama-4-maverick:free",
+        messages = new[]
         {
-            _httpClient = httpClient;
-            _apiKey = Environment.GetEnvironmentVariable("OPENAI_API_KEY") ?? "";
+            new
+            {
+                role = "system",
+                content = "Você é o Jarbas, um assistente informal e carismático que fala com gírias e bom humor. Sempre responde como um amigo experiente e direto."
+            },
+            new { role = "user", content = pergunta }
+        },
+        max_tokens = 1000,
+        temperature = 0.7
+    };
+
+    try
+    {
+        using var content = new StringContent(
+            JsonSerializer.Serialize(requestBody, new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+            }),
+            Encoding.UTF8,
+            "application/json"
+        );
+
+        using var request = new HttpRequestMessage(HttpMethod.Post, "https://openrouter.ai/api/v1/chat/completions");
+        request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", _apiKey);
+        request.Content = content;
+
+        using var response = await _httpClient.SendAsync(request);
+        response.EnsureSuccessStatusCode();
+
+        var responseString = await response.Content.ReadAsStringAsync();
+
+        using JsonDocument json = JsonDocument.Parse(responseString);
+
+        if (json.RootElement.TryGetProperty("choices", out var choices) &&
+            choices.GetArrayLength() > 0 &&
+            choices[0].TryGetProperty("message", out var message) &&
+            message.TryGetProperty("content", out var contentProp))
+        {
+            return contentProp.GetString()?.Trim() ?? "Poxa, não consegui entender a resposta da API...";
         }
 
-        public async Task<ChatResponse> AskJarbas(string question)
-        {
-            var requestBody = new
-            {
-                model = "gpt-3.5-turbo",
-                messages = new[]
-                {
-                    new { role = "system", content = "Você é o JarbasBot, um assistente brasileiro, divertido, direto e informal. Fale com simpatia, usando gírias leves e humor." },
-                    new { role = "user", content = question }
-                }
-            };
-
-            var request = new HttpRequestMessage(HttpMethod.Post, "https://api.openai.com/v1/chat/completions");
-            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", _apiKey);
-            request.Content = new StringContent(JsonSerializer.Serialize(requestBody), Encoding.UTF8, "application/json");
-
-            var response = await _httpClient.SendAsync(request);
-            if (!response.IsSuccessStatusCode)
-            {
-                return new ChatResponse { Answer = "Rapaz... acho que deu ruim aqui. Tenta de novo mais tarde!" };
-            }
-
-            using var responseStream = await response.Content.ReadAsStreamAsync();
-            using var doc = await JsonDocument.ParseAsync(responseStream);
-            var result = doc.RootElement.GetProperty("choices")[0].GetProperty("message").GetProperty("content").GetString();
-
-            return new ChatResponse { Answer = result ?? "Ih, travou aqui... me pergunta de novo!" };
-        }
+        return "Eita, a resposta da API veio estranha, véi!";
+    }
+    catch (HttpRequestException ex)
+    {
+        return $"Deu zica na conexão: {ex.Message} (Status: {(int?)ex.StatusCode ?? 0})";
+    }
+    catch (JsonException)
+    {
+        return "Opa, o formato da resposta tá zoado!";
+    }
+    catch (Exception ex)
+    {
+        return $"Eita, algo deu ruim: {ex.Message}";
     }
 }
 
@@ -141,7 +161,7 @@ using JarbasBot.Services;
 namespace JarbasBot.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/chat")]
     public class ChatController : ControllerBase
     {
         private readonly OpenAiService _openAiService;
