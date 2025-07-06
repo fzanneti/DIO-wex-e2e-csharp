@@ -78,10 +78,25 @@ Ainda dentro de `DesafioWEXDockerCompose`, rode:
 ```bash
 
 dotnet new webapi -n JarbasBot
+sudo chown -R fzanneti:fzanneti /DesafioWEXDockerCompose/JarbasBot
 
 ```
 
 Esse comando vai criar a pasta `JarbasBot/` com um projeto ASP.NET Core Web API padrão.
+
+---
+
+### ✏️ **Edite seu `Program.cs`**
+
+Adicione a configuração do Kestrel logo após o `CreateBuilder`:
+
+```csharp
+
+
+
+```
+
+❗ *Não precisa mudar o restante do código.*
 
 ---
 
