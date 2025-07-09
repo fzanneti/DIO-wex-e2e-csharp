@@ -1,28 +1,20 @@
-# Etapa 1: build
+# Etapa 1 - Build com .NET 8.0
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
-
-# Copia somente o projeto JarbasBot
-COPY ./DesafioWEXDockerCompose/JarbasBot ./JarbasBot
-
-# Vai para o diretório do projeto
-WORKDIR /src/JarbasBot
-
-# Restaura as dependências
-RUN dotnet restore
-
-# Publica o app em modo Release
-RUN dotnet publish -c Release -o /app/publish
-
-# Etapa 2: runtime
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 
-# Copia os arquivos publicados da etapa anterior
-COPY --from=build /app/publish .
+# Copia apenas a pasta do JarbasBot
+COPY ./DesafioWEXDockerCompose/JarbasBot ./JarbasBot
+WORKDIR /app/JarbasBot
 
-# Define a porta da aplicação
+# Restaura e publica
+RUN dotnet restore
+RUN dotnet publish -c Release -o /out
+
+# Etapa 2 - Runtime com .NET 8.0
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
+WORKDIR /app
+COPY --from=build /out .
+
 ENV ASPNETCORE_URLS=http://+:80
 
-# Executa o JarbasBot
 ENTRYPOINT ["dotnet", "JarbasBot.dll"]
