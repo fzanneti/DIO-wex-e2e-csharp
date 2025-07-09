@@ -1,0 +1,5 @@
+[phases.setup]
+nixPkgs = ["docker"]
+
+[build]
+nixpacksPlan = false
