@@ -119,10 +119,10 @@ aws ec2 run-instances \
 
 ### 📚 Links de estudo complementar
 
-* 🌐 [Infraestrutura Global da AWS – Oficial](https://aws.amazon.com/about-aws/global-infrastructure/)
-* 🎥 [AWS Global Infra explicada (YouTube – Branas)](https://www.youtube.com/watch?v=WQnOBr9n0-k)
+* 🌐 [Infraestrutura Global da AWS – Oficial](https://docs.aws.amazon.com/pt_br/whitepapers/latest/aws-overview/global-infrastructure.html)
+* 🎥 [AWS Global Infra explicada (YouTube – AWS)](https://www.youtube.com/watch?v=UuRX2gK0IYw)
 * 🗺️ [Mapa interativo das Regiões da AWS](https://infrastructure.aws/)
-* 📘 [O que é Edge Location – Explicação no Medium](https://medium.com/@lucascprazeres/aws-edge-locations-44f242705f4d)
+* 📘 [O que é Edge Location?](https://www-lastweekinaws-com.translate.goog/blog/what-is-an-edge-location-in-aws-a-simple-explanation/?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc)
 
 ---
 
