@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_project\\project_3\\project_3.csproj",
+      "projectUniqueName": "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex-e2e-csharp\\study_project\\project_3\\project_3.csproj",
       "projectName": "project_3",
-      "projectPath": "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_project\\project_3\\project_3.csproj",
+      "projectPath": "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex-e2e-csharp\\study_project\\project_3\\project_3.csproj",
       "packagesPath": "C:\\Users\\fzann\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex_e2e_csharp\\study_project\\project_3\\obj\\",
+      "outputPath": "C:\\Users\\fzann\\OneDrive\\Documentos\\Projects\\wex-e2e-csharp\\study_project\\project_3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fzann\\AppData\\Roaming\\NuGet\\NuGet.Config"
