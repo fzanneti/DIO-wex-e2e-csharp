@@ -2,13 +2,13 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copia apenas o csproj e restaura as dependências
-COPY JarbasBot/*.csproj ./JarbasBot/
-WORKDIR /src/JarbasBot
+# Copia tudo
+COPY . ./
+
+# Restaura as dependências
 RUN dotnet restore
 
-# Agora copia o restante dos arquivos e compila
-COPY . /src
+# Publica o app em modo Release
 RUN dotnet publish -c Release -o /app/publish
 
 # Etapa 2: runtime
@@ -18,8 +18,8 @@ WORKDIR /app
 # Copia os arquivos compilados da etapa anterior
 COPY --from=build /app/publish .
 
-# Define a porta da aplicação (Railway usa variável $PORT)
-ENV ASPNETCORE_URLS=http://+:${PORT}
+# Define a porta da aplicação
+ENV ASPNETCORE_URLS=http://+:80
 
 # Executa o JarbasBot
 ENTRYPOINT ["dotnet", "JarbasBot.dll"]
