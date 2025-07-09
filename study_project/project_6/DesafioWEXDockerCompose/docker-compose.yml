@@ -23,6 +23,6 @@ services:
     networks:
       - jarbas-net
 
-  networks:
-    jarbas-net:
+networks:
+  jarbas-net:
     driver: bridge
