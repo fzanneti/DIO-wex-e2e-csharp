@@ -1,25 +1,18 @@
-# Etapa 1: build
+# Etapa de build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copia tudo
-COPY . ./
-
-# Restaura as dependências
+# Copia apenas o .csproj
+COPY JarbasBot.csproj ./
 RUN dotnet restore
 
-# Publica o app em modo Release
-RUN dotnet publish -c Release -o /app/publish
+# Copia o restante do código
+COPY . ./
+RUN dotnet publish -c Release -o /app/out
 
-# Etapa 2: runtime
+# Etapa de runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
+COPY --from=build /app/out .
 
-# Copia os arquivos compilados da etapa anterior
-COPY --from=build /app/publish .
-
-# Define a porta da aplicação
-ENV ASPNETCORE_URLS=http://+:80
-
-# Executa o JarbasBot
 ENTRYPOINT ["dotnet", "JarbasBot.dll"]
