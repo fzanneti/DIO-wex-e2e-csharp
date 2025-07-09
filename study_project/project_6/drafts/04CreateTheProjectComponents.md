@@ -75,72 +75,110 @@ namespace JarbasBot.Models
 
 ```csharp
 
-public async Task<string> AskJarbas(string pergunta)
+using System;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
+using System.Text.Json;
+using System.Threading.Tasks;
+
+namespace JarbasBot.Services
 {
-    if (string.IsNullOrWhiteSpace(pergunta))
+    public class OpenAiService : IDisposable
     {
-        return "Ô meu, manda uma pergunta direito aí!";
-    }
+        private readonly HttpClient _httpClient;
+        private readonly string _apiKey;
+        private bool _disposed;
 
-    var requestBody = new
-    {
-        model = "meta-llama/llama-4-maverick:free",
-        messages = new[]
+        public OpenAiService()
         {
-            new
+            _httpClient = new HttpClient
             {
-                role = "system",
-                content = "Você é o Jarbas, um assistente informal e carismático que fala com gírias e bom humor. Sempre responde como um amigo experiente e direto."
-            },
-            new { role = "user", content = pergunta }
-        },
-        max_tokens = 1000,
-        temperature = 0.7
-    };
+                Timeout = TimeSpan.FromSeconds(30)
+            };
 
-    try
-    {
-        using var content = new StringContent(
-            JsonSerializer.Serialize(requestBody, new JsonSerializerOptions
-            {
-                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-            }),
-            Encoding.UTF8,
-            "application/json"
-        );
+            _apiKey = Environment.GetEnvironmentVariable("OPENAI_API_KEY")
+                ?? throw new InvalidOperationException("Chave da API OpenAI não foi encontrada.");
 
-        using var request = new HttpRequestMessage(HttpMethod.Post, "https://openrouter.ai/api/v1/chat/completions");
-        request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", _apiKey);
-        request.Content = content;
-
-        using var response = await _httpClient.SendAsync(request);
-        response.EnsureSuccessStatusCode();
-
-        var responseString = await response.Content.ReadAsStringAsync();
-
-        using JsonDocument json = JsonDocument.Parse(responseString);
-
-        if (json.RootElement.TryGetProperty("choices", out var choices) &&
-            choices.GetArrayLength() > 0 &&
-            choices[0].TryGetProperty("message", out var message) &&
-            message.TryGetProperty("content", out var contentProp))
-        {
-            return contentProp.GetString()?.Trim() ?? "Poxa, não consegui entender a resposta da API...";
+            // Headers fixos para OpenRouter
+            _httpClient.DefaultRequestHeaders.Add("HTTP-Referer", "https://localhost");
+            _httpClient.DefaultRequestHeaders.Add("X-Title", "JarbasBot");
         }
 
-        return "Eita, a resposta da API veio estranha, véi!";
-    }
-    catch (HttpRequestException ex)
-    {
-        return $"Deu zica na conexão: {ex.Message} (Status: {(int?)ex.StatusCode ?? 0})";
-    }
-    catch (JsonException)
-    {
-        return "Opa, o formato da resposta tá zoado!";
-    }
-    catch (Exception ex)
-    {
-        return $"Eita, algo deu ruim: {ex.Message}";
+        public async Task<string> AskJarbas(string pergunta)
+        {
+            if (string.IsNullOrWhiteSpace(pergunta))
+                return "Ô meu, manda uma pergunta direito aí!";
+
+            var requestBody = new
+            {
+                model = "mistralai/mistral-small-3.2-24b-instruct:free",
+                messages = new[]
+                {
+                        new
+                        {
+                            role = "user",
+                                content = $"Você é o Jarbas, um assistente informal e carismático que fala com gírias e bom humor. Sempre responde como um amigo experiente e direto.\n\n{pergunta}"
+                        }
+                },
+                max_tokens = 1000,
+                temperature = 0.7
+            };
+
+            var content = new StringContent(
+                JsonSerializer.Serialize(requestBody, new JsonSerializerOptions
+                {
+                    PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+                }),
+                Encoding.UTF8,
+                "application/json"
+            );
+
+            try
+            {
+                var request = new HttpRequestMessage(HttpMethod.Post, "https://openrouter.ai/api/v1/chat/completions");
+                request.Content = content;
+             
+                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", _apiKey);
+
+                using var response = await _httpClient.SendAsync(request);
+                response.EnsureSuccessStatusCode();
+
+                var responseString = await response.Content.ReadAsStringAsync();
+                using JsonDocument json = JsonDocument.Parse(responseString);
+
+                if (json.RootElement.TryGetProperty("choices", out var choices) &&
+                    choices.GetArrayLength() > 0 &&
+                    choices[0].TryGetProperty("message", out var message) &&
+                    message.TryGetProperty("content", out var contentProp))
+                {
+                    return contentProp.GetString()?.Trim() ?? "Poxa, não consegui entender a resposta da API...";
+                }
+
+                return "Eita, a resposta da API veio estranha, véi!";
+            }
+            catch (HttpRequestException ex)
+            {
+                return $"Deu zica na conexão: {ex.Message} (Status: {(int?)ex.StatusCode ?? 0})";
+            }
+            catch (JsonException)
+            {
+                return "Opa, o formato da resposta tá zoado!";
+            }
+            catch (Exception ex)
+            {
+                return $"Eita, algo deu ruim: {ex.Message}";
+            }
+        }
+
+        public void Dispose()
+        {
+            if (!_disposed)
+            {
+                _httpClient?.Dispose();
+                _disposed = true;
+            }
+        }
     }
 }
 
@@ -171,14 +209,14 @@ namespace JarbasBot.Controllers
             _openAiService = openAiService;
         }
 
-        [HttpPost("chat")]
+        [HttpPost]
         public async Task<IActionResult> Chat([FromBody] ChatRequest request)
         {
             if (string.IsNullOrWhiteSpace(request.Question))
-                return BadRequest("A pergunta tá vazia, parça! Manda alguma coisa aí.");
+                return BadRequest("Pergunta não pode estar vazia, parça!");
 
             var response = await _openAiService.AskJarbas(request.Question);
-            return Ok(response);
+            return Ok(new {answer = response});
         }
     }
 }
@@ -193,74 +231,54 @@ No `Program.cs`, adicione:
 
 ```csharp
 
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using JarbasBot.Services;
-
-//...
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Serviços
-builder.Services.AddControllers();                  // ← Obrigatório para Controllers
-builder.Services.AddEndpointsApiExplorer();         // ← Necessário para Swagger
-builder.Services.AddSwaggerGen();                   // ← Gera os arquivos Swagger
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
+// Adiciona serviços ao container
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+// Injeta o serviço do Jarbas
+builder.Services.AddSingleton<OpenAiService>();
 
 var app = builder.Build();
 
-// Middleware
-app.UseSwagger();                                   // ← Gera o JSON
-app.UseSwaggerUI();                                 // ← Interface visual
+app.UseCors("AllowAll");
 
-app.UseHttpsRedirection();
+// Configura o pipeline de requisição
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+// HTTPS é desativado porque estamos rodando via Docker sem certificado
+// app.UseHttpsRedirection(); (não necessário se usando apenas HTTP)
+
 app.UseAuthorization();
-app.MapControllers();
-
+app.MapControllers(); // ESSENCIAL para rotas como /api/chat
 app.Run();
 
 ```
 
 ---
 
-## ⚙️ ETAPA 5 – Colocar a API Key de forma segura
-
-### 📌 Melhor prática: passar pelo `docker-compose.yml`
-
-No `docker-compose.yml`, adicione a variável de ambiente:
-
-```yaml
-
-jarbasbot:
-  ...
-  environment:
-    - ASPNETCORE_ENVIRONMENT=Development
-    - OPENAI_API_KEY=sua-chave-aqui
-
-```
-
----
-
-### 🔐 Onde conseguir a sua chave da OpenAI
-
-1. Acesse o site: [https://platform.openai.com](https://platform.openai.com)
-2. Faça login com sua conta
-3. No menu superior direito, clique no seu nome → **"View API keys"** ou vá direto para [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
-4. Clique em **"Create new secret key"**
-5. Copie a chave gerada (ela começa com `sk-...`)
-
-> ⚠️ **Importante**: você só verá essa chave uma vez — copie e guarde em um local seguro.
-
----
-
-Depois, no `OpenAiService.cs`, altere:
-
-```csharp
-
-_apiKey = Environment.GetEnvironmentVariable("OPENAI_API_KEY") ?? "";
-
-```
-
----
-
-## ✅ Finalizando
+#### ✅ Finalizando
 
 Reconstrua:
 
@@ -273,10 +291,10 @@ docker-compose up --build
 
 ---
 
-## 🧪 Teste no Swagger
+### 🧪 Teste no Swagger
 
-* Acesse: `http://192.168.1.48:5000/swagger`
-* Teste o endpoint: `POST /api/chat/chat`
+* Acesse: `http://ip:5000/swagger`
+* Teste o endpoint: `POST /api/chat`
 * Corpo da requisição:
 
 ```json
@@ -298,18 +316,6 @@ Resposta:
 }
 
 ```
-
----
-
-### 🚀 Projeto JarbasBot online!
-
-Firmeza total, Fabio. Com isso você tem:
-
-* Backend C# com Docker
-* API REST com integração GPT
-* Resposta com personalidade
-* Estrutura pronta pra colocar no GitHub
-
 ---
 
 ##### ✍️ Criado por: Fabio Zanneti - 🎯 Projeto: WEX - End to End Engineering

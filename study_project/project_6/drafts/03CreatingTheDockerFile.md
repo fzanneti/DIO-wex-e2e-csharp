@@ -138,6 +138,8 @@ services:
       - "8080:80"
     volumes:
       - ./html:/usr/local/apache2/htdocs/
+    networks:
+      - jarbas-net
 
   jarbasbot:
     build:
@@ -150,6 +152,12 @@ services:
       - .env
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
+    networks:
+      - jarbas-net
+
+networks:
+  jarbas-net:
+    driver: bridge
 
 ```
 
