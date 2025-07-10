@@ -89,7 +89,7 @@ O .NET passou de um framework limitado ao Windows para uma plataforma poderosa e
 
 ---
 
-<img src="https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/assets/images/Code_Generated_Image.png" alt="Comparação de Perfomance" width="300">
+<img src="https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/assets/images/Code_Generated_Image.png" alt="Comparação de Perfomance" width="450">
 
 ---
 
