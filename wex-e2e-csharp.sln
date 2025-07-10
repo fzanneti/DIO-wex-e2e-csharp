@@ -4,23 +4,23 @@ VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "study_project", "study_project", "{AD520E4D-5A44-DBA7-8B82-62FA2D8D31B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project_3", "study_project\project_3\project_3.csproj", "{011A0511-7FC1-2EB7-764D-163A660EE28B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project_3", "study_project/project_3/project_3.csproj", "{011A0511-7FC1-2EB7-764D-163A660EE28B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "project_1", "project_1", "{38EDFC68-26B4-C85C-38C0-36E8ADE7092B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project_1_building_a_parking_system_with_csharp", "study_project\project_1\project_1_building_a_parking_system_with_csharp\project_1_building_a_parking_system_with_csharp.csproj", "{B40E9EC7-F33A-8839-C5EA-EC31403574D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project_1_building_a_parking_system_with_csharp", "study_project/project_1/project_1_building_a_parking_system_with_csharp/project_1_building_a_parking_system_with_csharp.csproj", "{B40E9EC7-F33A-8839-C5EA-EC31403574D2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "project_2", "project_2", "{4F354EBE-CCC4-289B-7782-B4878F6B83EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project_2_hotel", "study_project\project_2\project_2_hotel_dictionary\project_2_hotel.csproj", "{80347D9B-91A6-8F01-0E1F-199283019F4A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project_2_hotel", "study_project/project_2/project_2_hotel_dictionary/project_2_hotel.csproj", "{80347D9B-91A6-8F01-0E1F-199283019F4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project_2_hotel_list", "study_project\project_2\project_2_hotel_list\project_2_hotel_list.csproj", "{A90E2ED6-5899-D909-64DE-A24111EE3F15}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project_2_hotel_list", "study_project/project_2/project_2_hotel_list/project_2_hotel_list.csproj", "{A90E2ED6-5899-D909-64DE-A24111EE3F15}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "project_6", "project_6", "{2E5FC0C1-9DC2-F040-2037-B01344C82527}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesafioWEXDockerCompose", "DesafioWEXDockerCompose", "{15EFBDB1-3EBF-7C85-1B61-248B206F75BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JarbasBot", "study_project\project_6\DesafioWEXDockerCompose\JarbasBot\JarbasBot.csproj", "{9C771124-903C-4281-0CC0-AF58FA4E8125}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JarbasBot", "study_project/project_6/DesafioWEXDockerCompose/JarbasBot/JarbasBot.csproj", "{9C771124-903C-4281-0CC0-AF58FA4E8125}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
