@@ -92,11 +92,23 @@ Um ambiente que suporta CI/CD é, por natureza, propício à **colaboração em 
 
 ### 🧰 Principais IDEs para .NET
 
-| 🧩 IDE                | 💼 Indicado para...                | 🖥️ Plataforma       | 💸 Gratuito?        |
-|----------------------|------------------------------------|---------------------|---------------------|
-| **Visual Studio**     | Profissionais e grandes projetos   | Windows / macOS     | ✅ Sim (Community)  |
-| **Visual Studio Code**| Projetos leves e multiplataforma  | Win / macOS / Linux | ✅ Sim              |
-| **Rider (JetBrains)** | Alternativa robusta e avançada     | Win / macOS / Linux | ⚠️ Não (trial)      |
+|🧩 IDE|💼 Indicado para...|🖥️ Plataforma|💸 Gratuito?| ✅ Prós|❌ Contras|
+|---|---|---|---|---|---|
+|**Visual Studio**|Profissionais e grandes projetos|Windows / macOS|✅ Sim (Community)|✅ Recursos completos, integração com Azure|❌ Pesado, apenas Windows/macOS|
+|**Visual Studio Code**|Projetos leves e multiplataforma|Win / macOS / Linux|✅ Sim|✅ Leve, extensível|❌ Requer configuração manual|
+|**Rider (JetBrains)**|Alternativa robusta e avançada|Win / macOS / Linux|⚠️ Não (trial)|✅ Debugger avançado, suporte a Docker|❌ Pago|
+
+---
+
+### 🔒 Configuração de certificados HTTPS:
+
+```bash
+
+dotnet dev-certs https --trust
+
+```
+
+> "**Nota**: Esse comando configura certificados para desenvolvimento local, essencial para projetos `ASP.NET` Core com `HTTPS`."
 
 ---
 
@@ -200,6 +212,208 @@ dotnet run
 
 ---
 
+## ⚙️ Configuração Avançada do Ambiente
+
+### 🧩 Personalizando o VS Code
+
+- **Configurações recomendadas** (adicione ao `settings.json` do VS Code):
+
+```json
+  
+{
+  "editor.formatOnSave": true,
+  "csharp.suppressDotnetInstallWarning": true,
+  "omnisharp.useGlobalMono": "always"
+}
+  
+```
+
+- **Atalhos úteis**:
+
+  - `Ctrl + .`: Sugestões rápidas (Quick Fix).
+  - `F5`: Iniciar depuração.
+  - `Ctrl + Shift + B`: Compilar projeto.
+
+---
+
+### 📦 Integração com Git
+
+- Inicialize um repositório Git:
+
+```bash
+  
+git init
+git add .
+git commit -m "feat: initialize .NET console project"
+
+```
+
+- Configure `.gitignore` para .NET:
+
+```
+bin/
+obj/
+*.csproj.user
+.vscode/
+  
+```
+
+---
+
+### 🛠️ Ferramentas Complementares
+
+- **Postman**: Teste APIs criadas com ASP.NET Core.
+- **Docker Desktop**: Para rodar aplicações .NET em contêineres.
+- **SQL Server Management Studio**: Para projetos com bancos de dados.
+
+---
+
+## ⚙️ **Seção: Instalando o .NET SDK**
+
+### Instalação do .NET SDK por Plataforma
+
+- **Windows**: Baixe o instalador em [dotnet.microsoft.com](https://dotnet.microsoft.com/download).
+- **macOS**:
+```bash
+
+brew install dotnet-sdk
+
+```
+- **Linux (Ubuntu)**:
+```bash
+
+sudo apt-get update && sudo apt-get install -y dotnet-sdk-8.0
+
+```
+- **Verifique a instalação**:  
+```bash
+
+dotnet --list-sdks
+
+```
+
+> Saída esperada: Lista de versões do SDK instaladas, ex.: `8.0.100 [/usr/share/dotnet/sdk]`.
+
+---
+
+## ⚙️ Instalando o .NET SDK
+
+### 📦 O que vem no SDK?
+
+- Compiladores, CLI `dotnet`, bibliotecas padrão.
+
+### 🧩 E o Runtime?
+
+- Executa aplicações compiladas, mas não suporta desenvolvimento.
+
+### 🔍 SDK vs Runtime
+
+| 🔍 Característica     | ✅ .NET SDK      | 🚫 .NET Runtime     |
+|----------------------|------------------|---------------------|
+| Desenvolver apps     | ✅ Sim           | ❌ Não              |
+| Executar apps        | ✅ Sim           | ✅ Sim              |
+| Usar CLI `dotnet`    | ✅ Completo      | ⚠️ Limitado         |
+
+**Instalação**:
+
+- Windows: [dotnet.microsoft.com](https://dotnet.microsoft.com/download)
+- macOS: `brew install dotnet-sdk`
+- Linux (Ubuntu): `sudo apt-get install -y dotnet-sdk-8.0`
+- Verifique: `dotnet --list-sdks`
+
+---
+
+### 📅 Exemplo de Calculadora:
+
+```csharp
+
+using System;
+
+namespace MinhaCalculadora
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Bem-vindo à Calculadora .NET!");
+            Console.WriteLine("Digite o primeiro número:");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite o segundo número:");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Escolha a operação (+, -, *, /):");
+            char operacao = Console.ReadKey().KeyChar;
+            Console.WriteLine();
+
+            double resultado = 0;
+            switch (operacao)
+            {
+                case '+': resultado = num1 + num2; break;
+                case '-': resultado = num1 - num2; break;
+                case '*': resultado = num1 * num2; break;
+                case '/': resultado = num2 != 0 ? num1 / num2 : throw new DivideByZeroException("Divisão por zero!"); break;
+                default: throw new InvalidOperationException("Operação inválida!");
+            }
+
+            Console.WriteLine($"Resultado: {num1} {operacao} {num2} = {resultado}");
+        }
+    }
+}
+
+```
+
+### Como rodar o projeto:
+
+1. Crie o projeto:
+
+```bash
+
+dotnet new console -n MinhaCalculadora
+cd MinhaCalculadora
+
+```
+2. Substitua o conteúdo de `Program.cs` pelo código acima.
+3. Execute:
+
+```bash
+
+dotnet run
+   
+```
+
+---
+
+## 🛠️ Solução de Problemas
+
+- **Erro: "dotnet não é reconhecido"**
+  - **Causa**: .NET SDK não está no PATH.
+  - **Solução**: Reinstale o SDK ou adicione ao PATH:
+```bash
+
+export PATH=$PATH:/usr/share/dotnet
+    
+```
+- **Erro: "OmniSharp não inicia no VS Code"**
+  - **Causa**: Extensão C# ou SDK mal configurados.
+  - **Solução**: Reinstale a extensão C# e verifique o SDK com `dotnet --info`.
+- **Erro: "Projeto não compila por falta de dependências"**
+  - **Solução**: Restaure pacotes:
+```bash
+
+dotnet restore
+
+```
+
+---
+
+#### 📚 Recursos Complementares
+
+- [Microsoft Learn: .NET](https://learn.microsoft.com/pt-br/dotnet/core/tutorials/)
+- [DIO: Bootcamp WEX](https://dio.me)
+- [Discord .NET Community](https://discord.com/invite/dotnet)
+- [VS Code + .NET Tutorial](https://www.youtube.com/watch?v=YEtisxQugew)
+
+---
+
 #### 🎓 Vídeos e Tutoriais Gratuitos
 
 - [Instalando Visual Studio](https://www.youtube.com/watch?v=s5bi_8y6bLQ)
@@ -213,12 +427,14 @@ dotnet run
 
 - [Terminal integrado do VS Code](https://code.visualstudio.com/docs/editor/integrated-terminal)
 - [Extensões úteis no VS Code](https://marketplace.visualstudio.com/)
+- [Tutorial de VS Code com .NET](https://www.youtube.com/watch?v=YEtisxQugew).
+- [Microsoft Learn: Configurar o Ambiente .NET](https://learn.microsoft.com/pt-br/dotnet/core/tutorials/).
 
 ---
 
 #### ✅ Conclusão
 
-Agora você:
+Você agora:
 
 * Entende o papel de uma **IDE**
 * Sabe a diferença entre **SDK e Runtime**
