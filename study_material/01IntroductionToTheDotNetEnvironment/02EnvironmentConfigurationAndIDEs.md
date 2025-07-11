@@ -119,7 +119,7 @@ Com o SDK instalado, configure o VS Code para desenvolvimento .NET:
 
 1. 🔽 Baixe o VS Code: [📥](https://code.visualstudio.com)
 2. 🧩 Instale a extensão `C# for VS Code (powered by OmniSharp)`
-3. 📦 [Instale o .NET SDK separadamente](https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/01IntroductionToTheDotNetEnvironment/02EnvironmentConfigurationAndIDEs.md#L107) 
+3. 📦 [Instale o .NET SDK separadamente](https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/01IntroductionToTheDotNetEnvironment/02EnvironmentConfigurationAndIDEs.md#%EF%B8%8F-instala%C3%A7%C3%A3o-por-plataforma) 
 4. 🧪 Verifique instalação: `dotnet --version`.
 5. 🚀 Crie seu primeiro projeto:
 
