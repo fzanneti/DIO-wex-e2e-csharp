@@ -1,8 +1,18 @@
 # 🔄 Introdução ao Versionamento de Código com Git e GitHub
 
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
+
+---
+
 ### 🧭 Visão Geral
 
-Nesta trilha, você vai aprender a controlar versões do seu código usando **Git** e **GitHub** — ferramentas essenciais para qualquer desenvolvedor moderno.
+O versionamento com **Git** e **GitHub** é essencial para desenvolvedores, especialmente em projetos .NET. Essas ferramentas permitem gerenciar alterações, testar ideias e colaborar em equipe, garantindo organização e qualidade. Neste módulo, você dominará o Git para controle local e o GitHub para colaboração remota, alinhado ao Bootcamp WEX.
 
 ---
 
@@ -27,49 +37,36 @@ Nesta trilha, você vai aprender a controlar versões do seu código usando **Gi
 
 ---
 
-## 📦 O que é Versionamento de Código?
+### 📦 O que é Versionamento de Código?
 
-### 🔍 Definição: 
+🧠 **Definição**: Processo de registrar, rastrear e gerenciar alterações no código-fonte.
+*Por que usar?*
 
-Versionamento de código é o processo de registrar, rastrear e gerenciar alterações feitas no código-fonte de um projeto ao longo do tempo.
+- 🔙 Voltar a versões anteriores.
+- 👥 Colaborar em equipe.
+- 💡 Testar ideias sem riscos.
+- 📜 Manter histórico detalhado.
 
----
-
-### 🧠 Por que usar?
-
-- 🔙 Voltar no tempo (rollback)
-- 👥 Trabalhar em equipe com segurança
-- 💡 Testar novas ideias sem afetar o projeto principal
-- 📜 Ter histórico detalhado de cada mudança
-
+**Analogia**: Como salvar um documento com "v1", "v2", mas com mais controle e eficiência.
 
 ---
 
-### 📝 Analogia Simples
+### ⚙️ O que é Git?
 
-> Imagine salvar um documento Word com "v1", "v2", "v3"... O Git faz isso automaticamente, com muito mais controle e eficiência.
+🧠 **Definição**: Sistema de controle de versão distribuído, criado por Linus Torvalds em 2005. Salva "fotografias" do código (commits) para rastreamento.
 
----
+### 📚 Conceitos Principais
 
-## ⚙️ O que é Git?
-
-### 🧠 Definição:
-
-Git é um **sistema de controle de versão distribuído**, criado por **Linus Torvalds** (o criador do Linux) em 2005.
-Permite salvar "fotografias" do seu código (os **commits**) e voltar para versões anteriores a qualquer momento.
-
----
-
-### 📚 Conceitos principais
-
-| 🧩 Termo      | 🔍 O que significa              |
-|--------------|-------------------------------|
-| Repositório  | Pasta monitorada pelo Git     |
-| Commit       | Registro de uma alteração     |
-| Branch       | Ramificação para testar ideias|
-| Merge        | Unir mudanças de uma branch   |
-| Clone        | Cópia local de um repositório remoto |
-
+| 🧩 Termo | 🔍 O que significa |
+| --- | --- |
+| Repositório | Pasta monitorada pelo Git |
+| Commit | Registro de uma alteração |
+| Branch | Ramificação para testar ideias |
+| Merge | Unir mudanças de uma branch |
+| Clone | Cópia local de um repositório remoto |
+| Stage | Área temporária para preparar commits |
+| Pull | Baixar e integrar mudanças remotas |
+| Pull Request | Solicitação para revisar e mesclar mudanças |
 
 ---
 
@@ -77,19 +74,30 @@ Permite salvar "fotografias" do seu código (os **commits**) e voltar para vers�
 
 ```bash
 
+# Inicialização
 git init                  # Inicia um repositório Git
+git clone <url>           # Clona um repositório Gir
+
+# Controle de alterações
 git status                # Mostra o estado atual dos arquivos
+git add <arquivo>         # Adiciona um arquivo específico
 git add .                 # Adiciona todos os arquivos ao stage
 git commit -m "mensagem"  # Cria um commit com mensagem
+git log                   # Exibe o histórico de commits de um repositório Git
+
+# Colaboração
+git push origin <branch>  # Envia suas alterações locais (commits) para o repositório remoto
+git pull origin <branch>  # Baixa as alterações do repositório remoto e as mescla no seu repositório local
+git branch <nome>         # Cria uma nova branch com o nome especificado
+git checkout <nome>       # Muda para a branch ou commit especificado, atualizando seu diretório de trabalho
+git merge <branch>        # Integra as alterações de uma branch para a branch atual
 
 ```
 ---
 
 ## ☁️ O que é GitHub?
 
-### 🧠 Definição:
-
-GitHub é uma **plataforma online** que hospeda repositórios Git, permitindo:
+🧠 **Definição**: GitHub é uma **plataforma online** que hospeda repositórios Git, permitindo:
 
 * 🧑‍🤝‍🧑 Colaboração em equipe
 * 🔁 Controle de versão remoto
@@ -106,6 +114,72 @@ GitHub é uma **plataforma online** que hospeda repositórios Git, permitindo:
 | Função principal  | Controle de versão | Hospedagem e colaboração |
 | Requer internet?  | ❌ Não (até o push) | ✅ Sim                    |
 
+---
+
+### 📦 GitHub Actions
+
+Automatize builds e testes com workflows. Exemplo para .NET:
+
+```yaml
+
+name: CI .NET
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+      - run: dotnet build
+      - run: dotnet test
+
+```
+
+---
+
+### 🌿 Fluxo de Trabalho com Branches
+
+1. Crie uma branch:
+
+```bash
+
+git branch feature/nova-funcionalidade
+git checkout feature/nova-funcionalidade
+
+```
+
+2. Faça alterações e commit:
+
+```bash
+
+git add .
+git commit -m "feat: add nova funcionalidade"
+
+```
+
+3. Envie ao GitHub:
+
+```bash
+
+git push origin feature/nova-funcionalidade
+
+```
+4. Crie um Pull Request no GitHub.
+
+5. Mesclar na `main`:
+
+```bash
+
+git checkout main
+git merge feature/nova-funcionalidade
+git push origin main
+   
+```
+
+---
+
 🎯 **Resumo:**
 
 > Git é o motor.
@@ -115,34 +189,66 @@ GitHub é uma **plataforma online** que hospeda repositórios Git, permitindo:
 
 ### 🚀 Exemplo Prático de Fluxo com Git e GitHub
 
+1. Crie um projeto .NET:
+
 ```bash
 
-# Criação e envio do projeto local para GitHub
-
-git init                          # Cria repositório local
-git add .                         # Adiciona todos os arquivos
-git commit -m "Primeiro commit"   # Salva alterações localmente
-git remote add origin https://github.com/seu_usuario/repositorio.git
-git push -u origin master         # Envia para o GitHub
+dotnet new console -n MeuProjeto
+cd MeuProjeto
 
 ```
+2. Inicialize o Git:
+
+```bash
+
+git init
+git add .
+git commit -m "feat: create initial .NET console project"
+   
+```
+
+3. Crie um repositório no GitHub e conecte:
+
+```bash
+
+git remote add origin https://github.com/fzanneti/MeuProjeto.git
+git push -u origin main
+
+```
+
+**Código** (`Program.cs`):
+
+```csharp
+
+using System;
+
+namespace MeuProjeto
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Bem-vindo ao meu projeto .NET no GitHub!");
+        }
+    }
+}
+
+```
+---
+
+### 🛠️ Solução de Problemas
+
+- **"fatal: not a git repository"**: Execute `git init`.
+- **"failed to push some refs"**: Use `git pull --rebase` antes de `git push`.
+- **"permission denied (publickey)"**: Gere uma chave SSH (`ssh-keygen`) e adicione ao GitHub.
+
+---
+
 ### 📚 Documentação Oficial
 
 * 📘 [Git - Documentação Oficial](https://git-scm.com/doc)
 * 📘 [GitHub Docs (pt-BR)](https://docs.github.com/pt)
 * 🧪 [Guia interativo do Git (em português)](https://learngitbranching.js.org/?locale=pt_BR)
-
----
-
-#### ✅ Conclusão
-
-Agora você:
-
-* Compreende o que é **versionamento de código**
-* Entende a diferença entre **Git e GitHub**
-* Conhece os **comandos iniciais** para começar a trabalhar com repositórios
-
-🔧 Nas próximas aulas, você vai **explorar comandos mais avançados** e simulações de cenários reais de colaboração.
 
 ---
 
@@ -158,4 +264,18 @@ Agora você:
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+#### ✅ Conclusão
+
+Agora você:
+
+* Compreende o que é **versionamento de código**
+* Entende a diferença entre **Git e GitHub**
+* Conhece os **comandos iniciais** para começar a trabalhar com repositórios
+
+🔧 Nas próximas aulas, você vai **explorar comandos mais avançados** e simulações de cenários reais de colaboração.
+
+---
+
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
