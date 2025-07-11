@@ -12,15 +12,13 @@
 
 ### 🎯 Introdução
 
-> Configurar um ambiente de desenvolvimento .NET eficiente é o primeiro passo para criar aplicações robustas e escaláveis. Escolher a IDE certa e instalar as ferramentas corretas (como o .NET SDK) permite que você foque no aprendizado de C# e no desenvolvimento de projetos, sem preocupações com problemas de configuração. Este guia vai te orientar passo a passo para começar com confiança.
+> Configurar um ambiente .NET eficiente é o primeiro passo para criar aplicações robustas e escaláveis. Escolher a IDE certa e instalar as ferramentas corretas (como o .NET SDK) permite focar no aprendizado de C# e no desenvolvimento, sem preocupações com problemas técnicos. Este guia orienta você passo a passo para começar com confiança.
 
-Antes de escrever seu primeiro código em **C#**, você precisa configurar seu ambiente de desenvolvimento.
-
-Isso inclui:
+Você aprenderá a:
 
 - 📥 Instalar ferramentas e SDKs
 - 🧠 Escolher a IDE ideal
-- 🔍 Entender a diferença entre **.NET SDK** e **.NET Runtime**
+- 🔍 Diferenciar **.NET SDK** e **.NET Runtime**
 
 ---
 
@@ -28,30 +26,28 @@ Isso inclui:
 
 ### 💻 O que é uma IDE?
 
-**IDE (Integrated Development Environment)** é um ambiente completo que combina:
+Uma **IDE (Integrated Development Environment)** é um ambiente completo que combina:
 
 - ✏️ Editor de código
 - 🧪 Depurador
 - ⚙️ Compilador
 - 💻 Terminal embutido
 
-Tudo para aumentar sua produtividade como desenvolvedor.
+Esses recursos aumentam a produtividade do desenvolvedor.
 
 ---
 
-### 📌 O papel do OmniSharp no suporte ao C# no VS Code
+### 📌 Papel do OmniSharp no VS Code
 
 O **OmniSharp** é uma ferramenta de código aberto fundamental que transforma o **VS Code** (Visual Studio Code) em um ambiente de desenvolvimento robusto e completo para C#. Ele atua como um servidor de linguagem, fornecendo recursos avançados que tornam a codificação em C# muito mais eficiente e produtiva.
 
 Pense no OmniSharp como o "cérebro" por trás das funcionalidades inteligentes do VS Code para C#. Sem ele, o VS Code seria apenas um editor de texto básico para seus arquivos C#. Com o OmniSharp, você obtém:
 
-* **Preenchimento de código (IntelliSense):** À medida que você digita, o OmniSharp sugere nomes de classes, métodos, propriedades e variáveis, acelerando o desenvolvimento e reduzindo erros.
-* **Análise de código e diagnóstico:** Ele identifica erros de sintaxe, problemas de lógica e sugere melhorias em tempo real, ajudando a manter a qualidade do código.
-* **Navegação e refatoração:** Permite navegar rapidamente entre definições de código, encontrar referências, renomear símbolos de forma segura e aplicar outras refatorações úteis.
-* **Depuração:** Embora o depurador em si seja uma extensão separada do VS Code, o OmniSharp fornece as informações de contexto necessárias para que o depurador funcione de forma eficaz com seu código C#.
-* **Gerenciamento de projetos:** Ele entende a estrutura dos seus projetos C# (arquivos `.csproj` e `.sln`), permitindo que o VS Code trabalhe com soluções complexas.
-
-Em essência, o OmniSharp integra as capacidades de um IDE (Ambiente de Desenvolvimento Integrado) completo dentro da leveza e flexibilidade do VS Code, tornando-o uma escolha popular para desenvolvedores C#.
+- **IntelliSense**: Sugestões automáticas de código.
+- **Análise de código**: Identifica erros em tempo real.
+- **Navegação**: Permite ir a definições e referências.
+- **Depuração**: Integra com o depurador do VS Code.
+- **Gerenciamento de projetos**: Suporta arquivos `.csproj` e `.sln`.
 
 ---
 
@@ -59,32 +55,11 @@ Em essência, o OmniSharp integra as capacidades de um IDE (Ambiente de Desenvol
 
 Além da ferramenta de desenvolvimento individual, a eficiência de uma equipe de software depende criticamente de um **ambiente bem configurado para CI/CD (Integração Contínua/Entrega Contínua) e colaboração**. Isso vai muito além do editor de código e impacta diretamente a velocidade, qualidade e comunicação do desenvolvimento.
 
-### 🔄 Integração Contínua (CI)
+Um ambiente configurado para Integração Contínua (CI) e Entrega Contínua (CD) garante:
 
-A **Integração Contínua** é a prática de integrar o código de todos os desenvolvedores em um repositório compartilhado várias vezes ao dia. Cada integração é verificada por um build automatizado, incluindo testes. A importância de um ambiente configurado para CI reside em:
-
-* **Detecção precoce de erros:** Problemas de integração e bugs são identificados rapidamente, tornando-os mais fáceis e baratos de corrigir.
-* **Redução de conflitos:** Integrar com frequência minimiza a chance de grandes conflitos de código entre as contribuições dos desenvolvedores.
-* **Garantia de qualidade:** Testes automatizados (unitários, de integração, etc.) são executados a cada commit, garantindo que novas alterações não quebrem funcionalidades existentes.
-* **Feedback rápido:** Desenvolvedores recebem feedback instantâneo sobre a integridade do seu código.
-
-### 📦 Entrega Contínua (CD)
-
-A **Entrega Contínua** estende a CI, garantindo que o software possa ser liberado de forma confiável a qualquer momento. Isso significa que, após a CI, o código está pronto para ser implantado em ambientes de teste ou produção. Um ambiente de CD bem configurado oferece:
-
-* **Implantações automatizadas:** O processo de lançamento é automatizado, reduzindo erros manuais e acelerando a entrega.
-* **Maior confiança nas liberações:** Como o processo é automatizado e testado, há mais confiança de que as novas versões funcionarão conforme o esperado.
-* **Ciclos de feedback mais curtos:** Novas funcionalidades chegam aos usuários mais rapidamente, permitindo coletar feedback e iterar com agilidade.
-
-### 🤝 Colaboração em Equipe
-
-Um ambiente que suporta CI/CD é, por natureza, propício à **colaboração em equipe**. Além disso, outros aspectos são cruciais:
-
-* **Sistema de controle de versão (Git):** Um VCS centralizado e bem utilizado é o alicerce da colaboração, permitindo que múltiplos desenvolvedores trabalhem no mesmo código sem sobrescrever o trabalho uns dos outros.
-* **Padronização:** Ferramentas, configurações de linter e formatadores de código padronizados garantem que todos os membros da equipe sigam as mesmas convenções, tornando o código mais legível e fácil de manter.
-* **Revisão de código (Code Review):** Plataformas como GitHub ou GitLab facilitam a revisão de código, onde os colegas podem fornecer feedback, identificar problemas e compartilhar conhecimento.
-* **Automação de tarefas:** Scripts e ferramentas automatizadas para builds, testes e implantações liberam os desenvolvedores de tarefas repetitivas, permitindo que se concentrem em desenvolver novas funcionalidades.
-* **Documentação acessível:** Ter documentação clara e fácil de encontrar (arquitetura, APIs, processos) é vital para a integração de novos membros da equipe e para garantir que todos estejam alinhados.
+- **CI**: Builds e testes automatizados para detectar erros cedo.
+- **CD**: Implantações confiáveis e rápidas.
+- **Colaboração**: Git, revisões de código e padrões unificados melhoram o trabalho em equipe.
 
 > 📝 Em resumo, enquanto o OmniSharp aprimora a experiência de desenvolvimento C# individual no VS Code, um ambiente robusto de CI/CD e colaboração em equipe eleva a produtividade e a qualidade do software em escala, garantindo que o código seja integrado, testado e entregue de forma eficiente e confiável.
 
@@ -98,61 +73,11 @@ Um ambiente que suporta CI/CD é, por natureza, propício à **colaboração em 
 |**Visual Studio Code**|Projetos leves e multiplataforma|Win / macOS / Linux|✅ Sim|✅ Leve, extensível|❌ Requer configuração manual|
 |**Rider (JetBrains)**|Alternativa robusta e avançada|Win / macOS / Linux|⚠️ Não (trial)|✅ Debugger avançado, suporte a Docker|❌ Pago|
 
----
+- **Visual Studio**: Ferramenta oficial da Microsoft, ideal para soluções corporativas, com IntelliSense, designer e depuração avançada.
+- **VS Code**: Leve e extensível, perfeito para projetos multiplataforma, mas requer extensões.
+- **Rider**: IDE paga com recursos avançados, como suporte a Docker e testes nativos.
 
-### 🔒 Configuração de certificados HTTPS:
-
-```bash
-
-dotnet dev-certs https --trust
-
-```
-
-> "**Nota**: Esse comando configura certificados para desenvolvimento local, essencial para projetos `ASP.NET` Core com `HTTPS`."
-
----
-
-### 🧪 Visual Studio (VS)
-
-- Ferramenta oficial da **Microsoft**.
-- Suporte completo a C#, ASP.NET, Windows Forms, etc.
-- Recursos como:
-  - IntelliSense
-  - Designer
-  - Live Debugging
-- Recomendado para **grandes soluções corporativas**.
-
----
-
-### 📝 Visual Studio Code (VS Code)
-
-- Editor leve e altamente extensível.
-- Requer **extensões** para suporte completo ao .NET.
-- Ideal para quem prefere terminal, controle fino e velocidade.
-
-#### 🔌 Extensões úteis para VS Code
-
-- `C# for Visual Studio Code` (by Microsoft)
-- `.NET Install Tool`
-- `Debugger for C#`
-- `Code Spell Checker` (qualidade de código)
-- `GitLens` (versões e histórico Git)
-
-📘 [Documentação oficial do VS Code + .NET](https://learn.microsoft.com/pt-br/dotnet/core/tutorials/with-visual-studio-code)
-
----
-
-### 💼 Rider (JetBrains)
-
-- IDE paga e avançada.
-- Ideal para quem já usa ferramentas JetBrains (como IntelliJ).
-- Recursos nativos:
-  - Testes
-  - Docker
-  - Git
-  - Debugger avançado
-
-🌐 [Site oficial do Rider](https://www.jetbrains.com/rider/)
+🌐 [Rider](https://www.jetbrains.com/rider/) | 📘 [VS Code + .NET](https://learn.microsoft.com/pt-br/dotnet/core/tutorials/with-visual-studio-code)
 
 ---
 
@@ -160,9 +85,7 @@ dotnet dev-certs https --trust
 
 ### 📦 O que vem no SDK?
 
-- Compiladores
-- CLI `dotnet`
-- Bibliotecas padrão para desenvolvimento
+- Compiladores, CLI `dotnet`, bibliotecas padrão para desenvolvimento.
 
 ### 🧩 E o Runtime?
 
@@ -179,25 +102,25 @@ dotnet dev-certs https --trust
 | Executar apps        | ✅ Sim           | ✅ Sim              |
 | Usar CLI `dotnet`    | ✅ Completo      | ⚠️ Limitado         |
 
-📥 [Download oficial do SDK](https://dotnet.microsoft.com/en-us/download)
+📥 [Download oficial do SDK](https://dotnet.microsoft.com/pt-br/download)
+
+### ⚙️ Instalação por Plataforma
+
+- 🗔 **Windows**: Baixe em dotnet.microsoft.com.
+- 🍎 **macOS**: `brew install dotnet-sdk`.
+- 🐧 **Linux (Ubuntu)**: `sudo apt-get update && sudo apt-get install -y dotnet-sdk-8.0`.
+- Verifique: `dotnet --list-sdks` (ex.: `8.0.100 [/usr/share/dotnet/sdk]`).
 
 ---
 
-## 💡 Instalando o VS Code + Extensões
+### 💡 Instalando o VS Code + Extensões
 
-### 🧭 Passo a passo
+Com o SDK instalado, configure o VS Code para desenvolvimento .NET:
 
-1. 🔽 Baixe o VS Code: [https://code.visualstudio.com](https://code.visualstudio.com)
+1. 🔽 Baixe o VS Code: [📥](https://code.visualstudio.com)
 2. 🧩 Instale a extensão `C# for VS Code (powered by OmniSharp)`
-3. 📦 Instale o .NET SDK separadamente
-4. 🧪 Verifique instalação:
-
-```bash
-
-dotnet --version
-
-```
-
+3. 📦 [Instale o .NET SDK separadamente](https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/01IntroductionToTheDotNetEnvironment/02EnvironmentConfigurationAndIDEs.md#L107) 
+4. 🧪 Verifique instalação: `dotnet --version`.
 5. 🚀 Crie seu primeiro projeto:
 
 ```bash
@@ -208,7 +131,13 @@ dotnet run
 
 ```
 
-> 📝 Esse comando gera uma aplicação console simples em C#.
+### 🔌 Extensões recomendadas:
+
+- `C# for Visual Studio Code (Microsoft)`.
+- `.NET Install Tool`.
+- `Debugger for C#`.
+- `Code Spell Checker`.
+- `GitLens`.
 
 ---
 
@@ -233,6 +162,18 @@ dotnet run
   - `Ctrl + .`: Sugestões rápidas (Quick Fix).
   - `F5`: Iniciar depuração.
   - `Ctrl + Shift + B`: Compilar projeto.
+
+---
+
+### 🔒 Certificados HTTPS
+
+- Para projetos ASP.NET Core:
+
+```bash
+
+dotnet dev-certs https --trust
+
+```
 
 ---
 
@@ -268,62 +209,7 @@ obj/
 
 ---
 
-## ⚙️ **Seção: Instalando o .NET SDK**
-
-### Instalação do .NET SDK por Plataforma
-
-- **Windows**: Baixe o instalador em [dotnet.microsoft.com](https://dotnet.microsoft.com/download).
-- **macOS**:
-```bash
-
-brew install dotnet-sdk
-
-```
-- **Linux (Ubuntu)**:
-```bash
-
-sudo apt-get update && sudo apt-get install -y dotnet-sdk-8.0
-
-```
-- **Verifique a instalação**:  
-```bash
-
-dotnet --list-sdks
-
-```
-
-> Saída esperada: Lista de versões do SDK instaladas, ex.: `8.0.100 [/usr/share/dotnet/sdk]`.
-
----
-
-## ⚙️ Instalando o .NET SDK
-
-### 📦 O que vem no SDK?
-
-- Compiladores, CLI `dotnet`, bibliotecas padrão.
-
-### 🧩 E o Runtime?
-
-- Executa aplicações compiladas, mas não suporta desenvolvimento.
-
-### 🔍 SDK vs Runtime
-
-| 🔍 Característica     | ✅ .NET SDK      | 🚫 .NET Runtime     |
-|----------------------|------------------|---------------------|
-| Desenvolver apps     | ✅ Sim           | ❌ Não              |
-| Executar apps        | ✅ Sim           | ✅ Sim              |
-| Usar CLI `dotnet`    | ✅ Completo      | ⚠️ Limitado         |
-
-**Instalação**:
-
-- Windows: [dotnet.microsoft.com](https://dotnet.microsoft.com/download)
-- macOS: `brew install dotnet-sdk`
-- Linux (Ubuntu): `sudo apt-get install -y dotnet-sdk-8.0`
-- Verifique: `dotnet --list-sdks`
-
----
-
-### 📅 Exemplo de Calculadora:
+### 📅 Exemplo prático de Calculadora:
 
 ```csharp
 
