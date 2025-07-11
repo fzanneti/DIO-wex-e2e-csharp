@@ -258,6 +258,8 @@ namespace MeuProjeto
 * 📘 [Livro gratuito “Pro Git” (pt-BR)](https://git-scm.com/book/pt-br/v2)
 * 🔁 [GitHub Learning Lab (exercícios práticos)](https://github-com.translate.goog/apps/github-learning-lab?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc)
 
+---
+
 ### 📝 Projeto Interligado da DIO
 
 [![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=digitalinnovationone&repo=dio-lab-open-source&bg_color=261d31&border_color=7a49c6&show_icons=true&icon_color=7a49c6&title_color=37ccab&text_color=FFF)](https://github.com/digitalinnovationone/dio-lab-open-source)
