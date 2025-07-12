@@ -19,7 +19,7 @@ Ele responde via:
 - **API REST** (`/api/chat`)
 - **Interface Web (HTML + JS)** simples para facilitar testes
 
-<img src="https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/assets/images/Project-Jarbas-Bot.gif" width="400px" />
+<img src="https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/assets/images/Project-Jarbas-Bot.gif" width="800px" />
 
 ---
 
