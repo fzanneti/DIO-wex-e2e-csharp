@@ -1,5 +1,15 @@
 # 🧱 Introdução — Entendendo a Estrutura do Projeto em C#
 
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
+
+---
+
 ### 📁 Estrutura básica de um projeto .NET
 
 Antes de escrever código, é importante entender o que vem por padrão ao criar um projeto .NET:
@@ -24,21 +34,79 @@ Isso gera uma estrutura como:
 
 No C#, **classes são moldes** que descrevem:
 
-* Características → **Propriedades**
+* Características / Dados → **Propriedades**
 * Comportamentos → **Métodos**
 
-### 💡 Exemplo:
+---
+
+### 📝 Exemplo Prático:
+
+1. **Produto.cs**:
 
 ```csharp
 
-public class Pessoa
+namespace MeuProjeto
 {
-    public string Nome;
-    public int Idade;
-
-    public void Apresentar()
+    public class Produto
     {
-        Console.WriteLine($"Olá, meu nome é {Nome} e tenho {Idade} anos.");
+        public string Nome { get; set; }
+        public double Preco { get; set; }
+
+        public void ExibirInfo()
+        {
+            Console.WriteLine($"{Nome} custa {Preco:C}");
+        }
+    }
+}
+
+```
+
+2. **GerenciadorProdutos.cs**:
+  
+ ```csharp
+
+using System.Collections.Generic;
+
+namespace MeuProjeto
+{
+    public class GerenciadorProdutos
+    {
+        private readonly List<Produto> _produtos = new List<Produto>();
+
+        public void AdicionarProduto(Produto produto)
+        {
+            _produtos.Add(produto);
+        }
+
+        public void ListarProdutos()
+        {
+            foreach (var produto in _produtos)
+            {
+                produto.ExibirInfo();
+            }
+        }
+    }
+}
+   
+   ```
+
+3. **Program.cs**:
+
+```csharp
+
+using System;
+
+namespace MeuProjeto
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var gerenciador = new GerenciadorProdutos();
+            gerenciador.AdicionarProduto(new Produto { Nome = "Notebook", Preco = 3500.00 });
+            gerenciador.AdicionarProduto(new Produto { Nome = "Mouse", Preco = 50.00 });
+            gerenciador.ListarProdutos();
+        }
     }
 }
 
@@ -94,16 +162,70 @@ namespace Exemplo
 
 ---
 
+## 📚 Explicando o Projeto C# "MeuProjeto" 📚
+
+Este manual explica de forma concisa as classes do seu projeto C# e como elas trabalham juntas para gerenciar produtos.
+
+---
+
+### Visão Geral
+
+O "MeuProjeto" é um sistema básico de gerenciamento de produtos. Ele demonstra como organizar o código em C# usando classes específicas para diferentes tarefas: definir produtos, gerenciar uma lista de produtos e executar a aplicação.
+
+---
+
+### 1. Classe `Produto` 📦
+
+* **Arquivo**: `Produto.cs`
+* **Função**: É o **modelo** para cada produto.
+* **Conteúdo**:
+    * **`Nome`** (texto) e **`Preco`** (número decimal): Propriedades para as características do produto.
+    * **`ExibirInfo()`**: Método que mostra o nome e o preço do produto no console.
+
+---
+
+### 2. Classe `GerenciadorProdutos` 📋
+
+* **Arquivo**: `GerenciadorProdutos.cs`
+* **Função**: É o **organizador** dos produtos.
+* **Conteúdo**:
+    * **`private readonly List<Produto> _produtos`**: Uma lista interna e privada para guardar os objetos `Produto`. É `readonly` para que a lista em si não possa ser substituída, mas produtos podem ser adicionados ou removidos dela.
+    * **`AdicionarProduto(Produto produto)`**: Adiciona um produto à lista.
+    * **`ListarProdutos()`**: Percorre a lista e pede a cada produto que exiba suas informações usando `ExibirInfo()`.
+
+---
+
+### 3. Classe `Program` ▶️
+
+* **Arquivo**: `Program.cs`
+* **Função**: É o **ponto de partida** da aplicação.
+* **Conteúdo**:
+    * **`static void Main(string[] args)`**: O método que inicia a execução do programa.
+    * Cria uma instância de `GerenciadorProdutos`.
+    * Cria novos objetos `Produto` (Notebook, Mouse) e os adiciona ao `GerenciadorProdutos`.
+    * Chama o método `ListarProdutos()` do `GerenciadorProdutos` para mostrar todos os produtos cadastrados.
+
+---
+
+### Como Interagem 🤝
+
+O `Program` **cria** um `GerenciadorProdutos`. Ele então **cria** produtos e os **entrega** ao `GerenciadorProdutos` para que este os **armazene**. Por fim, o `Program` pede ao `GerenciadorProdutos` para **listar** tudo, e o `GerenciadorProdutos`, por sua vez, pede a cada `Produto` para **se exibir**.
+
+---
+
 ### 📦 Namespaces
 
 Namespaces agrupam classes relacionadas para evitar conflitos de nomes e manter a organização.
 
 ```csharp
 
-namespace Projeto.Exemplo
+namespace MeuProjeto.Compras
+{
+    public class Pedido { }
+}
+namespace MeuProjeto.Usuarios
 {
     public class Cliente { }
-    public class Pedido { }
 }
 
 ```
@@ -129,7 +251,7 @@ No C#, **instanciamos objetos** com `new`, acessamos **propriedades** e executam
 
 * Linhas terminam com `;`
 * Blocos delimitados com `{}` (não por identação como em Python)
-* Tipagem forte e explícita
+* Tipagem forte e explícita `int idade = 30;`
 * Linguagem orientada a objetos
 
 ### Exemplo:
@@ -143,97 +265,32 @@ string nome = "Fabio";
 
 ---
 
-## ✍️ Convenções de Escrita (Case Style)
+### ✍️ Convenções de Escrita
 
-### CamelCase
+- **CamelCase**: `nomeCliente`, `precoTotal`.
+- **PascalCase**: `Produto`, `ExibirInfo()`.
 
-* Usado para variáveis e parâmetros
-* Ex: `nomeCliente`, `precoTotal`
-
-### PascalCase
-
-* Usado para classes, métodos e propriedades
-* Ex: `Produto`, `CalcularTotal()`, `NomeCompleto`
-
-### ❌ snake\_case
-
-* Não é usado no C#
-* Mais comum em Python
-
----
-
-### ✔️ Convenções em Ação
+**Exemplo**:
 
 ```csharp
 
-public class Produto
+public class Cliente
 {
-    public string Nome { get; set; }
-    public double Preco { get; set; }
-
-    public void ExibirInfo()
-    {
-        Console.WriteLine($"{Nome} custa {Preco:C}");
-    }
+    public string NomeCompleto { get; set; }
+    public int IdadeCliente { get; set; }
 }
 
 ```
 
-🎯 Nome de classe, propriedades e método em PascalCase.
-
 ---
 
-### 🧹 Boas Práticas de Escrita
+### 🧹 Boas Práticas para Estruturação
 
-* 🟢 Use nomes significativos: `clienteAtivo` > `c1`
-* 🟢 Evite abreviações sem sentido: `produto` > `prd`
-* 🟢 Use linhas em branco para separar blocos
-* 🟢 Escreva código legível para você e para os outros
-
-### Comparativo:
-
-```csharp
-
-string nomeCompleto = "Maria Clara"; // Boa prática
-int idadeCliente = 35;
-
-public class Cliente { }             // PascalCase
-
-// Ruim:
-string nc = "Maria Clara";
-int id = 35;
-
-```
-
----
-
-## 📚 Material de Apoio
-
-Ao criar um projeto em C#, especialmente com .NET, o Visual Studio ou o .NET CLI gera uma estrutura padrão de arquivos e pastas. Compreender o papel de cada parte facilita a organização, manutenção e escalabilidade do código.
-
----
-
-### 🎓 Vídeos e Aulas Gratuitas
-
-- [Estrutura de Projeto C# .NET – Balta.io](https://www.youtube.com/watch?v=wvG6I7e1wQg)
-- [Organização de um Projeto C# – DevAprender](https://www.youtube.com/watch?v=ehFCjQe7mcg)
-- [Criando Projeto C# com .NET CLI – Luiz Carlos Faria](https://www.youtube.com/watch?v=TC32f7A0ynE)
-
----
-
-### 📚 Documentação Oficial Microsoft
-
-- [Estrutura de Projetos C# – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/core/project-sdk/overview)
-- [`Program.cs`, `Main()` e top-level statements](https://learn.microsoft.com/pt-br/dotnet/csharp/fundamentals/program-structure/program-structure)
-- [`csproj`: o arquivo de projeto](https://learn.microsoft.com/pt-br/dotnet/core/project-sdk/msbuild-props)
-
----
-
-### 🧠 Artigos Técnicos e Blogs
-
-- [Como funciona a estrutura de projeto no .NET – Medium](https://medium.com/@mariofs/estrutura-de-um-projeto-em-net-core-para-iniciantes-cf4f50a3f63b)
-- [Entendendo o Program.cs, Startup.cs e Appsettings.json](https://balta.io/blog/estrutura-de-um-projeto-dotnet)
-- [Organização de pastas em projetos C# – TreinaWeb](https://www.treinaweb.com.br/blog/organizacao-de-projetos-em-csharp)
+1. **Separação de Responsabilidades**: Use `Controllers/`, `Models/`, `Services/`.
+2. **Nomenclatura Clara**: `ProdutoService`, `listaProdutos`.
+3. **Modularização**: Camadas (ex.: Dados, Negócios).
+4. **Documentação**: Use comentários XML.
+5. **Testes**: Crie pasta `Tests/` com xUnit.
 
 ---
 
@@ -248,6 +305,26 @@ Ao criar um projeto em C#, especialmente com .NET, o Visual Studio ou o .NET CLI
 | `bin/` e `obj/`      | Pastas geradas automaticamente com os arquivos compilados                         |
 | `Properties/launchSettings.json` | Define configurações de execução (usado em debug local)               |
 | `Controllers/`, `Models/`, `Services/` | Organização comum em projetos MVC/API                            |
+
+---
+
+## 📚 Material de Apoio
+
+Ao criar um projeto em C#, especialmente com .NET, o Visual Studio ou o .NET CLI gera uma estrutura padrão de arquivos e pastas. Compreender o papel de cada parte facilita a organização, manutenção e escalabilidade do código.
+
+---
+
+### 📚 Documentação Oficial Microsoft
+
+- [Estrutura de Projetos C# – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/core/project-sdk/overview)
+- [`Program.cs`, `Main()` e top-level statements](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/top-level-statements)
+- [`csproj`: o arquivo de projeto](https://learn.microsoft.com/pt-br/dotnet/core/project-sdk/msbuild-props)
+
+---
+
+### 🧠 Artigos Técnicos e Blogs
+
+- [Organize seu projeto no .NET](https://learn.microsoft.com/pt-br/dotnet/core/porting/project-structure)
 
 ---
 
@@ -267,8 +344,10 @@ O C# possui uma estrutura clara e bem definida para organizar projetos. Aprender
 * Trabalhar melhor em equipe
 * Evoluir com confiança em projetos reais
 
-📌 Dominar os fundamentos é o que te torna pronto para desafios mais complexos.
+📌 Dominar a estrutura de um projeto .NET te prepara para escrever código organizado, colaborar em equipe e enfrentar desafios reais no Bootcamp WEX. Crie projetos práticos, siga convenções e use Git para versionar seu progresso. Seu código está pronto para crescer!
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
