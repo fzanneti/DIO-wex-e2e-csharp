@@ -1,6 +1,14 @@
 # 🌐 Introdução às APIs com C#
 
-Este módulo apresenta os conceitos fundamentais de **APIs (Application Programming Interfaces)** com foco no desenvolvimento em **C# utilizando ASP.NET Core**. Também explora exemplos práticos de consumo de APIs públicas e a criação de uma API RESTful do zero.
+No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. **APIs** permitem comunicação entre sistemas. Este módulo explora como criar e consumir APIs RESTful com **ASP.NET Core**.
+
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
 
 ---
 
@@ -189,13 +197,13 @@ Aqui estão alguns materiais gratuitos e de qualidade para reforçar os conhecim
 
 ### 🎓 Cursos e Tutoriais Gratuitos
 
-- [Criando Web APIs com ASP.NET Core - Microsoft Learn](https://learn.microsoft.com/pt-br/training/modules/build-web-api-aspnet-core/)
-- [Web API RESTful com ASP.NET Core - DevAprender](https://www.youtube.com/watch?v=IufAwzGE2C8)
+- [Criando Web APIs com ASP.NET Core](https://learn.microsoft.com/pt-br/training/modules/build-web-api-aspnet-core/)
 
 ### 📚 Documentações Oficiais
 
-- [Documentação ASP.NET Core Web API](https://learn.microsoft.com/pt-br/aspnet/core/web-api/?view=aspnetcore-8.0)
-- [Referência da Classe ControllerBase (Microsoft)](https://learn.microsoft.com/pt-br/dotnet/api/microsoft.aspnetcore.mvc.controllerbase?view=aspnetcore-8.0)
+- [ASP.NET Core Web API](https://learn.microsoft.com/pt-br/aspnet/core/web-api/?view=aspnetcore-8.0)
+- [System.Text.Json](https://learn.microsoft.com/pt-br/dotnet/standard/serialization/system-text-json/overview)
+- [Autenticação no ASP.NET Core](https://learn.microsoft.com/pt-br/aspnet/core/security/authentication/?view=aspnetcore-8.0)
 
 ### 📦 Ferramentas e Testes de API
 
@@ -206,7 +214,6 @@ Aqui estão alguns materiais gratuitos e de qualidade para reforçar os conhecim
 ### 💡 Extras Interessantes
 
 - [RESTful API Design - Best Practices](https://restfulapi.net/)
-- [Top 10 REST API Best Practices](https://www.freecodecamp.org/news/rest-api-best-practices/)
 
 ---
 
@@ -221,4 +228,6 @@ Aqui estão alguns materiais gratuitos e de qualidade para reforçar os conhecim
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
