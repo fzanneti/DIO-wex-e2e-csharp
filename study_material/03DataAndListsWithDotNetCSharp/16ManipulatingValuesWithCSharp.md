@@ -1,6 +1,14 @@
 # 🧮 Manipulando Valores com C#
 
-Este módulo apresenta as formas mais comuns e eficientes de **manipular valores em C#**, incluindo strings, números, datas e moedas. A manipulação correta dessas informações é essencial para aplicações reais, como exibição de dados ao usuário, armazenamento e cálculos.
+No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. A **manipulação de valores** é essencial para processar dados, formatar saídas e realizar cálculos precisos. Este módulo explora strings, números, datas, moedas e localização.
+
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
 
 ---
 
@@ -208,34 +216,14 @@ else
 
 ---
 
-## ⚙️ Links Complementares de Estudo – Manipulando Valores com C#
-
-Trabalhar bem com valores em C# significa dominar tipos primitivos, variáveis, operadores, conversões e expressões — tudo que você usa pra fazer a lógica acontecer.
-
----
-
-### 🎓 Cursos e Vídeos Gratuitos
-
-- [Tipos de Dados e Variáveis em C# – Balta.io](https://www.youtube.com/watch?v=OdpntmqoyKs)
-- [Operadores em C# – Curso em Vídeo](https://www.youtube.com/watch?v=ZoOe0NHS9jw)
-- [Conversão de Tipos em C# – DevAprender](https://www.youtube.com/watch?v=jp5Q6MtUl_g)
-
----
-
 ### 📚 Documentação Oficial Microsoft
 
-- [Tipos de Dados C# – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/builtin-types/built-in-types)
-- [Variáveis e Escopo – Microsoft Learn](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/inside-a-program/variables)
-- [Operadores C# – Microsoft Learn](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/operators/)
+- [Tipos de Dados C#](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/builtin-types/built-in-types)
+- [Variáveis e Escopo](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/inside-a-program/variables)
+- [Formatação de Strings](https://learn.microsoft.com/pt-br/dotnet/standard/base-types/string-formats)
+- [CultureInfo](https://learn.microsoft.com/pt-br/dotnet/api/system.globalization.cultureinfo)
+- [Operadores C#](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/operators/)
 - [Conversões de Tipo e Casting](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
-
----
-
-### 🧠 Artigos Técnicos e Explicações
-
-- [Entendendo Variáveis e Tipos em C# (DevMedia)](https://www.devmedia.com.br/entendendo-variaveis-e-tipos-de-dados-em-c/30506)
-- [Conversão de Tipos em C# – Alura](https://www.alura.com.br/artigos/conversoes-de-tipos-em-c-sharp)
-- [Operadores em C#: Guia Completo (Medium)](https://medium.com/@wilsonneto/operadores-em-c-75ccdfd9bb55)
 
 ---
 
@@ -252,4 +240,6 @@ Manipular valores em C# vai além de converter números e datas. Trata-se de tor
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti
