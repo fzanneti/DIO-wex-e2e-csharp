@@ -138,6 +138,12 @@ public double CalcularDesconto(double valor, double porcentagem)
 
 ---
 
+### Desafio do Módulo 2 - Estacionamento
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=fzanneti&repo=dio-and-wex-parking-challenge&bg_color=261d31&border_color=7a49c6&show_icons=true&icon_color=7a49c6&title_color=37ccab&text_color=FFF)](https://github.com/fzanneti/dio-and-wex-parking-challenge)
+
+---
+
 #### ✅ Considerações Finais
 
 - 🟢 **Use comentários com moderação**. Um código bem escrito deve ser, por si só, fácil de entender.
