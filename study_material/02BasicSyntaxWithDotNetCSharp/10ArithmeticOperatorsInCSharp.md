@@ -1,10 +1,18 @@
 # 🧮 Operadores Aritméticos em C#
 
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
+
+---
+
 ### ➕ Introdução aos Operadores Aritméticos
 
-> Entenda os operadores aritméticos do C# e aprenda a usar a classe `Math` para realizar operações matemáticas mais avançadas, como potência, raiz quadrada e trigonometria.
-
-Em C#, operadores aritméticos são símbolos usados para realizar cálculos matemáticos. Eles funcionam com tipos numéricos como `int`, `double`, `float`, entre outros. São fundamentais para qualquer aplicação que envolva matemática.
+No Bootcamp WEX, você está construindo aplicações com C#, .NET, Git e GitHub. **Operadores aritméticos** e a classe `Math` são essenciais para cálculos em projetos como sistemas financeiros ou APIs. Este módulo explora operadores básicos, funções matemáticas e boas práticas. Em C#, operadores aritméticos são símbolos usados para realizar cálculos matemáticos. Eles funcionam com tipos numéricos como `int`, `double`, `float`, entre outros. São fundamentais para qualquer aplicação que envolva matemática.
 
 ---
 
@@ -118,41 +126,17 @@ Operadores aritméticos são fundamentais em C# para realizar cálculos simples 
 
 ---
 
-### 🎓 Aulas e Vídeos Gratuitos
-
-- [Operadores Aritméticos em C# – Balta.io](https://www.youtube.com/watch?v=OdpntmqoyKs)
-  - Aula explicando operadores como `+`, `-`, `*`, `/`, `%` com exemplos práticos.
-- [Operadores C# – DevAprender](https://www.youtube.com/watch?v=ZoOe0NHS9jw)
-  - Vídeo mostrando operadores aritméticos, relacionais e lógicos com aplicação em código.
-- [Curso C# Básico – CFBCursos (Operadores)](https://www.youtube.com/watch?v=x5BzU9aHtxw)
-  - Aulas com exercícios simples, direto ao ponto para iniciantes.
-
----
-
 ### 📚 Documentação Oficial Microsoft
 
 - [Operadores Aritméticos – C# Docs](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/operators/arithmetic-operators)
-  - Guia completo sobre operadores `+`, `-`, `*`, `/`, `%` e como funcionam internamente.
 - [Tabela Geral de Operadores – Microsoft](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/operators/)
-  - Todos os operadores em C#, incluindo aritméticos, lógicos, relacionais e bit a bit.
-
----
-
-### 🧠 Artigos Técnicos e Explicações
-
-- [Entendendo Operadores Aritméticos – DevMedia](https://www.devmedia.com.br/operadores-aritmeticos-no-c/30044)
-  - Artigo com vários exemplos e explicações para cada operador.
-- [Diferença entre / e % (divisão e módulo)](https://www.alura.com.br/artigos/entendendo-o-uso-do-operador-de-resto-em-csharp)
-  - Importante entender como o `%` funciona para identificar restos de divisões.
 
 ---
 
 ### 💻 Ferramentas para Testes
 
 - [DotNetFiddle](https://dotnetfiddle.net/)
-  - Ideal para testar expressões aritméticas rapidamente online.
 - [LINQPad](https://www.linqpad.net/)
-  - Teste qualquer cálculo em tempo real sem criar um projeto completo.
 
 ---
 
@@ -169,4 +153,6 @@ Operadores aritméticos são **base da programação matemática**. Dominar o us
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
