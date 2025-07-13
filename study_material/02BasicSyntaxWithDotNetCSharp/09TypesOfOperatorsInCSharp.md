@@ -2,11 +2,19 @@
 
 Entenda como funcionam os operadores de atribuição, conversão de tipos e boas práticas para lidar com diferentes tipos de dados em C#.
 
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
+
 ---
 
 ### ✅ Introdução - Operador de Atribuição
 
-Em C#, o **operador de atribuição** é usado para armazenar valores em variáveis. O símbolo `=` é utilizado para essa operação:
+No Bootcamp WEX, você está construindo aplicações com C#, .NET, Git e GitHub. **Operadores** são ferramentas essenciais para manipular dados, tomar decisões e implementar lógicas complexas. Este módulo explora operadores de atribuição, condicionais, lógicos e conversões de tipos, preparando você para projetos robustos.
 
 ```csharp
 
@@ -14,7 +22,7 @@ int idade = 30;
 
 ```
 
-Isso significa: “A variável ````idade```` recebe o valor ````30````”. Atenção: isso não é uma **igualdade**, mas sim uma **atribuição de valor**.
+Isso significa: “A variável `idade` recebe o valor `30`”. Atenção: isso não é uma **igualdade**, mas sim uma **atribuição de valor**.
 
 ---
 
@@ -29,8 +37,7 @@ Isso significa: “A variável ````idade```` recebe o valor ````30````”. Aten�
 | `*=`     | Multiplicação e atribuição | `x *= 3;`               |
 | `/=`     | Divisão e atribuição       | `x /= 2;`               |
 | `%=`     | Módulo e atribuição        | `x %= 2;`               |
-
-Esses atalhos deixam o código mais limpo e fácil de ler.
+| `&=`     | AND bit a bit e atribuição | `x &= 2;`               |
 
 ---
 
@@ -563,4 +570,6 @@ Os operadores lógicos permitem escrever **decisões mais completas e inteligent
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
