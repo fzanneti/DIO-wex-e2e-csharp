@@ -2,11 +2,23 @@
 
 Material de apoio referente ao módulo de Arrays e Listas em C# do curso WEX - End to End Engineering (DIO).
 
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
+
 ---
 
 ### 🧠 Introdução aos Arrays
 
-Arrays são estruturas de dados que armazenam **uma coleção de elementos do mesmo tipo**, com **tamanho fixo**.
+No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. **Arrays** e **listas** são fundamentais para manipular coleções de dados em projetos como cadastros ou APIs. Este módulo explora arrays, listas, seus métodos e boas práticas.
+
+---
+
+## 🧠 Arrays
 
 ### Exemplo:
 
@@ -167,17 +179,27 @@ nomes.Clear();               // Limpa a lista
 ```
 ---
 
-## 📚 Links Complementares de Estudo – Arrays e Listas em C#
+### 🛡️ Tratamento de Erros
 
-Trabalhar com Arrays e Listas é essencial pra manipular conjuntos de dados em C#. Arrays são fixos e listas são dinâmicas, e entender a diferença e uso correto faz toda a diferença.
+```csharp
+
+try
+{
+    int[] numeros = new int[2];
+    numeros[2] = 10; // Lança IndexOutOfRangeException
+}
+catch (IndexOutOfRangeException)
+{
+    Console.WriteLine("Erro: Índice fora do intervalo!");
+}
+
+```
 
 ---
 
-### 🎓 Cursos e Vídeos Gratuitos
+## 📚 Links Complementares de Estudo – Arrays e Listas em C#
 
-- [Arrays em C# – Curso em Vídeo](https://www.youtube.com/watch?v=KoJ8PfRpQBY)
-- [Listas em C# (List<T>) – Balta.io](https://www.youtube.com/watch?v=SGvUu2hEqyA)
-- [Arrays vs Listas em C# – DevAprender](https://www.youtube.com/watch?v=K6E1dEpCGdU)
+Trabalhar com Arrays e Listas é essencial pra manipular conjuntos de dados em C#. Arrays são fixos e listas são dinâmicas, e entender a diferença e uso correto faz toda a diferença.
 
 ---
 
@@ -186,14 +208,6 @@ Trabalhar com Arrays e Listas é essencial pra manipular conjuntos de dados em C
 - [Array Class – System.Array](https://learn.microsoft.com/pt-br/dotnet/api/system.array?view=net-8.0)
 - [List<T> Class – System.Collections.Generic.List](https://learn.microsoft.com/pt-br/dotnet/api/system.collections.generic.list-1?view=net-8.0)
 - [Como percorrer coleções em C# (foreach)](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/foreach-in)
-
----
-
-### 🧠 Artigos e Explicações Técnicas
-
-- [Arrays e Listas em C# – DevMedia](https://www.devmedia.com.br/arrays-e-listas-em-c/28021)
-- [Diferença entre Array e List em C# (Medium)](https://medium.com/@jrodrigues/diferen%C3%A7a-entre-array-e-list-em-c-4a36f7d6b535)
-- [Manipulando Listas em C# (Alura)](https://www.alura.com.br/artigos/listas-em-csharp)
 
 ---
 
@@ -206,23 +220,10 @@ Trabalhar com Arrays e Listas é essencial pra manipular conjuntos de dados em C
 
 ### ✅ Encerramento do Tema
 
-- Use **arrays** quando souber exatamente quantos elementos irá armazenar.
-- Prefira **listas** (`List<T>`) para manipular coleções dinâmicas.
-- Lembre-se de tratar exceções ao acessar arrays com índices inválidos.
-- Explore métodos utilitários da classe `Array` e a flexibilidade das listas.
+Use **arrays** para coleções fixas e **listas** para coleções dinâmicas. Trate erros como índices inválidos e use métodos como `Sort` e `Find` para manipulações eficientes. Continue praticando no Bootcamp WEX para dominar coleções!
 
 ---
 
-### 💡 Dica
-
-Use `var` com listas quando o tipo for evidente:
-
-```csharp
-
-var numeros = new List<int> { 1, 2, 3 };
-
-```
-
----
-
-##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
