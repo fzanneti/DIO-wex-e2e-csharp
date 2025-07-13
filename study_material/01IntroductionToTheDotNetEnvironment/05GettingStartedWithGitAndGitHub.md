@@ -201,27 +201,6 @@ git branch -d nome-branch      # Deleta branch
 
 ---
 
-### 📝 Exemplo de CI para .NET:
-
-```yaml
-
-name: CI .NET
-on: [push]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '8.0.x'
-      - run: dotnet build
-      - run: dotnet test
-
-```
-
----
-
 ## ⚔️ Resolvendo Conflitos
 
 ### 🔹 O que é um conflito?

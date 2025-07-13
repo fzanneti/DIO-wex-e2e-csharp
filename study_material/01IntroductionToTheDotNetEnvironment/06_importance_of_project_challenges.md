@@ -1,5 +1,15 @@
 # A Importância dos Desafios de Projeto na Prática
 
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
+
+---
+
 ### 🎯 Introdução
 
 Estudar teoria é essencial — mas não suficiente.
@@ -56,11 +66,13 @@ Mostre ao recrutador **o que você sabe fazer de verdade**.
 
 ## 🧩 Como Escolher um Desafio de Projeto?
 
-| 🔰 Nível       | 💼 Tipo de Projeto                                         |
-|---------------|-------------------------------------------------------------|
-| Iniciante      | Calculadora, To-Do List, CRUD simples                      |
-| Intermediário  | API REST, e-commerce básico, integração com banco de dados |
-| Avançado       | Autenticação, testes automatizados, arquitetura em camadas |
+| 🔰 Nível       | 💼 Tipo de Projeto                                         | 🛠️ Tecnologias Sugeridas                     |
+|---------------|------------------------------------------------------------|---------------------------------------------|
+| Iniciante     | Calculadora, To-Do List, CRUD simples                     | .NET Core, C#, SQLite, Console App          |
+| Intermediário | API REST, e-commerce básico, integração com banco de dados | .NET Core, Entity Framework, SQL Server, Postman |
+| Avançado      | Autenticação, testes automatizados, arquitetura em camadas | .NET Core, JWT, xUnit, DDD, Docker          |
+
+> **Dica**: Escolha projetos que resolvam problemas reais, como um sistema de agendamento.
 
 ---
 
@@ -88,9 +100,21 @@ Mostre ao recrutador **o que você sabe fazer de verdade**.
 
 ---
 
+## 🌟 Dicas para se Destacar
+
+1. Mostre o processo no README.
+2. Adicione testes com xUnit.
+3. Use GitHub Actions para CI/CD.
+4. Explique projetos em entrevistas.
+5. Contribua em projetos open source na DIO.
+
+---
+
 #### ✅ Conclusão
 
 Os **desafios de projeto** são uma ponte entre o estudo e o mercado.
+
+Cada desafio de projeto é uma oportunidade de crescer. No Bootcamp WEX, você está construindo sua carreira. Crie projetos que desafiem suas habilidades, documente-os bem e mostre ao mundo o que você pode fazer. Seu próximo commit pode ser o início de uma grande oportunidade!
 
 > Quanto mais projetos práticos você tiver:
 > - Mais preparado você estará
@@ -103,4 +127,6 @@ Crie, erre, aprenda e melhore.
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
