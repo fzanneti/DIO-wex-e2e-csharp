@@ -1,7 +1,5 @@
 # 🔢 Arrays e Listas em C#
 
-Material de apoio referente ao módulo de Arrays e Listas em C# do curso WEX - End to End Engineering (DIO).
-
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
 ![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
