@@ -167,7 +167,6 @@ Herança e polimorfismo são dois dos principais pilares da **Programação Orie
 
 - [Herança](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [Polimorfismo](https://learn.microsoft.com/pt-br/dotnet/csharp/fundamentals/object-oriented/polymorphism)
-- [Interfaces](https://learn.microsoft.com/pt-br/dotnet/csharp/fundamentals/types/interfaces)
 - [Palavras-chave: `virtual`, `override`, `new` – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/override)
 
 ---

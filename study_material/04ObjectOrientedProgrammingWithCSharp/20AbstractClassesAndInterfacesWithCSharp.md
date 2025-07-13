@@ -1,6 +1,14 @@
 # 🧱 Classes Abstratas e Interfaces em C#
 
-Neste módulo vamos entender conceitos fundamentais da Programação Orientada a Objetos com C#, como **classes abstratas**, **classes seladas**, **interfaces** e o papel da **classe base object**.
+No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. **Classes abstratas**, **classes seladas** e **interfaces** são ferramentas da POO que garantem flexibilidade e segurança. Este módulo explora como definir contratos e compartilhar código.
+
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github
 
 ---
 
@@ -204,24 +212,11 @@ public class Logger : ILog { }
 
 Estudar a fundo o uso de **classes abstratas** e **interfaces** é essencial para aplicar corretamente os conceitos de **POO (Programação Orientada a Objetos)** em C#. Abaixo estão materiais para reforçar o conteúdo:
 
-### 🎓 Cursos e Vídeos Gratuitos
-
-- [Curso sobre Classes Abstratas e Interfaces - Balta.io](https://www.youtube.com/watch?v=qZev0U_U85I)
-- [Interfaces vs Classes Abstratas em C# - DevAprender](https://www.youtube.com/watch?v=qk_ZTZ6Yqew)
-- [C# POO - Classes Abstratas e Interfaces (CFBCursos)](https://www.youtube.com/watch?v=mGzG5qX99CM)
-
 ### 📚 Documentações Oficiais da Microsoft
 
-- [Documentação sobre Interfaces (C#)](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/interfaces/)
-- [Classes Abstratas (abstract)](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/abstract)
-
-- [Interface vs Abstract Class - StackOverflow (Explicação objetiva)](https://stackoverflow.com/questions/1913098/what-is-the-difference-between-an-abstract-class-and-an-interface-in-c)
-
-### 🧠 Artigos e Leitura Técnica
-
-- [Interfaces x Classes Abstratas – Qual usar e quando?](https://www.treinaweb.com.br/blog/interfaces-x-classes-abstratas-qual-usar-e-quando)
-- [Quando usar uma Interface ou Classe Abstrata? - DevMedia](https://www.devmedia.com.br/interfaces-e-classes-abstratas-em-c/27709)
-- [Diferença entre Interface e Classe Abstrata (Medium)](https://medium.com/@wilsonneto/diferen%C3%A7a-entre-interface-e-classe-abstrata-em-c-3f5cb3686b53)
+- [Classes Abstratas](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/abstract)
+- [Interfaces](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/interfaces/)
+- [Classe Object](https://learn.microsoft.com/pt-br/dotnet/api/system.object)
 
 ---
 
@@ -240,4 +235,6 @@ Estudar a fundo o uso de **classes abstratas** e **interfaces** é essencial par
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
