@@ -1,8 +1,18 @@
 # 📦 Introdução a Banco de Dados
 
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
+
+---
+
 ### 📘 Introdução ao Módulo
 
-Neste módulo vamos aprender os conceitos fundamentais sobre **bancos de dados**, desde sua definição, passando pelos principais tipos existentes, até a instalação prática do **SQL Server**, um dos SGBDs mais usados no ecossistema .NET.
+No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. **Bancos de dados** armazenam informações de forma eficiente. Este módulo explora bancos relacionais e NoSQL, com foco em **SQL Server** e **Entity Framework Core**.
 
 ---
 
@@ -107,17 +117,6 @@ Bancos de dados são fundamentais em qualquer aplicação moderna. Entender bem 
 
 ---
 
-### 🎓 Aulas e Cursos Gratuitos
-
-- [Curso de Banco de Dados para Iniciantes (Curso em Vídeo)](https://www.youtube.com/playlist?list=PLHz_AreHm4dmDP_VgNa8YG_5bhOUIpEMd)
-  > Explicação passo a passo de SQL, tabelas, comandos básicos e teoria relacional.
-- [Introdução a Banco de Dados – DevMedia](https://www.devmedia.com.br/introducao-a-banco-de-dados/38352)
-  > Um guia inicial com fundamentos teóricos sobre modelagem, tipos de dados, normalização e relacionamentos.
-- [Fundamentos de Banco de Dados – Microsoft Learn](https://learn.microsoft.com/pt-br/training/modules/introduction-to-data/)
-  > Módulo gratuito com explicações claras sobre dados estruturados, armazenamento e linguagens de consulta.
-
----
-
 ### 📚 Documentação e Ferramentas
 
 - [Documentação Oficial SQL (W3Schools)](https://www.w3schools.com/sql/)
@@ -129,16 +128,9 @@ Bancos de dados são fundamentais em qualquer aplicação moderna. Entender bem 
 - [DB Fiddle](https://www.db-fiddle.com/)
   > Ambiente online para testar SQL sem instalar nada. Excelente para praticar.
 
----
-
-### 📁 Conceitos Fundamentais
-
-- [Modelo Relacional de Dados – Alura Artigo](https://www.alura.com.br/artigos/modelo-relacional-dados)
-  > Explicação clara sobre como funciona o modelo de tabelas e relacionamentos.
-- [O que é SQL? E para que serve? (HostGator)](https://www.hostgator.com.br/blog/o-que-e-sql/)
-  > Visão geral bem simples sobre a linguagem SQL, ideal para iniciantes.
-- [Normalização de Dados – DevMedia](https://www.devmedia.com.br/normalizacao-de-dados/24310)
-  > Entenda como evitar redundância e garantir consistência nos seus bancos.
+- [Entity Framework Core](https://learn.microsoft.com/pt-br/ef/core/)
+- [SQL Server](https://learn.microsoft.com/pt-br/sql/sql-server/)
+- [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/pt-br/sql/ssms/)
 
 ---
 
@@ -159,4 +151,6 @@ Este módulo oferece a base essencial para quem está começando a trabalhar com
 
 ---
 
-##### ✍️ **Criado por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
