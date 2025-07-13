@@ -1,8 +1,18 @@
-# 🧰 SQL Server – Manipulando Dados  
+# 🧰 SQL Server – Manipulando Dados
+
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
+
+---
 
 ### 📘 Introdução
 
-Agora que já conhecemos a criação de tabelas e inserção de dados, este módulo apresenta formas **mais avançadas de manipulação** com SQL Server, utilizando **funções de agregação, formatação de dados, joins** e muito mais.
+No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. **Manipular dados no SQL Server** é essencial para consultas avançadas e relacionamentos. Este módulo explora comandos T-SQL e integração com **EF Core**.
 
 ---
 
@@ -276,17 +286,6 @@ Manipular dados é uma das habilidades mais fundamentais ao trabalhar com banco 
 
 ---
 
-### 🎓 Cursos e Aulas Gratuitas
-
-- [Manipulação de Dados no SQL Server – Bóson Treinamentos](https://www.youtube.com/playlist?list=PLucm8g_ezqNoeQ1n3Azc-5p_R7Y3tFUSP)
-  > Playlist com aulas práticas sobre comandos `INSERT`, `SELECT`, `UPDATE`, `DELETE`, `JOIN`, `WHERE`, `ORDER BY`, etc.
-- [Curso Completo de SQL Server – CFBCursos (DML)](https://www.youtube.com/watch?v=_OTU08AuvBY)
-  > Aulas sobre manipulação e consulta de dados, incluindo `GROUP BY`, `HAVING` e agregações (`COUNT`, `SUM`, etc.).
-- [Consultando Dados com T-SQL – Microsoft Learn](https://learn.microsoft.com/pt-br/training/modules/query-data-select-transact-sql/)
-  > Módulo oficial com exemplos e exercícios para consulta de dados usando T-SQL no SQL Server.
-
----
-
 ### 📚 Documentação Oficial Microsoft
 
 - [SELECT (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/queries/select-transact-sql)
@@ -299,17 +298,6 @@ Manipular dados é uma das habilidades mais fundamentais ao trabalhar com banco 
   > Remoção de registros com segurança, incluindo uso de `WHERE`.
 - [INNER JOIN e OUTER JOIN – Explicação](https://learn.microsoft.com/pt-br/sql/t-sql/queries/from-transact-sql?view=sql-server-ver16)
   > Como unir tabelas com `JOIN` e suas variações.
-
----
-
-### 🧠 Artigos Técnicos e Exercícios
-
-- [Comandos SQL para Manipulação de Dados – DevMedia](https://www.devmedia.com.br/sql-insert-update-e-delete/24351)
-  > Explicações claras com exemplos e cenário prático de uso.
-- [Diferença entre INNER JOIN, LEFT JOIN e RIGHT JOIN (Blog da Alura)](https://www.alura.com.br/artigos/sql-joins-diferencas)
-  > Artigo ilustrado explicando os tipos de `JOIN` com esquemas visuais.
-- [SQL Practice – W3Schools](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all)
-  > Ambiente online para testar comandos SQL interativamente.
 
 ---
 
@@ -337,4 +325,6 @@ Essa base é essencial para qualquer aplicação que manipule dados no back-end 
 
 ---
 
-##### ✍️ **Criado por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
