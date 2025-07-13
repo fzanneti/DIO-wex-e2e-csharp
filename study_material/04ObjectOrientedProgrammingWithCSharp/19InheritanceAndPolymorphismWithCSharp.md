@@ -1,6 +1,14 @@
 # 🧬 Herança e Polimorfismo com C#
 
-Este documento apresenta, de forma clara e objetiva, dois dos pilares fundamentais da Programação Orientada a Objetos (POO): **Herança** e **Polimorfismo**, utilizando a linguagem **C#**.
+No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. **Herança** e **polimorfismo** são pilares da POO que permitem reutilizar código e criar sistemas flexíveis. Este módulo explora como herdar comportamentos e implementar métodos dinâmicos.
+
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
 
 ---
 
@@ -155,23 +163,12 @@ Som genérico de animal
 
 Herança e polimorfismo são dois dos principais pilares da **Programação Orientada a Objetos (POO)**. São fundamentais para escrever código limpo, reutilizável e extensível em C#. Aqui estão materiais gratuitos e práticos para aprofundar nesse tema:
 
-### 🎓 Vídeos e Aulas Gratuitas
-
-- [Herança em C# - Curso POO Balta.io (YouTube)](https://www.youtube.com/watch?v=KTwE-cbdq5Y)
-- [Polimorfismo em C# - DevAprender](https://www.youtube.com/watch?v=mKCeu5ne7Xc)
-- [POO em C# - Herança e Polimorfismo (CFBCursos)](https://www.youtube.com/watch?v=z-f7L_OZMEg)
-
 ### 📚 Documentação Oficial da Microsoft
 
-- [Herança (C#) – Microsoft Learn](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
-- [Polimorfismo – Microsoft Learn](https://learn.microsoft.com/pt-br/dotnet/fundamentals/code-analysis/quality-guidelines/ca2214)
+- [Herança](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
+- [Polimorfismo](https://learn.microsoft.com/pt-br/dotnet/csharp/fundamentals/object-oriented/polymorphism)
+- [Interfaces](https://learn.microsoft.com/pt-br/dotnet/csharp/fundamentals/types/interfaces)
 - [Palavras-chave: `virtual`, `override`, `new` – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/override)
-
-### 🧠 Artigos e Leitura Técnica
-
-- [O que é Herança e Polimorfismo em C#? (DevMedia)](https://www.devmedia.com.br/entendendo-heranca-e-polimorfismo-em-c/25881)
-- [Herança x Composição - Qual aplicar em C#? (TreinaWeb)](https://www.treinaweb.com.br/blog/heranca-ou-composicao-em-c)
-- [Polimorfismo com exemplos simples - Medium](https://medium.com/@wilsonneto/polimorfismo-em-c-com-exemplos-1b5b18004f96)
 
 ---
 
@@ -180,6 +177,10 @@ Herança e polimorfismo são dois dos principais pilares da **Programação Orie
 A combinação de **herança** e **polimorfismo** proporciona um código mais **modular, reutilizável e fácil de manter**.
 Esses conceitos são amplamente usados em frameworks, bibliotecas e aplicações reais.
 
+Herança e polimorfismo são fundamentais para projetos .NET no Bootcamp WEX. Use herança para reutilizar código e polimorfismo para flexibilidade. Continue praticando!
+
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
