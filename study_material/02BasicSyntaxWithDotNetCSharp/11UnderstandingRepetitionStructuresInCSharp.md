@@ -2,16 +2,15 @@
 
 Este material é parte da trilha de estudos em C#, abordando as principais **estruturas de repetição (loops)** da linguagem. Loops são fundamentais para executar blocos de código de forma repetitiva até que uma condição seja atendida — algo essencial em qualquer aplicação real.
 
----
+Este módulo explora `for`, `while`, `do while` e `foreach`, com boas práticas para projetos escaláveis.
 
-### 📌 Índice
-
-- Introdução às Estruturas de Repetição  
-- Estrutura `for`  
-- Estrutura `while`  
-- Estrutura `do while`  
-- Interrupção de fluxo com `break` e `continue`  
-- Criando e refatorando menus interativos  
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
 
 ---
 
@@ -211,28 +210,12 @@ As estruturas de repetição permitem executar blocos de código várias vezes, 
 
 ---
 
-### 🎓 Vídeos e Aulas Gratuitas
-
-- [Estruturas de Repetição em C# – Curso Completo (CFBCursos)](https://www.youtube.com/watch?v=5vHThwFGeYs)
-- [Laços em C# – Balta.io](https://www.youtube.com/watch?v=PE5rxK7Yp5g)
-- [foreach no C# – DevAprender](https://www.youtube.com/watch?v=8mrYu4CZ41U)
-
----
-
 ### 📚 Documentação Oficial Microsoft
 
 - [`for` Loop – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/for)
 - [`while` Loop – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/while)
 - [`do-while` Loop – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/do)
 - [`foreach` – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/foreach-in)
-
----
-
-### 🧠 Artigos e Explicações Técnicas
-
-- [Estruturas de Repetição em C# – DevMedia](https://www.devmedia.com.br/estruturas-de-repeticao-em-c/27995)
-- [Diferença entre `for`, `foreach` e `while` – Alura](https://www.alura.com.br/artigos/csharp-for-foreach-while)
-- [Boas práticas ao usar laços – Medium](https://medium.com/@luizeduardohs/boas-pr%C3%A1ticas-em-la%C3%A7os-de-repeti%C3%A7%C3%A3o-no-c-e0a6bc8fdc7)
 
 ---
 
@@ -249,4 +232,6 @@ Dominar estruturas de repetição é essencial para programar de forma eficiente
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
