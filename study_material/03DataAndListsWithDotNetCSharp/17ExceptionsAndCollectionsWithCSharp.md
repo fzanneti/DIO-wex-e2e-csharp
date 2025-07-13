@@ -2,9 +2,19 @@
 
 Este material faz parte do repositório de estudos em C# e tem como objetivo apresentar de forma **clara, prática e didática** como funcionam os conceitos de **exceções** (erros) e **coleções** (estruturas para armazenar dados) na linguagem C#.
 
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
+
 ---
 
 ### 📌 O que você vai aprender
+
+No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. **Exceções** garantem que seu código lide com erros de forma segura, enquanto **coleções** organizam dados eficientemente. Este módulo explora tratamento de erros e estruturas como filas, pilhas e dicionários.
 
 - O que são exceções e como tratá-las  
 - Como ler arquivos com segurança  
@@ -208,45 +218,12 @@ Tratamento de exceções é essencial para garantir que sua aplicação reaja be
 
 ---
 
-### 🎓 Aulas e Vídeos Gratuitos
-
-- [Tratamento de Exceções em C# – Balta.io](https://www.youtube.com/watch?v=1DYwz7ECxJ0)
-- [Exceções no C# – DevAprender](https://www.youtube.com/watch?v=kdAodQkDHLs)
-- [CFBCursos – Tratamento de Erros em C#](https://www.youtube.com/watch?v=Uax3P8VXLWY)
-
----
-
 ### 📚 Documentação Microsoft
 
-- [Tratamento de Exceções (Microsoft Docs)](https://learn.microsoft.com/pt-br/dotnet/csharp/fundamentals/exceptions/)
-- [Exceções Personalizadas – Como Criar](https://learn.microsoft.com/pt-br/dotnet/standard/exceptions/how-to-create-user-defined-exceptions)
-
----
-
-### 🧠 Artigos Técnicos
-
-- [Boas práticas no uso de Exceções (Medium)](https://medium.com/@wesleywillians/boas-pr%C3%A1ticas-no-tratamento-de-exce%C3%A7%C3%B5es-em-c-b2409ef1cb59)
-
----
-
-### 📦 Parte 2: Coleções em C#
-
-Coleções permitem armazenar e manipular conjuntos de dados como listas, filas e dicionários. São a base para trabalhar com dados em memória.
-
----
-
-### 🎓 Aulas e Tutoriais Gratuitos
-
-- [Coleções em C# (List, Dictionary, Stack, Queue) – Balta.io](https://www.youtube.com/watch?v=K6E1dEpCGdU)
-- [Listas e Arrays em C# – DevAprender](https://www.youtube.com/watch?v=SGvUu2hEqyA)
-- [Coleções Genéricas – CFBCursos](https://www.youtube.com/watch?v=eYZ1kGBMRzM)
-
----
-
-### 📚 Documentação Microsoft
-
+- [Tratamento de Exceções](https://learn.microsoft.com/pt-br/dotnet/csharp/fundamentals/exceptions/)
+- [Exceções Personalizadas](https://learn.microsoft.com/pt-br/dotnet/standard/exceptions/how-to-create-user-defined-exceptions)
 - [Coleções Genéricas – System.Collections.Generic](https://learn.microsoft.com/pt-br/dotnet/api/system.collections.generic?view=net-8.0)
-- [Array vs List – Quando usar](https://learn.microsoft.com/pt-br/dotnet/standard/collections/when-to-use-generic-collections)
+- [Array vs List](https://learn.microsoft.com/pt-br/dotnet/standard/collections/when-to-use-generic-collections)
 - [Foreach e Iteração de Coleções](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/foreach-in)
 
 ---
@@ -260,6 +237,8 @@ Coleções permitem armazenar e manipular conjuntos de dados como listas, filas 
 
 #### ✅ Encerramento
 
+Exceções e coleções são fundamentais para projetos .NET no Bootcamp WEX. Use `try-catch` para proteger seu código e coleções como `Queue<T>`, `Stack<T>`, `Dictionary<TKey, TValue>`, `List<T>` e `HashSet<T>` para manipular dados. Continue praticando!
+
 Você agora aprendeu:
 
 ✔️ Como proteger seu código contra falhas (exceções).  
@@ -267,4 +246,6 @@ Você agora aprendeu:
 
 ---
 
-##### ✍️ **Criado por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
