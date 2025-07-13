@@ -1,8 +1,18 @@
 # 🧩 SQL Server - Dominando Tabelas e Tipos de Dados
 
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
+
+---
+
 ### 📘 Introdução
 
-Neste módulo, vamos aprofundar os conhecimentos em **SQL Server**, dominando comandos essenciais para criar, consultar, modificar e excluir dados de tabelas. É a base prática para integrar **bancos relacionais** com aplicações em **C# e .NET**.
+No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. **Tabelas e tipos de dados no SQL Server** são essenciais para persistência de dados. Este módulo explora como criar e manipular tabelas com **SQL Server** e **EF Core**.
 
 ---
 
@@ -248,17 +258,6 @@ Compreender os **tipos de dados**, **estruturas de tabelas** e boas práticas de
 
 ---
 
-### 🎓 Aulas e Tutoriais Gratuitos
-
-- [SQL Server para Iniciantes – Curso Completo (CFBCursos)](https://www.youtube.com/playlist?list=PLx4x_zx8csUj3IbPQ4_X5jis_SkCol3eC)
-  > Curso completo no YouTube com foco em comandos DDL e estruturação de tabelas.
-- [Tipos de Dados e Tabelas no SQL Server – Bóson Treinamentos](https://www.youtube.com/watch?v=5FKJwD7tyQU)
-  > Explicação objetiva sobre os tipos de dados mais utilizados no SQL Server.
-- [Introdução ao SQL Server – Microsoft Learn](https://learn.microsoft.com/pt-br/training/modules/intro-to-sql-server/)
-  > Curso oficial da Microsoft com fundamentos sobre tabelas, colunas e tipos de dados.
-
----
-
 ### 📚 Documentação Oficial Microsoft
 
 - [Tipos de Dados (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/data-types/data-types-transact-sql)
@@ -268,16 +267,7 @@ Compreender os **tipos de dados**, **estruturas de tabelas** e boas práticas de
 - [CAST e CONVERT – Tratamento de Tipos](https://learn.microsoft.com/pt-br/sql/t-sql/functions/cast-and-convert-transact-sql)
   > Como converter tipos de dados corretamente no SQL Server.
 
----
-
-### 📘 Artigos Técnicos e Blogs
-
-- [Tipos de Dados no SQL Server – DevMedia](https://www.devmedia.com.br/sql-server-tipos-de-dados/40456)
-  > Comparação entre tipos de dados (`VARCHAR`, `CHAR`, `INT`, `DECIMAL`, etc.), com exemplos reais.
-- [Melhores práticas na criação de tabelas – Blog da Alura](https://www.alura.com.br/artigos/como-definir-campos-tabelas-banco-dados)
-  > Dicas práticas para evitar erros comuns ao definir colunas e tipos.
-- [Diferença entre VARCHAR e NVARCHAR (Blog SQLServerCentral)](https://www.sqlservercentral.com/articles/nvarchar-vs-varchar-which-to-use)
-  > Um detalhe importante para lidar com acentuação e idiomas diferentes.
+- [Entity Framework Core](https://learn.microsoft.com/pt-br/ef/core/)
 
 ---
 
@@ -299,4 +289,6 @@ Com isso, você já pode **criar, consultar, atualizar e deletar registros**, al
 
 ---
 
-##### ✍️ **Criado por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
