@@ -52,7 +52,7 @@ SELECT Nome, Ano FROM Filmes;
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/05IntroductionToDatabases/assets/images/querie1.jpg" alt="Querie 1" style="width: 600px;">
+<img src="https://github.com/fzanneti/wex_e2e_csharp/tree/main/study_material/05IntroductionToDatabases/assets/images/querie1.jpg" alt="Querie 1" style="width: 600px;">
 
 ---
 
@@ -64,7 +64,7 @@ SELECT Nome, Ano FROM Filmes ORDER BY Ano ASC;
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/05IntroductionToDatabases/assets/images/querie2.jpg" alt="Querie 2" style="width: 600px;">
+<img src="https://github.com/fzanneti/wex_e2e_csharp/tree/main/study_material/05IntroductionToDatabases/assets/images/querie2.jpg" alt="Querie 2" style="width: 600px;">
 
 ---
 
@@ -76,7 +76,7 @@ SELECT Nome, Ano, Duracao FROM Filmes WHERE Nome = 'De Volta para o Futuro';
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/05IntroductionToDatabases/assets/images/querie3.jpg" alt="Querie 3" style="width: 600px;">
+<img src="https://github.com/fzanneti/wex_e2e_csharp/tree/main/study_material/05IntroductionToDatabases/assets/images/querie3.jpg" alt="Querie 3" style="width: 600px;">
 
 ---
 
@@ -88,7 +88,7 @@ SELECT Nome, Ano, Duracao FROM Filmes WHERE Ano = 1997;
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/05IntroductionToDatabases/assets/images/querie4.jpg" alt="Querie 4" style="width: 600px;">
+<img src="https://github.com/fzanneti/wex_e2e_csharp/tree/main/study_material/05IntroductionToDatabases/assets/images/querie4.jpg" alt="Querie 4" style="width: 600px;">
 
 ---
 
@@ -100,7 +100,7 @@ SELECT Nome, Ano, Duracao FROM Filmes WHERE Ano > 2000;
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/05IntroductionToDatabases/assets/images/querie5.jpg" alt="Querie 5" style="width: 600px;">
+<img src="https://github.com/fzanneti/wex_e2e_csharp/tree/main/study_material/05IntroductionToDatabases/assets/images/querie5.jpg" alt="Querie 5" style="width: 600px;">
 
 ---
 
@@ -112,7 +112,7 @@ SELECT Nome, Ano, Duracao FROM Filmes WHERE Duracao > 100 AND Duracao < 150 ORDE
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/05IntroductionToDatabases/assets/images/querie6.jpg" alt="Querie 6" style="width: 600px;">
+<img src="https://github.com/fzanneti/wex_e2e_csharp/tree/main/study_material/05IntroductionToDatabases/assets/images/querie6.jpg" alt="Querie 6" style="width: 600px;">
 
 ---
 
@@ -124,7 +124,7 @@ SELECT Ano, COUNT(*) AS ContagemDeFilmes, MAX(Duracao) AS MaiorDuracao FROM Film
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/05IntroductionToDatabases/assets/images/querie7.jpg" alt="Querie 7" style="width: 600px;">
+<img src="https://github.com/fzanneti/wex_e2e_csharp/tree/main/study_material/05IntroductionToDatabases/assets/images/querie7.jpg" alt="Querie 7" style="width: 600px;">
 
 ---
 
@@ -136,7 +136,7 @@ SELECT PrimeiroNome, UltimoNome, Genero FROM Atores WHERE Genero = 'M';
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/05IntroductionToDatabases/assets/images/querie8.jpg" alt="Querie 8" style="width: 600px;">
+<img src="https://github.com/fzanneti/wex_e2e_csharp/tree/main/study_material/05IntroductionToDatabases/assets/images/querie8.jpg" alt="Querie 8" style="width: 600px;">
 
 ---
 
@@ -148,7 +148,7 @@ SELECT PrimeiroNome, UltimoNome, Genero FROM Atores WHERE Genero = 'F' ORDER BY 
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/05IntroductionToDatabases/assets/images/querie9.jpg" alt="Querie 9" style="width: 600px;">
+<img src="https://github.com/fzanneti/wex_e2e_csharp/tree/main/study_material/05IntroductionToDatabases/assets/images/querie9.jpg" alt="Querie 9" style="width: 600px;">
 
 ---
 
@@ -162,7 +162,7 @@ JOIN Generos ON FilmesGenero.IdGenero = Generos.Id;
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/05IntroductionToDatabases/assets/images/querie10.jpg" alt="Querie 10" style="width: 600px;">
+<img src="https://github.com/fzanneti/wex_e2e_csharp/tree/main/study_material/05IntroductionToDatabases/assets/images/querie10.jpg" alt="Querie 10" style="width: 600px;">
 
 ---
 
@@ -177,7 +177,7 @@ WHERE Genero = 'Mistério';
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/05IntroductionToDatabases/assets/images/querie11.jpg" alt="Querie 11" style="width: 600px;">
+<img src="https://github.com/fzanneti/wex_e2e_csharp/tree/main/study_material/05IntroductionToDatabases/assets/images/querie11.jpg" alt="Querie 11" style="width: 600px;">
 
 ---
 
@@ -191,7 +191,7 @@ JOIN Atores ON ElencoFilme.IdAtor = Atores.Id;
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/05IntroductionToDatabases/assets/images/querie12.jpg" alt="Querie 12" style="width: 600px;">
+<img src="https://github.com/fzanneti/wex_e2e_csharp/tree/main/study_material/05IntroductionToDatabases/assets/images/querie12.jpg" alt="Querie 12" style="width: 600px;">
 
 ---
 
