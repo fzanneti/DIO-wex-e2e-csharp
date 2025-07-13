@@ -1,6 +1,14 @@
 # 📚 Introdução, Abstração e Encapsulamento em C#
 
-Este material tem como objetivo apresentar, de forma objetiva e prática, os conceitos fundamentais de Programação Orientada a Objetos (POO) com foco em **abstração** e **encapsulamento** utilizando a linguagem **C#**.
+No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. **Abstração** e **encapsulamento** são pilares da POO que organizam e protegem o código. Este módulo explora como modelar entidades e proteger dados.
+
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
 
 ---
 
@@ -111,23 +119,11 @@ Os pilares da Programação Orientada a Objetos (POO) começam com:
 
 Dominar esses conceitos permite criar sistemas mais seguros, organizados e reutilizáveis. Aqui estão conteúdos gratuitos e objetivos para aprofundar nesses fundamentos usando C#:
 
-### 🎓 Aulas e Cursos Gratuitos
-
-- [POO em C# – Introdução e Conceitos (Balta.io)](https://www.youtube.com/watch?v=KhzGSHNhnbI)
-- [Abstração e Encapsulamento – CFBCursos (YouTube)](https://www.youtube.com/watch?v=Da0RtgZsMQs)
-- [Curso POO Completo – DevAprender](https://www.youtube.com/watch?v=JLf9qU9KKuk)
-
 ### 📚 Documentação Oficial da Microsoft
 
 - [Programação Orientada a Objetos – C# Microsoft Learn](https://learn.microsoft.com/pt-br/dotnet/csharp/fundamentals/tutorials/oop)
 - [Modificadores de Acesso – private, public, protected](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
 - [Propriedades em C# (`get`, `set`)](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/using-properties)
-
-### 🧠 Artigos Técnicos e Explicações
-
-- [POO em C# – Entendendo Abstração e Encapsulamento (DevMedia)](https://www.devmedia.com.br/poo-em-c-introducao-a-encapsulamento-e-abstracao/18801)
-- [Encapsulamento e Abstração: Diferenças e Aplicações – TreinaWeb](https://www.treinaweb.com.br/blog/entendendo-o-encapsulamento-e-a-abstracao-na-orientacao-a-objetos)
-- [Diferença entre Abstração e Encapsulamento (Medium)](https://medium.com/@wilsonneto/entendendo-a-diferen%C3%A7a-entre-abstra%C3%A7%C3%A3o-e-encapsulamento-6f1438a09f29)
 
 ---
 
@@ -137,6 +133,10 @@ Abstração e Encapsulamento são **fundamentos essenciais** para qualquer desen
 
 Estes conceitos estão presentes no dia a dia de qualquer sistema orientado a objetos, seja em pequenos projetos ou grandes aplicações empresariais.
 
+Use abstração para modelar entidades e encapsulamento para proteger dados. Continue praticando!
+
 ---
 
-##### ✍️ **Criado por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
