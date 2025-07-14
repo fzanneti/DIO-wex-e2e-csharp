@@ -1,6 +1,14 @@
 # 📘 Fundamentos de Qualidade de Software
 
-Material de estudo estruturado para apoiar alunos, iniciantes e profissionais em transição de carreira que desejam entender os fundamentos da Qualidade de Software (Software Quality).
+No **Bootcamp WEX**, você está aprendendo a construir aplicações completas com **C#**, **.NET**, **Git**, **APIs e bancos de dados relacionais** e **NoSQL**. A **Qualidade de Software** é um pilar fundamental para garantir que essas aplicações sejam confiáveis, escaláveis e atendam às expectativas dos usuários. Este módulo explora os fundamentos de QA, incluindo processos, técnicas e ferramentas de teste, com exemplos práticos em C# que se integram aos projetos full-stack, preparando você para atuar em equipes ágeis e pipelines DevOps.
+
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
 
 ---
 
@@ -384,8 +392,9 @@ Testes não são apenas uma etapa, mas parte essencial do ciclo de desenvolvimen
 - [Documentação de Testes - IEEE 829](https://en.wikipedia.org/wiki/IEEE_829)
 - [CTFL (bstqb.org.br)](https://bstqb.org.br/b9/doc/syllabus_ctfl_3.1br.pdf)
 - [martinfowler.com](https://martinfowler.com/)
-- [Cobertura de código explicada. Relatórios e métricas com Istanbul e o… | by Eduardo Rabelo | Medium](https://oieduardorabelo.medium.com/cobertura-de-c%C3%B3digo-explicada-ba1516db7dbd)
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
