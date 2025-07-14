@@ -1,6 +1,6 @@
 # 🧪 Introdução ao Mercado de Qualidade de Software
 
-Este material tem como objetivo apresentar uma visão ampla e atualizada sobre a área de Qualidade de Software (QA - *Quality Assurance*), suas tendências, papel no mercado de tecnologia e as principais competências e conhecimentos necessários para iniciar ou se especializar na carreira.
+No Bootcamp WEX, você está aprendendo a construir aplicações robustas com C#, .NET, Git, GitHub, SQL Server, e MongoDB. Qualidade de Software (QA) é essencial para garantir que essas aplicações atendam aos requisitos, sejam confiáveis e ofereçam uma boa experiência ao usuário. Este módulo explora o mercado de QA, suas tendências, habilidades técnicas e soft skills necessárias, além de práticas de automação com ferramentas integradas ao ecossistema .NET, preparando você para se destacar em uma carreira estratégica e de alta demanda.
 
 ---
 
