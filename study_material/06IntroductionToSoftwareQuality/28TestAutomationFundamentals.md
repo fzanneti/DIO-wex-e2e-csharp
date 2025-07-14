@@ -483,6 +483,12 @@ public class LoginTest
 
 ---
 
+### 📝 Complemento para o Bootcamp
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=fzanneti&repo=quality-assurance-qa-experience-training&bg_color=261d31&border_color=7a49c6&show_icons=true&icon_color=7a49c6&title_color=37ccab&text_color=FFF)](https://github.com/fzanneti/quality-assurance-qa-experience-training)
+
+---
+
 #### ✅ 5. Conclusão
 
 > ✅ O padrão App Actions é aplicável em **qualquer linguagem**, inclusive **C#**, desde que siga a ideia de **organizar ações de alto nível separadas das páginas**. Ele funciona como uma camada intermediária entre os testes e os objetos de página, facilitando a leitura e a manutenção dos testes E2E.
