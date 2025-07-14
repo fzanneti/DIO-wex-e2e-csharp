@@ -1,8 +1,20 @@
 # 🧪 Fundamentos de Automação de Testes
 
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Linguagem](https://img.shields.io/badge/Linguagem-CSharp-blue)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
+
+---
+
 ## 📌 1. Introdução
 
-A automação de testes é um dos pilares para garantir qualidade de software de forma escalável e ágil. Com a evolução das metodologias ágeis e da entrega contínua (CI/CD), a automação deixou de ser um diferencial e se tornou uma necessidade.
+No **Bootcamp WEX**, você está aprendendo a construir aplicações completas com **C#**, **.NET**, **Git**, **APIs e bancos de dados relacionais** e **NoSQL**. A automação de testes é um pilar crucial para garantir qualidade, agilidade e confiabilidade em projetos modernos. Este módulo explora os fundamentos de automação, com foco em ferramentas e padrões de design aplicados a projetos .NET, como xUnit, Selenium e SpecFlow, preparando você para implementar testes escaláveis em pipelines CI/CD e equipes ágeis.
+
+---
 
 ### 🔍 Por que automatizar testes?
 
@@ -497,4 +509,6 @@ Cada padrão tem sua **finalidade específica** e pode ser usado **em conjunto**
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
