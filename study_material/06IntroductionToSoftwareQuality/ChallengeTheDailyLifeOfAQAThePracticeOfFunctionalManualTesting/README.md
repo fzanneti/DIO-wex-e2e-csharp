@@ -2,6 +2,13 @@
 
 > Projeto desenvolvido como parte do curso **"Formação QA Specialist – DIO + WEX"**, com foco em práticas de planejamento, documentação, teste e controle de qualidade no ciclo de vida de um sistema eCommerce.
 
+![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
+![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/fzanneti/wex-e2e-csharp?style=social)
+![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
+![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
+![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
+
 ---
 
 ### 🎯 Objetivo
@@ -15,7 +22,7 @@ Foram documentadas as etapas de desenvolvimento, gerenciamento ágil com Jira, a
 ## 🗂️ Estrutura do Projeto
 
 - ✅ Planejamento no **Jira** com sprints, épicas, tarefas e user stories
-- ✅ Documentação técnica organizada no **Confluence** [Acessar para ver todo o conteúdo.](https://fzanneti.atlassian.net/wiki/x/_YAR)
+- ✅ Documentação técnica organizada no **Confluence** [PDF](https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/06IntroductionToSoftwareQuality/ChallengeTheDailyLifeOfAQAThePracticeOfFunctionalManualTesting/assets/docs/SQ-SwagLabsShopping%20-%20QA%20Home.pdf)
 - ✅ User stories próprias elaboradas pelo participante
 - ✅ Plano de fluxo de trabalho e ciclo de vida do bug
 
@@ -84,4 +91,6 @@ Documentação e entregas finalizadas com base nos requisitos do curso.
 
 ---
 
-##### ✍️ **Seção criada por:** *Fabio Zanneti* 🎯 Projeto: **WEX - End to End Engineering**
+##### ✍️ Seção criada por: *Fabio Zanneti* - 🎯 Bootcamp: **WEX - End to End Engineering**
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
