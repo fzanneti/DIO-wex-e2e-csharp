@@ -73,6 +73,6 @@ A implementação das ferramentas Amazon EC2, Amazon S3 e AWS Lambda na Abstergo
 
 ---
 <br>
-<img src="https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/08IntroductionToTheCloudWithAWS/ChallengeReducePharmacyCostsWithAWS/assets/images/ass.png" width="150px">         
-______________________<br>                    
+<img src="https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/08IntroductionToTheCloudWithAWS/ChallengeReducePharmacyCostsWithAWS/assets/images/ass.png" width="150px">   
+_______________________<br>                    
 Fabio Zanneti da Silva<br>
