@@ -47,16 +47,6 @@ A implementação das três ferramentas AWS trouxe os seguintes benefícios:
 
 ---
 
-### Gráfico de Redução de Custos
-
-| Serviço       | Custo Anterior (R$/mês) | Custo com AWS (R$/mês) | Economia (%) |
-|---------------|-------------------------|------------------------|--------------|
-| Amazon EC2    | 50.000                  | 30.000                 | 40%          |
-| Amazon S3     | 20.000                  | 8.000                  | 60%          |
-| AWS Lambda    | 15.000                  | 7.500                  | 50%          |
-
----
-
 # Conclusão
 
 A implementação das ferramentas Amazon EC2, Amazon S3 e AWS Lambda na Abstergo Industries resultará em maior eficiência operacional, escalabilidade e segurança, além de uma redução significativa nos custos operacionais. Estima-se uma economia total de 45-50% nos processos financeiros e de infraestrutura. Recomenda-se a continuidade da utilização dessas ferramentas e a exploração de outros serviços AWS, como Amazon RDS, para otimizar ainda mais os processos da empresa.
@@ -65,10 +55,10 @@ A implementação das ferramentas Amazon EC2, Amazon S3 e AWS Lambda na Abstergo
 
 # Anexos
 
-- Planilha de custos detalhada (cost_analysis_abstergo.xlsx)  
-- Manual de configuração do Amazon EC2 (ec2_setup_guide.pdf)  
-- Documentação de políticas de segurança do Amazon S3 (s3_security_policy.pdf)  
-- Relatório de automação com AWS Lambda (lambda_automation_report.pdf)  
+- [Planilha de custos detalhada](https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/08IntroductionToTheCloudWithAWS/ChallengeReducePharmacyCostsWithAWS/assets/docs/xls/Analise%20de%20Custo%20-%20Abstergo.xlsx)
+- [Manual de configuração do Amazon EC2](https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/08IntroductionToTheCloudWithAWS/ChallengeReducePharmacyCostsWithAWS/assets/docs/pdf/Amazon%20EC2.pdf)  
+- [Documentação de políticas de segurança do Amazon S3](https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/08IntroductionToTheCloudWithAWS/ChallengeReducePharmacyCostsWithAWS/assets/docs/pdf/Amazon%20EC2.pdf)  
+- [Relatório de automação com AWS Lambda](https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/08IntroductionToTheCloudWithAWS/ChallengeReducePharmacyCostsWithAWS/assets/docs/pdf/AWS%20Lambda.pdf)  
 
 *Nota: Os anexos podem ser fornecidos em formato editável para ajustes, se necessário.*
 
