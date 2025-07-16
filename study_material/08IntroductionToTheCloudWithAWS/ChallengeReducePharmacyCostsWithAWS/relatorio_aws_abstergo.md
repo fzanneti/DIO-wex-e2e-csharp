@@ -1,5 +1,6 @@
-<img src="https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/08IntroductionToTheCloudWithAWS/ChallengeReducePharmacyCostsWithAWS/assets/images/logo.png" width=100px>
-<h1>RELATÓRIO DE IMPLEMENTAÇÃO DE SERVIÇOS AWS</h1>
+<img src="https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/08IntroductionToTheCloudWithAWS/ChallengeReducePharmacyCostsWithAWS/assets/images/logo.png" width=150px align="center">
+
+### RELATÓRIO DE IMPLEMENTAÇÃO DE SERVIÇOS AWS
 
 **Data:** 15 de Julho de 2025  
 **Empresa:** Abstergo Industries - Empresa do segmento farmacêutico  
