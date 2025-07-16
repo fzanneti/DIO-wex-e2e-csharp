@@ -18,42 +18,46 @@ Este repositório contém o relatório de implementação de serviços AWS para 
 ### 🧱 Estrutura do Repositório
 
 - **relatorio_aws_abstergo.md**: Relatório principal contendo a introdução, descrição do projeto, benefícios, redução de custos e conclusão.
-- **anexos/** (opcional, para edição futura):
-  - `cost_analysis_abstergo.xlsx`: Planilha com análise detalhada de custos.
-  - `ec2_setup_guide.pdf`: Manual de configuração do Amazon EC2.
-  - `s3_security_policy.pdf`: Documentação de políticas de segurança do Amazon S3.
-  - `lambda_automation_report.pdf`: Relatório de automação com AWS Lambda.
+- **anexos/**
+  - `Analise de Custo - Abstergo.xlsx`: Planilha com análise detalhada de custos.
+  - `Amazon EC2.pdf`: Manual de configuração do Amazon EC2.
+  - `AWS S3.pdf`: Documentação de políticas de segurança do Amazon S3.
+  - `AWS Lambda.pdf`: Relatório de automação com AWS Lambda.
 
-## Objetivo
+---
+
+### 🎯 Objetivo
+
 O projeto visa demonstrar como os serviços AWS podem ser aplicados ao setor financeiro da Abstergo Industries, uma empresa do segmento farmacêutico, para:
 - Reduzir custos operacionais em até 50%.
 - Aumentar a eficiência e escalabilidade dos processos.
 - Garantir segurança e conformidade com normas do setor.
 
-## Tecnologias Utilizadas
+---
+
+### 🖱️ Tecnologias Utilizadas
+
 - **Amazon EC2**: Infraestrutura de computação escalável para gerenciar picos de demanda.
 - **Amazon S3**: Armazenamento seguro e econômico para relatórios e dados financeiros.
 - **AWS Lambda**: Computação sem servidor para automação de processos repetitivos.
 
-## Como Utilizar
-1. Clone este repositório:
-   ```bash
-   git clone <URL_DO_REPOSITORIO>
-   ```
-2. Acesse o arquivo principal `relatorio_aws_abstergo.md` para visualizar o relatório completo.
-3. Os anexos mencionados no relatório podem ser editados conforme necessário (formatos sugeridos: `.xlsx` e `.pdf`).
+---
 
-## Resultados Esperados
+### ✅ Resultados Esperados
+
 - **Redução de Custos**: Economia estimada de 40-60% nos processos financeiros e de infraestrutura.
 - **Eficiência Operacional**: Automação de tarefas repetitivas e maior disponibilidade de dados.
 - **Escalabilidade**: Capacidade de adaptação a picos de demanda sem investimentos adicionais em hardware.
+
+---
 
 ## Autor
 - **Nome**: Fabio Zanneti da Silva
 - **Curso**: DIO X Wex
 - **Data**: 15 de Julho de 2025
 
-## Contato
-Para dúvidas ou sugestões, entre em contato com o responsável pelo projeto:
-- **E-mail**: fabio.zanneti@exemplo.com
-- **LinkedIn**: linkedin.com/in/fabiozanneti (exemplo)
+---
+
+##### ✍️ Criado por: Fabio Zanneti - 🎯 Projeto: WEX - End to End Engineering
+[![GitHub](https://img.shields.io/badge/GitHub-fzanneti-181717?style=flat&logo=github)](https://github.com/fzanneti)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-fzanneti-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/fzanneti)
