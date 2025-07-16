@@ -1,4 +1,4 @@
-<img src="https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/08IntroductionToTheCloudWithAWS/ChallengeReducePharmacyCostsWithAWS/assets/images/logo.png" width=150px align="left">
+<img src="https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/08IntroductionToTheCloudWithAWS/ChallengeReducePharmacyCostsWithAWS/assets/images/logo.png" width=185px align="left">
 
 ### RELATÓRIO DE IMPLEMENTAÇÃO DE SERVIÇOS AWS
 
