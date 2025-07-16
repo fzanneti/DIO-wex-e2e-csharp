@@ -1,4 +1,4 @@
-<img src="https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/08IntroductionToTheCloudWithAWS/ChallengeReducePharmacyCostsWithAWS/assets/images/logo.png" style="width=100px">
+<img src="https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/08IntroductionToTheCloudWithAWS/ChallengeReducePharmacyCostsWithAWS/assets/images/logo.png" width=100px>
 <h1>RELATÓRIO DE IMPLEMENTAÇÃO DE SERVIÇOS AWS</h1>
 
 **Data:** 15 de Julho de 2025  
@@ -73,6 +73,6 @@ A implementação das ferramentas Amazon EC2, Amazon S3 e AWS Lambda na Abstergo
 
 ---
 <br>
-<img src="https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/08IntroductionToTheCloudWithAWS/ChallengeReducePharmacyCostsWithAWS/assets/images/ass.png" width="100px"><br>          
+<img src="https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/08IntroductionToTheCloudWithAWS/ChallengeReducePharmacyCostsWithAWS/assets/images/ass.png" width="150px">         
 ______________________<br>                    
 Fabio Zanneti da Silva<br>
