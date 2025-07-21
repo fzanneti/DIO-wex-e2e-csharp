@@ -112,6 +112,12 @@ Onde os contêineres realmente rodam.
 
 ---
 
+### 📝 Projeto Interligado da DIO
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=fzanneti&repo=wex-dockercompose-challenge&bg_color=261d31&border_color=7a49c6&show_icons=true&icon_color=7a49c6&title_color=37ccab&text_color=FFF)](https://github.com/fzanneti/wex-dockercompose-challenge)
+
+---
+
 #### ✅ O que você aprendeu nessa parte:
 
 * Conceito e propósito do **Kubernetes**
