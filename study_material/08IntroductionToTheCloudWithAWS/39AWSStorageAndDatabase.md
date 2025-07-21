@@ -172,6 +172,12 @@ O **Amazon Redshift** é um serviço de **data warehouse** otimizado para análi
 
 ---
 
+### 📝 Projeto Interligado da DIO
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=fzanneti&repo=wex-dockercompose-challenge&bg_color=261d31&border_color=7a49c6&show_icons=true&icon_color=7a49c6&title_color=37ccab&text_color=FFF)](https://github.com/fzanneti/wex-dockercompose-challenge)
+
+---
+
 ### 📚 Links para Estudo Complementar
 
 * 📘 [Amazon S3 – Documentação Oficial](https://docs.aws.amazon.com/pt_br/s3/)
