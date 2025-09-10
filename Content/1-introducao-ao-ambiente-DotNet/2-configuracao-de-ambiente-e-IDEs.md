@@ -79,7 +79,8 @@ Um ambiente configurado para Integração Contínua (CI) e Entrega Contínua (CD
 - **VS Code**: Leve e extensível, perfeito para projetos multiplataforma, mas requer extensões.
 - **Rider**: IDE paga com recursos avançados, como suporte a Docker e testes nativos.
 
-🌐 [Rider](https://www.jetbrains.com/rider/) | 📘 [VS Code + .NET](https://learn.microsoft.com/pt-br/dotnet/core/tutorials/with-visual-studio-code)
+🔗[Rider](https://www.jetbrains.com/rider/)     
+🔗[VS Code + .NET](https://learn.microsoft.com/pt-br/dotnet/core/tutorials/with-visual-studio-code)
 
 ---
 
@@ -301,28 +302,28 @@ dotnet restore
 
 ### Recursos Complementares
 
-- [Microsoft Learn: .NET](https://learn.microsoft.com/pt-br/dotnet/core/tutorials/)
-- [DIO: Bootcamp WEX](https://dio.me)
-- [Discord .NET Community](https://discord.com/invite/dotnet)
-- [VS Code + .NET Tutorial](https://www.youtube.com/watch?v=YEtisxQugew)
+🔗[Microsoft Learn: .NET](https://learn.microsoft.com/pt-br/dotnet/core/tutorials/)     
+🔗[DIO: Bootcamp WEX](https://dio.me)    
+🔗[Discord .NET Community](https://discord.com/invite/dotnet)    
+🔗[VS Code + .NET Tutorial](https://www.youtube.com/watch?v=YEtisxQugew)    
 
 ---
 
 ### Vídeos e Tutoriais Gratuitos
 
-- [Instalando Visual Studio](https://www.youtube.com/watch?v=s5bi_8y6bLQ)
-- [IDE p/ C#](https://www.youtube.com/watch?v=LwGXtxDSmeg)
-- [Configurando VS Code com C# .Net SDK](https://www.youtube.com/watch?v=YEtisxQugew)
-- [Domine o .NET CLI com Esses 5 Comandos Essenciais!](https://www.youtube.com/watch?v=0H-K_-E6hRM)
+🔗[Instalando Visual Studio](https://www.youtube.com/watch?v=s5bi_8y6bLQ)    
+🔗[IDE p/ C#](https://www.youtube.com/watch?v=LwGXtxDSmeg)     
+🔗[Configurando VS Code com C# .Net SDK](https://www.youtube.com/watch?v=YEtisxQugew)    
+🔗[Domine o .NET CLI com Esses 5 Comandos Essenciais!](https://www.youtube.com/watch?v=0H-K_-E6hRM)    
 
 ---
 
 ### Extras úteis
 
-- [Terminal integrado do VS Code](https://code.visualstudio.com/docs/editor/integrated-terminal)
-- [Extensões úteis no VS Code](https://marketplace.visualstudio.com/)
-- [Tutorial de VS Code com .NET](https://www.youtube.com/watch?v=YEtisxQugew).
-- [Microsoft Learn: Configurar o Ambiente .NET](https://learn.microsoft.com/pt-br/dotnet/core/tutorials/).
+🔗[Terminal integrado do VS Code](https://code.visualstudio.com/docs/editor/integrated-terminal)      
+🔗[Extensões úteis no VS Code](https://marketplace.visualstudio.com/)       
+🔗[Tutorial de VS Code com .NET](https://www.youtube.com/watch?v=YEtisxQugew)      
+🔗[Microsoft Learn: Configurar o Ambiente .NET](https://learn.microsoft.com/pt-br/dotnet/core/tutorials/)        
 
 ---
 
