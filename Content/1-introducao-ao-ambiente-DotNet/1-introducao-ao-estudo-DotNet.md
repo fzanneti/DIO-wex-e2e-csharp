@@ -15,13 +15,13 @@ Seu foco principal é oferecer uma base unificada e moderna para desenvolvimento
 
 ---
 
-### 1.1 - Por que escolher o .NET?
+### Por que escolher o .NET?
 
 O .NET é amplamente adotado por empresas globais devido à sua escalabilidade, segurança e suporte a arquiteturas modernas, como microsserviços e aplicações em nuvem (ex.: Azure). Comparado a outras plataformas, como Java ou Node.js, o .NET oferece uma integração nativa com ferramentas Microsoft, alta performance com o JIT Compiler, e uma comunidade ativa que impulsiona inovações constantes. É ideal para quem busca produtividade com C# e flexibilidade para diferentes tipos de projetos.
 
 ---
 
-### 1.2 - Conceitos Principais
+### Conceitos Principais
 
 - **.NET** é um ecossistema completo: inclui ferramentas, bibliotecas e o tempo de execução (**runtime**).
 - **Multiplataforma**: roda no Windows, Linux e macOS.
@@ -31,7 +31,7 @@ O .NET é amplamente adotado por empresas globais devido à sua escalabilidade, 
 
 ---
 
-### 1.3 - Bibliotecas Populares:
+### Bibliotecas Populares:
 
 - **ASP.NET Core**: Framework para aplicações web modernas e APIs REST.
 - **Entity Framework Core**: ORM para acesso a bancos de dados de forma simplificada.
@@ -39,7 +39,7 @@ O .NET é amplamente adotado por empresas globais devido à sua escalabilidade, 
 
 ---
 
-### 1.4 - Linha do Tempo do .NET
+### Linha do Tempo do .NET
 
 | Ano | Evento Importante |
 |:------:|----------------------|
@@ -55,23 +55,22 @@ O .NET é amplamente adotado por empresas globais devido à sua escalabilidade, 
 
 ---
 
-### 1.5 - Conclusão
+### Conclusão
 
 O .NET passou de um framework limitado ao Windows para uma plataforma poderosa e multiplataforma, ideal para aplicações modernas.
 
 ---
 
-### 1.6 - Comparando: .NET Framework vs .NET (Core/5+)
+### Comparando: .NET Framework vs .NET (Core/5+)
 
-#### .NET Framework
-
-- Lançado em **2002**.
-- Suporte apenas a sistemas **Windows**.
-- Muito usado em sistemas corporativos e aplicações **legadas**.
+- .NET Framework
+   - Lançado em **2002**.
+   - Suporte apenas a sistemas **Windows**.
+   - Muito usado em sistemas corporativos e aplicações **legadas**.
 
 ---
 
-### 1.7 - .NET Core / .NET 5+
+### .NET Core / .NET 5+
 
 - **Multiplataforma**.
 - **Open Source**.
@@ -80,7 +79,7 @@ O .NET passou de um framework limitado ao Windows para uma plataforma poderosa e
 
 ---
 
-### 1.8 - Tabela Comparativa
+### Tabela Comparativa
 
 | Recurso            | .NET Framework  |   .NET Core / .NET 5+    |
 |--------------------|-----------------|--------------------------|
@@ -100,7 +99,7 @@ O .NET passou de um framework limitado ao Windows para uma plataforma poderosa e
 
 ---
 
-### 1.9 - Conclusão
+### Conclusão
 
 Se você está começando hoje, foque no **.NET 6** ou superior. O .NET Framework ainda é usado, mas não receberá mais evoluções significativas. Ele permanece em modo de manutenção, ou seja:
 
@@ -114,7 +113,7 @@ A Microsoft incentiva a migração para o .NET 6+ (ou superior), que é o futuro
 
 ---
 
-### 1.10 - Compiladores e Transpiladores no .NET
+### Compiladores e Transpiladores no .NET
 
 #### Conceitos
 
@@ -124,7 +123,7 @@ A Microsoft incentiva a migração para o .NET 6+ (ou superior), que é o futuro
 
 ---
 
-### 1.11 -  Como funciona o compilador .NET
+### Como funciona o compilador .NET
 
 1. Você escreve código em C#.
 2. O compilador converte esse código em **CIL**.
@@ -145,11 +144,11 @@ class Program
 
 ```
 
-> 🧪 Esse código é compilado para **CIL** e executado pelo **CLR** na plataforma destino.
+> Esse código é compilado para **CIL** e executado pelo **CLR** na plataforma destino.
 
 ---
 
-### 1.12 - Exemplo prático: Criando e Compilando um Projeto .NET: JIT vs. AOT
+### Exemplo prático: Criando e Compilando um Projeto .NET: JIT vs. AOT
 
 Este guia prático mostrará como criar um projeto de console simples no .NET, executá-lo com compilação Just-In-Time (JIT) e, em seguida, publicá-lo como um executável nativo usando Ahead-of-Time (AOT) para entender as diferenças.
 
@@ -180,7 +179,7 @@ cd MeuAppExemplo
 
 ---
 
-### 2. Entendendo o Código (Program.cs)
+### Entendendo o Código (Program.cs)
 
 Por padrão, o arquivo `Program.cs` dentro da pasta `MeuAppExemplo` terá um código simples como este:
 
@@ -195,7 +194,7 @@ Você pode abrir este arquivo com seu editor de texto preferido para visualizá-
 
 ---
 
-### 3. Executando com Compilação JIT (Just-In-Time)
+### Executando com Compilação JIT (Just-In-Time)
 
 Quando você executa seu aplicativo .NET dessa forma, o Common Intermediate Language (CIL) é compilado para código de máquina **durante a execução** (JIT). Isso é ideal para desenvolvimento, pois permite um ciclo rápido de feedback.
 
@@ -209,7 +208,7 @@ dotnet run
 
 Você verá a saída: `"Olá, mundo! Este é o meu app .NET."`
 
-### 4. Publicando com Compilação AOT (Ahead-of-Time)
+### Publicando com Compilação AOT (Ahead-of-Time)
 
 Agora, vamos publicar nosso aplicativo usando a compilação AOT. Isso criará um **executável nativo** que não requer o runtime .NET instalado na máquina de destino. Ele é compilado **antes da execução**, resultando em inicialização mais rápida e um binário independente.
 
@@ -223,7 +222,7 @@ dotnet publish -c Release -r win-x64 --self-contained true /p:PublishAot=true
 
 ---
 
-### 5. Verificando o Executável AOT
+### Verificando o Executável AOT
 
 Após o comando `dotnet publish` ser concluído, você encontrará o executável nativo na seguinte pasta (o caminho exato pode variar um pouco dependendo da versão do .NET e do sistema operacional):
 
@@ -235,7 +234,7 @@ Você pode executar este arquivo diretamente sem a necessidade do SDK do .NET ou
 
 ---
 
-### 1.13 - Resumo das Diferenças
+### Resumo das Diferenças
 
 | Característica | JIT (Just-In-Time)                        | AOT (Ahead-of-Time)                                     |
 | :------------- | :---------------------------------------- | :------------------------------------------------------ |
@@ -248,11 +247,11 @@ Você pode executar este arquivo diretamente sem a necessidade do SDK do .NET ou
 
 ---
 
-### 1.14 - Primeiros Passos com .NET
+### Primeiros Passos com .NET
 
-#### Crie seu primeiro projeto
+**Crie seu primeiro projeto**
 
-- Crie um projeto console:
+- *Crie um projeto console*:
 
 ```bash
 
@@ -283,7 +282,7 @@ namespace MinhaPrimeiraApp
 
 ```
 
-- Execute:
+- *Execute*:
 
 ```bash
 
@@ -295,15 +294,15 @@ dotnet run
 
 ---
 
-### 1.15 - Boas Práticas no .NET
+### Boas Práticas no .NET
 
-#### Desenvolvimento no .NET
+**Desenvolvimento no .NET:**
 
-- **Organize seu projeto**:
+- *Organize seu projeto*:
 
 Use pastas como `Controllers`, `Services`, `Models` para separar responsabilidades.
 
-  - Exemplo:
+- Exemplo:
 
 ```
 
@@ -318,7 +317,7 @@ Use pastas como `Controllers`, `Services`, `Models` para separar responsabilidad
 
 ---
 
-### 1.16 - Conclusão
+### Conclusão
 
 O sistema de compilação do .NET fornece:
 
@@ -330,7 +329,7 @@ Com isso, você pode escrever em C# e rodar sua aplicação em diversos sistemas
 
 ---
 
-### Materiais Complementares.
+### Materiais Complementares:
 
 🔗[Documentação oficial da Microsoft](https://learn.microsoft.com/pt-br/dotnet/)
 🔗[Livro gratuito da Microsoft](https://docs.microsoft.com/dotnet/standard/)
