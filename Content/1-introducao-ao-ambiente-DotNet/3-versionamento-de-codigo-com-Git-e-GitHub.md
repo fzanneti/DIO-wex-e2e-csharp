@@ -31,9 +31,9 @@ O versionamento com **Git** e **GitHub** é essencial para desenvolvedores, espe
 
 | 🧩 Ferramenta | 🛠️ Função Principal           | 🔗 Link para Download                       |
 |---------------|-------------------------------|--------------------------------------------|
-| **Git**      | Controle de versão local      | [git-scm.com](https://git-scm.com/)        |
-| **GitHub**   | Repositório remoto e colaboração | [github.com](https://github.com/)       |
-| **VS Code**  | Editor de código              | [code.visualstudio.com](https://code.visualstudio.com/) |
+| **Git**      | Controle de versão local      | 🔗[git-scm.com](https://git-scm.com/)        |
+| **GitHub**   | Repositório remoto e colaboração | 🔗[github.com](https://github.com/)       |
+| **VS Code**  | Editor de código              | 🔗[code.visualstudio.com](https://code.visualstudio.com/) |
 
 > **Dica:** Instale o Git antes de tudo. Ele é a base de toda a trilha.
 
@@ -49,6 +49,8 @@ O versionamento com **Git** e **GitHub** é essencial para desenvolvedores, espe
 - Testar ideias sem riscos.
 - Manter histórico detalhado.
 
+---
+
 **Analogia**: Como salvar um documento com "v1", "v2", mas com mais controle e eficiência.
 
 ---
@@ -59,7 +61,9 @@ O versionamento com **Git** e **GitHub** é essencial para desenvolvedores, espe
 
 **Definição**: Sistema de controle de versão distribuído, criado por Linus Torvalds em 2005. Salva "fotografias" do código (commits) para rastreamento.
 
-### 📚 Conceitos Principais
+---
+
+### Conceitos Principais
 
 | 🧩 Termo | 🔍 O que significa |
 | --- | --- |
@@ -74,7 +78,7 @@ O versionamento com **Git** e **GitHub** é essencial para desenvolvedores, espe
 
 ---
 
-### 🔧 Comandos Básicos do Git
+### Comandos Básicos do Git
 
 ```bash
 
@@ -99,18 +103,20 @@ git merge <branch>        # Integra as alterações de uma branch para a branch 
 ```
 ---
 
-## ☁️ O que é GitHub?
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/assets/images/github.png" alt="Comparação de Perfomance" width="300px">
 
-🧠 **Definição**: GitHub é uma **plataforma online** que hospeda repositórios Git, permitindo:
+### O que é GitHub?
 
-* 🧑‍🤝‍🧑 Colaboração em equipe
-* 🔁 Controle de versão remoto
-* ✅ Revisões de código
-* 🚀 Deploy de projetos
+**Definição**: GitHub é uma **plataforma online** que hospeda repositórios Git, permitindo:
+
+* Colaboração em equipe
+* Controle de versão remoto
+* Revisões de código
+* Deploy de projetos
 
 ---
 
-### ⚖️ Git vs GitHub
+### Git vs GitHub
 
 | ⚙️ Característica | 🧠 Git             | ☁️ GitHub                |
 | ----------------- | ------------------ | ------------------------ |
@@ -120,7 +126,7 @@ git merge <branch>        # Integra as alterações de uma branch para a branch 
 
 ---
 
-### 🌿 Fluxo de Trabalho com Branches
+### Fluxo de Trabalho com Branches
 
 1. Crie uma branch:
 
@@ -161,14 +167,14 @@ git push origin main
 
 ---
 
-🎯 **Resumo:**
+### Resumo:
 
 > Git é o motor.
 > GitHub é a garagem onde você armazena e compartilha seu projeto.
 
 ---
 
-### 🚀 Exemplo Prático de Fluxo com Git e GitHub
+### Exemplo Prático de Fluxo com Git e GitHub
 
 1. Crie um projeto .NET:
 
@@ -217,7 +223,7 @@ namespace MeuProjeto
 ```
 ---
 
-### 🛠️ Solução de Problemas
+### Solução de Problemas
 
 - **"fatal: not a git repository"**: Execute `git init`.
 - **"failed to push some refs"**: Use `git pull --rebase` antes de `git push`.
@@ -225,29 +231,29 @@ namespace MeuProjeto
 
 ---
 
-### 📚 Documentação Oficial
+### Documentação Oficial
 
-* 📘 [Git - Documentação Oficial](https://git-scm.com/doc)
-* 📘 [GitHub Docs (pt-BR)](https://docs.github.com/pt)
-* 🧪 [Guia interativo do Git (em português)](https://learngitbranching.js.org/?locale=pt_BR)
-
----
-
-### 📚 Materiais Complementares
-
-* 🎓 [Curso rápido de Git e GitHub - DIO](https://www.youtube.com/watch?v=UBAX-13g8OM)
-* 📘 [Livro gratuito “Pro Git” (pt-BR)](https://git-scm.com/book/pt-br/v2)
-* 🔁 [GitHub Learning Lab (exercícios práticos)](https://github-com.translate.goog/apps/github-learning-lab?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc)
+🔗[Git - Documentação Oficial](https://git-scm.com/doc)    
+🔗[GitHub Docs (pt-BR)](https://docs.github.com/pt)     
+🔗[Guia interativo do Git (em português)](https://learngitbranching.js.org/?locale=pt_BR)
 
 ---
 
-### 📝 Projeto Interligado da DIO
+### Materiais Complementares
+
+🔗[Curso rápido de Git e GitHub - DIO](https://www.youtube.com/watch?v=UBAX-13g8OM)     
+🔗[Livro gratuito “Pro Git” (pt-BR)](https://git-scm.com/book/pt-br/v2)     
+🔗[GitHub Learning Lab (exercícios práticos)](https://github-com.translate.goog/apps/github-learning-lab?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc)
+
+---
+
+### Projeto Interligado da DIO
 
 [![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=digitalinnovationone&repo=dio-lab-open-source&bg_color=261d31&border_color=7a49c6&show_icons=true&icon_color=7a49c6&title_color=37ccab&text_color=FFF)](https://github.com/digitalinnovationone/dio-lab-open-source)
 
 ---
 
-#### ✅ Conclusão
+### Conclusão
 
 Agora você:
 
