@@ -1,7 +1,8 @@
-# 🚀 Introdução ao .NET
+# WEX - End to End Engineering
+
+## 1 - Introdução ao .NET
 
 A plataforma **.NET**, desenvolvida pela **Microsoft**, é um ambiente robusto e versátil que permite criar aplicações para **Windows**, **Web**, **Cloud**, **Mobile**, e até **IoT**.
-
 Seu foco principal é oferecer uma base unificada e moderna para desenvolvimento em diversas linguagens — com destaque para o **C#**.
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
@@ -14,21 +15,23 @@ Seu foco principal é oferecer uma base unificada e moderna para desenvolvimento
 
 ---
 
-#### ❓ Por que escolher o .NET?
+### 1.1 - Por que escolher o .NET?
 
-> O .NET é amplamente adotado por empresas globais devido à sua escalabilidade, segurança e suporte a arquiteturas modernas, como microsserviços e aplicações em nuvem (ex.: Azure). Comparado a outras plataformas, como Java ou Node.js, o .NET oferece uma integração nativa com ferramentas Microsoft, alta performance com o JIT Compiler, e uma comunidade ativa que impulsiona inovações constantes. É ideal para quem busca produtividade com C# e flexibilidade para diferentes tipos de projetos.
+O .NET é amplamente adotado por empresas globais devido à sua escalabilidade, segurança e suporte a arquiteturas modernas, como microsserviços e aplicações em nuvem (ex.: Azure). Comparado a outras plataformas, como Java ou Node.js, o .NET oferece uma integração nativa com ferramentas Microsoft, alta performance com o JIT Compiler, e uma comunidade ativa que impulsiona inovações constantes. É ideal para quem busca produtividade com C# e flexibilidade para diferentes tipos de projetos.
 
 ---
 
-### 🧠 Conceitos Principais
+### 1.2 - Conceitos Principais
 
-- 🧰 **.NET** é um ecossistema completo: inclui ferramentas, bibliotecas e o tempo de execução (**runtime**).
-- 🖥️ **Multiplataforma**: roda no Windows, Linux e macOS.
-- 🔤 Suporte a várias linguagens: **C#**, **F#**, **VB.NET**.
-- 🛠️ **SDK (.NET Software Development Kit)**: Inclui ferramentas e bibliotecas para desenvolvimento, como compiladores e o .NET CLI.
-- ⚙️ **.NET CLI**: Interface de linha de comando para criar, compilar e executar projetos .NET (ex.: dotnet new, dotnet run).
+- **.NET** é um ecossistema completo: inclui ferramentas, bibliotecas e o tempo de execução (**runtime**).
+- **Multiplataforma**: roda no Windows, Linux e macOS.
+- Suporte a várias linguagens: **C#**, **F#**, **VB.NET**.
+- **SDK (.NET Software Development Kit)**: Inclui ferramentas e bibliotecas para desenvolvimento, como compiladores e o .NET CLI.
+- **.NET CLI**: Interface de linha de comando para criar, compilar e executar projetos .NET (ex.: dotnet new, dotnet run).
 
-### 📚 Bibliotecas Populares:
+---
+
+### 1.3 - Bibliotecas Populares:
 
 - **ASP.NET Core**: Framework para aplicações web modernas e APIs REST.
 - **Entity Framework Core**: ORM para acesso a bancos de dados de forma simplificada.
@@ -36,9 +39,9 @@ Seu foco principal é oferecer uma base unificada e moderna para desenvolvimento
 
 ---
 
-### 📅 Linha do Tempo do .NET
+### 1.4 - Linha do Tempo do .NET
 
-| 🗓️ Ano | 📌 Evento Importante |
+| Ano | Evento Importante |
 |:------:|----------------------|
 | 2002   | Lançamento do .NET Framework 1.0 |
 | 2016   | Lançamento do .NET Core (cross-platform) |
@@ -52,32 +55,32 @@ Seu foco principal é oferecer uma base unificada e moderna para desenvolvimento
 
 ---
 
-#### ✅ Conclusão
+### 1.5 - Conclusão
 
 O .NET passou de um framework limitado ao Windows para uma plataforma poderosa e multiplataforma, ideal para aplicações modernas.
 
 ---
 
-## ⚖️ Comparando: .NET Framework vs .NET (Core/5+)
+### 1.6 - Comparando: .NET Framework vs .NET (Core/5+)
 
-### 🏢 .NET Framework
+#### .NET Framework
 
-- 🗂️ Lançado em **2002**.
-- 🪟 Suporte apenas a sistemas **Windows**.
-- 💼 Muito usado em sistemas corporativos e aplicações **legadas**.
-
----
-
-### 🌐 .NET Core / .NET 5+
-
-- 🧭 **Multiplataforma**.
-- 🔓 **Open Source**.
-- 🚀 Alta performance.
-- 💬 Suporte ativo da comunidade.
+- Lançado em **2002**.
+- Suporte apenas a sistemas **Windows**.
+- Muito usado em sistemas corporativos e aplicações **legadas**.
 
 ---
 
-### 📊 Tabela Comparativa
+### 1.7 - .NET Core / .NET 5+
+
+- **Multiplataforma**.
+- **Open Source**.
+- Alta performance.
+- Suporte ativo da comunidade.
+
+---
+
+### 1.8 - Tabela Comparativa
 
 | Recurso            | .NET Framework  |   .NET Core / .NET 5+    |
 |--------------------|-----------------|--------------------------|
@@ -89,15 +92,15 @@ O .NET passou de um framework limitado ao Windows para uma plataforma poderosa e
 
 ---
 
-<img src="https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/assets/images/Code_Generated_Image.png" alt="Comparação de Perfomance" width="600px">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/assets/images/Code_Generated_Image.png" alt="Comparação de Perfomance" width="600px">
 
 ---
 
-> 💡 **Resumo**: Use o **.NET 6 ou superior** para novos projetos. O .NET Framework continua sendo usado para sistemas legados, mas está em modo de manutenção.
+> **Resumo**: Use o **.NET 6 ou superior** para novos projetos. O .NET Framework continua sendo usado para sistemas legados, mas está em modo de manutenção.
 
 ---
 
-#### ✅ **Conclusão**
+### 1.9 - Conclusão
 
 Se você está começando hoje, foque no **.NET 6** ou superior. O .NET Framework ainda é usado, mas não receberá mais evoluções significativas. Ele permanece em modo de manutenção, ou seja:
 
@@ -107,21 +110,21 @@ Se você está começando hoje, foque no **.NET 6** ou superior. O .NET Framewor
 
 A Microsoft incentiva a migração para o .NET 6+ (ou superior), que é o futuro da plataforma. O .NET moderno é multiplataforma, open source, com melhor performance e mais recursos.
 
-💡 Resumo: o .NET Framework ainda é necessário para sistemas antigos, mas novos projetos devem usar o .NET atual (.NET 6, 7, 8...).
+> **Resumo:** o .NET Framework ainda é necessário para sistemas antigos, mas novos projetos devem usar o .NET atual (.NET 6, 7, 8...).
 
 ---
 
-## 🛠️ Compiladores e Transpiladores no .NET
+### 1.10 - Compiladores e Transpiladores no .NET
 
-### 📚 Conceitos
+#### Conceitos
 
-- 🧮 **Compilador**: transforma código C# em **CIL** (*Common Intermediate Language*).
-- 🔁 **CLR** (*Common Language Runtime*): executa o código CIL no sistema.
-- 🔄 **Transpilador**: converte código de uma linguagem para outra. (Menos comum no .NET, mas útil para interoperabilidade.)
+- **Compilador**: transforma código C# em **CIL** (*Common Intermediate Language*).
+- **CLR** (*Common Language Runtime*): executa o código CIL no sistema.
+- **Transpilador**: converte código de uma linguagem para outra. (Menos comum no .NET, mas útil para interoperabilidade.)
 
 ---
 
-### 🔧 Como funciona o compilador .NET
+### 1.11 -  Como funciona o compilador .NET
 
 1. Você escreve código em C#.
 2. O compilador converte esse código em **CIL**.
@@ -146,11 +149,11 @@ class Program
 
 ---
 
-## 💭 Exemplo prático: Criando e Compilando um Projeto .NET: JIT vs. AOT
+### 1.12 - Exemplo prático: Criando e Compilando um Projeto .NET: JIT vs. AOT
 
 Este guia prático mostrará como criar um projeto de console simples no .NET, executá-lo com compilação Just-In-Time (JIT) e, em seguida, publicá-lo como um executável nativo usando Ahead-of-Time (AOT) para entender as diferenças.
 
-### Pré-requisitos
+#### Pré-requisitos
 
 Certifique-se de ter o **SDK do .NET** instalado em sua máquina. Você pode baixá-lo em [dotnet.microsoft.com/download](https://dotnet.microsoft.com/download).
 
@@ -162,6 +165,8 @@ dotnet --version
 
 ```
 
+---
+
 ### 1. Criando um Novo Projeto de Console
 
 Primeiro, vamos criar um novo projeto de console chamado "MeuAppExemplo".
@@ -172,6 +177,8 @@ dotnet new console -o MeuAppExemplo
 cd MeuAppExemplo
 
 ```
+
+---
 
 ### 2. Entendendo o Código (Program.cs)
 
@@ -186,6 +193,8 @@ Console.WriteLine("Olá, mundo! Este é o meu app .NET.");
 
 Você pode abrir este arquivo com seu editor de texto preferido para visualizá-lo ou modificá-lo.
 
+---
+
 ### 3. Executando com Compilação JIT (Just-In-Time)
 
 Quando você executa seu aplicativo .NET dessa forma, o Common Intermediate Language (CIL) é compilado para código de máquina **durante a execução** (JIT). Isso é ideal para desenvolvimento, pois permite um ciclo rápido de feedback.
@@ -195,6 +204,8 @@ Quando você executa seu aplicativo .NET dessa forma, o Common Intermediate Lang
 dotnet run
 
 ```
+
+---
 
 Você verá a saída: `"Olá, mundo! Este é o meu app .NET."`
 
@@ -210,6 +221,8 @@ dotnet publish -c Release -r win-x64 --self-contained true /p:PublishAot=true
 
 ```
 
+---
+
 ### 5. Verificando o Executável AOT
 
 Após o comando `dotnet publish` ser concluído, você encontrará o executável nativo na seguinte pasta (o caminho exato pode variar um pouco dependendo da versão do .NET e do sistema operacional):
@@ -220,9 +233,9 @@ Dentro desta pasta `publish`, você verá um arquivo executável chamado `MeuApp
 
 Você pode executar este arquivo diretamente sem a necessidade do SDK do .NET ou do runtime .NET instalado, comprovando que ele é um binário nativo e independente.
 
------
+---
 
-### Resumo das Diferenças
+### 1.13 - Resumo das Diferenças
 
 | Característica | JIT (Just-In-Time)                        | AOT (Ahead-of-Time)                                     |
 | :------------- | :---------------------------------------- | :------------------------------------------------------ |
@@ -235,9 +248,9 @@ Você pode executar este arquivo diretamente sem a necessidade do SDK do .NET ou
 
 ---
 
-## 🚀 Primeiros Passos com .NET
+### 1.14 - Primeiros Passos com .NET
 
-### Crie seu primeiro projeto
+#### Crie seu primeiro projeto
 
 - Crie um projeto console:
 
@@ -282,9 +295,9 @@ dotnet run
 
 ---
 
-##  💜 Boas Práticas no .NET
+### 1.15 - Boas Práticas no .NET
 
-### ✅ Desenvolvimento no .NET
+#### Desenvolvimento no .NET
 
 - **Organize seu projeto**:
 
@@ -305,22 +318,22 @@ Use pastas como `Controllers`, `Services`, `Models` para separar responsabilidad
 
 ---
 
-#### ✅ Conclusão
+### 1.16 - Conclusão
 
 O sistema de compilação do .NET fornece:
 
-* 🔒 **Segurança**
-* 📦 **Portabilidade**
-* ⚡ **Performance**
+- **Segurança**
+- **Portabilidade**
+- **Performance**
 
 Com isso, você pode escrever em C# e rodar sua aplicação em diversos sistemas com eficiência.
 
 ---
 
-#### 📚 Materiais Complementares
+### Materiais Complementares.
 
-* 📘 [Documentação oficial da Microsoft](https://learn.microsoft.com/pt-br/dotnet/)
-* 📖 [Livro gratuito da Microsoft](https://docs.microsoft.com/dotnet/standard/)
+🔗[Documentação oficial da Microsoft](https://learn.microsoft.com/pt-br/dotnet/)
+🔗[Livro gratuito da Microsoft](https://docs.microsoft.com/dotnet/standard/)
 
 ---
 
