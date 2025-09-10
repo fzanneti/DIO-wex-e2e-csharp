@@ -12,7 +12,7 @@
 
 ---
 
-### 2.1 - Introdução
+### Introdução
 
 Configurar um ambiente .NET eficiente é o primeiro passo para criar aplicações robustas e escaláveis. Escolher a IDE certa e instalar as ferramentas corretas (como o .NET SDK) permite focar no aprendizado de C# e no desenvolvimento, sem preocupações com problemas técnicos. Este guia orienta você passo a passo para começar com confiança.
 
@@ -24,9 +24,9 @@ Você aprenderá a:
 
 ---
 
-### 2.2 - Conceitos Principais
+### Conceitos Principais
 
-#### O que é uma IDE?
+**O que é uma IDE?**
 
 Uma **IDE (Integrated Development Environment)** é um ambiente completo que combina:
 
@@ -39,7 +39,7 @@ Esses recursos aumentam a produtividade do desenvolvedor.
 
 ---
 
-### 2.3 - Papel do OmniSharp no VS Code
+### Papel do OmniSharp no VS Code
 
 O **OmniSharp** é uma ferramenta de código aberto fundamental que transforma o **VS Code** (Visual Studio Code) em um ambiente de desenvolvimento robusto e completo para C#. Ele atua como um servidor de linguagem, fornecendo recursos avançados que tornam a codificação em C# muito mais eficiente e produtiva.
 
@@ -53,7 +53,7 @@ Pense no OmniSharp como o "cérebro" por trás das funcionalidades inteligentes 
 
 ---
 
-### 2.4 - A importância de um ambiente configurado para CI/CD e colaboração em equipe
+### A importância de um ambiente configurado para CI/CD e colaboração em equipe
 
 Além da ferramenta de desenvolvimento individual, a eficiência de uma equipe de software depende criticamente de um **ambiente bem configurado para CI/CD (Integração Contínua/Entrega Contínua) e colaboração**. Isso vai muito além do editor de código e impacta diretamente a velocidade, qualidade e comunicação do desenvolvimento.
 
@@ -67,7 +67,7 @@ Um ambiente configurado para Integração Contínua (CI) e Entrega Contínua (CD
 
 ---
 
-### 2.5 - Principais IDEs para .NET
+### Principais IDEs para .NET
 
 |🧩 IDE|💼 Indicado para...|🖥️ Plataforma|💸 Gratuito?| ✅ Prós|❌ Contras|
 |---|---|---|---|---|---|
@@ -84,22 +84,22 @@ Um ambiente configurado para Integração Contínua (CI) e Entrega Contínua (CD
 
 ---
 
-### 2.6 - Instalando o .NET SDK
+### Instalando o .NET SDK
 
-#### O que vem no SDK?
+**O que vem no SDK?**
 
 - Compiladores, CLI `dotnet`, bibliotecas padrão para desenvolvimento.
 
 ---
 
-### E o Runtime?
+**E o Runtime?**
 
 - Permite **executar** aplicações já compiladas.
 - **Não permite desenvolvimento**.
 
 ---
 
-### 2.7 - Comparativo: SDK vs Runtime
+### Comparativo: SDK vs Runtime
 
 | 🔍 Característica     | ✅ .NET SDK      | 🚫 .NET Runtime     |
 |----------------------|------------------|---------------------|
@@ -107,11 +107,11 @@ Um ambiente configurado para Integração Contínua (CI) e Entrega Contínua (CD
 | Executar apps        | ✅ Sim           | ✅ Sim              |
 | Usar CLI `dotnet`    | ✅ Completo      | ⚠️ Limitado         |
 
-[Download oficial do SDK](https://dotnet.microsoft.com/pt-br/download)
+🔗[Download oficial do SDK](https://dotnet.microsoft.com/pt-br/download)
 
 ---
 
-### 2.8 - Instalação por Plataforma
+### Instalação por Plataforma
 
 - **Windows**: Baixe em dotnet.microsoft.com.
 - **macOS**: `brew install dotnet-sdk`.
@@ -120,13 +120,13 @@ Um ambiente configurado para Integração Contínua (CI) e Entrega Contínua (CD
 
 ---
 
-### 2.9 - Instalando o VS Code + Extensões
+### Instalando o VS Code + Extensões
 
 Com o SDK instalado, configure o VS Code para desenvolvimento .NET:
 
-1. Baixe o VS Code: [📥](https://code.visualstudio.com)
+1. Baixe o VS Code: 🔗[📥](https://code.visualstudio.com)
 2. Instale a extensão `C# for VS Code (powered by OmniSharp)`
-3. [Instale o .NET SDK separadamente](https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/01IntroductionToTheDotNetEnvironment/02EnvironmentConfigurationAndIDEs.md#%EF%B8%8F-instala%C3%A7%C3%A3o-por-plataforma) 
+3. 🔗[Instale o .NET SDK separadamente](https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/01IntroductionToTheDotNetEnvironment/02EnvironmentConfigurationAndIDEs.md#%EF%B8%8F-instala%C3%A7%C3%A3o-por-plataforma) 
 4. Verifique instalação: `dotnet --version`.
 5. Crie seu primeiro projeto:
 
@@ -140,7 +140,7 @@ dotnet run
 
 ---
 
-### 2.10 - Extensões recomendadas:
+### Extensões recomendadas:
 
 - `C# for Visual Studio Code (Microsoft)`.
 - `.NET Install Tool`.
@@ -150,11 +150,11 @@ dotnet run
 
 ---
 
-### 2.11 - Configuração Avançada do Ambiente
+### Configuração Avançada do Ambiente
 
-#### Personalizando o VS Code
+**Personalizando o VS Code**
 
-- **Configurações recomendadas** (adicione ao `settings.json` do VS Code):
+- **Configurações recomendadas:** (adicione ao `settings.json` do VS Code):
 
 ```json
   
@@ -166,7 +166,7 @@ dotnet run
   
 ```
 
-- **Atalhos úteis**:
+**Atalhos úteis**:
 
   - `Ctrl + .`: Sugestões rápidas (Quick Fix).
   - `F5`: Iniciar depuração.
@@ -174,9 +174,9 @@ dotnet run
 
 ---
 
-### 2.12 - Certificados HTTPS
+### Certificados HTTPS
 
-- Para projetos ASP.NET Core:
+**Para projetos ASP.NET Core:**
 
 ```bash
 
@@ -186,9 +186,9 @@ dotnet dev-certs https --trust
 
 ---
 
-### 2.13 - Integração com Git
+### Integração com Git
 
-- Inicialize um repositório Git:
+**Inicialize um repositório Git:**
 
 ```bash
   
@@ -198,7 +198,7 @@ git commit -m "feat: initialize .NET console project"
 
 ```
 
-- Configure `.gitignore` para .NET:
+**Configure `.gitignore` para .NET:**
 
 ```
 bin/
@@ -210,7 +210,7 @@ obj/
 
 ---
 
-### 2.14 - Ferramentas Complementares
+### Ferramentas Complementares
 
 - **Postman**: Teste APIs criadas com ASP.NET Core.
 - **Docker Desktop**: Para rodar aplicações .NET em contêineres.
@@ -218,7 +218,7 @@ obj/
 
 ---
 
-### 2.15 - Exemplo prático de Calculadora:
+### Exemplo prático de Calculadora:
 
 ```csharp
 
@@ -256,7 +256,9 @@ namespace MinhaCalculadora
 
 ```
 
-### 2.16 - Como rodar o projeto:
+---
+
+### Como rodar o projeto:
 
 1. Crie o projeto:
 
@@ -277,21 +279,24 @@ dotnet run
 
 ---
 
-### 2.17 - Solução de Problemas
+### Solução de Problemas
 
 - **Erro: "dotnet não é reconhecido"**
   - **Causa**: .NET SDK não está no PATH.
   - **Solução**: Reinstale o SDK ou adicione ao PATH:
+
 ```bash
 
 export PATH=$PATH:/usr/share/dotnet
     
 ```
+
 - **Erro: "OmniSharp não inicia no VS Code"**
   - **Causa**: Extensão C# ou SDK mal configurados.
   - **Solução**: Reinstale a extensão C# e verifique o SDK com `dotnet --info`.
 - **Erro: "Projeto não compila por falta de dependências"**
   - **Solução**: Restaure pacotes:
+
 ```bash
 
 dotnet restore
@@ -327,7 +332,7 @@ dotnet restore
 
 ---
 
-### 2.18 - Conclusão
+### Conclusão
 
 Você agora:
 
