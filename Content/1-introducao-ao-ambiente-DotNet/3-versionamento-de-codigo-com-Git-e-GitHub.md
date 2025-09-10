@@ -1,4 +1,6 @@
-# 🔄 Introdução ao Versionamento de Código com Git e GitHub
+# WEX - End to End Engineering
+
+## 3 - Introdução ao Versionamento de Código com Git e GitHub
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
@@ -10,13 +12,13 @@
 
 ---
 
-### 🧭 Visão Geral
+### Visão Geral
 
 O versionamento com **Git** e **GitHub** é essencial para desenvolvedores, especialmente em projetos .NET. Essas ferramentas permitem gerenciar alterações, testar ideias e colaborar em equipe, garantindo organização e qualidade. Neste módulo, você dominará o Git para controle local e o GitHub para colaboração remota, alinhado ao Bootcamp WEX.
 
 ---
 
-### 🎯 Objetivos do Módulo
+### Objetivos do Módulo
 
 - Entender o conceito de **versionamento de código**
 - Aprender os **fundamentos do Git**
@@ -25,7 +27,7 @@ O versionamento com **Git** e **GitHub** é essencial para desenvolvedores, espe
 
 ---
 
-### 🧰 Ferramentas Utilizadas
+### Ferramentas Utilizadas
 
 | 🧩 Ferramenta | 🛠️ Função Principal           | 🔗 Link para Download                       |
 |---------------|-------------------------------|--------------------------------------------|
@@ -33,27 +35,29 @@ O versionamento com **Git** e **GitHub** é essencial para desenvolvedores, espe
 | **GitHub**   | Repositório remoto e colaboração | [github.com](https://github.com/)       |
 | **VS Code**  | Editor de código              | [code.visualstudio.com](https://code.visualstudio.com/) |
 
-💡 **Dica:** Instale o Git antes de tudo. Ele é a base de toda a trilha.
+> **Dica:** Instale o Git antes de tudo. Ele é a base de toda a trilha.
 
 ---
 
-### 📦 O que é Versionamento de Código?
+### O que é Versionamento de Código?
 
-🧠 **Definição**: Processo de registrar, rastrear e gerenciar alterações no código-fonte.
+**Definição**: Processo de registrar, rastrear e gerenciar alterações no código-fonte.
 *Por que usar?*
 
-- 🔙 Voltar a versões anteriores.
-- 👥 Colaborar em equipe.
-- 💡 Testar ideias sem riscos.
-- 📜 Manter histórico detalhado.
+- Voltar a versões anteriores.
+- Colaborar em equipe.
+- Testar ideias sem riscos.
+- Manter histórico detalhado.
 
 **Analogia**: Como salvar um documento com "v1", "v2", mas com mais controle e eficiência.
 
 ---
 
-### ⚙️ O que é Git?
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/assets/images/git.png" alt="Comparação de Perfomance" width="300px">
 
-🧠 **Definição**: Sistema de controle de versão distribuído, criado por Linus Torvalds em 2005. Salva "fotografias" do código (commits) para rastreamento.
+### O que é Git?
+
+**Definição**: Sistema de controle de versão distribuído, criado por Linus Torvalds em 2005. Salva "fotografias" do código (commits) para rastreamento.
 
 ### 📚 Conceitos Principais
 
