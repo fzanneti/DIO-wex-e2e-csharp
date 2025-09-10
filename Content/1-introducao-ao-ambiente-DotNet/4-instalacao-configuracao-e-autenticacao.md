@@ -1,4 +1,6 @@
-# 🔧 Instalando, Configurando e Autenticando o Git
+# WEX - End to End Engineering
+
+## Instalando, Configurando e Autenticando o Git
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
@@ -10,7 +12,7 @@
 
 ---
 
-### 🧭 Introdução
+### Introdução
 
 Configurar o Git corretamente é essencial para gerenciar projetos .NET com eficiência, garantindo colaboração fluida e versionamento seguro. No Bootcamp WEX, você usará Git e GitHub para controlar suas aplicações. Este módulo guia você na instalação, configuração e autenticação, preparando o terreno para fluxos colaborativos.
 
@@ -22,9 +24,9 @@ Você aprenderá a:
 
 ---
 
-## 💾 Instalação do Git
+### Instalação do Git
 
-### 🪟 Windows
+⊞ Windows
 
 1. Acesse: [https://git-scm.com/download/win](https://git-scm.com/download/win)  
 2. Baixe o instalador, execute mantendo as opções padrão
@@ -40,7 +42,7 @@ git --version
 
 ---
 
-### 🐧 Linux (Ubuntu)
+🐧 Linux (Ubuntu)
 
 Abra o terminal e execute:
 
@@ -52,7 +54,9 @@ git --version
 
 ```
 
-### 🖥️ macOS
+---
+
+🍎 macOS
 
 ```bash
 
@@ -72,7 +76,7 @@ git --version
 
 ---
 
-### ⚙️ Configurando o Git
+### Configurando o Git
 
 Após a instalação, defina seu nome e e-mail (eles ficarão gravados em cada commit que você fizer):
 
@@ -83,7 +87,9 @@ git config --global user.email "seuemail@exemplo.com"
 
 ```
 
-**Configurações adicionais:**
+---
+
+### Configurações adicionais:
 
 - Editor padrão (VS Code):
 
@@ -93,6 +99,8 @@ git config --global core.editor "code --wait"
 
 ```
 
+---
+
 - Cores no terminal:
 
 ```bash
@@ -100,6 +108,8 @@ git config --global core.editor "code --wait"
 git config --global color.ui auto
 
 ```
+
+---
 
 - Branch padrão (`main`):
 
@@ -109,7 +119,9 @@ git config --global init.defaultBranch main
 
 ```
 
-✅ **Verifique a configuração:**
+---
+
+### Verifique a configuração:
 
 ```bash
 
@@ -117,11 +129,11 @@ git config --list
 
 ```
 
-💡 *Essa configuração é como “assinar” seus códigos com sua identidade.*
+> *Essa configuração é como “assinar” seus códigos com sua identidade.*
 
 ---
 
-### 🛠️ Configurando Git para Projetos .NET
+### Configurando Git para Projetos .NET
 
 1. Crie um projeto .NET:
 
@@ -145,14 +157,16 @@ git commit -m "feat: initialize .NET console project"
 
 ---
 
-## 🔐 Autenticação via Token (HTTPS)
+### Autenticação via Token (HTTPS)
 
 O GitHub **não permite mais login com senha**.
 A autenticação por Token é simples e segura para quem usa Git ocasionalmente.
 
-### 👣 Como gerar seu Token:
+---
 
-1. Acesse: [https://github.com/settings/tokens](https://github.com/settings/tokens)
+### Como gerar seu Token:
+
+1. Acesse: 🔗[https://github.com/settings/tokens](https://github.com/settings/tokens)
 2. Clique em **"Generate new token (classic)"**
 3. Marque permissões como:
 
@@ -161,7 +175,9 @@ A autenticação por Token é simples e segura para quem usa Git ocasionalmente.
    * `read:user`
 4. Copie o token (⚠️ ele não será exibido novamente)
 
-### 🛠️ Como usar:
+---
+
+### Como usar:
 
 Na hora de fazer `git push`, use:
 
@@ -174,6 +190,8 @@ git push origin main
 
 ```
 
+---
+
 ### Armazenar token:
 
 ```bash
@@ -184,11 +202,11 @@ git config --global credential.helper store
 
 ---
 
-## 🛡️ Autenticação via Chave SSH (Recomendado)
+### Autenticação via Chave SSH (Recomendado)
 
 Mais segura e prática. Ideal para quem usa GitHub com frequência.
 
-### 🔐 Gerar uma chave SSH:
+- Gerar uma chave SSH:
 
 ```bash
 
@@ -199,7 +217,9 @@ ssh-keygen -t ed25519 -C "seuemail@exemplo.com"
 * Pressione **Enter** para aceitar o local padrão
 * Pode usar senha (ou deixar em branco)
 
-### 📋 Adicionar ao GitHub:
+---
+
+### Adicionar ao GitHub:
 
 1. Copie a chave pública:
 
@@ -211,6 +231,8 @@ cat ~/.ssh/id_ed25519.pub
 
 2. Vá até: [https://github.com/settings/ssh/new](https://github.com/settings/ssh/new)
 3. Cole a chave e clique em **Add SSH Key**
+
+---
 
 ### ✅ Testar conexão:
 
@@ -228,7 +250,9 @@ Hi seu_usuario! You've successfully authenticated.
 
 ```
 
-💡 *A chave SSH funciona como um “cartão de acesso” entre sua máquina e o GitHub.*
+> *A chave SSH funciona como um “cartão de acesso” entre sua máquina e o GitHub.*
+
+---
 
 ### Múltiplas máquinas:
 
@@ -240,7 +264,7 @@ ssh-keygen -t ed25519 -C "seuemail@exemplo.com" -f ~/.ssh/id_ed25519_trabalho
 
 ---
 
-### ⚖️ Comparativo: Token vs SSH
+### Comparativo: Token vs SSH
 
 | 🔐 Autenticação | ✅ Vantagem                | 👤 Ideal para...           |
 | --------------- | ------------------------- | -------------------------- |
@@ -249,7 +273,7 @@ ssh-keygen -t ed25519 -C "seuemail@exemplo.com" -f ~/.ssh/id_ed25519_trabalho
 
 ---
 
-### 🚀 Exemplo prático: Git com SSH
+### Exemplo prático: Git com SSH
 
 1. Crie um projeto .NET:
 
@@ -280,6 +304,8 @@ git push -u origin main
 
 ```
 
+---
+
 ### Código (Program.cs):
 
 ```csharp
@@ -301,7 +327,7 @@ namespace MeuProjeto
 
 ---
 
-### 🛠️ Solução de Problemas
+### Solução de Problemas
 
 - "git não reconhecido": Reinstale o Git e verifique o PATH.
 - "Permission denied (publickey)": Adicione a chave SSH ao GitHub.
@@ -309,17 +335,17 @@ namespace MeuProjeto
 
 ---
 
-### 📚 Materiais Complementares
+### Materiais Complementares
 
-* 📘 [Documentação Oficial do Git](https://git-scm.com/doc)
-* 📚 [Pro Git Book (pt-BR)](https://git-scm.com/book/pt-br/v2)
-* ✅ [GitHub Docs: Autenticação](https://docs.github.com/pt/authentication)
-* 🔐 [Como gerar e usar tokens no GitHub](https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
-* 🛡️ [Conectar-se ao GitHub com SSH](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh)
+🔗[Documentação Oficial do Git](https://git-scm.com/doc)
+🔗[Pro Git Book (pt-BR)](https://git-scm.com/book/pt-br/v2)
+🔗[GitHub Docs: Autenticação](https://docs.github.com/pt/authentication)
+🔗[Como gerar e usar tokens no GitHub](https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+🔗[Conectar-se ao GitHub com SSH](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh)
 
 ---
 
-#### ✅ Conclusão
+### Conclusão
 
 Configurar corretamente o Git e autenticar com segurança é o primeiro passo para usar versionamento com eficiência.
 Com **Token ou SSH**, você garante segurança e praticidade ao trabalhar com o GitHub.
