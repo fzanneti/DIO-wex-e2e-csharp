@@ -10,6 +10,10 @@
 ![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
 ![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
 
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/dotnet_configuration.png" alt="Configurando o Ambiente" width="600px">
+
+[Tutorial .NET - Olá, Mundo em 5 minutos](https://dotnet.microsoft.com/pt-br/learn/dotnet/hello-world-tutorial/intro)
+
 ---
 
 ### Introdução
@@ -311,20 +315,10 @@ dotnet restore
 🔗[DIO: Bootcamp WEX](https://dio.me)    
 🔗[Discord .NET Community](https://discord.com/invite/dotnet)    
 🔗[VS Code + .NET Tutorial](https://www.youtube.com/watch?v=YEtisxQugew)    
-
----
-
-### Vídeos e Tutoriais Gratuitos
-
 🔗[Instalando Visual Studio](https://www.youtube.com/watch?v=s5bi_8y6bLQ)    
 🔗[IDE p/ C#](https://www.youtube.com/watch?v=LwGXtxDSmeg)     
 🔗[Configurando VS Code com C# .Net SDK](https://www.youtube.com/watch?v=YEtisxQugew)    
 🔗[Domine o .NET CLI com Esses 5 Comandos Essenciais!](https://www.youtube.com/watch?v=0H-K_-E6hRM)    
-
----
-
-### Extras úteis
-
 🔗[Terminal integrado do VS Code](https://code.visualstudio.com/docs/editor/integrated-terminal)      
 🔗[Extensões úteis no VS Code](https://marketplace.visualstudio.com/)       
 🔗[Tutorial de VS Code com .NET](https://www.youtube.com/watch?v=YEtisxQugew)      
