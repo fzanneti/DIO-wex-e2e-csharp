@@ -318,13 +318,13 @@ Ao criar um projeto em C#, especialmente com .NET, o Visual Studio ou o .NET CLI
 
 ---
 
-🔗[Estrutura de Projetos C# – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/core/project-sdk/overview)
-🔗[`Program.cs`, `Main()` e top-level statements](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/top-level-statements)
-🔗[`csproj`: o arquivo de projeto](https://learn.microsoft.com/pt-br/dotnet/core/project-sdk/msbuild-props)
-🔗[Organize seu projeto no .NET](https://learn.microsoft.com/pt-br/dotnet/core/porting/project-structure)
-🔗[Visual Studio 2022 Community](https://visualstudio.microsoft.com/pt-br/vs/community/)
-🔗[Visual Studio Code + C# Extension](https://code.visualstudio.com/docs/languages/dotnet)
-🔗[DotNet CLI (`dotnet new console`)](https://learn.microsoft.com/pt-br/dotnet/core/tools/dotnet-new)
+🔗[Estrutura de Projetos C# – Microsoft Docs](https://learn.microsoft.com/pt-br/dotnet/core/project-sdk/overview)   
+🔗[`Program.cs`, `Main()` e top-level statements](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/top-level-statements)    
+🔗[`csproj`: o arquivo de projeto](https://learn.microsoft.com/pt-br/dotnet/core/project-sdk/msbuild-props)   
+🔗[Organize seu projeto no .NET](https://learn.microsoft.com/pt-br/dotnet/core/porting/project-structure)   
+🔗[Visual Studio 2022 Community](https://visualstudio.microsoft.com/pt-br/vs/community/)    
+🔗[Visual Studio Code + C# Extension](https://code.visualstudio.com/docs/languages/dotnet)    
+🔗[DotNet CLI (`dotnet new console`)](https://learn.microsoft.com/pt-br/dotnet/core/tools/dotnet-new)    
 
 ---
 
