@@ -10,7 +10,7 @@
 
 ---
 
-### 📌 Introdução
+### Introdução
 
 O versionamento com Git e GitHub é essencial para projetos .NET, permitindo colaboração eficiente e controle de alterações. No Bootcamp WEX, você usará essas ferramentas para versionar seu código e colaborar em equipe. Este módulo aborda repositórios, branches, commits, conflitos e automação.
 
@@ -24,15 +24,17 @@ Neste módulo, você aprenderá:
 
 ---
 
-## 📁 Criando e Clonando Repositórios
+### Criando e Clonando Repositórios
 
-### 🔹 Conceitos
+**Conceitos**
 
 - Um **repositório** é onde seu código é armazenado com controle de versão
 - **Clonar**: copiar um repositório remoto
 - **Criar**: iniciar um projeto do zero
 
-### 🛠️ Comandos
+---
+
+**Comandos**
 
 ```bash
 
@@ -54,15 +56,17 @@ dotnet new console
 
 ---
 
-## 💾 Salvando Alterações no Repositório Local
+### Salvando Alterações no Repositório Local
 
-### 🔹 Processo
+**Processo**
 
 1. Modifique seus arquivos
 2. Use `git add` para prepará-los
 3. Use `git commit` para registrar as alterações
 
-### 🛠️ Comandos
+---
+
+**Comandos**
 
 ```bash
 
@@ -71,7 +75,7 @@ git commit -m "mensagem do commit"  # Salva alterações com descrição - exemp
 
 ```
 
-### 🔏.gitignore para .NET**:
+### gitignore para .NET**:
 
 ```bash
 
@@ -80,15 +84,17 @@ echo -e "bin/\nobj/\n*.csproj.user\n.vscode/" > .gitignore
 
 ```
 
-#### Propósito do .gitignore
+---
 
-> O arquivo .gitignore é crucial em sistemas de controle de versão (mais comumente o Git) para especificar arquivos e diretórios intencionalmente não rastreados que o Git deve ignorar. Isso ajuda a manter seu repositório limpo e focado no código-fonte relevante, impedindo que arquivos desnecessários (como arquivos temporários, artefatos de build ou configurações específicas de IDE) sejam commitados.
+### Propósito do .gitignore
+
+O arquivo `.gitignore` é crucial em sistemas de controle de versão (mais comumente o Git) para especificar arquivos e diretórios intencionalmente não rastreados que o Git deve ignorar. Isso ajuda a manter seu repositório limpo e focado no código-fonte relevante, impedindo que arquivos desnecessários (como arquivos temporários, artefatos de build ou configurações específicas de IDE) sejam commitados.
 
 ---
 
-## 🔄 Desfazendo Alterações
+### Desfazendo Alterações
 
-### 🔹 Situações comuns
+**Situações comuns**
 
 | Situação                             | Comando                    |
 | ------------------------------------ | -------------------------- |
@@ -98,7 +104,9 @@ echo -e "bin/\nobj/\n*.csproj.user\n.vscode/" > .gitignore
 
 ⚠️ Cuidado com `reset --hard`, ele apaga alterações sem retorno.
 
-### 🔹Usando `git stash`
+---
+
+### Usando `git stash`
 
 ```bash
 
@@ -112,9 +120,9 @@ git stash pop
 
 ---
 
-## 🌐 Enviando e Baixando do GitHub
+### Enviando e Baixando do GitHub
 
-### 🛠️ Comandos
+**Comandos**
 
 ```bash
 
@@ -123,44 +131,48 @@ git pull origin main    # Baixa alterações do repositório remoto
 
 ```
 
-📌 `origin` = nome do repositório remoto
-📌 `main` = branch principal (padrão atual)
+- `origin` = nome do repositório remoto
+- `main` = branch principal (padrão atual)
 
 ---
 
-## 🌳 Trabalhando com Branches
+### Trabalhando com Branches
 
-### 🔹 Diferença entre main e master no GitHub
+**Diferença entre main e master no GitHub**
 
 - São nomes de branches
 Tanto main quanto master são nomes dados ao branch principal de um repositório Git.
 Ou seja, é como se fosse a "linha do tempo" principal onde o desenvolvimento do projeto acontece.
 
-### Mas por que tem dois nomes?
+**Mas por que tem dois nomes?**
 
 - **Antes (padrão antigo):** ```master``` - 
 Antigamente, o Git criava o primeiro branch com o nome master por padrão.   
 Isso vem desde a criação do Git, lá em 2005.
-
 - **Hoje (padrão novo):** ```main``` - 
 A partir de 2020, o GitHub (e depois o Git) mudou o padrão para main.  
 Motivo: tornar o Git mais inclusivo. O termo “master” pode ter conotações ruins, especialmente relacionadas à escravidão. A mudança foi parte de um movimento maior por linguagem mais neutra.
 
 ---
 
-## Na prática, o que muda pra você?
+### Na prática, o que muda pra você?
 
-### Pouca coisa, mas vale saber:
+**Pouca coisa, mas vale saber:**
 
 | Situação                        | Branch padrão |
 | ------------------------------- | ------------- |
 | Repositórios antigos (pré-2020) | `master`      |
 | Repositórios novos (pós-2020)   | `main`        |
 
-### Você pode mudar o nome?	  
-- Sim! É só renomear o branch
+---
 
-🔍 Para ver o branch principal:
+**Você pode mudar o nome?**
+
+Sim! É só renomear o branch
+
+---
+
+**Para ver o branch principal:**
 
 ```bash
 
@@ -169,7 +181,9 @@ cat .git/HEAD
 
 ```
 
-### 🛠️ Renomear `master` para `main`
+---
+
+### Renomear `master` para `main`
 
 ```bash
 
@@ -177,6 +191,8 @@ git branch -m master main        # Renomeia localmente
 git push origin -u main          # Atualiza no remoto
 
 ```
+
+---
 
 Depois, no GitHub:
 
@@ -186,7 +202,7 @@ Depois, no GitHub:
 
 ---
 
-### 🛠️ Comandos com Branches
+### Comandos com Branches
 
 ```bash
 
@@ -197,17 +213,19 @@ git branch -d nome-branch      # Deleta branch
 
 ```
 
-💡 Use branches para desenvolver funcionalidades separadamente.
+> Use branches para desenvolver funcionalidades separadamente.
 
 ---
 
-## ⚔️ Resolvendo Conflitos
+### Resolvendo Conflitos
 
-### 🔹 O que é um conflito?
+**O que é um conflito?**
 
 Quando duas pessoas alteram a mesma parte de um arquivo em branches diferentes.
 
-### ✅ Como resolver:
+---
+
+### Como resolver:
 
 1. O Git marca o conflito com `<<<<<<<`, `=======`, `>>>>>>>`
 2. Edite e resolva manualmente
@@ -222,7 +240,7 @@ git commit -m "resolve conflito"
 
 ---
 
-###  📝 Exemplo:
+###  Exemplo:
 
 1. Conflito em `Program.cs`:
 
@@ -254,7 +272,7 @@ git commit -m "resolve: merge conflict in Program.cs"
 
 ---
 
-### 🧰 Comandos Úteis no Dia a Dia
+### Comandos Úteis no Dia a Dia
 
 | Comando      | Função                              |
 | ------------ | ----------------------------------- |
@@ -266,7 +284,7 @@ git commit -m "resolve: merge conflict in Program.cs"
 
 ---
 
-#### ✅ Conclusão
+### Conclusão
 
 Você agora conhece o fluxo básico de versionamento:
 
@@ -275,16 +293,16 @@ Você agora conhece o fluxo básico de versionamento:
 3. Trabalhar com branches e colaborar
 4. Resolver conflitos com segurança
 
-🧪 Continue praticando!
-🛠️ Use o GitHub como vitrine do seu progresso.
+- Continue praticando!
+- Use o GitHub como vitrine do seu progresso.
 
 ---
 
-### 📚 Recursos adicionais
+### Recursos adicionais
 
-* 📘 [Livro oficial do Git (pt-br)](https://git-scm.com/book/pt-br/v2)
-* 🎥 [Como usar Git e GitHub na prática (YouTube)](https://www.youtube.com/watch?v=UBAX-13g8OM)
-* 📖 [Documentação oficial do GitHub](https://docs.github.com/pt)
+🔗[Livro oficial do Git (pt-br)](https://git-scm.com/book/pt-br/v2)  
+🔗[Como usar Git e GitHub na prática (YouTube)](https://www.youtube.com/watch?v=UBAX-13g8OM)  
+🔗[Documentação oficial do GitHub](https://docs.github.com/pt)  
 
 ---
 
