@@ -233,7 +233,7 @@ Dominar estruturas de repetição é essencial para programar de forma eficiente
 
 ### Certificado
 
-<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/9-conhecendo-as-estruturas-de-repeticao-em-CSharp_page-0001.jpg" alt="Certificado" width="600px">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/9-conhecendo-as-estruturas-de-repeticao-em-CSharp.jpg" alt="Certificado" width="600px">
 
 ---
 
