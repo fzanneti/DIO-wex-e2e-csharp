@@ -10,7 +10,7 @@
 
 ---
 
-### 🎯 Introdução
+### Introdução
 
 Estudar teoria é essencial — mas não suficiente.
 
@@ -22,13 +22,14 @@ O que realmente transforma um iniciante em um **dev em evolução constante** é
 
 ---
 
-## 💡 Por Que os Desafios São Tão Valiosos?
+### Por Que os Desafios São Tão Valiosos?
 
-### 1. 📚 Aplicação real dos conceitos
+1. Aplicação real dos conceitos
 
 Você estuda Git, C#, .NET... Mas é **criando projetos** que esses conhecimentos se consolidam.
 
-**🧪 Exemplo prático:**  
+**Exemplo prático:**
+
 Criar uma API RESTful com .NET Core vai te ensinar de verdade sobre:
 
 - Endpoints
@@ -38,7 +39,7 @@ Criar uma API RESTful com .NET Core vai te ensinar de verdade sobre:
 
 ---
 
-### 2. 🏢 Simulação do Ambiente de Trabalho
+2. Simulação do Ambiente de Trabalho
 
 Projetos práticos te aproximam do dia a dia profissional:
 
@@ -49,13 +50,12 @@ Projetos práticos te aproximam do dia a dia profissional:
 
 ---
 
-### 3. 🧳 Criação de um Portfólio Profissional
+3. Criação de um Portfólio Profissional
 
-📌 Um portfólio bem documentado vale **mais que dezenas de certificados**.
+- Um portfólio bem documentado vale **mais que dezenas de certificados**.
+- Mostre ao recrutador **o que você sabe fazer de verdade**.
 
-Mostre ao recrutador **o que você sabe fazer de verdade**.
-
-> 🔍 **Dica:**  
+> **Dica:**  
 > Sempre inclua em cada projeto:
 > - Um `README.md` claro
 > - Prints de telas ou vídeos
@@ -64,9 +64,9 @@ Mostre ao recrutador **o que você sabe fazer de verdade**.
 
 ---
 
-## 🧩 Como Escolher um Desafio de Projeto?
+### Como Escolher um Desafio de Projeto?
 
-| 🔰 Nível       | 💼 Tipo de Projeto                                         | 🛠️ Tecnologias Sugeridas                     |
+| Nível       | Tipo de Projeto                                         | Tecnologias Sugeridas                     |
 |---------------|------------------------------------------------------------|---------------------------------------------|
 | Iniciante     | Calculadora, To-Do List, CRUD simples                     | .NET Core, C#, SQLite, Console App          |
 | Intermediário | API REST, e-commerce básico, integração com banco de dados | .NET Core, Entity Framework, SQL Server, Postman |
@@ -76,31 +76,26 @@ Mostre ao recrutador **o que você sabe fazer de verdade**.
 
 ---
 
-## 🏗️ Crie Seu Portfólio Vencedor
+### Crie Seu Portfólio Vencedor
 
-### 🔄 Etapas sugeridas para um projeto bem estruturado
+**Etapas sugeridas para um projeto bem estruturado**
 
 1. **Escolha sua stack:**  
    Exemplo: `C# + .NET + Git`
-
 2. **Defina um problema real:**  
    Sistema de agendamento, controle de estoque, blog, etc.
-
 3. **Planeje o projeto:**  
    Faça wireframes simples (desenhos ou no Figma) e defina funcionalidades básicas.
-
 4. **Implemente por partes:**  
    Use branches no Git para cada etapa (ex: `feature/login`, `feature/cadastro-produto`).
-
 5. **Documente:**  
    Escreva como o sistema funciona, tecnologias usadas e como rodar localmente.
-
 6. **Publique no GitHub:**  
    Organize bem seu repositório e mantenha o `README` completo e atualizado.
 
 ---
 
-## 🌟 Dicas para se Destacar
+### Dicas para se Destacar
 
 1. Mostre o processo no README.
 2. Adicione testes com xUnit.
@@ -110,7 +105,7 @@ Mostre ao recrutador **o que você sabe fazer de verdade**.
 
 ---
 
-#### ✅ Conclusão
+### Conclusão
 
 Os **desafios de projeto** são uma ponte entre o estudo e o mercado.
 
@@ -122,8 +117,7 @@ Cada desafio de projeto é uma oportunidade de crescer. No Bootcamp WEX, você e
 > - Mais confiança você sentirá em entrevistas
 
 Crie, erre, aprenda e melhore.
-
-📌 O código conta sua história melhor que qualquer currículo.
+O código conta sua história melhor que qualquer currículo.
 
 ---
 
