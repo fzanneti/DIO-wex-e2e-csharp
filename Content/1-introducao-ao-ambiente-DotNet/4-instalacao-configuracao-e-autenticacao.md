@@ -337,10 +337,10 @@ namespace MeuProjeto
 
 ### Materiais Complementares
 
-🔗[Documentação Oficial do Git](https://git-scm.com/doc)
-🔗[Pro Git Book (pt-BR)](https://git-scm.com/book/pt-br/v2)
-🔗[GitHub Docs: Autenticação](https://docs.github.com/pt/authentication)
-🔗[Como gerar e usar tokens no GitHub](https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+🔗[Documentação Oficial do Git](https://git-scm.com/doc)  
+🔗[Pro Git Book (pt-BR)](https://git-scm.com/book/pt-br/v2)  
+🔗[GitHub Docs: Autenticação](https://docs.github.com/pt/authentication)  
+🔗[Como gerar e usar tokens no GitHub](https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)  
 🔗[Conectar-se ao GitHub com SSH](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh)
 
 ---
