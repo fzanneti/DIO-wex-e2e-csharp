@@ -1,4 +1,6 @@
-# 📘 Tipos de Dados em C#
+# WEX - End to End Engineering
+
+## Tipos de Dados em C#
 
 Guia completo para iniciantes que estão aprendendo C# e desejam entender os principais tipos de dados utilizados no desenvolvimento de aplicações na plataforma .NET.
 
@@ -12,13 +14,13 @@ Guia completo para iniciantes que estão aprendendo C# e desejam entender os pri
 
 ---
 
-### 🧠 Introdução
+### Introdução
 
 No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. Dominar **tipos de dados** é fundamental para criar códigos eficientes e livres de erros. Este módulo explora os principais tipos do C#, suas aplicações e boas práticas, preparando você para projetos práticos.
 
 ---
 
-### 🔢 Tipos Numéricos Inteiros
+### Tipos Numéricos Inteiros
 
 Representam **números inteiros** (sem casas decimais). A escolha entre eles depende do intervalo necessário:
 
@@ -30,11 +32,11 @@ Representam **números inteiros** (sem casas decimais). A escolha entre eles dep
 | `int`   | 32 bits | -2.147.483.648 a 2.147.483.647 | `int ano = 2025;`              |
 | `long`  | 64 bits | ±9 quintilhões                 | `long populacao = 7800000000;` |
 
-🎯 Use `int` como padrão, a não ser que haja necessidade específica para mais ou menos alcance.
+> Use `int` como padrão, a não ser que haja necessidade específica para mais ou menos alcance.
 
 ---
 
-### 🔍 Tipos Numéricos com Casas Decimais
+### Tipos Numéricos com Casas Decimais
 
 Indicados para valores **com ponto flutuante**, como medições, preços ou porcentagens.
 
@@ -46,13 +48,15 @@ Indicados para valores **com ponto flutuante**, como medições, preços ou porc
 
 ---
 
-### 📝 Declarando Tipos de Variáveis
+### Declarando Tipos de Variáveis
 
 No C#, a estrutura da declaração é sempre:
 
 `tipo nome = valor;`
 
-### 📝 Tipos de Texto e Booleanos
+---
+
+### Tipos de Texto e Booleanos
 
 - **string**: Texto Unicode.
 ```csharp
@@ -69,7 +73,7 @@ bool ativo = true;
 
 ---
 
-### 🔄 Conversão de Tipos
+### Conversão de Tipos
 
 - **Implícita**:
 
@@ -100,7 +104,7 @@ int numero = int.Parse(texto);
 
 ---
 
-### ⏰ Tipo `DateTime`
+### Tipo `DateTime`
 
 ```csharp
 
@@ -128,7 +132,7 @@ Console.WriteLine(diferenca.TotalDays); // Saída: 7
 
 ---
 
-### 🧪 Manipulando Variáveis
+### Manipulando Variáveis
 
 Variáveis podem ser **reutilizadas e alteradas** desde que o tipo seja mantido:
 
@@ -144,7 +148,7 @@ nome = nome + " Clara"; // Resultado: "Maria Clara"
 
 ---
 
-### ⚙️ Operadores Comuns
+### Operadores Comuns
 
 | Operador | Função               | Exemplo                      |
 | -------- | -------------------- | ---------------------------- |
@@ -158,7 +162,7 @@ nome = nome + " Clara"; // Resultado: "Maria Clara"
 
 ---
 
-### ❗ Observações Importantes
+### Observações Importantes
 
 * Tipos numéricos sem casas decimais são mais rápidos, mas não servem para valores quebrados.
 * `decimal` deve ser usado em valores de **dinheiro**, pois evita erros de arredondamento comuns em `float` e `double`.
@@ -166,7 +170,7 @@ nome = nome + " Clara"; // Resultado: "Maria Clara"
 
 ---
 
-#### ✅ Conclusão
+### Conclusão
 
 Compreender e utilizar corretamente os **tipos de dados** é essencial para garantir:
 
@@ -178,11 +182,17 @@ C# oferece uma gama poderosa de tipos para lidar com qualquer situação — da 
 
 ---
 
-### 🔗 Links Úteis
+### Links Úteis
 
-* [📄 Documentação Oficial — Tipos de Dados em C#](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/builtin-types/built-in-types)
-* [🔧 Dotnetfiddle — Teste seu código C# online](https://dotnetfiddle.net/)
-* [▶️ Vídeo: Tipos de Dados em C#](https://www.youtube.com/watch?v=aUlTrGWsCuc)
+🔗[Documentação Oficial — Tipos de Dados em C#](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/builtin-types/built-in-types)
+🔗[Dotnetfiddle — Teste seu código C# online](https://dotnetfiddle.net/)
+🔗[Vídeo: Tipos de Dados em C#](https://www.youtube.com/watch?v=aUlTrGWsCuc)
+
+---
+
+### Certificado
+
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/6-sintaxe-e-tipos-de-dados-em-CSharp.jpg" alt="Certificado" width="600px">
 
 ---
 
