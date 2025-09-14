@@ -261,7 +261,7 @@ Agora você:
 * Entende a diferença entre **Git e GitHub**
 * Conhece os **comandos iniciais** para começar a trabalhar com repositórios
 
-🔧 Nas próximas aulas, você vai **explorar comandos mais avançados** e simulações de cenários reais de colaboração.
+Nas próximas aulas, você vai **explorar comandos mais avançados** e simulações de cenários reais de colaboração.
 
 ---
 
