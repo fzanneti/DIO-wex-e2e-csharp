@@ -55,7 +55,7 @@ O versionamento com **Git** e **GitHub** é essencial para desenvolvedores, espe
 
 ---
 
-<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/git.png" alt="Comparação de Perfomance" width="300px">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/git.png" alt="Git" width="300px">
 
 ### O que é Git?
 
@@ -103,7 +103,7 @@ git merge <branch>        # Integra as alterações de uma branch para a branch 
 ```
 ---
 
-<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/github.png" alt="Comparação de Perfomance" width="300px">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/github.png" alt="GitHub" width="300px">
 
 ### O que é GitHub?
 
