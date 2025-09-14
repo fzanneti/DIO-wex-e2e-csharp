@@ -184,9 +184,9 @@ C# oferece uma gama poderosa de tipos para lidar com qualquer situação — da 
 
 ### Links Úteis
 
-🔗[Documentação Oficial — Tipos de Dados em C#](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/builtin-types/built-in-types)
-🔗[Dotnetfiddle — Teste seu código C# online](https://dotnetfiddle.net/)
-🔗[Vídeo: Tipos de Dados em C#](https://www.youtube.com/watch?v=aUlTrGWsCuc)
+🔗[Documentação Oficial — Tipos de Dados em C#](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/builtin-types/built-in-types)    
+🔗[Dotnetfiddle — Teste seu código C# online](https://dotnetfiddle.net/)   
+🔗[Vídeo: Tipos de Dados em C#](https://www.youtube.com/watch?v=aUlTrGWsCuc)   
 
 ---
 
