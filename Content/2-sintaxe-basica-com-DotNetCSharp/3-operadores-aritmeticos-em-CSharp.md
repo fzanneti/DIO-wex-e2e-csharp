@@ -1,4 +1,6 @@
-# 🧮 Operadores Aritméticos em C#
+# WEX - End to End Engineering
+
+## Operadores Aritméticos em C#
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
@@ -10,13 +12,13 @@
 
 ---
 
-### ➕ Introdução aos Operadores Aritméticos
+### Introdução aos Operadores Aritméticos
 
 No Bootcamp WEX, você está construindo aplicações com C#, .NET, Git e GitHub. **Operadores aritméticos** e a classe `Math` são essenciais para cálculos em projetos como sistemas financeiros ou APIs. Este módulo explora operadores básicos, funções matemáticas e boas práticas. Em C#, operadores aritméticos são símbolos usados para realizar cálculos matemáticos. Eles funcionam com tipos numéricos como `int`, `double`, `float`, entre outros. São fundamentais para qualquer aplicação que envolva matemática.
 
 ---
 
-### 🧰 Principais Operadores
+### Principais Operadores
 
 | Operador | Operação         | Exemplo       |
 |----------|------------------|----------------|
@@ -28,7 +30,7 @@ No Bootcamp WEX, você está construindo aplicações com C#, .NET, Git e GitHub
 
 ---
 
-### 🧮 Criando uma Classe Calculadora
+### Criando uma Classe Calculadora
 
 Vamos criar uma classe simples que implementa essas operações básicas:
 
@@ -47,7 +49,7 @@ public class Calculadora
 
 ---
 
-### 🔍 Exemplo de Uso
+### Exemplo de Uso
 
 ```csharp
 
@@ -58,7 +60,7 @@ Console.WriteLine(calc.Somar(4, 5)); // Saída: 9
 
 ---
 
-### ⚡ Usando Potência com `Math.Pow()`
+### Usando Potência com `Math.Pow()`
 
 Para calcular potências (ex: 2³ = 8), usamos a função Math.Pow():
 
@@ -71,7 +73,7 @@ Console.WriteLine($"2 elevado a 3 é {resultado}");
 
 ---
 
-### 📐 Funções Trigonométricas
+### Funções Trigonométricas
 
 As funções trigonométricas em C# são acessadas pela classe `Math`, utilizando **radianos** como unidade.
 
@@ -90,7 +92,7 @@ Console.WriteLine($"Seno: {seno}, Cosseno: {cosseno}, Tangente: {tangente}");
 
 ---
 
-### 🔼 Incremento e 🔽 Decremento
+### Incremento e Decremento
 
 Esses operadores servem para aumentar ou diminuir o valor de uma variável em 1.
 
@@ -107,7 +109,7 @@ x--; // Agora x é 5 novamente
 
 ---
 
-### 🧪 Raiz Quadrada com `Math.Sqrt()`
+### Raiz Quadrada com `Math.Sqrt()`
 
 Para obter a raiz quadrada de um número, use Math.Sqrt():
 
@@ -120,27 +122,18 @@ Console.WriteLine($"Raiz quadrada de 25 é {raiz}");
 
 ---
 
-## ➕ Links Complementares de Estudo – Operadores Aritméticos em C#
+### Links Complementares de Estudo – Operadores Aritméticos em C#
 
 Operadores aritméticos são fundamentais em C# para realizar cálculos simples ou composições mais complexas dentro de expressões matemáticas e lógicas. Dominar esses operadores é base para qualquer algoritmo.
 
----
-
-### 📚 Documentação Oficial Microsoft
-
-- [Operadores Aritméticos – C# Docs](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/operators/arithmetic-operators)
-- [Tabela Geral de Operadores – Microsoft](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/operators/)
+🔗[Operadores Aritméticos – C# Docs](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/operators/arithmetic-operators)    
+🔗[Tabela Geral de Operadores – Microsoft](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/operators/)     
+🔗[DotNetFiddle](https://dotnetfiddle.net/)    
+🔗[LINQPad](https://www.linqpad.net/)    
 
 ---
 
-### 💻 Ferramentas para Testes
-
-- [DotNetFiddle](https://dotnetfiddle.net/)
-- [LINQPad](https://www.linqpad.net/)
-
----
-
-#### ✅ Conclusão
+### Conclusão
 
 Operadores aritméticos são **base da programação matemática**. Dominar o uso de operadores básicos, combinados com funções da classe `Math`, te dá uma boa base para:
 
@@ -149,7 +142,13 @@ Operadores aritméticos são **base da programação matemática**. Dominar o us
 - Algoritmos matemáticos
 - Jogos e simulações
 
-> 💡 Desafio: Adicione novos métodos na `Calculadora` para `potência`, `raiz` e `conversão de ângulo`!
+> Desafio: Adicione novos métodos na `Calculadora` para `potência`, `raiz` e `conversão de ângulo`!
+
+---
+
+### Certificado
+
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/8-operadores-aritmeticos-em-CSharp.jpg" alt="Certificado" width="600px">
 
 ---
 
