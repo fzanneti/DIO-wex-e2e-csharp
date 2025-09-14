@@ -1,4 +1,6 @@
-# Versionamento de Código com Git e GitHub
+# WEX - End to End Engineering
+
+## 5 - Versionamento de Código com Git e GitHub
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
@@ -303,6 +305,12 @@ Você agora conhece o fluxo básico de versionamento:
 🔗[Livro oficial do Git (pt-br)](https://git-scm.com/book/pt-br/v2)  
 🔗[Como usar Git e GitHub na prática (YouTube)](https://www.youtube.com/watch?v=UBAX-13g8OM)  
 🔗[Documentação oficial do GitHub](https://docs.github.com/pt)  
+
+---
+
+### Certificado
+
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/5-contribuindo-em-um-projeto-open-source-no-GitHub.jpg" alt="Certificado" width="600px">
 
 ---
 
