@@ -29,7 +29,7 @@ O versionamento com **Git** e **GitHub** é essencial para desenvolvedores, espe
 
 ### Ferramentas Utilizadas
 
-| 🧩 Ferramenta | 🛠️ Função Principal           | 🔗 Link para Download                       |
+| Ferramenta | Função Principal           | Link para Download                       |
 |---------------|-------------------------------|--------------------------------------------|
 | **Git**      | Controle de versão local      | 🔗[git-scm.com](https://git-scm.com/)        |
 | **GitHub**   | Repositório remoto e colaboração | 🔗[github.com](https://github.com/)       |
@@ -65,7 +65,7 @@ O versionamento com **Git** e **GitHub** é essencial para desenvolvedores, espe
 
 ### Conceitos Principais
 
-| 🧩 Termo | 🔍 O que significa |
+| Termo | O que significa |
 | --- | --- |
 | Repositório | Pasta monitorada pelo Git |
 | Commit | Registro de uma alteração |
@@ -118,7 +118,7 @@ git merge <branch>        # Integra as alterações de uma branch para a branch 
 
 ### Git vs GitHub
 
-| ⚙️ Característica | 🧠 Git             | ☁️ GitHub                |
+| Característica | Git             | GitHub                |
 | ----------------- | ------------------ | ------------------------ |
 | Tipo              | CLI (local)        | Plataforma web (remota)  |
 | Função principal  | Controle de versão | Hospedagem e colaboração |
