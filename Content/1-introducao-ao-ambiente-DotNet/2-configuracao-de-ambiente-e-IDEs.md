@@ -73,7 +73,7 @@ Um ambiente configurado para Integração Contínua (CI) e Entrega Contínua (CD
 
 ### Principais IDEs para .NET
 
-|🧩 IDE|💼 Indicado para...|🖥️ Plataforma|💸 Gratuito?| ✅ Prós|❌ Contras|
+|IDE|Indicado para...|Plataforma|Gratuito?|Prós|Contras|
 |---|---|---|---|---|---|
 |**Visual Studio**|Profissionais e grandes projetos|Windows / macOS|✅ Sim (Community)|✅ Recursos completos, integração com Azure|❌ Pesado, apenas Windows/macOS|
 |**Visual Studio Code**|Projetos leves e multiplataforma|Win / macOS / Linux|✅ Sim|✅ Leve, extensível|❌ Requer configuração manual|
@@ -105,7 +105,7 @@ Um ambiente configurado para Integração Contínua (CI) e Entrega Contínua (CD
 
 ### Comparativo: SDK vs Runtime
 
-| 🔍 Característica     | ✅ .NET SDK      | 🚫 .NET Runtime     |
+| Característica     | .NET SDK      | .NET Runtime     |
 |----------------------|------------------|---------------------|
 | Desenvolver apps     | ✅ Sim           | ❌ Não              |
 | Executar apps        | ✅ Sim           | ✅ Sim              |
