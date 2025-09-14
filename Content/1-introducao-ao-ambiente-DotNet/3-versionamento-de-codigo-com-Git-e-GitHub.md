@@ -1,6 +1,6 @@
 # WEX - End to End Engineering
 
-## 3 - Introdução ao Versionamento de Código com Git e GitHub
+## 1.3 - Introdução ao Versionamento de Código com Git e GitHub
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)

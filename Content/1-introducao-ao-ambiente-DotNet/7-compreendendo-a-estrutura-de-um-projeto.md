@@ -1,6 +1,6 @@
 # WEX - End to End Engineering
 
-## 7 - Introdução — Entendendo a Estrutura do Projeto em C#
+## 1.7 - Introdução — Entendendo a Estrutura do Projeto em C#
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)

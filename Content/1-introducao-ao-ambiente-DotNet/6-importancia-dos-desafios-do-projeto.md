@@ -1,6 +1,6 @@
 # WEX - End to End Engineering
 
-## 6 - A Importância dos Desafios de Projeto na Prática
+## 1.6 - A Importância dos Desafios de Projeto na Prática
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)

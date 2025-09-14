@@ -1,6 +1,6 @@
 # WEX - End to End Engineering
 
-## 1 - Introdução ao .NET
+## 1.1 - Introdução ao .NET
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
