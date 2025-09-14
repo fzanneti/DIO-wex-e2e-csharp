@@ -576,7 +576,7 @@ Os operadores lógicos permitem escrever **decisões mais completas e inteligent
 
 ### Certificado
 
-<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/7-tipos-de-operadores-em-CSharp.jpg" alt="Certificado" width="600px">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/7-tipos-de-operadores-em-CSharp.jpg" alt="Certificado" width="600px">
 
 ---
 

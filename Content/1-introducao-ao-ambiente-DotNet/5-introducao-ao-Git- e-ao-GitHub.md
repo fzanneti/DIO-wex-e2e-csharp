@@ -310,7 +310,7 @@ Você agora conhece o fluxo básico de versionamento:
 
 ### Certificado
 
-<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/5-contribuindo-em-um-projeto-open-source-no-GitHub.jpg" alt="Certificado" width="600px">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/5-contribuindo-em-um-projeto-open-source-no-GitHub.jpg" alt="Certificado" width="600px">
 
 ---
 

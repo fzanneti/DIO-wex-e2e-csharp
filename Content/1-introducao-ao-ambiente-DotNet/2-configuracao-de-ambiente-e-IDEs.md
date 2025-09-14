@@ -340,7 +340,7 @@ Escolha a IDE que **melhor combina com seu estilo**, e **comece a praticar**.
 
 ### Certificado
 
-<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/2-introducao-as-IDEs-e-configuracao-de-ambiente-dotnet.jpg" alt="Certificado" width="600px">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/2-introducao-as-IDEs-e-configuracao-de-ambiente-dotnet.jpg" alt="Certificado" width="600px">
 
 ---
 

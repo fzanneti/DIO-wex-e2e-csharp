@@ -125,7 +125,7 @@ O código conta sua história melhor que qualquer currículo.
 
 ### Certificado
 
-<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/4-desafios-de-projetos-crie-um-portfolio-vencedor.jpg" alt="Certificado" width="600px">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/4-desafios-de-projetos-crie-um-portfolio-vencedor.jpg" alt="Certificado" width="600px">
 
 ---
 

@@ -192,7 +192,7 @@ C# oferece uma gama poderosa de tipos para lidar com qualquer situação — da 
 
 ### Certificado
 
-<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/6-sintaxe-e-tipos-de-dados-em-CSharp.jpg" alt="Certificado" width="600px">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/6-sintaxe-e-tipos-de-dados-em-CSharp.jpg" alt="Certificado" width="600px">
 
 ---
 
