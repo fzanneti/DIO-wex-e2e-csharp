@@ -342,7 +342,9 @@ Com isso, você pode escrever em C# e rodar sua aplicação em diversos sistemas
 
 ### Certificado
 
-<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/introducao_ao_desenvolvimento_moderno_de_software.jpg" alt="Certificado" width="600px">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/1-introducao-a-experiencia-WEX-end-to-end-engineering.jpg" alt="Certificado" width="600px">
+
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/1-introducao-ao-dotnet.jpg" alt="Certificado" width="600px">
 
 ---
 
