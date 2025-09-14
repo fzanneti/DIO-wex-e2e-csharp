@@ -28,9 +28,9 @@ Você aprenderá a:
 
 ⊞ Windows
 
-1. Acesse: [https://git-scm.com/download/win](https://git-scm.com/download/win)  
+1. Acesse: 🔗[https://git-scm.com/download/win](https://git-scm.com/download/win)  
 2. Baixe o instalador, execute mantendo as opções padrão
-3. ✅ Certifique-se de deixar marcada a opção **“Git from the command line”**
+3. Certifique-se de deixar marcada a opção **“Git from the command line”**
 
 **Verifique a instalação:**
 
@@ -234,7 +234,7 @@ cat ~/.ssh/id_ed25519.pub
 
 ---
 
-### ✅ Testar conexão:
+### Testar conexão:
 
 ```bash
 
@@ -266,7 +266,7 @@ ssh-keygen -t ed25519 -C "seuemail@exemplo.com" -f ~/.ssh/id_ed25519_trabalho
 
 ### Comparativo: Token vs SSH
 
-| 🔐 Autenticação | ✅ Vantagem                | 👤 Ideal para...           |
+| Autenticação | Vantagem                | Ideal para...           |
 | --------------- | ------------------------- | -------------------------- |
 | **Token**       | Fácil de gerar e usar     | Usuários ocasionais        |
 | **SSH**         | Mais segura e persistente | Usuários frequentes e devs |
