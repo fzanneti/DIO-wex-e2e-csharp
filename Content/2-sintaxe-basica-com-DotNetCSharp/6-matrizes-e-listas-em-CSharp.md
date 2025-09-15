@@ -1,4 +1,6 @@
-# 🔢 Arrays e Listas em C#
+# WEX - End to End Engineering
+
+## Arrays e Listas em C#
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
@@ -8,17 +10,13 @@
 ![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
 ![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
 
----
-
-### 🧠 Introdução aos Arrays
-
 No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. **Arrays** e **listas** são fundamentais para manipular coleções de dados em projetos como cadastros ou APIs. Este módulo explora arrays, listas, seus métodos e boas práticas.
 
 ---
 
-## 🧠 Arrays
+### Arrays
 
-### Exemplo:
+**Exemplo:**
 
 ```csharp
 
@@ -36,7 +34,7 @@ string[] frutas = { "Maçã", "Banana", "Pêra" };
 
 ---
 
-### 🔨 Implementando um Array de Inteiros
+### Implementando um Array de Inteiros
 
 ```csharp
 
@@ -51,7 +49,7 @@ Console.WriteLine(numeros[1]); // Saída: 20
 
 ---
 
-### ⚠️ Acessando um Índice Inválido
+### Acessando um Índice Inválido
 
 ```csharp
 
@@ -73,7 +71,7 @@ System.IndexOutOfRangeException
 
 ---
 
-### 🔁 Percorrendo um Array com `foreach`
+### Percorrendo um Array com `foreach`
 
 ```csharp
 
@@ -86,11 +84,11 @@ foreach (string nome in nomes)
 
 ```
 
-O `foreach` é ideal quando você não precisa modificar os dados e quer apenas percorrer os elementos.
+> O `foreach` é ideal quando você não precisa modificar os dados e quer apenas percorrer os elementos.
 
 ---
 
-### 🐞 Debugando um Array
+### Debugando um Array
 
 Durante o debug no Visual Studio, é possível ver:
 
@@ -98,7 +96,7 @@ Durante o debug no Visual Studio, é possível ver:
 * O valor armazenado em cada posição
 * O comprimento total (`Length`)
 
-### Exemplo:
+**Exemplo:**
 
 ```csharp
 
@@ -108,7 +106,7 @@ Console.WriteLine(nomes.Length); // Quantos elementos há
 
 ---
 
-### 🔄 Redimensionando um Array
+### Redimensionando um Array
 
 Arrays são estáticos, mas é possível redimensioná-los com `Array.Resize()`:
 
@@ -121,11 +119,11 @@ numeros[4] = 5;
 
 ```
 
-⚠️ Isso cria uma **nova instância** do array e copia os valores antigos.
+> Isso cria uma **nova instância** do array e copia os valores antigos.
 
 ---
 
-### 📋 Copiando um Array para Outro
+### Copiando um Array para Outro
 
 ```csharp
 
@@ -146,11 +144,11 @@ int[] copia = (int[])origem.Clone();
 
 ---
 
-### 📚 Trabalhando com Listas (`List<T>`)
+### Trabalhando com Listas (`List<T>`)
 
 Diferente dos arrays, as listas são **dinâmicas** — você pode adicionar e remover elementos facilmente.
 
-### Exemplo básico:
+**Exemplo básico:**
 
 ```csharp
 
@@ -166,7 +164,7 @@ foreach (var nome in nomes)
 
 ```
 
-### Outras operações:
+**Outras operações:**
 
 ```csharp
 
@@ -195,30 +193,27 @@ catch (IndexOutOfRangeException)
 
 ---
 
-## 📚 Links Complementares de Estudo – Arrays e Listas em C#
+### Links Complementares de Estudo – Arrays e Listas em C#
 
 Trabalhar com Arrays e Listas é essencial pra manipular conjuntos de dados em C#. Arrays são fixos e listas são dinâmicas, e entender a diferença e uso correto faz toda a diferença.
 
----
-
-### 📚 Documentação Oficial Microsoft
-
-- [Array Class – System.Array](https://learn.microsoft.com/pt-br/dotnet/api/system.array?view=net-8.0)
-- [List<T> Class – System.Collections.Generic.List](https://learn.microsoft.com/pt-br/dotnet/api/system.collections.generic.list-1?view=net-8.0)
-- [Como percorrer coleções em C# (foreach)](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/foreach-in)
+🔗[Array Class – System.Array](https://learn.microsoft.com/pt-br/dotnet/api/system.array?view=net-8.0)    
+🔗[List<T> Class – System.Collections.Generic.List](https://learn.microsoft.com/pt-br/dotnet/api/system.collections.generic.list-1?view=net-8.0)      
+🔗[Como percorrer coleções em C# (foreach)](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/foreach-in)      
+🔗[DotNetFiddle](https://dotnetfiddle.net/)      
+🔗[LINQPad](https://www.linqpad.net/)    
 
 ---
 
-### 💡 Ferramentas para Prática
-
-- [DotNetFiddle](https://dotnetfiddle.net/)
-- [LINQPad](https://www.linqpad.net/)
-
----
-
-### ✅ Encerramento do Tema
+### Encerramento do Tema
 
 Use **arrays** para coleções fixas e **listas** para coleções dinâmicas. Trate erros como índices inválidos e use métodos como `Sort` e `Find` para manipulações eficientes. Continue praticando no Bootcamp WEX para dominar coleções!
+
+---
+
+### Certificado
+
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/11-arrays-e-listas-em-CSharp.jpg" alt="Certificado" width="600px">
 
 ---
 
