@@ -175,7 +175,7 @@ nomes.Clear();               // Limpa a lista
 ```
 ---
 
-### 🛡️ Tratamento de Erros
+### Tratamento de Erros
 
 ```csharp
 
