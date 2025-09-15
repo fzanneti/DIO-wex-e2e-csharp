@@ -1,6 +1,6 @@
 # WEX - End to End Engineering
 
-## Manipulando Valores com C#
+## 3.2 - Manipulando Valores com C#
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)

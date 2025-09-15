@@ -1,6 +1,6 @@
 # WEX - End to End Engineering
 
-## Propriedades, Métodos e Construtores em C#
+## 3.1 - Propriedades, Métodos e Construtores em C#
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
