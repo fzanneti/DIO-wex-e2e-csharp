@@ -1,4 +1,6 @@
-# 📘 Propriedades, Métodos e Construtores em C#
+# WEX - End to End Engineering
+
+## Propriedades, Métodos e Construtores em C#
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
@@ -8,17 +10,13 @@
 ![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
 ![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
 
----
-
-### 📍 Introdução ao Módulo
-
 Este módulo apresenta os fundamentos da programação orientada a objetos em C#, abordando a estrutura e o funcionamento de **propriedades**, **métodos** e **construtores** — pilares essenciais para construir programas robustos e organizados. Em C#, as **classes** são moldes que representam entidades do mundo real. Para torná-las funcionais e interativas, usamos **propriedades** (dados), **métodos** (ações) e **construtores** (modo de criação de objetos). Esses recursos formam a base para escrever códigos reutilizáveis, claros e seguros.
 
 ---
 
-## 🏷️ Propriedades
+### Propriedades
 
-### ✅ Introdução às Propriedades
+**Introdução às Propriedades**
 
 As propriedades são membros de uma classe que funcionam como **acessadores de dados**. Elas encapsulam campos privados e controlam como os valores são lidos ou alterados.
 
@@ -37,7 +35,7 @@ public class Pessoa
 
 ```
 
-### 🛠️ Propriedades na Prática
+### Propriedades na Prática
 
 Propriedades podem incluir regras de validação ou simplesmente delegar leitura e escrita direta ao campo interno:
 
@@ -56,17 +54,17 @@ public int Idade
 
 ---
 
-## 🧠 O Que Está Acontecendo Aqui?
+### O Que Está Acontecendo Aqui?
 
-### 🎯 Objetivo:
+**Objetivo:**
 
 Criar uma **propriedade chamada `Idade`** que permita **acessar** (ler) e **definir** (escrever) a idade de uma pessoa, **com uma validação** que impede que valores negativos sejam atribuídos.
 
 ---
 
-## 🔍 Linha por Linha
+### Linha por Linha
 
-### 🟩 `public int Idade`
+**`public int Idade`**
 
 * `public` → A propriedade será visível para qualquer classe.
 * `int` → O tipo da propriedade é inteiro.
@@ -76,7 +74,7 @@ Criar uma **propriedade chamada `Idade`** que permita **acessar** (ler) e **defi
 
 ---
 
-### 🔵 `{ get { return idade; } ... }`
+**`{ get { return idade; } ... }`**
 
 Este é o **acessador de leitura** (`get`).
 
@@ -90,42 +88,44 @@ Este é o **acessador de leitura** (`get`).
 
   ```
 
-* Isso quer dizer que ao **chamar `pessoa.Idade` em outro lugar do código**, será retornado o **valor armazenado na variável interna `idade`**.
+> Isso quer dizer que ao **chamar `pessoa.Idade` em outro lugar do código**, será retornado o **valor armazenado na variável interna `idade`**.
 
-### 🔴 `{ set { if (value >= 0) idade = value; } }`
+---
+
+**`{ set { if (value >= 0) idade = value; } }`**
 
 Este é o **acessador de escrita** (`set`).
 
 * O `set` é usado para **atribuir um valor à propriedade**.
 * `value` é uma **palavra-chave especial** dentro do `set` que representa **o valor que está sendo atribuído à propriedade**.
 
-> Exemplo:
->
-> ```csharp
->
-> pessoa.Idade = 25;
->
-> ```
->
+**Exemplo:**
+
+```csharp
+
+pessoa.Idade = 25;
+
+```
+
 > Nesse caso, `value` dentro do `set` será 25.
 
 * A linha:
 
-  ```csharp
+```csharp
 
-  if (value >= 0) idade = value;
-  
-  ```
+if (value >= 0) idade = value;
 
-  faz o seguinte:
+```
 
-  * **Verifica** se o valor fornecido é maior ou igual a 0.
-  * Se for, **atribui esse valor à variável privada `idade`**.
-  * Se não for, **ignora a atribuição** (protegendo o dado).
+faz o seguinte:
+
+* **Verifica** se o valor fornecido é maior ou igual a 0.
+* Se for, **atribui esse valor à variável privada `idade`**.
+* Se não for, **ignora a atribuição** (protegendo o dado).
 
 ---
 
-### 🧩 Mas de onde vem `idade`?
+### Mas de onde vem `idade`?
 
 O código está usando um **campo privado interno** chamado `idade`. Ele **precisa ser declarado antes da propriedade**, assim:
 
@@ -139,7 +139,7 @@ private int idade;
 
 ---
 
-### ✅ Por Que Usar Isso?
+### Por Que Usar Isso?
 
 * Evita dados inválidos (como `-5` anos).
 * Encapsula a lógica de acesso: quem usa a classe não precisa saber como a validação acontece.
@@ -147,7 +147,7 @@ private int idade;
 
 ---
 
-### 🔁 Exemplo Completo
+### Exemplo Completo
 
 ```csharp
 
@@ -182,7 +182,7 @@ Console.WriteLine(p.Idade); // Ainda 30, pois -5 foi ignorado
 
 ---
 
-### 🧱 Alternativas com Expressões Simples (a partir do C# 6)
+### Alternativas com Expressões Simples (a partir do C# 6)
 
 Se não precisar de validação:
 
@@ -202,9 +202,9 @@ public int Idade { get; } = 18;
 
 ---
 
-## ⚙️ Métodos
+### Métodos
 
-### ✨ Criando um Método
+**Criando um Método**
 
 Um método executa uma **ação**. É definido com um **tipo de retorno**, um nome e, opcionalmente, parâmetros.
 
@@ -217,7 +217,7 @@ public void ExibirNome()
 
 ```
 
-### 🔎 Validações no GET e SET
+### Validações no GET e SET
 
 O `get` pode ser usado para **formatar ou calcular** o valor de retorno, e o `set` para **verificar regras de negócio** antes de alterar valores.
 
@@ -236,7 +236,7 @@ public string Email
 
 ---
 
-### 🧾 Body Expressions
+### Body Expressions
 
 Uma forma simplificada de propriedades com `=>` (lambda), usada para propriedades simples e somente leitura.
 
@@ -248,7 +248,7 @@ public string NomeCompleto => $"{Nome} {Sobrenome}";
 
 ---
 
-### 🧪 Validando a Propriedade Idade
+### Validando a Propriedade Idade
 
 Exemplo prático de propriedade com validação:
 
@@ -270,7 +270,7 @@ public int Idade
 
 ---
 
-### 🔐 Modificadores de Acesso
+### Modificadores de Acesso
 
 Controlam a visibilidade dos membros de uma classe:
 
@@ -283,7 +283,7 @@ Controlam a visibilidade dos membros de uma classe:
 
 ---
 
-### 🔒 Propriedades Somente Leitura
+### Propriedades Somente Leitura
 
 Você pode definir uma propriedade que só pode ser lida, útil para dados imutáveis.
 
@@ -295,13 +295,13 @@ public string Codigo { get; } = Guid.NewGuid().ToString();
 
 ---
 
-### ⚡ Introdução aos Métodos
+### Introdução aos Métodos
 
 Métodos representam **comportamentos** de uma classe. Podem receber dados (parâmetros), retornar dados (tipo de retorno), e encapsular lógicas.
 
 ---
 
-### 🧱 Implementando a Classe Curso
+### Implementando a Classe Curso
 
 ```csharp
 
@@ -315,7 +315,7 @@ public class Curso
 
 ---
 
-### 🔁 Tipo de Retorno
+### Tipo de Retorno
 
 O tipo de retorno define o que o método irá devolver ao final da execução:
 
@@ -330,7 +330,7 @@ public int ObterQuantidadeAlunos()
 
 ---
 
-### 🧹 Método Remover
+### Método Remover
 
 ```csharp
 
@@ -343,7 +343,7 @@ public void RemoverAluno(string nome)
 
 ---
 
-### 📋 Método Listar Alunos
+### Método Listar Alunos
 
 ```csharp
 
@@ -359,9 +359,9 @@ public void ListarAlunos()
 
 ---
 
-## 🏗️ Construtores
+### Construtores
 
-### 🏁 Trabalhando com Construtores
+**Trabalhando com Construtores**
 
 O **construtor** é um método especial chamado automaticamente quando um objeto é criado.
 
@@ -376,7 +376,7 @@ public Curso(string nome)
 
 ---
 
-### 🛠️ Implementando o Construtor
+### Implementando o Construtor
 
 ```csharp
 
@@ -394,7 +394,7 @@ public class Pessoa
 
 ---
 
-#### ✅ Finalização
+### Finalização
 
 Neste módulo, você aprendeu:
 
@@ -407,13 +407,19 @@ Propriedades, métodos e construtores são fundamentais para projetos .NET no Bo
 
 ---
 
-### 🔗 Referências
+### Referências
 
-- [Documentação Oficial do C# (Microsoft)](https://learn.microsoft.com/pt-br/dotnet/csharp/)
-- [Guia de Estilo C#](https://learn.microsoft.com/pt-br/dotnet/csharp/fundamentals/coding-style/coding-conventions)
-- [Propriedades em C#](https://learn.microsoft.com/pt-br/dotnet/csharp/properties)
-- [Métodos em C#](https://learn.microsoft.com/pt-br/dotnet/csharp/methods)
-- [Construtores](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/constructors)
+🔗[Documentação Oficial do C# (Microsoft)](https://learn.microsoft.com/pt-br/dotnet/csharp/)     
+🔗[Guia de Estilo C#](https://learn.microsoft.com/pt-br/dotnet/csharp/fundamentals/coding-style/coding-conventions)     
+🔗[Propriedades em C#](https://learn.microsoft.com/pt-br/dotnet/csharp/properties)    
+🔗[Métodos em C#](https://learn.microsoft.com/pt-br/dotnet/csharp/methods)    
+🔗[Construtores](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/classes-and-structs/constructors)  
+
+---
+
+### Certificado
+
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/13-construindo-um-sistema-para-um-estacionamento-com-CSharp.jpg" alt="Certificado" width="600px">
 
 ---
 
