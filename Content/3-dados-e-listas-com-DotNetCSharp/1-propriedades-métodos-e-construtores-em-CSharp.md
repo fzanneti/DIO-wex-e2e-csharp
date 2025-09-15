@@ -419,7 +419,7 @@ Propriedades, métodos e construtores são fundamentais para projetos .NET no Bo
 
 ### Certificado
 
-<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/13-construindo-um-sistema-para-um-estacionamento-com-CSharp.jpg" alt="Certificado" width="600px">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/a0dc4198dc768d2a155ea05fa478fab2128056ed/Assets/images/certificados/14-propriedades-metodos-e-construtores-com-CSharp.jpg" alt="Certificado" width="600px">
 
 ---
 
