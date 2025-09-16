@@ -1,4 +1,6 @@
-# 🧩 SQL Server - Dominando Tabelas e Tipos de Dados
+# WEX - End to End Engineering
+
+## 5.2 - SQL Server - Dominando Tabelas e Tipos de Dados
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
@@ -10,13 +12,13 @@
 
 ---
 
-### 📘 Introdução
+### Introdução
 
 No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. **Tabelas e tipos de dados no SQL Server** são essenciais para persistência de dados. Este módulo explora como criar e manipular tabelas com **SQL Server** e **EF Core**.
 
 ---
 
-### 🗃️ Entendendo um Database
+### Entendendo um Database
 
 Um **database** (ou banco de dados) é o **repositório central** onde todas as tabelas, relacionamentos e dados da aplicação são armazenados.
 
@@ -27,7 +29,7 @@ No SQL Server, um database pode conter:
 - Triggers (gatilhos)
 - Funções
 
-🎯 Comando para criar um database:
+**Comando para criar um database:**
 
 ```sql
 
@@ -37,7 +39,7 @@ CREATE DATABASE NomeDoBanco;
 
 ---
 
-### 🔐 Acessando o Banco de Dados
+### Acessando o Banco de Dados
 
 Após criar o banco ou abrir o SQL Server, usamos o comando:
 
@@ -51,7 +53,7 @@ Isso define qual banco estamos utilizando para as próximas instruções SQL.
 
 ---
 
-### 🏗️ Criando Nossa Tabela
+### Criando Nossa Tabela
 
 ```sql
 
@@ -69,7 +71,7 @@ CREATE TABLE Clientes (
 
 ---
 
-### 🔍 O Comando SELECT
+### O Comando SELECT
 
 Serve para consultar os dados de uma tabela.
 
@@ -90,7 +92,7 @@ SELECT Nome, Email FROM Clientes;
 
 ---
 
-### 📑 Ordenando os Resultados
+### Ordenando os Resultados
 
 ```sql
 
@@ -103,7 +105,7 @@ SELECT * FROM Clientes ORDER BY Nome ASC;
 
 ---
 
-### 🎯 Usando WHERE (Filtrando Dados)
+### Usando WHERE (Filtrando Dados)
 
 ```sql
 
@@ -116,7 +118,7 @@ SELECT * FROM Clientes WHERE Email LIKE '%@gmail.com';
 
 ---
 
-### ➕ Realizando um INSERT
+### Realizando um INSERT
 
 ```sql
 
@@ -127,7 +129,7 @@ VALUES ('Fabio Zanneti', 'fabio@email.com', '2025-06-15');
 
 ---
 
-### ✂️ INSERT Omitindo Colunas
+### INSERT Omitindo Colunas
 
 Se a tabela permite valores `NULL`, é possível omitir colunas:
 
@@ -140,7 +142,7 @@ VALUES ('Maria');
 
 ---
 
-### 🆔 Entendendo o ID
+### Entendendo o ID
 
 O `ID` é uma coluna chave primária (`PRIMARY KEY`), que **identifica unicamente cada registro**.
 
@@ -149,7 +151,7 @@ O `ID` é uma coluna chave primária (`PRIMARY KEY`), que **identifica unicament
 
 ---
 
-### 📌 Apontamento de Query
+### Apontamento de Query
 
 Você pode especificar qual tabela e quais campos está manipulando:
 
@@ -163,7 +165,7 @@ SELECT Nome FROM dbo.Clientes;
 
 ---
 
-### ✏️ Realizando um UPDATE
+### Realizando um UPDATE
 
 ```sql
 
@@ -173,11 +175,11 @@ WHERE Id = 1;
 
 ```
 
-⚠️ **Sempre use WHERE para evitar atualizar todos os registros!**
+**Sempre use WHERE para evitar atualizar todos os registros!**
 
 ---
 
-### ⚠️ Cuidados com UPDATE
+### Cuidados com UPDATE
 
 ```sql
 
@@ -191,7 +193,7 @@ UPDATE Clientes SET Email = 'teste@email.com' WHERE Id = 1;
 
 ---
 
-## 🗑️ Deletando um Registro
+### Deletando um Registro
 
 ```sql
 
@@ -199,13 +201,13 @@ DELETE FROM Clientes WHERE Id = 2;
 
 ```
 
-⚠️ Assim como o UPDATE, **NUNCA use DELETE sem WHERE**.
+Assim como o UPDATE, **NUNCA use DELETE sem WHERE**.
 
 ---
 
-### 🧠 Estudando Tipos de Dados
+### Estudando Tipos de Dados
 
-## 📚 Tabela de Tipos de Dados no SQL Server
+**Tabela de Tipos de Dados no SQL Server**
 
 | Tipo SQL            | Descrição                                                                 | Exemplos                     | Observações                                 |
 |---------------------|---------------------------------------------------------------------------|------------------------------|---------------------------------------------|
@@ -229,7 +231,8 @@ DELETE FROM Clientes WHERE Id = 2;
 
 ---
 
-📌 **Dicas**:
+**Dicas**:
+
 - Prefira `VARCHAR` ao invés de `CHAR` para textos que variam de tamanho.
 - Use `DECIMAL` para valores financeiros (evita erros de arredondamento).
 - `BIT` é perfeito para representar verdadeiro/falso ou ligado/desligado.
@@ -237,7 +240,7 @@ DELETE FROM Clientes WHERE Id = 2;
 
 ---
 
-### 🧱 Criando Outra Tabela de Exemplo
+### Criando Outra Tabela de Exemplo
 
 ```sql
 
@@ -252,40 +255,36 @@ CREATE TABLE Produtos (
 
 ---
 
-## 🗄️ Links Complementares de Estudo – SQL Server: Dominando Tabelas e Tipos de Dados
+### Links Complementares de Estudo – SQL Server: Dominando Tabelas e Tipos de Dados
 
 Compreender os **tipos de dados**, **estruturas de tabelas** e boas práticas de modelagem é essencial para desenvolver soluções eficientes com SQL Server. Aqui estão links e materiais de apoio para aprofundar no tema:
 
----
-
-### 📚 Documentação Oficial Microsoft
-
-- [Tipos de Dados (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/data-types/data-types-transact-sql)
-  > Lista completa dos tipos de dados suportados no SQL Server, com descrição e exemplos.
-- [CREATE TABLE (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/statements/create-table-transact-sql)
-  > Guia oficial sobre a sintaxe para criar tabelas, constraints e propriedades avançadas.
-- [CAST e CONVERT – Tratamento de Tipos](https://learn.microsoft.com/pt-br/sql/t-sql/functions/cast-and-convert-transact-sql)
-  > Como converter tipos de dados corretamente no SQL Server.
-
-- [Entity Framework Core](https://learn.microsoft.com/pt-br/ef/core/)
-
----
-
-### 🧪 Ferramentas e Ambientes para Testes
-
-- [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms)
-  > Ferramenta oficial da Microsoft para gerenciar bancos SQL Server localmente ou em rede.
-- [Azure SQL (Gratuito por tempo limitado)](https://learn.microsoft.com/pt-br/azure/azure-sql/)
-  > Ideal para testar soluções em nuvem com SQL Server.
-- [DB Fiddle (com suporte parcial a SQL Server)](https://www.db-fiddle.com/)
-  > Plataforma online para testar estruturas e comandos SQL sem precisar instalar nada.
+🔗[Tipos de Dados (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/data-types/data-types-transact-sql)     
+  > Lista completa dos tipos de dados suportados no SQL Server, com descrição e exemplos     
+🔗[CREATE TABLE (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/statements/create-table-transact-sql)     
+  > Guia oficial sobre a sintaxe para criar tabelas, constraints e propriedades avançadas.       
+🔗[CAST e CONVERT – Tratamento de Tipos](https://learn.microsoft.com/pt-br/sql/t-sql/functions/cast-and-convert-transact-sql)      
+  > Como converter tipos de dados corretamente no SQL Server      
+🔗[Entity Framework Core](https://learn.microsoft.com/pt-br/ef/core/)        
+🔗[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms)      
+  > Ferramenta oficial da Microsoft para gerenciar bancos SQL Server localmente ou em rede.       
+🔗[Azure SQL (Gratuito por tempo limitado)](https://learn.microsoft.com/pt-br/azure/azure-sql/)        
+  > Ideal para testar soluções em nuvem com SQL Server       
+🔗[DB Fiddle (com suporte parcial a SQL Server)](https://www.db-fiddle.com/)            
+  > Plataforma online para testar estruturas e comandos SQL sem precisar instalar nada     
 
 ---
 
-#### ✅ Conclusão
+### Conclusão
 
 Este módulo fornece o essencial para **manipular tabelas e dados no SQL Server**, base para qualquer aplicação .NET que dependa de persistência de dados.
 Com isso, você já pode **criar, consultar, atualizar e deletar registros**, além de entender melhor como o banco se estrutura.
+
+---
+
+### Certificado
+
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/24-SQL-Server-dominando-tabelas-e-tipos-de-dados.jpg" alt="Certificado" width="600px">
 
 ---
 
