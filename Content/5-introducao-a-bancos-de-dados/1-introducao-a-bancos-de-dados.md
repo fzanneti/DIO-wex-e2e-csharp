@@ -1,4 +1,6 @@
-# 📦 Introdução a Banco de Dados
+# WEX - End to End Engineering
+
+## 5.1 - Introdução a Banco de Dados
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
@@ -10,13 +12,13 @@
 
 ---
 
-### 📘 Introdução ao Módulo
+### Introdução ao Módulo
 
 No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. **Bancos de dados** armazenam informações de forma eficiente. Este módulo explora bancos relacionais e NoSQL, com foco em **SQL Server** e **Entity Framework Core**.
 
 ---
 
-### 🧠 O que é um Banco de Dados?
+### O que é um Banco de Dados?
 
 Um **banco de dados** é um conjunto organizado de dados que podem ser acessados, gerenciados e atualizados de forma eficiente. Ele serve para **armazenar informações** estruturadas, como registros de clientes, produtos, pedidos etc.
 
@@ -24,21 +26,20 @@ No desenvolvimento com .NET, é comum utilizarmos **SGBDs relacionais**, como o 
 
 ---
 
-## 🗂️ Tipos de Banco de Dados
+### Tipos de Banco de Dados
 
-### 1. Relacional (RDBMS)
+1. Relacional (RDBMS)
 - Estruturado em **tabelas com colunas e linhas**.
 - Utiliza a linguagem **SQL (Structured Query Language)**.
 - Exemplo: SQL Server, MySQL, PostgreSQL.
-
-### 2. Não Relacional (NoSQL)
+2. Não Relacional (NoSQL)
 - Ideal para dados sem estrutura rígida.
 - Pode ser baseado em **documentos, grafos, chave-valor ou colunas**.
 - Exemplo: MongoDB, Redis, Cassandra.
 
 ---
 
-### 📊 Entendendo uma Tabela
+### Entendendo uma Tabela
 
 Uma **tabela** em um banco relacional é composta por:
 - **Colunas**: Definem os **tipos de dados** (ex: `Nome`, `Idade`, `Email`).
@@ -53,7 +54,7 @@ Exemplo:
 
 ---
 
-### 🌐 Bancos Não Relacionais
+### Bancos Não Relacionais
 
 Em vez de tabelas, os bancos NoSQL armazenam dados em:
 - **Documentos (ex: JSON)** → MongoDB
@@ -61,11 +62,11 @@ Em vez de tabelas, os bancos NoSQL armazenam dados em:
 - **Grafos** → Neo4j
 - **Colunas** → Cassandra
 
-📌 Úteis quando lidamos com **grandes volumes de dados não estruturados**, como logs, redes sociais, etc.
+> Úteis quando lidamos com **grandes volumes de dados não estruturados**, como logs, redes sociais, etc.
 
 ---
 
-### 🔠 Tipos de Dados Comuns
+### Tipos de Dados Comuns
 
 | Tipo         | Exemplo               | Uso                                  |
 |--------------|------------------------|---------------------------------------|
@@ -77,7 +78,7 @@ Em vez de tabelas, os bancos NoSQL armazenam dados em:
 
 ---
 
-### ⚙️ O que é um DBMS (ou SGBD)?
+### O que é um DBMS (ou SGBD)?
 
 DBMS (Database Management System) ou em português **SGBD (Sistema Gerenciador de Banco de Dados)** é o software que gerencia o banco.
 
@@ -86,68 +87,63 @@ DBMS (Database Management System) ou em português **SGBD (Sistema Gerenciador d
 - Permitir acesso concorrente.
 - Gerenciar transações e segurança.
 
-🎯 Exemplo: **Microsoft SQL Server**, **PostgreSQL**, **MySQL**, **MongoDB**.
+> Exemplo: **Microsoft SQL Server**, **PostgreSQL**, **MySQL**, **MongoDB**.
 
 ---
 
-### 🧪 Instalando o SQL Server
+### Instalando o SQL Server
 
 Para projetos em C# e .NET, o **SQL Server** é altamente recomendado.
 
-### 👉 Passo a Passo:
+---
+
+### Passo a Passo:
 
 1. Baixe o instalador do **SQL Server Developer Edition**:  
-   [https://www.microsoft.com/pt-br/sql-server/sql-server-downloads](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
-
+   🔗[https://www.microsoft.com/pt-br/sql-server/sql-server-downloads](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
 2. Instale o **SQL Server Management Studio (SSMS)** para gerenciar o banco via interface gráfica:  
-   [https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms)
-
+   🔗[https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms)
 3. Durante a instalação:
    - Escolha a opção "Basic" ou "Custom"
    - Mantenha o modo de autenticação padrão (Windows Authentication)
-
 4. Após instalar:
    - Abra o **SSMS**, conecte ao servidor local (`localhost`) e comece a criar seu banco!
 
 ---
 
-## 🗃️ Links Complementares de Estudo – Introdução a Banco de Dados
+### Links Complementares de Estudo – Introdução a Banco de Dados
 
 Bancos de dados são fundamentais em qualquer aplicação moderna. Entender bem os conceitos de tabelas, relacionamentos, SQL e NoSQL é o primeiro passo para trabalhar com persistência de dados. Abaixo estão materiais para te ajudar a entender desde os fundamentos até os primeiros comandos práticos.
 
----
-
-### 📚 Documentação e Ferramentas
-
-- [Documentação Oficial SQL (W3Schools)](https://www.w3schools.com/sql/)
-  > Um dos melhores guias interativos para aprender comandos SQL (`SELECT`, `INSERT`, `JOIN`, etc.).
-- [MySQL Documentation (pt-br)](https://dev.mysql.com/doc/)
-  > Documentação oficial para quem está usando MySQL (muito usado em cursos e projetos iniciais).
-- [PostgreSQL - Guia Rápido](https://www.postgresql.org/docs/current/tutorial-start.html)
-  > Comece a brincar com um banco de dados robusto e open source.
-- [DB Fiddle](https://www.db-fiddle.com/)
-  > Ambiente online para testar SQL sem instalar nada. Excelente para praticar.
-
-- [Entity Framework Core](https://learn.microsoft.com/pt-br/ef/core/)
-- [SQL Server](https://learn.microsoft.com/pt-br/sql/sql-server/)
-- [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/pt-br/sql/ssms/)
-
----
-
-### 💡 Extras Interessantes
-
-- [SQLZoo – Exercícios interativos de SQL](https://sqlzoo.net/)
-  > Plataforma prática para treinar comandos SQL direto no navegador.
-- [DrawSQL – Ferramenta de Diagrama ER online](https://drawsql.app/)
-  > Para criar seus próprios esquemas de banco de dados com visual profissional.
-- [DBeaver – Cliente gráfico de Banco de Dados](https://dbeaver.io/)
-  > Ferramenta gratuita para conectar, visualizar e manipular dados em bancos locais ou remotos.
+🔗[Documentação Oficial SQL (W3Schools)](https://www.w3schools.com/sql/)    
+  > Um dos melhores guias interativos para aprender comandos SQL (`SELECT`, `INSERT`, `JOIN`, etc.)    
+🔗[MySQL Documentation (pt-br)](https://dev.mysql.com/doc/)    
+  > Documentação oficial para quem está usando MySQL (muito usado em cursos e projetos iniciais)    
+🔗[PostgreSQL - Guia Rápido](https://www.postgresql.org/docs/current/tutorial-start.html)   
+  > Comece a brincar com um banco de dados robusto e open source    
+🔗[DB Fiddle](https://www.db-fiddle.com/)    
+  > Ambiente online para testar SQL sem instalar nada. Excelente para praticar    
+🔗[Entity Framework Core](https://learn.microsoft.com/pt-br/ef/core/)     
+🔗[SQL Server](https://learn.microsoft.com/pt-br/sql/sql-server/)    
+🔗[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/pt-br/sql/ssms/)     
+🔗[SQLZoo – Exercícios interativos de SQL](https://sqlzoo.net/)     
+  > Plataforma prática para treinar comandos SQL direto no navegador     
+🔗[DrawSQL – Ferramenta de Diagrama ER online](https://drawsql.app/)     
+  > Para criar seus próprios esquemas de banco de dados com visual profissional      
+🔗[DBeaver – Cliente gráfico de Banco de Dados](https://dbeaver.io/)     
+  > Ferramenta gratuita para conectar, visualizar e manipular dados em bancos locais ou remotos      
 
 ---
 
-#### ✅ Conclusão
+### Conclusão
 
 Este módulo oferece a base essencial para quem está começando a trabalhar com **banco de dados no .NET**, preparando o terreno para usar **ORMs como Entity Framework** ou executar **comandos SQL diretamente**.
+
+---
+
+### Certificado
+
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/23-introducao-banco-de-dados.jpg" alt="Certificado" width="600px">
 
 ---
 
