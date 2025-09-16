@@ -235,6 +235,12 @@ Estudar a fundo o uso de **classes abstratas** e **interfaces** é essencial par
 
 ---
 
+### Desafio do Módulo 4 - SmartPhone
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=fzanneti&repo=DIO-and-wex-cell-phone-challenge&bg_color=261d31&border_color=7a49c6&show_icons=true&icon_color=7a49c6&title_color=37ccab&text_color=FFF)](https://github.com/fzanneti/DIO-and-wex-cell-phone-challenge)
+
+---
+
 ### Certificado
 
 <img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/dd1e47a38400eb9fc8d893e2e5996f31cb4777a6/Assets/images/certificados/20-classes-abstratas-e-interfaces-com-CSharp.jpg" alt="Certificado" width="600px">
