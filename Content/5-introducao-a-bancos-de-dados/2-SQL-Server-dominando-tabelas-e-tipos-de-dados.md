@@ -260,18 +260,17 @@ CREATE TABLE Produtos (
 Compreender os **tipos de dados**, **estruturas de tabelas** e boas práticas de modelagem é essencial para desenvolver soluções eficientes com SQL Server. Aqui estão links e materiais de apoio para aprofundar no tema:
 
 🔗[Tipos de Dados (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/data-types/data-types-transact-sql)     
-  > Lista completa dos tipos de dados suportados no SQL Server, com descrição e exemplos     
+Lista completa dos tipos de dados suportados no SQL Server, com descrição e exemplos     
 🔗[CREATE TABLE (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/statements/create-table-transact-sql)     
-  > Guia oficial sobre a sintaxe para criar tabelas, constraints e propriedades avançadas.       
+Guia oficial sobre a sintaxe para criar tabelas, constraints e propriedades avançadas.       
 🔗[CAST e CONVERT – Tratamento de Tipos](https://learn.microsoft.com/pt-br/sql/t-sql/functions/cast-and-convert-transact-sql)      
-  > Como converter tipos de dados corretamente no SQL Server      
+Como converter tipos de dados corretamente no SQL Server      
 🔗[Entity Framework Core](https://learn.microsoft.com/pt-br/ef/core/)        
-🔗[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms)      
-  > Ferramenta oficial da Microsoft para gerenciar bancos SQL Server localmente ou em rede.       
+🔗[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms)    Ferramenta oficial da Microsoft para gerenciar bancos SQL Server localmente ou em rede.       
 🔗[Azure SQL (Gratuito por tempo limitado)](https://learn.microsoft.com/pt-br/azure/azure-sql/)        
-  > Ideal para testar soluções em nuvem com SQL Server       
+Ideal para testar soluções em nuvem com SQL Server       
 🔗[DB Fiddle (com suporte parcial a SQL Server)](https://www.db-fiddle.com/)            
-  > Plataforma online para testar estruturas e comandos SQL sem precisar instalar nada     
+Plataforma online para testar estruturas e comandos SQL sem precisar instalar nada     
 
 ---
 
