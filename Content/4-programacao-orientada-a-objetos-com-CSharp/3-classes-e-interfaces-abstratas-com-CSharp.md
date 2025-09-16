@@ -1,6 +1,6 @@
-# 🧱 Classes Abstratas e Interfaces em C#
+# WEX - End to End Engineering
 
-No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. **Classes abstratas**, **classes seladas** e **interfaces** são ferramentas da POO que garantem flexibilidade e segurança. Este módulo explora como definir contratos e compartilhar código.
+## 4.3 - Classes Abstratas e Interfaces em C#
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
@@ -10,17 +10,19 @@ No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. **Classes abstra
 ![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
 ![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
 
+No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. **Classes abstratas**, **classes seladas** e **interfaces** são ferramentas da POO que garantem flexibilidade e segurança. Este módulo explora como definir contratos e compartilhar código.
+
 ---
 
-### 📌 Introdução: Classe Abstrata
+### Introdução: Classe Abstrata
 
 Uma **classe abstrata** é uma classe que **não pode ser instanciada** diretamente. Ela serve como **modelo base** para outras classes e pode conter métodos com ou sem implementação.
 
-✅ Usada para criar **estruturas comuns** para classes derivadas.
+> Usada para criar **estruturas comuns** para classes derivadas.
 
 ---
 
-### 🛠️ Classe Abstrata na Prática
+### Classe Abstrata na Prática
 
 ```csharp
 
@@ -45,7 +47,7 @@ public class Gato : Animal
 
 ---
 
-### 🔁 Construtor por Herança
+### Construtor por Herança
 
 Mesmo sendo abstrata, a classe base **pode ter construtores**, que serão executados pelas classes filhas através da chamada `base()`:
 
@@ -69,13 +71,13 @@ public class Aluno : Pessoa
 
 ---
 
-### 🔒 Introdução: Classe Selada
+### Introdução: Classe Selada
 
 Uma **classe selada (sealed)** **não pode ser herdada**. Ela garante que nenhuma outra classe estenda sua implementação, sendo usada por **motivos de segurança, performance ou integridade da lógica**.
 
 ---
 
-### 🧪 Classe Selada na Prática
+### Classe Selada na Prática
 
 ```csharp
 
@@ -93,7 +95,7 @@ public sealed class Relatorio
 
 ---
 
-### 🚫 Método Selado na Prática
+### Método Selado na Prática
 
 Você também pode **selar apenas um método** dentro de uma hierarquia com `sealed override`.
 
@@ -118,7 +120,7 @@ public class PDFColorido : PDF
 
 ---
 
-### 👤 Introdução: Classe Object
+### Introdução: Classe Object
 
 Toda classe em C# herda **implícita ou explicitamente da classe `object`**, a **base de todos os tipos no .NET**.
 
@@ -131,7 +133,7 @@ Ela fornece métodos como:
 
 ---
 
-### 🧪 Classe Object na Prática
+### Classe Object na Prática
 
 ```csharp
 
@@ -154,7 +156,7 @@ Console.WriteLine(p.ToString()); // Saída: Produto: Caderno
 
 ---
 
-### 📢 Introdução: Interfaces
+### Introdução: Interfaces
 
 Uma **interface** é um **contrato** que define **quais membros uma classe deve implementar**, sem fornecer lógica.
 
@@ -166,7 +168,7 @@ Diferente de uma classe abstrata:
 
 ---
 
-### 💼 Interface na Prática
+### Interface na Prática
 
 ```csharp
 
@@ -187,7 +189,7 @@ public class EmailService : INotificavel
 
 ---
 
-### 🧩 Método Padrão na Interface (C# 8+)
+### Método Padrão na Interface (C# 8+)
 
 Desde o C# 8, **interfaces podem ter implementações padrão** com `default`:
 
@@ -208,19 +210,17 @@ public class Logger : ILog { }
 ```
 ---
 
-## 🧩 Links Complementares de Estudo
+### Links Complementares de Estudo
 
 Estudar a fundo o uso de **classes abstratas** e **interfaces** é essencial para aplicar corretamente os conceitos de **POO (Programação Orientada a Objetos)** em C#. Abaixo estão materiais para reforçar o conteúdo:
 
-### 📚 Documentações Oficiais da Microsoft
-
-- [Classes Abstratas](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/abstract)
-- [Interfaces](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/interfaces/)
-- [Classe Object](https://learn.microsoft.com/pt-br/dotnet/api/system.object)
+🔗[Classes Abstratas](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/abstract)
+🔗[Interfaces](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/interfaces/)
+🔗[Classe Object](https://learn.microsoft.com/pt-br/dotnet/api/system.object)
 
 ---
 
-#### ✅ Finalização
+### Finalização
 
 | Conceito        | Pode ter implementação? | Pode ser herdada? | Pode ser instanciada? |
 | --------------- | ----------------------- | ----------------- | --------------------- |
@@ -228,10 +228,16 @@ Estudar a fundo o uso de **classes abstratas** e **interfaces** é essencial par
 | Classe Selada   | Sim                     | Não               | Sim                   |
 | Interface       | Apenas a partir do C# 8 | Sim (múltiplas)   | Não                   |
 
-🎯 Use **classes abstratas** quando quiser **compartilhar código entre classes relacionadas**.
-🎯 Use **interfaces** quando quiser **forçar um contrato** de implementação, com ou sem herança entre classes.
+- Use **classes abstratas** quando quiser **compartilhar código entre classes relacionadas**.
+- Use **interfaces** quando quiser **forçar um contrato** de implementação, com ou sem herança entre classes.
 
-📌 Dominar esses conceitos é essencial para aplicar princípios de design como SOLID, Clean Code e Injeção de Dependência no .NET.
+> Dominar esses conceitos é essencial para aplicar princípios de design como SOLID, Clean Code e Injeção de Dependência no .NET.
+
+---
+
+### Certificado
+
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/4-programacao-orientada-a-objetos-com-CSharp/3-classes-e-interfaces-abstratas-com-CSharp.md" alt="Certificado" width="600px">
 
 ---
 
