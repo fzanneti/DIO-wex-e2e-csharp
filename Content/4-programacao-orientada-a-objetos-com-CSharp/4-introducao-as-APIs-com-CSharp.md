@@ -204,10 +204,10 @@ Aqui estão alguns materiais gratuitos e de qualidade para reforçar os conhecim
 🔗[Criando Web APIs com ASP.NET Core](https://learn.microsoft.com/pt-br/training/modules/build-web-api-aspnet-core/)     
 🔗[ASP.NET Core Web API](https://learn.microsoft.com/pt-br/aspnet/core/web-api/?view=aspnetcore-8.0)      
 🔗[System.Text.Json](https://learn.microsoft.com/pt-br/dotnet/standard/serialization/system-text-json/overview)     
-🔗[Autenticação no ASP.NET Core](https://learn.microsoft.com/pt-br/aspnet/core/security/authentication/?view=aspnetcore-8.0)
-🔗[Postman](https://www.postman.com/)     
-🔗[Insomnia](https://insomnia.rest/)      
-🔗[Swagger UI (Swashbuckle)](https://learn.microsoft.com/pt-br/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-8.0&tabs=visual-studio)
+🔗[Autenticação no ASP.NET Core](https://learn.microsoft.com/pt-br/aspnet/core/security/authentication/?view=aspnetcore-8.0)     
+🔗[Postman](https://www.postman.com/)       
+🔗[Insomnia](https://insomnia.rest/)        
+🔗[Swagger UI (Swashbuckle)](https://learn.microsoft.com/pt-br/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-8.0&tabs=visual-studio)     
 🔗[RESTful API Design - Best Practices](https://restfulapi.net/)      
 
 ---
