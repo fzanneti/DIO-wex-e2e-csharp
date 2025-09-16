@@ -237,7 +237,7 @@ Estudar a fundo o uso de **classes abstratas** e **interfaces** é essencial par
 
 ### Certificado
 
-<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/4-programacao-orientada-a-objetos-com-CSharp/3-classes-e-interfaces-abstratas-com-CSharp.md" alt="Certificado" width="600px">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/dd1e47a38400eb9fc8d893e2e5996f31cb4777a6/Assets/images/certificados/20-classes-abstratas-e-interfaces-com-CSharp.jpg" alt="Certificado" width="600px">
 
 ---
 
