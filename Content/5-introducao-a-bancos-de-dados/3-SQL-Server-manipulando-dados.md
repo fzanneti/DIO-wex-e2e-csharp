@@ -1,4 +1,6 @@
-# 🧰 SQL Server – Manipulando Dados
+# WEX - End to End Engineering
+
+## SQL Server – Manipulando Dados
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
@@ -10,13 +12,13 @@
 
 ---
 
-### 📘 Introdução
+### Introdução
 
 No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. **Manipular dados no SQL Server** é essencial para consultas avançadas e relacionamentos. Este módulo explora comandos T-SQL e integração com **EF Core**.
 
 ---
 
-### 🔢 Usando o COUNT
+### Usando o COUNT
 
 O `COUNT` retorna a **quantidade de registros**.
 
@@ -36,7 +38,7 @@ SELECT COUNT(Email) FROM Clientes;
 
 ---
 
-### ➕ Usando o SUM
+### Usando o SUM
 
 O `SUM` retorna a **soma total de uma coluna numérica**.
 
@@ -48,9 +50,9 @@ SELECT SUM(Estoque) FROM Produtos;
 
 ---
 
-## 📈 MÍN, MÁX e MÉDIA
+### MÍN, MÁX e MÉDIA
 
-### `MIN` – valor mínimo
+`MIN` – valor mínimo
 
 ```sql
 
@@ -58,7 +60,7 @@ SELECT MIN(Preco) FROM Produtos;
 
 ```
 
-### `MAX` – valor máximo
+`MAX` – valor máximo
 
 ```sql
 
@@ -66,7 +68,7 @@ SELECT MAX(Preco) FROM Produtos;
 ```
 
 
-### `AVG` – média dos valores
+`AVG` – média dos valores
 
 ```sql
 
@@ -76,7 +78,7 @@ SELECT AVG(Preco) FROM Produtos;
 
 ---
 
-### 🔗 Concatenando Colunas
+### Concatenando Colunas
 
 Você pode juntar colunas de texto com `+` ou `CONCAT`.
 
@@ -96,7 +98,7 @@ SELECT CONCAT(Nome, ' | ', Email) AS Info FROM Clientes;
 
 ---
 
-### 🔠 Funções UPPER e LOWER
+### Funções UPPER e LOWER
 
 * `UPPER()` → transforma o texto em **maiúsculas**
 * `LOWER()` → transforma o texto em **minúsculas**
@@ -110,7 +112,7 @@ SELECT LOWER(Email) AS EmailMinusculo FROM Clientes;
 
 ---
 
-### 🧱 Adicionando Nova Coluna
+### Adicionando Nova Coluna
 
 ```sql
 
@@ -121,7 +123,7 @@ ADD Telefone VARCHAR(15);
 
 ---
 
-### 🗓️ Formatando uma Data
+### Formatando uma Data
 
 Usando `FORMAT()` para customizar exibição:
 
@@ -133,7 +135,7 @@ SELECT FORMAT(DataCadastro, 'dd/MM/yyyy') AS DataFormatada FROM Clientes;
 
 ---
 
-### 📊 Entendendo o GROUP BY
+### Entendendo o GROUP BY
 
 Permite **agrupar registros** com base em um ou mais campos, geralmente usado com funções de agregação.
 
@@ -147,7 +149,7 @@ GROUP BY Preco;
 
 ---
 
-### 🔑 Primary Key (PK) e Foreign Key (FK)
+### Primary Key (PK) e Foreign Key (FK)
 
 * **Primary Key**: identificador único da tabela.
 * **Foreign Key**: cria **relação entre tabelas**.
@@ -156,7 +158,7 @@ Exemplo prático: Clientes e seus Endereços.
 
 ---
 
-### 📦 Criando Tabela de Endereços com Foreign Key
+### Criando Tabela de Endereços com Foreign Key
 
 ```sql
 
@@ -176,7 +178,7 @@ CREATE TABLE Enderecos (
 
 ---
 
-### 🔄 Realizando um JOIN
+### Realizando um JOIN
 
 O `JOIN` é utilizado para **combinar registros de duas ou mais tabelas** com base em uma condição de relacionamento (normalmente uma **chave primária** e uma **chave estrangeira**).
 
@@ -188,11 +190,11 @@ INNER JOIN Enderecos e ON c.Id = e.ClienteId;
 
 ```
 
-📌 *Exibe apenas os clientes que possuem endereço cadastrado.*
+> *Exibe apenas os clientes que possuem endereço cadastrado.*
 
 ---
 
-### 🔸 LEFT JOIN (ou LEFT OUTER JOIN)
+### LEFT JOIN (ou LEFT OUTER JOIN)
 
 Retorna **todos os registros da tabela da esquerda** (`Clientes`) e os correspondentes da direita (`Enderecos`).
 Se não houver correspondência, os campos da tabela da direita virão como `NULL`.
@@ -205,11 +207,11 @@ LEFT JOIN Enderecos e ON c.Id = e.ClienteId;
 
 ```
 
-📌 *Exibe todos os clientes, mesmo os que **não têm endereço**.*
+> *Exibe todos os clientes, mesmo os que **não têm endereço**.*
 
 ---
 
-### 🔸 RIGHT JOIN (ou RIGHT OUTER JOIN)
+### RIGHT JOIN (ou RIGHT OUTER JOIN)
 
 Retorna **todos os registros da tabela da direita** e os correspondentes da esquerda.
 Se não houver correspondência, os campos da tabela da esquerda virão como `NULL`.
@@ -222,11 +224,11 @@ RIGHT JOIN Enderecos e ON c.Id = e.ClienteId;
 
 ```
 
-📌 *Exibe todos os endereços, mesmo os que **não estão ligados a clientes**.*
+> *Exibe todos os endereços, mesmo os que **não estão ligados a clientes**.*
 
 ---
 
-### 🔸 FULL JOIN (ou FULL OUTER JOIN)
+### FULL JOIN (ou FULL OUTER JOIN)
 
 Retorna **todos os registros de ambas as tabelas**, combinando os dados quando há correspondência.
 Se não houver, preenche com `NULL` nas colunas da tabela que não tiver valor correspondente.
@@ -239,11 +241,11 @@ FULL JOIN Enderecos e ON c.Id = e.ClienteId;
 
 ```
 
-📌 *Exibe todos os clientes e todos os endereços, inclusive os que **não têm relação** entre si.*
+> *Exibe todos os clientes e todos os endereços, inclusive os que **não têm relação** entre si.*
 
 ---
 
-### 🧠 Dica Visual (Resumão)
+### Dica Visual (Resumão)
 
 | JOIN       | O que retorna?                                      |
 | ---------- | --------------------------------------------------- |
@@ -254,7 +256,7 @@ FULL JOIN Enderecos e ON c.Id = e.ClienteId;
 
 ---
 
-### 🧪 Exemplo com Dados
+### Exemplo com Dados
 
 Imaginando a tabela `Clientes` e `Enderecos`:
 
@@ -280,39 +282,30 @@ Imaginando a tabela `Clientes` e `Enderecos`:
 
 ---
 
-## 💾 Links Complementares de Estudo – SQL Server: Manipulando Dados
+### Links Complementares de Estudo – SQL Server: Manipulando Dados
 
 Manipular dados é uma das habilidades mais fundamentais ao trabalhar com banco de dados. Isso inclui inserir, consultar, atualizar e excluir registros de forma segura e eficiente. Abaixo estão materiais gratuitos para dominar os principais comandos DML (Data Manipulation Language) no SQL Server.
 
----
-
-### 📚 Documentação Oficial Microsoft
-
-- [SELECT (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/queries/select-transact-sql)
-  > Guia completo do comando `SELECT`, com cláusulas como `WHERE`, `ORDER BY`, `TOP`, `JOIN`.
-- [INSERT (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/statements/insert-transact-sql)
-  > Sintaxe e exemplos para inserir dados em tabelas.
-- [UPDATE (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/statements/update-transact-sql)
-  > Modificando dados existentes com `UPDATE`.
-- [DELETE (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/statements/delete-transact-sql)
-  > Remoção de registros com segurança, incluindo uso de `WHERE`.
-- [INNER JOIN e OUTER JOIN – Explicação](https://learn.microsoft.com/pt-br/sql/t-sql/queries/from-transact-sql?view=sql-server-ver16)
-  > Como unir tabelas com `JOIN` e suas variações.
-
----
-
-### 🧪 Ferramentas para Prática
-
-- [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms)
-  > Ferramenta oficial para executar comandos SQL Server localmente.
-- [DB Fiddle (com suporte a SQL Server)](https://www.db-fiddle.com/)
-  > Teste seus comandos online sem precisar instalar nada.
-- [SQLPad – Executando SQL no Navegador](https://sqlpad.io/)
-  > Ótima opção para ensinar e praticar comandos SQL interativamente.
+🔗[SELECT (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/queries/select-transact-sql)     
+Guia completo do comando `SELECT`, com cláusulas como `WHERE`, `ORDER BY`, `TOP`, `JOIN`     
+🔗[INSERT (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/statements/insert-transact-sql)    
+Sintaxe e exemplos para inserir dados em tabelas     
+🔗[UPDATE (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/statements/update-transact-sql)     
+Modificando dados existentes com `UPDATE`    
+🔗[DELETE (Transact-SQL)](https://learn.microsoft.com/pt-br/sql/t-sql/statements/delete-transact-sql)     
+Remoção de registros com segurança, incluindo uso de `WHERE`    
+🔗[INNER JOIN e OUTER JOIN – Explicação](https://learn.microsoft.com/pt-br/sql/t-sql/queries/from-transact-sql?view=sql-server-ver16)    
+Como unir tabelas com `JOIN` e suas variações    
+🔗[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms)    
+Ferramenta oficial para executar comandos SQL Server localmente    
+🔗[DB Fiddle (com suporte a SQL Server)](https://www.db-fiddle.com/)     
+Teste seus comandos online sem precisar instalar nada    
+🔗[SQLPad – Executando SQL no Navegador](https://sqlpad.io/)     
+Ótima opção para ensinar e praticar comandos SQL interativamente    
 
 ---
 
-#### ✅ Conclusão
+### Conclusão
 
 Com esses comandos, você já consegue:
 
@@ -322,6 +315,12 @@ Com esses comandos, você já consegue:
 * **Trabalhar com múltiplas tabelas ao mesmo tempo**
 
 Essa base é essencial para qualquer aplicação que manipule dados no back-end com C# e .NET.
+
+---
+
+### Certificado
+
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/25-SQL-Server-manipulando-dados.jpg" alt="Certificado" width="600px">
 
 ---
 
