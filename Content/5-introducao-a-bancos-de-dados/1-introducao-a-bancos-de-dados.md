@@ -115,23 +115,24 @@ Para projetos em C# e .NET, o **SQL Server** é altamente recomendado.
 
 Bancos de dados são fundamentais em qualquer aplicação moderna. Entender bem os conceitos de tabelas, relacionamentos, SQL e NoSQL é o primeiro passo para trabalhar com persistência de dados. Abaixo estão materiais para te ajudar a entender desde os fundamentos até os primeiros comandos práticos.
 
+
 🔗[Documentação Oficial SQL (W3Schools)](https://www.w3schools.com/sql/)    
-  > Um dos melhores guias interativos para aprender comandos SQL (`SELECT`, `INSERT`, `JOIN`, etc.)    
+Um dos melhores guias interativos para aprender comandos SQL (`SELECT`, `INSERT`, `JOIN`, etc.)    
 🔗[MySQL Documentation (pt-br)](https://dev.mysql.com/doc/)    
-  > Documentação oficial para quem está usando MySQL (muito usado em cursos e projetos iniciais)    
+Documentação oficial para quem está usando MySQL (muito usado em cursos e projetos iniciais)    
 🔗[PostgreSQL - Guia Rápido](https://www.postgresql.org/docs/current/tutorial-start.html)   
-  > Comece a brincar com um banco de dados robusto e open source    
+Comece a brincar com um banco de dados robusto e open source    
 🔗[DB Fiddle](https://www.db-fiddle.com/)    
-  > Ambiente online para testar SQL sem instalar nada. Excelente para praticar    
+Ambiente online para testar SQL sem instalar nada. Excelente para praticar    
 🔗[Entity Framework Core](https://learn.microsoft.com/pt-br/ef/core/)     
 🔗[SQL Server](https://learn.microsoft.com/pt-br/sql/sql-server/)    
 🔗[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/pt-br/sql/ssms/)     
 🔗[SQLZoo – Exercícios interativos de SQL](https://sqlzoo.net/)     
-  > Plataforma prática para treinar comandos SQL direto no navegador     
+Plataforma prática para treinar comandos SQL direto no navegador     
 🔗[DrawSQL – Ferramenta de Diagrama ER online](https://drawsql.app/)     
-  > Para criar seus próprios esquemas de banco de dados com visual profissional      
+Para criar seus próprios esquemas de banco de dados com visual profissional      
 🔗[DBeaver – Cliente gráfico de Banco de Dados](https://dbeaver.io/)     
-  > Ferramenta gratuita para conectar, visualizar e manipular dados em bancos locais ou remotos      
+Ferramenta gratuita para conectar, visualizar e manipular dados em bancos locais ou remotos      
 
 ---
 
