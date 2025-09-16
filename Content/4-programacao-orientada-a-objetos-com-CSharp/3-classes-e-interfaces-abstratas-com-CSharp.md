@@ -214,9 +214,9 @@ public class Logger : ILog { }
 
 Estudar a fundo o uso de **classes abstratas** e **interfaces** é essencial para aplicar corretamente os conceitos de **POO (Programação Orientada a Objetos)** em C#. Abaixo estão materiais para reforçar o conteúdo:
 
-🔗[Classes Abstratas](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/abstract)
-🔗[Interfaces](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/interfaces/)
-🔗[Classe Object](https://learn.microsoft.com/pt-br/dotnet/api/system.object)
+🔗[Classes Abstratas](https://learn.microsoft.com/pt-br/dotnet/csharp/language-reference/keywords/abstract)     
+🔗[Interfaces](https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/interfaces/)      
+🔗[Classe Object](https://learn.microsoft.com/pt-br/dotnet/api/system.object)      
 
 ---
 
