@@ -54,11 +54,11 @@ SELECT Nome, Ano FROM Filmes;
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/assets/images/querie1.jpg" alt="Querie 1" style="width: 600px;">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/bd/querie1.jpg" alt="Querie 1" style="width: 600px;">
 
 ---
 
-#### 2. Buscar o nome e ano dos filmes, ordenados por ordem crescente pelo ano
+2. Buscar o nome e ano dos filmes, ordenados por ordem crescente pelo ano
 
 ```sql
 
@@ -66,11 +66,11 @@ SELECT Nome, Ano FROM Filmes ORDER BY Ano ASC;
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/assets/images/querie2.jpg" alt="Querie 2" style="width: 600px;">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/bd/querie2.jpg" alt="Querie 2" style="width: 600px;">
 
 ---
 
-#### 3. Buscar pelo filme de volta para o futuro, trazendo o nome, ano e a duração
+3. Buscar pelo filme de volta para o futuro, trazendo o nome, ano e a duração
 
 ```sql
 
@@ -78,11 +78,11 @@ SELECT Nome, Ano, Duracao FROM Filmes WHERE Nome = 'De Volta para o Futuro';
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/assets/images/querie3.jpg" alt="Querie 3" style="width: 600px;">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/bd/querie3.jpg" alt="Querie 3" style="width: 600px;">
 
 ---
 
-#### 4. Buscar os filmes lançados em 1997
+4. Buscar os filmes lançados em 1997
 
 ```sql
 
@@ -90,11 +90,11 @@ SELECT Nome, Ano, Duracao FROM Filmes WHERE Ano = 1997;
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/assets/images/querie4.jpg" alt="Querie 4" style="width: 600px;">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/bd/querie4.jpg" alt="Querie 4" style="width: 600px;">
 
 ---
 
-#### 5. Buscar filmes lançados após 2000
+5. Buscar filmes lançados após 2000
 
 ```sql
 
@@ -102,11 +102,11 @@ SELECT Nome, Ano, Duracao FROM Filmes WHERE Ano > 2000;
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/assets/images/querie5.jpg" alt="Querie 5" style="width: 600px;">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/bd/querie5.jpg" alt="Querie 5" style="width: 600px;">
 
 ---
 
-#### 6. Buscar os filmes com a duracao maior que 100 e menor que 150, ordenando pela duracao em ordem crescente
+6. Buscar os filmes com a duracao maior que 100 e menor que 150, ordenando pela duracao em ordem crescente
 
 ```sql
 
@@ -114,11 +114,11 @@ SELECT Nome, Ano, Duracao FROM Filmes WHERE Duracao > 100 AND Duracao < 150 ORDE
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/assets/images/querie6.jpg" alt="Querie 6" style="width: 600px;">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/bd/querie6.jpg" alt="Querie 6" style="width: 600px;">
 
 ---
 
-#### 7. Contagem de filmes por ano, ordenando por maior duração
+7. Contagem de filmes por ano, ordenando por maior duração
 
 ```sql
 
@@ -126,11 +126,11 @@ SELECT Ano, COUNT(*) AS ContagemDeFilmes, MAX(Duracao) AS MaiorDuracao FROM Film
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/assets/images/querie7.jpg" alt="Querie 7" style="width: 600px;">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/bd/querie7.jpg" alt="Querie 7" style="width: 600px;">
 
 ---
 
-####  8. Buscar os Atores do gênero masculino, retornando o PrimeiroNome, UltimoNome
+8. Buscar os Atores do gênero masculino, retornando o PrimeiroNome, UltimoNome
 
 ```sql
 
@@ -138,11 +138,11 @@ SELECT PrimeiroNome, UltimoNome, Genero FROM Atores WHERE Genero = 'M';
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/assets/images/querie8.jpg" alt="Querie 8" style="width: 600px;">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/bd/querie8.jpg" alt="Querie 8" style="width: 600px;">
 
 ---
 
-#### 9. Buscar os Atores do gênero feminino, retornando o PrimeiroNome, UltimoNome, e ordenando pelo PrimeiroNome
+9. Buscar os Atores do gênero feminino, retornando o PrimeiroNome, UltimoNome, e ordenando pelo PrimeiroNome
 
 ```sql
 
@@ -150,11 +150,11 @@ SELECT PrimeiroNome, UltimoNome, Genero FROM Atores WHERE Genero = 'F' ORDER BY 
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/assets/images/querie9.jpg" alt="Querie 9" style="width: 600px;">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/bd/querie9.jpg" alt="Querie 9" style="width: 600px;">
 
 ---
 
-#### 10. Filme + Gênero
+10. Filme + Gênero
 
 ```sql
 
@@ -164,11 +164,11 @@ JOIN Generos ON FilmesGenero.IdGenero = Generos.Id;
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/assets/images/querie10.jpg" alt="Querie 10" style="width: 600px;">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/bd/querie10.jpg" alt="Querie 10" style="width: 600px;">
 
 ---
 
-#### 11. Buscar o nome do filme e o gênero do tipo "Mistério"
+11. Buscar o nome do filme e o gênero do tipo "Mistério"
 
 ```sql
 
@@ -179,11 +179,11 @@ WHERE Genero = 'Mistério';
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/assets/images/querie11.jpg" alt="Querie 11" style="width: 600px;">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/bd/querie11.jpg" alt="Querie 11" style="width: 600px;">
 
 ---
 
-#### 12. Filme + Atores + Papel
+12. Filme + Atores + Papel
 
 ```sql
 
@@ -193,11 +193,11 @@ JOIN Atores ON ElencoFilme.IdAtor = Atores.Id;
 
 ```
 
-<img src="https://github.com/fzanneti/wex_e2e_csharp/blob/main/study_material/assets/images/querie12.jpg" alt="Querie 12" style="width: 600px;">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/bd/querie12.jpg" alt="Querie 12" style="width: 600px;">
 
 ---
 
-### 🔗 Relacionamento das Tabelas
+### Relacionamento das Tabelas
 
 * **Filmes** (Id)   
   └─ 1\:N com **FilmesGenero** (IdFilme)   
@@ -211,7 +211,7 @@ JOIN Atores ON ElencoFilme.IdAtor = Atores.Id;
 
 ---
 
-### 📖 Aprendizados
+### Aprendizados
 
 * Prática de consultas SQL fundamentais para backend com .NET
 * Compreensão de **JOINs** e manipulação de dados entre tabelas
@@ -220,23 +220,9 @@ JOIN Atores ON ElencoFilme.IdAtor = Atores.Id;
 
 ---
 
-### 📁 Como usar este repositório
+### Certificado
 
-1. Clone o repositório ou baixe os arquivos `.sql`
-2. Execute o script `films.sql` no **SQL Server Management Studio**
-3. Utilize o arquivo `challenge.sql` para testar as queries
-
----
-
-### 🚀 Sobre
-
-Este desafio faz parte da trilha .NET + Banco de Dados oferecida pela [Digital Innovation One](https://dio.me) em parceria com a [WEX Brasil](https://www.wexinc.com/pt-br/).
-
----
-
-#### 📄 Licença
-
-Este projeto é de uso livre para fins educacionais. Compartilhe, estude e contribua! 🚀
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/27-montando-consultas-relacionais-no-SQL-Server.jpg" alt="Certificado" width="600px">
 
 ---
 
