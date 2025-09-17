@@ -1,6 +1,4 @@
-# 🧠 WEX End-to-End Engineering | Guia de Estudos em .NET com C\#
-
-Repositório educacional criado para apoiar estudantes e novos profissionais que estão aprendendo sobre a plataforma .NET com foco em C#, com base no curso WEX - End to End Engineering da Digital Innovation One (DIO).
+# WEX End-to-End Engineering | Guia de Estudos em .NET com C\#
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
@@ -8,6 +6,8 @@ Repositório educacional criado para apoiar estudantes e novos profissionais que
 ![Bootcamp](https://img.shields.io/badge/WEX-End--to--End%20Engineering-blueviolet?logo=vercel&logoColor=white)
 ![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
 ![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
+
+Repositório educacional criado para apoiar estudantes e novos profissionais que estão aprendendo sobre a plataforma .NET com foco em C#, com base no curso WEX - End to End Engineering da Digital Innovation One (DIO).
 
 ---
 
