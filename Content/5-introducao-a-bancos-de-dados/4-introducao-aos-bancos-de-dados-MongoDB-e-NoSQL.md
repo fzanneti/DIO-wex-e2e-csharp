@@ -33,7 +33,7 @@ O termo **NoSQL (Not Only SQL)** refere-se a bancos de dados que **não utilizam
 
 ---
 
-<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/neo4j.jpg" alt="neo4j" width="600px">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/neo4j.jpg" alt="neo4j" width="400px">
 
 ### Neo4j e Bancos de Dados Orientados a Grafos
 
@@ -91,11 +91,9 @@ RETURN pai.nome, filho.nome
 
 ### Sobre o Sandbox
 
-Validade: 3 dias (renovável)
-
-Ambiente isolado: Cada sandbox é um banco exclusivo seu
-
-Não precisa login em desktop: Tudo é web-based
+**Validade:** 3 dias (renovável)
+**Ambiente isolado:** Cada sandbox é um banco exclusivo seu
+**Não precisa login em desktop:** Tudo é web-based
 
 Ideal para aprender e demonstrar
 
@@ -827,7 +825,7 @@ MongoDB é altamente integrado com C# e uma excelente escolha para aplicações 
 
 ### Certificado
 
-<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/26-introducao-ao-MongoDB-e-bancos-de-dados-NoSQL.jpg" alt="Certificado" width="300px">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/26-introducao-ao-MongoDB-e-bancos-de-dados-NoSQL.jpg" alt="Certificado" width="600px">
 
 ---
 
