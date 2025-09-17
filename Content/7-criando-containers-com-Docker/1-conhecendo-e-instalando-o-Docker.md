@@ -88,13 +88,13 @@ Depois disso, reinicie a sessão do terminal ou a máquina.
 
 ### Links úteis sobre instalação:
 
-🔗[Documentação oficial – Instalando Docker no Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
-🔗[Instalando Docker no Windows com WSL2 (YouTube)](https://www.youtube.com/watch?v=_JpT8H_GnbE)
-🔗[Docker Playground (laboratório online gratuito)](https://www.docker.com/play-with-docker/)
-🔗[O que é Docker? (DigitalOcean - português)](https://www.digitalocean.com/community/tutorials/o-que-e-docker-e-para-que-serve)
-🔗[Entendendo Containers vs Máquinas Virtuais (Red Hat - português)](https://www.redhat.com/pt-br/topics/containers/containers-vs-virtual-machines)
-🔗[Guia de comandos básicos no Linux (DIO)](https://web.dio.me/articles/comandos-basicos-no-terminal-linux)
-🔗[Tabela de comandos Linux em PDF (Guia Linux)](https://www.guiadeti.com.br/wp-content/uploads/2019/11/comandos_linux_guia.pdf)
+🔗[Documentação oficial – Instalando Docker no Ubuntu](https://docs.docker.com/engine/install/ubuntu/)     
+🔗[Instalando Docker no Windows com WSL2 (YouTube)](https://www.youtube.com/watch?v=_JpT8H_GnbE)      
+🔗[Docker Playground (laboratório online gratuito)](https://www.docker.com/play-with-docker/)     
+🔗[O que é Docker? (DigitalOcean - português)](https://www.digitalocean.com/community/tutorials/o-que-e-docker-e-para-que-serve)      
+🔗[Entendendo Containers vs Máquinas Virtuais (Red Hat - português)](https://www.redhat.com/pt-br/topics/containers/containers-vs-virtual-machines)     
+🔗[Guia de comandos básicos no Linux (DIO)](https://web.dio.me/articles/comandos-basicos-no-terminal-linux)     
+🔗[Tabela de comandos Linux em PDF (Guia Linux)](https://www.guiadeti.com.br/wp-content/uploads/2019/11/comandos_linux_guia.pdf)     
 
 ---
 
