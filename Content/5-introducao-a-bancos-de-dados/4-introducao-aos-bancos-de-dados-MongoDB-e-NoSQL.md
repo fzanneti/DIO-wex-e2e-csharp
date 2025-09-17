@@ -62,7 +62,7 @@ Você pode começar a testar o **Neo4j diretamente no navegador** usando a ferra
 
 Acesse: 🔗[Neo4j](https://sandbox.neo4j.com)
 
-Passos para usar:
+**Passos para usar:**
 
 1. Clique em **"Start Project"**
 2. Selecione o modelo **"Blank Sandbox"**
@@ -70,7 +70,7 @@ Passos para usar:
 4. Clique em **"Open"** para abrir o console Cypher
 5. Use os comandos abaixo direto no editor:
 
-Exemplos práticos:
+**Exemplos práticos:**
 
 ```cypher
 
@@ -107,15 +107,15 @@ Use o botão "Code Snippets" no Sandbox para acessar exemplos prontos com modela
 
 ### Instalando o Neo4j
 
-### Local
+**Local**
 
 1. Acesse: https://neo4j.com/download/
 2. Baixe e instale o Neo4j Desktop
 3. Crie um novo banco e inicie o ambiente
 
-### Cloud (Neo4j Aura Free)
+**Cloud (Neo4j Aura Free)**
 
-1. Acesse: https://neo4j.com/cloud/aura/
+1. Acesse: 🔗[Neo4j](https://neo4j.com/cloud/aura/)
 2. Crie uma conta gratuita
 3. Crie um banco e copie a `connection string` e credenciais
 
@@ -366,12 +366,12 @@ SELECT * FROM usuarios;
 
 ### Testar sem instalar nada – Cassandra Playground
 
-Você pode testar o CQL direto no navegador em plataformas como:
+**Você pode testar o CQL direto no navegador em plataformas como:**
 
-🔗 https://www.killercoda.com/cassandra
-🔗 https://www.datastax.com/astra
+🔗[Cassandra](https://www.killercoda.com/cassandra)
+🔗[Astra](https://www.datastax.com/astra)
 
-### Dica:
+**Dica:**
 
 Use o DataStax Astra (versão cloud gratuita do Cassandra), ideal para praticar sem setup local.
 
@@ -474,7 +474,7 @@ docker run --name redis -p 6379:6379 -d redis
 
 **Cloud (Redis Cloud Gratuito)**
 
-1. Acesse: https://redis.com/try-free
+1. Acesse: 🔗[Redis](https://redis.com/try-free)
 2. Crie um cluster gratuito
 3. Copie a string de conexão
 
@@ -610,7 +610,7 @@ dotnet add package MongoDB.Driver
 
 ### Criando o Cluster (MongoDB Atlas)
 
-1. Acesse: [https://www.mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas)
+1. Acesse: 🔗[MongoDB](https://www.mongodb.com/cloud/atlas)
 2. Crie um cluster gratuito.
 3. Configure um usuário e libere IP (pode usar 0.0.0.0 para testes).
 4. Copie a **connection string** (ex: `mongodb+srv://usuario:senha@cluster.mongodb.net`)
