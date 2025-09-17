@@ -33,6 +33,8 @@ O termo **NoSQL (Not Only SQL)** refere-se a bancos de dados que **não utilizam
 
 ---
 
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/neo4j.jpg" alt="neo4j" width="600px">
+
 ### Neo4j e Bancos de Dados Orientados a Grafos
 
 **O que são Bancos de Dados em Grafos?**
@@ -244,6 +246,8 @@ O Neo4j é uma excelente ferramenta para aplicações .NET que demandam modelage
 
 ---
 
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/apache_cassandra.png" alt="Apache Cassandra" width="600px">
+
 ### Apache Cassandra – Banco de Dados Colunar  
 
 **O que é o Cassandra?**
@@ -420,6 +424,8 @@ O Cassandra é ideal para aplicações que precisam:
 - Trabalhar com consulta rápida por chave primária
 
 ---
+
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/redis.png" alt="Redis" width="600px">
 
 ### Redis – Banco de Dados Chave-Valor  
 
@@ -607,6 +613,8 @@ dotnet add package MongoDB.Driver
 ```
 
 ---
+
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/mongodb.jpg" alt="Redis" width="600px">
 
 ### Criando o Cluster (MongoDB Atlas)
 
