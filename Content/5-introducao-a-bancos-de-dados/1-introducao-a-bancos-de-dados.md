@@ -100,9 +100,9 @@ Para projetos em C# e .NET, o **SQL Server** é altamente recomendado.
 ### Passo a Passo:
 
 1. Baixe o instalador do **SQL Server Developer Edition**:  
-   🔗[https://www.microsoft.com/pt-br/sql-server/sql-server-downloads](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
+   🔗[SQL Server Developer Edition - Download](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
 2. Instale o **SQL Server Management Studio (SSMS)** para gerenciar o banco via interface gráfica:  
-   🔗[https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms)
+   🔗[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms)
 3. Durante a instalação:
    - Escolha a opção "Basic" ou "Custom"
    - Mantenha o modo de autenticação padrão (Windows Authentication)
