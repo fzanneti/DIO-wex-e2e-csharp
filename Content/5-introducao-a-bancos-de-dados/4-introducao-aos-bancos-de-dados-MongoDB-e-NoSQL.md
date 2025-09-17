@@ -423,7 +423,7 @@ O Cassandra é ideal para aplicações que precisam:
 
 ---
 
-<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/redis.png" alt="Redis" width="600px">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/redis.png" alt="Redis" width="300px">
 
 ### Redis – Banco de Dados Chave-Valor  
 
@@ -612,7 +612,7 @@ dotnet add package MongoDB.Driver
 
 ---
 
-<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/mongodb.jpg" alt="Redis" width="600px">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/mongodb.jpg" alt="Redis" width="300px">
 
 ### Criando o Cluster (MongoDB Atlas)
 
