@@ -827,7 +827,7 @@ MongoDB é altamente integrado com C# e uma excelente escolha para aplicações 
 
 ### Certificado
 
-<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/26-introducao-ao-MongoDB-e-bancos-de-dados-NoSQL.jpg" alt="Certificado" width="600px">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/26-introducao-ao-MongoDB-e-bancos-de-dados-NoSQL.jpg" alt="Certificado" width="300px">
 
 ---
 
