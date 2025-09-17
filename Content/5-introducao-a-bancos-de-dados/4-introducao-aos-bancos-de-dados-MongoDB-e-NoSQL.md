@@ -15,7 +15,6 @@
 ### Introdução ao NoSQL
 
 No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. **Bancos NoSQL** (MongoDB, Redis, Neo4j). Este módulo explora integração com C# e operações CRUD.
-
 O termo **NoSQL (Not Only SQL)** refere-se a bancos de dados que **não utilizam modelo relacional tradicional**. São ideais para aplicações modernas que exigem **alta performance, flexibilidade e escalabilidade horizontal**.
 
 > São perfeitos para trabalhar com dados semi-estruturados, como documentos JSON.
@@ -303,7 +302,7 @@ Escritas rápidas|	Projetado para grandes volumes de escrita|
 
 ### Instalando o Cassandra (Ambiente Local)
 
-**🐳 Usando Docker (opcional)**
+**Usando Docker (opcional)**
 
 ```bash
 
@@ -313,7 +312,7 @@ docker run --name cassandra -p 9042:9042 -d cassandra
 
 Ou:
 
-1. Baixe em: 🔗[Cassandra - Download](https://cassandra.apache.org/_/download.html)
+1. Baixe em: 🔗[Cassandra - Download](https://cassandra.apache.org/_/download.html)  
 2. Extraia e execute os scripts (bin/cassandra)
 
 ---
@@ -370,8 +369,8 @@ SELECT * FROM usuarios;
 
 **Você pode testar o CQL direto no navegador em plataformas como:**
 
-🔗[Cassandra - Teste](https://www.killercoda.com/cassandra)
-🔗[DataStax Astra - Teste](https://www.datastax.com/astra)
+🔗[Cassandra - Teste](https://www.killercoda.com/cassandra)     
+🔗[DataStax Astra - Teste](https://www.datastax.com/astra)     
 
 **Dica:**
 
@@ -617,8 +616,8 @@ dotnet add package MongoDB.Driver
 ### Criando o Cluster (MongoDB Atlas)
 
 1. Acesse: 🔗[MongoDB](https://www.mongodb.com/cloud/atlas)
-2. Crie um cluster gratuito.
-3. Configure um usuário e libere IP (pode usar 0.0.0.0 para testes).
+2. Crie um cluster gratuito
+3. Configure um usuário e libere IP (pode usar 0.0.0.0 para testes)
 4. Copie a **connection string** (ex: `mongodb+srv://usuario:senha@cluster.mongodb.net`)
 
 ---
