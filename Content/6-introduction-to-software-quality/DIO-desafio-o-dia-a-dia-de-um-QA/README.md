@@ -1,6 +1,6 @@
-# 🛍️ SwagLabsShopping – Projeto de Qualidade de Software
+# WEX - End to End Engineering
 
-> Projeto desenvolvido como parte do curso **"Formação QA Specialist – DIO + WEX"**, com foco em práticas de planejamento, documentação, teste e controle de qualidade no ciclo de vida de um sistema eCommerce.
+# SwagLabsShopping – Projeto de Qualidade de Software
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
@@ -9,26 +9,28 @@
 ![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
 ![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
 
+Projeto desenvolvido como parte do curso **"Formação QA Specialist – DIO + WEX"**, com foco em práticas de planejamento, documentação, teste e controle de qualidade no ciclo de vida de um sistema eCommerce.
+
 ---
 
-### 🎯 Objetivo
+### Objetivo
 
-Este projeto simula o fluxo completo de um usuário em uma loja virtual, inspirado na plataforma [Swag Labs](https://www.saucedemo.com), desde o login até a finalização da compra.
+Este projeto simula o fluxo completo de um usuário em uma loja virtual, inspirado na plataforma 🔗[Swag Labs](https://www.saucedemo.com), desde o login até a finalização da compra.
 
 Foram documentadas as etapas de desenvolvimento, gerenciamento ágil com Jira, análise de requisitos, escrita de user stories e elaboração de documentos de teste funcionais e comportamentais.
 
 ---
 
-## 🗂️ Estrutura do Projeto
+### Estrutura do Projeto
 
-- ✅ Planejamento no **Jira** com sprints, épicas, tarefas e user stories
-- ✅ Documentação técnica organizada no **Confluence** [PDF](https://github.com/fzanneti/wex-e2e-csharp/blob/main/study_material/06IntroductionToSoftwareQuality/ChallengeTheDailyLifeOfAQAThePracticeOfFunctionalManualTesting/assets/docs/SQ-SwagLabsShopping%20-%20QA%20Home.pdf)
-- ✅ User stories próprias elaboradas pelo participante
-- ✅ Plano de fluxo de trabalho e ciclo de vida do bug
+- Planejamento no **Jira** com sprints, épicas, tarefas e user stories
+- Documentação técnica organizada no **Confluence** [PDF](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/6-introduction-to-software-quality/DIO-desafio-o-dia-a-dia-de-um-QA/assets/docs/SQ-SwagLabsShopping%20-%20QA%20Home.pdf)
+- User stories próprias elaboradas pelo participante
+- Plano de fluxo de trabalho e ciclo de vida do bug
 
 ---
 
-## 🧱 Ferramentas Utilizadas
+### Ferramentas Utilizadas
 
 | Ferramenta       | Finalidade                                  |
 |------------------|---------------------------------------------|
@@ -39,7 +41,7 @@ Foram documentadas as etapas de desenvolvimento, gerenciamento ágil com Jira, a
 
 ---
 
-## 🔁 Plano de Fluxo de Trabalho
+### Plano de Fluxo de Trabalho
 
 O fluxo de desenvolvimento utilizado no Jira seguiu as seguintes etapas:
 
@@ -53,7 +55,7 @@ O fluxo permitiu transições livres para facilitar ajustes e revisões contínu
 
 ---
 
-## 👥 Time do Projeto (Fictício)
+### Time do Projeto (Fictício)
 
 | Nome           | Função       | Responsabilidades                                    |
 | -------------- | ------------ | ---------------------------------------------------- |
@@ -65,7 +67,7 @@ O fluxo permitiu transições livres para facilitar ajustes e revisões contínu
 
 ---
 
-## 📌 Organização das User Stories
+### Organização das User Stories
 
 As user stories estão divididas por **épicas** e organizadas em **sprints**, incluindo:
 
@@ -77,7 +79,7 @@ As user stories estão divididas por **épicas** e organizadas em **sprints**, i
 
 ---
 
-## 📎 Considerações Finais
+### Considerações Finais
 
 Este repositório representa uma simulação completa do trabalho de QA em um cenário realista. O foco está na organização, clareza dos processos e documentação acessível para todos os envolvidos.
 
@@ -85,9 +87,15 @@ Este repositório representa uma simulação completa do trabalho de QA em um ce
 
 ---
 
-#### ✅ Status: Concluído ✔️
+### Status: Concluído ✔️
 
 Documentação e entregas finalizadas com base nos requisitos do curso.
+
+---
+
+### Certificado
+
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/30-o-dia-a-dia-de-um-QA-a-pratica-de-testes-manuais-funcionais.jpg" alt="Certificado" width="600px">
 
 ---
 
