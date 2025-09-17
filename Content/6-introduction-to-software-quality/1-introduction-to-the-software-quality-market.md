@@ -23,7 +23,7 @@ Usamos Git/GitHub para versionar código, SQL Server/MongoDB para gerenciar dado
 
 ---
 
-### 📈 Mercado e Tendências
+### Mercado e Tendências
 
 O mercado de tecnologia tá bombando, e o QA é uma peça-chave nesse crescimento. A transformação digital tá fazendo empresas de todos os setores (bancos, varejo, saúde) dependerem de software, e isso aumenta a demanda por profissionais de QA. 
 
