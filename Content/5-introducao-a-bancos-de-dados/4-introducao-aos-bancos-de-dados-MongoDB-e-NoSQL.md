@@ -33,7 +33,7 @@ O termo **NoSQL (Not Only SQL)** refere-se a bancos de dados que **não utilizam
 
 ---
 
-<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/neo4j.jpg" alt="neo4j" width="400px">
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/neo4j.jpg" alt="neo4j" width="300px">
 
 ### Neo4j e Bancos de Dados Orientados a Grafos
 
