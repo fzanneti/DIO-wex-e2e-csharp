@@ -60,7 +60,7 @@ O **Neo4j** é o banco de grafos mais popular do mercado. Ele permite:
 
 Você pode começar a testar o **Neo4j diretamente no navegador** usando a ferramenta gratuita e oficial da plataforma:
 
-Acesse: 🔗[Neo4j](https://sandbox.neo4j.com)
+Acesse: 🔗[Neo4j - Web](https://sandbox.neo4j.com)
 
 **Passos para usar:**
 
@@ -109,13 +109,13 @@ Use o botão "Code Snippets" no Sandbox para acessar exemplos prontos com modela
 
 **Local**
 
-1. Acesse: https://neo4j.com/download/
+1. Acesse: 🔗[Neo4j - Desktop](https://neo4j.com/download/)
 2. Baixe e instale o Neo4j Desktop
 3. Crie um novo banco e inicie o ambiente
 
 **Cloud (Neo4j Aura Free)**
 
-1. Acesse: 🔗[Neo4j](https://neo4j.com/cloud/aura/)
+1. Acesse: 🔗[Neo4j - Cloud](https://neo4j.com/cloud/aura/)
 2. Crie uma conta gratuita
 3. Crie um banco e copie a `connection string` e credenciais
 
@@ -311,7 +311,7 @@ docker run --name cassandra -p 9042:9042 -d cassandra
 
 Ou:
 
-1. Baixe em: https://cassandra.apache.org/_/download.html
+1. Baixe em: 🔗[Cassandra - Download](https://cassandra.apache.org/_/download.html)
 2. Extraia e execute os scripts (bin/cassandra)
 
 ---
@@ -368,8 +368,8 @@ SELECT * FROM usuarios;
 
 **Você pode testar o CQL direto no navegador em plataformas como:**
 
-🔗[Cassandra](https://www.killercoda.com/cassandra)
-🔗[Astra](https://www.datastax.com/astra)
+🔗[Cassandra - Teste](https://www.killercoda.com/cassandra)
+🔗[DataStax Astra - Teste](https://www.datastax.com/astra)
 
 **Dica:**
 
@@ -474,7 +474,7 @@ docker run --name redis -p 6379:6379 -d redis
 
 **Cloud (Redis Cloud Gratuito)**
 
-1. Acesse: 🔗[Redis](https://redis.com/try-free)
+1. Acesse: 🔗[Redis - Cloud](https://redis.com/try-free)
 2. Crie um cluster gratuito
 3. Copie a string de conexão
 
@@ -562,7 +562,7 @@ Console.WriteLine($"Nome: {nome}");
 
 Você pode testar comandos Redis no navegador:
 
-🔗[Redis](https://try.redis.io/)
+🔗[Redis - Web](https://try.redis.io/)
 
 ---
 
