@@ -1,6 +1,6 @@
-# 📘 Fundamentos de Qualidade de Software
+# WEX - End to End Engineering
 
-No **Bootcamp WEX**, você está aprendendo a construir aplicações completas com **C#**, **.NET**, **Git**, **APIs e bancos de dados relacionais** e **NoSQL**. A **Qualidade de Software** é um pilar fundamental para garantir que essas aplicações sejam confiáveis, escaláveis e atendam às expectativas dos usuários. Este módulo explora os fundamentos de QA, incluindo processos, técnicas e ferramentas de teste, com exemplos práticos em C# que se integram aos projetos full-stack, preparando você para atuar em equipes ágeis e pipelines DevOps.
+## 6.2 - Fundamentos de Qualidade de Software
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
@@ -9,9 +9,11 @@ No **Bootcamp WEX**, você está aprendendo a construir aplicações completas c
 ![Plataforma](https://img.shields.io/badge/Powered%20by-DIO.io-red?logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTYuNzEgMy4yNWMtMi44OCAxLjQxLTUuMDcgNC4yMy01LjA3IDcuNzYgMCAzLjU4IDIuMjggNi43IDUuMzMgOC4xNSAxLjgzLS42MiAyLjQtMi4yNiAyLjQtMy44MSAwLS4yMy0uMDItLjQ1LS4wNS0uNjZBLjQ0LjQ0IDAgMDExMC4xIDExYy4yNC0uNzUuMTEtMS41My0uMy0yLjIyQzguOTIgNy45NiA3LjMzIDcuNSA1Ljc0IDcuNjZhNS41NSA1LjU1IDAgM)
 ![Autor](https://img.shields.io/badge/Autor-fzanneti-blue?style=flat-square&logo=github)
 
+No **Bootcamp WEX**, você está aprendendo a construir aplicações completas com **C#**, **.NET**, **Git**, **APIs e bancos de dados relacionais** e **NoSQL**. A **Qualidade de Software** é um pilar fundamental para garantir que essas aplicações sejam confiáveis, escaláveis e atendam às expectativas dos usuários. Este módulo explora os fundamentos de QA, incluindo processos, técnicas e ferramentas de teste, com exemplos práticos em C# que se integram aos projetos full-stack, preparando você para atuar em equipes ágeis e pipelines DevOps.
+
 ---
 
-### ✅ O que é Qualidade de Software
+### O que é Qualidade de Software
 
 A qualidade de software é o coração de qualquer aplicação robusta. É um conjunto de atributos que determinam a capacidade de um produto em satisfazer as necessidades explícitas e implícitas dos usuários, garantindo desempenho, segurança, usabilidade e confiabilidade. É como garantir que um carro não só ande, mas seja seguro, confortável e econômico.
 
@@ -23,7 +25,7 @@ Vamos detalhar cada seção para reforçar seu aprendizado!
 
 ---
 
-### 🧩 Definindo Qualidade
+### Definindo Qualidade
 
 Segundo a **ISO 25010**, qualidade de software é medida por características como:
 
@@ -36,7 +38,7 @@ Segundo a **ISO 25010**, qualidade de software é medida por características co
 
 ---
 
-### 🏅 Normas e Padrões de Qualidade
+### Normas e Padrões de Qualidade
 
 Essas normas são como "manuais" que equipes profissionais seguem para garantir consistência. No bootcamp, você usa **Git** para controle de versão e pipelines DevOps para entregas. Normas como o CMMI ajudam a estruturar esses processos, garantindo que cada commit passe por revisões e testes. A **IEEE 829**, por exemplo, ensina como documentar testes de forma clara, algo útil para relatórios no seu projeto.
 
@@ -49,7 +51,7 @@ Essas normas são como "manuais" que equipes profissionais seguem para garantir 
 
 ---
 
-### 📏 Medindo Qualidade
+### Medindo Qualidade
 
 A qualidade pode ser medida por métricas como:
 
@@ -62,7 +64,7 @@ A qualidade pode ser medida por métricas como:
 
 ---
 
-### 📋 Processos de Gerenciamento de Qualidade
+### Processos de Gerenciamento de Qualidade
 
 O processo inclui planejamento, garantia, controle e melhoria contínua.
 Pense nisso como um ciclo de produção: você planeja como construir (planejamento), segue regras para evitar erros (garantia), verifica o produto final (controle) e melhora o processo com base em falhas (melhoria contínua). No bootcamp, isso se traduz em:
@@ -74,9 +76,9 @@ Pense nisso como um ciclo de produção: você planeja como construir (planejame
 
 ---
 
-## 🐞 Gerenciamento de Defeitos
+### Gerenciamento de Defeitos
 
-### 🛡️ Falando em Controle de Qualidade
+**Falando em Controle de Qualidade**
 
 Controle de qualidade visa identificar e corrigir defeitos antes que o software chegue ao cliente. Isso inclui testes, revisões e inspeções.
 
@@ -84,7 +86,7 @@ Controle de qualidade visa identificar e corrigir defeitos antes que o software 
 
 ---
 
-### 🔎 Caracterizando Defeitos
+### Caracterizando Defeitos
 
 Um defeito pode ser:
 
@@ -94,7 +96,7 @@ Um defeito pode ser:
 
 ---
 
-### 🔄 Ciclo de Vida do Bug
+### Ciclo de Vida do Bug
 
 O ciclo inclui identificação, classificação, atribuição, correção, validação e encerramento.
 
@@ -109,7 +111,7 @@ Pense no ciclo de vida do bug como uma "tarefa" no JIRA. Cada etapa garante que 
 
 ---
 
-### 🛠️ Ferramentas de Suporte
+### Ferramentas de Suporte
 
 - **JIRA:** gestão de bugs e tarefas.
 - **Bugzilla:** rastreamento de defeitos.
@@ -120,9 +122,9 @@ Essas ferramentas são como "organizadores" que centralizam o trabalho da equipe
 
 ---
 
-## 🧪 Introdução aos Testes de Software
+### Introdução aos Testes de Software
 
-### 🎯 Conceitos e Objetivos
+**Conceitos e Objetivos**
 
 Testes de software são processos que visam:
 
@@ -130,7 +132,9 @@ Testes de software são processos que visam:
 - **Identificar falhas antes que cheguem ao cliente.**
 - **Garantir segurança, desempenho e usabilidade.**
 
-### 🔄 Processos de Teste
+---
+
+### Processos de Teste
 
 Conforme a **ISTQB**, o processo de teste é como uma receita: cada etapa é essencial para o resultado final. Você pode aplicar isso ao testar uma API REST. Por exemplo:
 
@@ -143,7 +147,7 @@ Conforme a **ISTQB**, o processo de teste é como uma receita: cada etapa é ess
 
 ---
 
-### 🧱 Níveis de Teste
+### Níveis de Teste
 
 Cada nível testa uma "camada" do software. Você começa com testes unitários (métodos em C#), avança para integração (interação com o banco) e, no final, valida o sistema completo com o cliente.
 
@@ -154,7 +158,7 @@ Cada nível testa uma "camada" do software. Você começa com testes unitários 
 
 ---
 
-### 🧩 Tipos de Teste
+### Tipos de Teste
 
 Cada tipo foca em um aspecto do sistema. Por exemplo, testes funcionais verificam se o botão de login funciona, enquanto testes não funcionais checam se ele aguenta 1.000 cliques por segundo.
 
@@ -165,7 +169,7 @@ Cada tipo foca em um aspecto do sistema. Por exemplo, testes funcionais verifica
 
 ---
 
-### 🔍 Técnicas de Teste
+### Técnicas de Teste
 
 Inclui caixa branca, caixa preta, baseadas em experiência e modelos.
 
@@ -176,7 +180,7 @@ Inclui caixa branca, caixa preta, baseadas em experiência e modelos.
 
 ---
 
-#### ✅ Conclusão
+### Conclusão
 
 Qualidade de software combina boas práticas, processos e testes. O QA é responsabilidade de todos.
  
@@ -188,12 +192,19 @@ Você está aprendendo a ser um engenheiro completo. QA não é só testar, mas 
 
 ---
 
-## 📚 Referências e Leitura Complementar
-- [ISO 25010](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010)
-- [CMMI Institute](https://cmmiinstitute.com/)
-- [ISTQB](https://www.istqb.org/)
-- [IEEE 829](https://ieeexplore.ieee.org/document/7167405)
-- [JIRA Software](https://www.atlassian.com/software/jira)
+### Referências e Leitura Complementar
+
+🔗[ISO 25010](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010)     
+🔗[CMMI Institute](https://cmmiinstitute.com/)     
+🔗[ISTQB](https://www.istqb.org/)     
+🔗[IEEE 829](https://ieeexplore.ieee.org/document/7167405)    
+🔗[JIRA Software](https://www.atlassian.com/software/jira)   
+
+---
+
+### Certificado
+
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/29-fundamentos-de-qualidade-de-software.jpg" alt="Certificado" width="600px">
 
 ---
 
