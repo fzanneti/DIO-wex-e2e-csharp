@@ -1,6 +1,6 @@
-# 🧪 Introdução ao Mercado de Qualidade de Software
+# WEX - End to End Engineering
 
-No Bootcamp WEX, você está aprendendo a construir aplicações robustas com C#, .NET, Git, GitHub, SQL Server, e MongoDB. Qualidade de Software (QA) é essencial para garantir que essas aplicações atendam aos requisitos, sejam confiáveis e ofereçam uma boa experiência ao usuário. Este módulo explora o mercado de QA, suas tendências, habilidades técnicas e soft skills necessárias, além de práticas de automação com ferramentas integradas ao ecossistema .NET, preparando você para se destacar em uma carreira estratégica e de alta demanda.
+## 6.1 - Introdução ao Mercado de Qualidade de Software
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
@@ -11,13 +11,17 @@ No Bootcamp WEX, você está aprendendo a construir aplicações robustas com C#
 
 ---
 
+No Bootcamp WEX, você está aprendendo a construir aplicações robustas com C#, .NET, Git, GitHub, SQL Server, e MongoDB. Qualidade de Software (QA) é essencial para garantir que essas aplicações atendam aos requisitos, sejam confiáveis e ofereçam uma boa experiência ao usuário. Este módulo explora o mercado de QA, suas tendências, habilidades técnicas e soft skills necessárias, além de práticas de automação com ferramentas integradas ao ecossistema .NET, preparando você para se destacar em uma carreira estratégica e de alta demanda.
+
 Qualidade de Software (QA) é a área responsável por garantir que uma aplicação funcione como esperado, seja confiável, segura e ofereça uma boa experiência ao usuário. No contexto do Bootcamp WEX, onde você tá aprendendo C#, .NET, Git, GitHub, SQL Server e MongoDB, o QA é o que une todas essas tecnologias para entregar um produto final que atenda aos requisitos do cliente e do negócio. Pense no QA como o "fiscal" que valida se o software que você tá construindo é top, sem bugs críticos e com desempenho sólido.
 
-*Por que é importante?* 
+**Por que é importante?** 
 
 Sem QA, você pode ter um código lindo em C# ou um banco de dados bem estruturado no SQL Server, mas se o sistema trava, tem brechas de segurança ou não faz o que o cliente espera, o projeto vai pro brejo. O QA ajuda a prevenir isso, garantindo que cada parte do desenvolvimento — desde o código até a integração com bancos como MongoDB — esteja alinhada com os objetivos.
 
 Usamos Git/GitHub para versionar código, SQL Server/MongoDB para gerenciar dados e .NET para construir aplicações. O QA entra pra garantir que tudo isso funcione em harmonia, com testes que verificam desde a lógica do backend até a experiência do usuário final.
+
+---
 
 ### 📈 Mercado e Tendências
 
@@ -37,7 +41,7 @@ Imagine que você desenvolveu um e-commerce com .NET e MongoDB. Se o sistema dei
 
 ---
 
-### 🌐 Contextualização do Mercado de TI e de QA
+### Contextualização do Mercado de TI e de QA
 
 O mercado de TI tá mudando rápido, e o QA tá acompanhando essa evolução. Antes, o QA era visto como a última etapa do desenvolvimento, onde alguém testava o software pronto pra encontrar erros. Hoje, com metodologias ágeis (como Scrum) e DevOps, o QA tá presente desde o começo, trabalhando junto com desenvolvedores, analistas de negócio e até designers. Isso é chamado de **Shift-Left Testing**, que significa trazer a mentalidade de qualidade pro início do projeto.
 
@@ -58,7 +62,7 @@ O crescimento da área de QA é impulsionado por três fatores principais:
 
 ---
 
-### 🎯 Importância da Qualidade de Software
+### Importância da Qualidade de Software
 
 A qualidade de software é um pilar estratégico pra qualquer empresa que depende de tecnologia. Ela impacta:
 
@@ -69,7 +73,7 @@ A qualidade de software é um pilar estratégico pra qualquer empresa que depend
 
 ---
 
-### 🚀 O Presente e Futuro da Área de Qualidade
+### O Presente e Futuro da Área de Qualidade
 
 O QA tá evoluindo de uma área operacional pra uma área estratégica. As principais tendências são:
 
@@ -78,13 +82,13 @@ O QA tá evoluindo de uma área operacional pra uma área estratégica. As princ
 - **Observabilidade:** Monitorar o comportamento do software em produção (ex.: usando ferramentas como New Relic) ajuda a identificar problemas antes que os usuários percebam.
 - **Shift-Left Testing:** Como já mencionado, o QA agora participa desde a definição dos requisitos, garantindo que o software seja projetado com qualidade em mente.
 
-> 🧭 **Visão de Futuro:** O QA vai deixar de ser apenas um testador pra se tornar um estrategista, influenciando decisões de produto e negócio. Por exemplo, um QA pode sugerir mudanças no design de uma aplicação pra torná-la mais testável ou performática.
+> **Visão de Futuro:** O QA vai deixar de ser apenas um testador pra se tornar um estrategista, influenciando decisões de produto e negócio. Por exemplo, um QA pode sugerir mudanças no design de uma aplicação pra torná-la mais testável ou performática.
 
 ---
 
-## 👨‍💻 Afinal, o que faz um QA?
+### Afinal, o que faz um QA?
 
-### 🏗️ Engenharia de Software e Suas Vertentes
+**Engenharia de Software e Suas Vertentes**
 
 A Engenharia de Software é a disciplina que organiza o desenvolvimento de software com processos estruturados. O QA se encaixa em várias etapas:
 
@@ -95,7 +99,7 @@ A Engenharia de Software é a disciplina que organiza o desenvolvimento de softw
 
 ---
 
-### 👥 Perfis e Responsabilidades de um QA
+### Perfis e Responsabilidades de um QA
 
 O QA não é um papel único — existem diferentes perfis, cada um com responsabilidades específicas:
 
@@ -104,11 +108,11 @@ O QA não é um papel único — existem diferentes perfis, cada um com responsa
 - **SDET (Software Development Engineer in Test):** É um desenvolvedor especializado em testes, criando frameworks personalizados. Ex.: construir um sistema de testes que simula milhares de usuários acessando uma API.
 - **Quality Coach:** Atua como mentor, ensinando o time a adotar práticas de qualidade, como escrever testes unitários no código .NET.
 
-> 🎯 **Nota:** Cada perfil exige níveis diferentes de conhecimento técnico e visão estratégica.
+> **Nota:** Cada perfil exige níveis diferentes de conhecimento técnico e visão estratégica.
 
 ---
 
-### 🏅 O Papel das Certificações na Carreira de Qualidade de Software
+### O Papel das Certificações na Carreira de Qualidade de Software
 
 As certificações em QA aumentam a empregabilidade e validam competências técnicas. As principais são:
 
@@ -117,13 +121,13 @@ As certificações em QA aumentam a empregabilidade e validam competências téc
 - **CTAL:** especializações em testes técnicos, de gestão e automação.
 - **Certificações Agile:** como **ICP-TST** e **Certified Agile Tester**, que validam habilidades em contextos ágeis.
 
-> 💡 **Dica:** As certificações podem ser um diferencial competitivo em processos seletivos e progressão na carreira.
+> **Dica:** As certificações podem ser um diferencial competitivo em processos seletivos e progressão na carreira.
 
 ---
 
-## 🗺️ Roadmap de Aprendizagem para Qualidade de Software
+### Roadmap de Aprendizagem para Qualidade de Software
 
-### 🛠️ Conhecimentos Técnicos e Conceitos para Ser um Bom QA
+**Conhecimentos Técnicos e Conceitos para Ser um Bom QA**
 
 Pra ser um QA completo, você precisa de um mix de habilidades técnicas e conceituais:
 
@@ -136,7 +140,7 @@ Pra ser um QA completo, você precisa de um mix de habilidades técnicas e conce
 
 ---
 
-### 🧠 Refletindo Sobre o Mindset de um QA e Seus Soft Skills
+### Refletindo Sobre o Mindset de um QA e Seus Soft Skills
 
 Além das habilidades técnicas, o QA precisa de um mindset e soft skills específicas:
 
@@ -149,7 +153,7 @@ Além das habilidades técnicas, o QA precisa de um mindset e soft skills espec�
 
 ---
 
-#### ✅ Encerramento do Curso
+### Encerramento do Curso
 
 O material te dá uma visão geral do QA, desde o mercado até as habilidades práticas e soft skills. 
 
@@ -160,13 +164,20 @@ O próximo passo é aplicar o que você aprendeu no Bootcamp WEX em projetos rea
 
 ---
 
-## 📚 Referências e Leitura Complementar
-- [World Quality Report 2023-24](https://www.capgemini.com/news/world-quality-report-2023-24/)
-- [ISTQB](https://www.istqb.org/)
-- [Selenium](https://www.selenium.dev/)
-- [Cypress](https://www.cypress.io/)
-- [Scrum Guide](https://scrumguides.org/)
-- [Playwright](https://playwright.dev/)
+### Referências e Leitura Complementar
+
+🔗[World Quality Report 2023-24](https://www.capgemini.com/news/world-quality-report-2023-24/)     
+🔗[ISTQB](https://www.istqb.org/)     
+🔗[Selenium](https://www.selenium.dev/)     
+🔗[Cypress](https://www.cypress.io/)    
+🔗[Scrum Guide](https://scrumguides.org/)    
+🔗[Playwright](https://playwright.dev/)    
+
+---
+
+### Certificado
+
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/28-introducao-ao-mercado-de-qualidade-de-software.jpg" alt="Certificado" width="600px">
 
 ---
 
