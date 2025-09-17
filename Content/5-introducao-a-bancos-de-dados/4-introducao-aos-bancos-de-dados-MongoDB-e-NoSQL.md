@@ -1,4 +1,6 @@
-# 🍃 MongoDB com C# e Bancos de Dados NoSQL
+# WEX - End to End Engineering
+
+## 4.4 - MongoDB com C# e Bancos de Dados NoSQL
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/fzanneti/wex-e2e-csharp)
 ![GitHub forks](https://img.shields.io/github/forks/fzanneti/wex-e2e-csharp?style=social)
@@ -10,17 +12,17 @@
 
 ---
 
-### 📘 Introdução ao NoSQL
+### Introdução ao NoSQL
 
 No Bootcamp WEX, você está aprendendo C#, .NET, Git e GitHub. **Bancos NoSQL** (MongoDB, Redis, Neo4j). Este módulo explora integração com C# e operações CRUD.
 
 O termo **NoSQL (Not Only SQL)** refere-se a bancos de dados que **não utilizam modelo relacional tradicional**. São ideais para aplicações modernas que exigem **alta performance, flexibilidade e escalabilidade horizontal**.
 
-> ✅ São perfeitos para trabalhar com dados semi-estruturados, como documentos JSON.
+> São perfeitos para trabalhar com dados semi-estruturados, como documentos JSON.
 
 ---
 
-### 🧩 Tipos de Bancos de Dados NoSQL
+### Tipos de Bancos de Dados NoSQL
 
 | Tipo             | Descrição                                | Exemplos                |
 |------------------|-------------------------------------------|-------------------------|
@@ -31,17 +33,17 @@ O termo **NoSQL (Not Only SQL)** refere-se a bancos de dados que **não utilizam
 
 ---
 
-## 🔗 Neo4j e Bancos de Dados Orientados a Grafos
+### Neo4j e Bancos de Dados Orientados a Grafos
 
-### 🧠 O que são Bancos de Dados em Grafos?
+**O que são Bancos de Dados em Grafos?**
 
 Um **banco de dados orientado a grafos** representa dados como **nós (nodes), arestas (relationships)** e **propriedades**, espelhando relações reais entre entidades.
 
-> 📌 **Exemplo real**: Redes sociais (usuário → segue → outro usuário)
+> **Exemplo real**: Redes sociais (usuário → segue → outro usuário)
 
 ---
 
-### 🌐 Introdução ao Neo4j
+### Introdução ao Neo4j
 
 O **Neo4j** é o banco de grafos mais popular do mercado. Ele permite:
 
@@ -52,15 +54,15 @@ O **Neo4j** é o banco de grafos mais popular do mercado. Ele permite:
 
 ---
 
-## 🌐 Teste comandos sem instalação 
+### Teste comandos sem instalação 
 
-### 🧪 Testando sem instalar nada – Neo4j Sandbox
+**Testando sem instalar nada – Neo4j Sandbox**
 
 Você pode começar a testar o **Neo4j diretamente no navegador** usando a ferramenta gratuita e oficial da plataforma:
 
-1. 🔗 Acesse: [https://sandbox.neo4j.com](https://sandbox.neo4j.com)
+Acesse: 🔗[Neo4j](https://sandbox.neo4j.com)
 
-### ▶️ Passos para usar:
+Passos para usar:
 
 1. Clique em **"Start Project"**
 2. Selecione o modelo **"Blank Sandbox"**
@@ -68,7 +70,7 @@ Você pode começar a testar o **Neo4j diretamente no navegador** usando a ferra
 4. Clique em **"Open"** para abrir o console Cypher
 5. Use os comandos abaixo direto no editor:
 
-### 💡 Exemplos práticos:
+Exemplos práticos:
 
 ```cypher
 
@@ -85,7 +87,7 @@ RETURN pai.nome, filho.nome
 
 ---
 
-### 📦 Sobre o Sandbox
+### Sobre o Sandbox
 
 Validade: 3 dias (renovável)
 
@@ -97,21 +99,21 @@ Ideal para aprender e demonstrar
 
 ---
 
-### 📌 Dica:
+### Dica:
 
 Use o botão "Code Snippets" no Sandbox para acessar exemplos prontos com modelagem de filmes, redes sociais, etc.
 
 ---
 
-## 🛠️ Instalando o Neo4j
+### Instalando o Neo4j
 
-### 🔹 Local
+### Local
 
 1. Acesse: https://neo4j.com/download/
 2. Baixe e instale o Neo4j Desktop
 3. Crie um novo banco e inicie o ambiente
 
-### ☁️ Cloud (Neo4j Aura Free)
+### Cloud (Neo4j Aura Free)
 
 1. Acesse: https://neo4j.com/cloud/aura/
 2. Crie uma conta gratuita
@@ -119,7 +121,7 @@ Use o botão "Code Snippets" no Sandbox para acessar exemplos prontos com modela
 
 ---
 
-### 🔍 Estrutura Conceitual
+### Estrutura Conceitual
 
 ```text
 
@@ -133,9 +135,9 @@ Exemplo:
 
 ---
 
-## 🔤 Linguagem Cypher - Consultas Básicas
+### Linguagem Cypher - Consultas Básicas
 
-### 🔸 Criar Nós
+**Criar Nós**
 
 ```cypher
 
@@ -144,7 +146,7 @@ CREATE (:Pessoa {nome: 'Miguel', idade: 6})
 
 ```
 
-### 🔸 Criar Relacionamento
+**Criar Relacionamento**
 
 ```cypher
 
@@ -153,7 +155,7 @@ CREATE (p1)-[:PAI_DE]->(p2)
 
 ```
 
-### 🔸 Buscar Relações
+**Buscar Relações**
 
 ```cypher
 
@@ -164,7 +166,7 @@ RETURN p.nome, filho.nome
 
 ---
 
-### 📊 Vantagens dos Bancos em Grafos
+### Vantagens dos Bancos em Grafos
 
 |Vantagem	|Explicação|
 |---|---|
@@ -175,9 +177,9 @@ RETURN p.nome, filho.nome
 
 ---
 
-## 💻 Integração com C# (.NET)
+### Integração com C# (.NET)
 
-### 🔹 Instalar o Driver .NET
+**Instalar o Driver .NET**
 
 ```bash
 
@@ -185,7 +187,7 @@ dotnet add package Neo4j.Driver
 
 ```
 
-### 🔹 Exemplo de Conexão
+**Exemplo de Conexão**
 
 ```csharp
 
@@ -208,7 +210,7 @@ await session.CloseAsync();
 
 ---
 
-### 🔹 Buscar Dados com C#
+### Buscar Dados com C#
 
 ```csharp
 
@@ -223,7 +225,7 @@ await result.ForEachAsync(record =>
 
 ---
 
-### 🧠 Casos de Uso Comuns
+### Casos de Uso Comuns
 
 - Redes Sociais: seguidores, amigos, curtidas
 - Recomendação: filmes, produtos, perfis
@@ -232,7 +234,7 @@ await result.ForEachAsync(record =>
 
 ---
 
-#### ✅ Conclusão
+### Conclusão
 
 O Neo4j é uma excelente ferramenta para aplicações .NET que demandam modelagem de relações complexas. Com integração simples via C# e consultas com Cypher, ele oferece:
 
@@ -242,17 +244,17 @@ O Neo4j é uma excelente ferramenta para aplicações .NET que demandam modelage
 
 ---
 
-## 📊 Apache Cassandra – Banco de Dados Colunar  
+### Apache Cassandra – Banco de Dados Colunar  
 
-### 📘 O que é o Cassandra?
+**O que é o Cassandra?**
 
 O **Apache Cassandra** é um **banco de dados NoSQL distribuído baseado em colunas**, projetado para lidar com grandes volumes de dados em ambientes distribuídos com alta disponibilidade e performance.
 
-> 🔧 Ideal para **grandes aplicações que exigem escalabilidade horizontal**, como IoT, redes sociais e serviços de streaming.
+> Ideal para **grandes aplicações que exigem escalabilidade horizontal**, como IoT, redes sociais e serviços de streaming.
 
 ---
 
-### 🧩 Modelo Colunar vs Relacional
+### Modelo Colunar vs Relacional
 
 | Relacional (SQL)          | Colunar (Cassandra)             |
 |---------------------------|---------------------------------|
@@ -263,14 +265,14 @@ O **Apache Cassandra** é um **banco de dados NoSQL distribuído baseado em colu
 
 ---
 
-### 🧱 Estrutura de Dados do Cassandra
+### Estrutura de Dados do Cassandra
 
 - **Keyspace**: Equivalente ao “banco de dados” em SQL
 - **Table**: Armazena os dados, organizada por **famílias de colunas**
 - **Partition Key**: Define onde os dados serão armazenados no cluster
 - **Clustering Columns**: Organiza os dados dentro da partição
 
-### Exemplo:
+**Exemplo:**
 
 ```text
 
@@ -286,7 +288,7 @@ Tabela: usuarios
 
 ---
 
-### 🚀 Vantagens do Cassandra
+### Vantagens do Cassandra
 
 |Recurso|	Benefício|
 |---|---|
@@ -297,9 +299,9 @@ Escritas rápidas|	Projetado para grandes volumes de escrita|
 
 ---
 
-## 🛠️ Instalando o Cassandra (Ambiente Local)
+### Instalando o Cassandra (Ambiente Local)
 
-### 🐳 Usando Docker (opcional)
+**🐳 Usando Docker (opcional)**
 
 ```bash
 
@@ -314,9 +316,9 @@ Ou:
 
 ---
 
-### 🧪 Testando com CQL (Cassandra Query Language)
+### Testando com CQL (Cassandra Query Language)
 
-🔹 Criando um Keyspace
+**Criando um Keyspace**
 
 ```Sql
 
@@ -327,7 +329,7 @@ CREATE KEYSPACE usuarios_app WITH replication = {
 
 ```
 
-🔹 Criando uma Tabela
+**Criando uma Tabela**
 
 ```Sql
 
@@ -342,7 +344,7 @@ CREATE TABLE usuarios (
 
 ```
 
-🔹 Inserindo Dados
+**Inserindo Dados**
 
 ```Sql
 
@@ -351,7 +353,7 @@ VALUES (uuid(), 'Fabio', 'fabio@email.com', toTimestamp(now()));
 
 ```
 
-🔹 Consultando Dados
+**Consultando Dados**
 
 
 ```Sql
@@ -362,22 +364,22 @@ SELECT * FROM usuarios;
 
 ---
 
-### 🧪 Testar sem instalar nada – Cassandra Playground
+### Testar sem instalar nada – Cassandra Playground
 
 Você pode testar o CQL direto no navegador em plataformas como:
 
 🔗 https://www.killercoda.com/cassandra
 🔗 https://www.datastax.com/astra
 
-### 💡 Dica:
+### Dica:
 
 Use o DataStax Astra (versão cloud gratuita do Cassandra), ideal para praticar sem setup local.
 
 ---
 
-### 💻 Integração com .NET (C#)
+### Integração com .NET (C#)
 
-🔹 Instalar o Driver
+**Instalar o Driver**
 
 ```bash
 
@@ -385,7 +387,7 @@ dotnet add package CassandraCSharpDriver
 
 ```
 
-🔹 Exemplo de Conexão
+**Exemplo de Conexão**
 
 ```csharp
 
@@ -408,7 +410,7 @@ foreach (var row in rs)
 
 ---
 
-### 🧠 Considerações Finais
+### Considerações Finais
 
 O Cassandra é ideal para aplicações que precisam:
 
@@ -419,9 +421,9 @@ O Cassandra é ideal para aplicações que precisam:
 
 ---
 
-## 🧰 Redis – Banco de Dados Chave-Valor  
+### Redis – Banco de Dados Chave-Valor  
 
-### 🧠 O que é o Redis?
+**O que é o Redis?**
 
 O **Redis** (Remote Dictionary Server) é um banco de dados NoSQL do tipo **chave-valor** e armazenado em memória. Ele é extremamente rápido e amplamente usado para:
 
@@ -430,11 +432,11 @@ O **Redis** (Remote Dictionary Server) é um banco de dados NoSQL do tipo **chav
 - Filas e publicações/assinaturas (pub/sub)
 - Contadores, listas, conjuntos e mais
 
-> 🔧 Redis é mais que um cache — é uma **estrutura de dados em memória**, simples e poderosa.
+> Redis é mais que um cache — é uma **estrutura de dados em memória**, simples e poderosa.
 
 ---
 
-### 🧩 Como funciona o modelo chave-valor?
+### Como funciona o modelo chave-valor?
 
 - **Chave (key)**: identificador único
 - **Valor (value)**: qualquer tipo de dado (string, lista, hash, set, etc.)
@@ -448,7 +450,7 @@ valor: "{ nome: 'Fabio', idade: 43 }"
 
 ---
 
-### 🚀 Vantagens do Redis
+### Vantagens do Redis
 
 |Recurso|	Benefício|
 |---|---|
@@ -460,9 +462,9 @@ valor: "{ nome: 'Fabio', idade: 43 }"
 
 ---
 
-### 🔌 Instalação do Redis
+### Instalação do Redis
 
-🔹 Local (via Docker)
+**Local (via Docker)**
 
 ```bash
 
@@ -470,7 +472,7 @@ docker run --name redis -p 6379:6379 -d redis
 
 ```
 
-🔹 Cloud (Redis Cloud Gratuito)
+**Cloud (Redis Cloud Gratuito)**
 
 1. Acesse: https://redis.com/try-free
 2. Crie um cluster gratuito
@@ -478,7 +480,7 @@ docker run --name redis -p 6379:6379 -d redis
 
 ---
 
-### 🔍 Comandos Básicos no Redis CLI
+### Comandos Básicos no Redis CLI
 
 ```bash
 
@@ -486,7 +488,7 @@ redis-cli
 
 ```
 
-🔹 Armazenar valor
+- Armazenar valor
 
 ```Redis
 
@@ -494,7 +496,7 @@ SET usuario:101 "Fabio"
 
 ```
 
-🔹 Buscar valor
+- Buscar valor
 
 ```Redis
 
@@ -502,7 +504,7 @@ GET usuario:101
 
 ```
 
-🔹 Expiração de chave
+- Expiração de chave
 
 ```Redis
 
@@ -513,9 +515,9 @@ EXPIRE codigo:123456 60
 
 ---
 
-### 💻 Integração com C# (.NET)
+### Integração com C# (.NET)
 
-🔹 Instalar pacote NuGet
+**Instalar pacote NuGet**
 
 ```bash
 
@@ -523,7 +525,7 @@ dotnet add package StackExchange.Redis
 
 ```
 
-🔹 Conectar e usar o Redis
+**Conectar e usar o Redis**
 
 ```csharp
 
@@ -543,7 +545,7 @@ Console.WriteLine($"Nome: {nome}");
 
 ---
 
-### 📦 Outros tipos de dados suportados
+### Outros tipos de dados suportados
 
 |Tipo|	Exemplo de Uso|
 |---|---|
@@ -556,15 +558,15 @@ Console.WriteLine($"Nome: {nome}");
 
 ---
 
-### 🧪 Testando Online – Redis Playground
+### Testando Online – Redis Playground
 
 Você pode testar comandos Redis no navegador:
 
-🔗 https://try.redis.io/
+🔗[Redis](https://try.redis.io/)
 
 ---
 
-### 🔐 Exemplo com Expiração e Sessão
+### Exemplo com Expiração e Sessão
 
 ```csharp
 
@@ -572,11 +574,11 @@ db.StringSet("sessao:fabio", "ativo", TimeSpan.FromMinutes(30));
 
 ```
 
-> 🔁 Ideal para sessões expiráveis sem precisar de banco tradicional.
+> Ideal para sessões expiráveis sem precisar de banco tradicional.
 
 ---
 
-### 🧠 Quando usar Redis?
+### Quando usar Redis?
 
 - Armazenar sessões de login
 - Cache de resultados de queries
@@ -586,15 +588,15 @@ db.StringSet("sessao:fabio", "ativo", TimeSpan.FromMinutes(30));
 
 ---
 
-#### ✅ Conclusão
+### Conclusão
 
 O Redis é essencial em sistemas de alta performance, sendo leve, rápido e extremamente útil para aplicações .NET. Mesmo com estrutura simples, permite resolver problemas complexos de cache, tempo real e persistência temporária.
 
 ---
 
-## 🍃 MongoDB com C# – Introdução e Instalação
+### MongoDB com C# – Introdução e Instalação
 
-### 🛠️ Instalando o MongoDB Driver
+**Instalando o MongoDB Driver**
 
 No seu projeto .NET:
 
@@ -606,7 +608,7 @@ dotnet add package MongoDB.Driver
 
 ---
 
-### ☁️ Criando o Cluster (MongoDB Atlas)
+### Criando o Cluster (MongoDB Atlas)
 
 1. Acesse: [https://www.mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas)
 2. Crie um cluster gratuito.
@@ -615,9 +617,9 @@ dotnet add package MongoDB.Driver
 
 ---
 
-## 🧱 Schema Design e Boas Práticas
+### Schema Design e Boas Práticas
 
-### Exemplo de Classe com Atributos
+**Exemplo de Classe com Atributos**
 
 ```csharp
 
@@ -639,11 +641,11 @@ public class Usuario
 
 ```
 
-> ✅ **Use atributos do namespace `MongoDB.Bson.Serialization.Attributes`** para mapear corretamente os campos.
+> **Use atributos do namespace `MongoDB.Bson.Serialization.Attributes`** para mapear corretamente os campos.
 
 ---
 
-### ⚙️ Conexão com o MongoDB
+### Conexão com o MongoDB
 
 ```csharp
 
@@ -657,9 +659,9 @@ var collection = database.GetCollection<Usuario>("usuarios");
 
 ---
 
-## 🧾 Operações com MongoDB no C\#
+### Operações com MongoDB no C\#
 
-### 🔹 Inserir um Documento
+**Inserir um Documento**
 
 ```csharp
 
@@ -670,7 +672,7 @@ await collection.InsertOneAsync(novoUsuario);
 
 ---
 
-### 🔍 Buscar Documentos
+**Buscar Documentos**
 
 ```csharp
 
@@ -680,7 +682,7 @@ var usuarios = await collection.Find(u => u.Idade > 40).ToListAsync();
 
 ---
 
-### ✏️ Atualizar Documento
+**Atualizar Documento**
 
 ```csharp
 
@@ -693,7 +695,7 @@ await collection.UpdateOneAsync(filtro, atualizacao);
 
 ---
 
-### ❌ Remover Documento
+**Remover Documento**
 
 ```csharp
 
@@ -703,7 +705,7 @@ await collection.DeleteOneAsync(u => u.Nome == "Fabio");
 
 ---
 
-### 🚀 Índices e Performance
+### Índices e Performance
 
 Você pode criar índices programaticamente:
 
@@ -714,11 +716,11 @@ await collection.Indexes.CreateOneAsync(new CreateIndexModel<Usuario>(indexKeys)
 
 ```
 
-> ⚠️ Use com moderação — muitos índices impactam o desempenho de inserções.
+> Use com moderação — muitos índices impactam o desempenho de inserções.
 
 ---
 
-### 📊 Agregações com C\#
+### Agregações com C\#
 
 Exemplo: Contar quantos usuários existem por idade:
 
@@ -739,7 +741,7 @@ var resultado = await collection.Aggregate()
 
 ---
 
-### 🔄 JSON vs BSON
+### JSON vs BSON
 
 | Formato | Descrição                   | Vantagens                       |
 | ------- | --------------------------- | ------------------------------- |
@@ -748,7 +750,7 @@ var resultado = await collection.Aggregate()
 
 ---
 
-#### ✅ Conclusão
+### Conclusão
 
 Neste módulo aprendemos:
 
@@ -762,88 +764,62 @@ MongoDB é altamente integrado com C# e uma excelente escolha para aplicações 
 
 ---
 
-## 🔗 **Neo4j – Banco de Dados de Grafos**
+### Neo4j – Banco de Dados de Grafos - Documentação e Guias
 
-### 📘 Documentação e Guias
-
-- [Documentação Oficial (em inglês)](https://neo4j.com/docs/)
-- [Neo4j Cypher Manual (linguagem de consulta)](https://neo4j.com/docs/cypher-refcard/current/)
-- [Guia de introdução rápida](https://neo4j.com/developer/get-started/)
-- [Guia prático em português - Data Hackers](https://www.linkedin.com/pulse/introdu%C3%A7%C3%A3o-ao-neo4j-com-cypher-n%C3%A3o-%C3%A9-magia-%C3%A9-grafo-leonardo-cavalcante)
-
-### 🧪 Testar Online
-
-- [Neo4j Sandbox](https://sandbox.neo4j.com) *(não precisa instalar nada)*
-- [Playground com queries de filmes](https://neo4j.com/developer/example-project/)
-
-### 📦 Integração com C#/.NET
-
-- [Neo4jClient (biblioteca C#)](https://github.com/Readify/Neo4jClient)
-- [Exemplo de uso com .NET](https://neo4j.com/developer/dotnet/)
+🔗[Documentação Oficial (em inglês)](https://neo4j.com/docs/)      
+🔗[Neo4j Cypher Manual (linguagem de consulta)](https://neo4j.com/docs/cypher-refcard/current/)     
+🔗[Guia de introdução rápida](https://neo4j.com/developer/get-started/)      
+🔗[Guia prático em português - Data Hackers](https://www.linkedin.com/pulse/introdu%C3%A7%C3%A3o-ao-neo4j-com-cypher-n%C3%A3o-%C3%A9-magia-%C3%A9-grafo-leonardo-cavalcante)         
+🔗[Neo4j Sandbox](https://sandbox.neo4j.com) *(não precisa instalar nada)*        
+🔗[Playground com queries de filmes](https://neo4j.com/developer/example-project/)       
+🔗[Neo4jClient (biblioteca C#)](https://github.com/Readify/Neo4jClient)        
+🔗[Exemplo de uso com .NET](https://neo4j.com/developer/dotnet/)       
 
 ---
 
-## 🔗 **Apache Cassandra – Banco de Dados Colunar**
+### Apache Cassandra – Banco de Dados Colunar - Documentação e Guias
 
-### 📘 Documentação e Guias
-
-- [Documentação Oficial](https://cassandra.apache.org/doc/latest/)
-- [CQL (Cassandra Query Language)](https://cassandra.apache.org/doc/latest/cql/)
-- [Curso Gratuito: Cassandra Essentials – DataStax](https://academy.datastax.com/courses/cassandra-essentials)
-- [Visão geral simplificada em português – Medium](https://medium.com/@souzamagno/introdu%C3%A7%C3%A3o-ao-banco-de-dados-cassandra-d0d63f632a98)
-
-### 🧪 Testar Online
-
-- [KillerCoda – Terminal interativo com Cassandra](https://www.killercoda.com/cassandra)
-- [DataStax Astra – Cassandra Cloud Gratuito](https://www.datastax.com/astra)
-
-### 📦 Integração com C#/.NET
-
-- [DataStax C# Driver](https://docs.datastax.com/en/developer/csharp-driver/)
-- [Repositório GitHub - Cassandra C# Driver](https://github.com/datastax/csharp-driver)
+🔗[Documentação Oficial](https://cassandra.apache.org/doc/latest/)        
+🔗[CQL (Cassandra Query Language)](https://cassandra.apache.org/doc/latest/cql/)       
+🔗[Curso Gratuito: Cassandra Essentials – DataStax](https://academy.datastax.com/courses/cassandra-essentials)      
+🔗[Visão geral simplificada em português – Medium](https://medium.com/@souzamagno/introdu%C3%A7%C3%A3o-ao-banco-de-dados-cassandra-d0d63f632a98)       
+🔗[KillerCoda – Terminal interativo com Cassandra](https://www.killercoda.com/cassandra)       
+🔗[DataStax Astra – Cassandra Cloud Gratuito](https://www.datastax.com/astra)      
+🔗[DataStax C# Driver](https://docs.datastax.com/en/developer/csharp-driver/)      
+🔗[Repositório GitHub - Cassandra C# Driver](https://github.com/datastax/csharp-driver)       
 
 ---
 
-## 🔗 **Redis – Banco de Dados Chave-Valor em Memória**
+### Redis – Banco de Dados Chave-Valor em Memória - Documentação e Guias
 
-### 📘 Documentação e Guias
-
-- [Documentação Oficial Redis](https://redis.io/docs/)
-- [Comandos Redis com exemplos](https://redis.io/commands/)
-- [Guia Redis para desenvolvedores .NET](https://stackexchange.github.io/StackExchange.Redis/)
-- [Artigo introdutório em português – Dev.to](https://dev.to/melgaco/introducao-ao-redis-pt-br-1o5d)
-
-### 🧪 Testar Online
-
-- [Redis Playground Oficial](https://try.redis.io/)
-- [RedisInsight (ferramenta visual)](https://redis.com/redis-enterprise/redis-insight/)
-
-### 📦 Integração com C#/.NET
-
-- [StackExchange.Redis (biblioteca oficial para .NET)](https://github.com/StackExchange/StackExchange.Redis)
-- [Exemplos de uso no .NET Docs](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-dotnet-core-quickstart)
+🔗[Documentação Oficial Redis](https://redis.io/docs/)      
+🔗[Comandos Redis com exemplos](https://redis.io/commands/)      
+🔗[Guia Redis para desenvolvedores .NET](https://stackexchange.github.io/StackExchange.Redis/)     
+🔗[Artigo introdutório em português – Dev.to](https://dev.to/melgaco/introducao-ao-redis-pt-br-1o5d)      
+🔗[Redis Playground Oficial](https://try.redis.io/)       
+🔗[RedisInsight (ferramenta visual)](https://redis.com/redis-enterprise/redis-insight/)     
+🔗[StackExchange.Redis (biblioteca oficial para .NET)](https://github.com/StackExchange/StackExchange.Redis)       
+🔗[Exemplos de uso no .NET Docs](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-dotnet-core-quickstart)     
 
 ---
 
-## 🔗 **MongoDB – Banco de Dados Orientado a Documentos**
+### MongoDB – Banco de Dados Orientado a Documentos - Documentação e Guias
 
-### 📘 Documentação e Guias
+🔗[MongoDB Docs Oficial](https://www.mongodb.com/docs/)      
+🔗[MongoDB University (cursos gratuitos)](https://learn.mongodb.com/)      
+🔗[Introdução ao MongoDB – Digital Innovation One](https://web.digitalinnovation.one/course/introducao-ao-mongodb/learning/8e316210-232b-4ab3-9ac7-eac0bc7c5b8b)      
+🔗[Cheat Sheet MongoDB (inglês)](https://www.mongodb.com/developer/products/mongodb/cheat-sheet/)     
+🔗[MongoDB Atlas (Cloud gratuito)](https://www.mongodb.com/cloud/atlas/register)       
+🔗[Playground no Compass](https://www.mongodb.com/products/compass)      
+🔗[MongoDB.Driver (NuGet oficial)](https://www.nuget.org/packages/MongoDB.Driver/)      
+🔗[Documentação oficial MongoDB com C#](https://mongodb.github.io/mongo-csharp-driver/2.19/)      
+🔗[Exemplo CRUD com MongoDB e C#](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app)      
 
-- [MongoDB Docs Oficial](https://www.mongodb.com/docs/)
-- [MongoDB University (cursos gratuitos)](https://learn.mongodb.com/)
-- [Introdução ao MongoDB – Digital Innovation One](https://web.digitalinnovation.one/course/introducao-ao-mongodb/learning/8e316210-232b-4ab3-9ac7-eac0bc7c5b8b)
-- [Cheat Sheet MongoDB (inglês)](https://www.mongodb.com/developer/products/mongodb/cheat-sheet/)
+---
 
-### 🧪 Testar Online
+### Certificado
 
-- [MongoDB Atlas (Cloud gratuito)](https://www.mongodb.com/cloud/atlas/register)
-- [Playground no Compass](https://www.mongodb.com/products/compass)
-
-### 📦 Integração com C#/.NET
-
-- [MongoDB.Driver (NuGet oficial)](https://www.nuget.org/packages/MongoDB.Driver/)
-- [Documentação oficial MongoDB com C#](https://mongodb.github.io/mongo-csharp-driver/2.19/)
-- [Exemplo CRUD com MongoDB e C#](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app)
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/certificados/26-introducao-ao-MongoDB-e-bancos-de-dados-NoSQL.jpg" alt="Certificado" width="600px">
 
 ---
 
