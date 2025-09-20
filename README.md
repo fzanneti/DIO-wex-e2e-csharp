@@ -51,13 +51,13 @@ Este repositório contém resumos, exemplos e materiais complementares organizad
 ----------4️⃣3️⃣[Classes e interfaces abstratas com C#](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/4-programacao-orientada-a-objetos-com-CSharp/3-classes-e-interfaces-abstratas-com-CSharp.md)\
 ----------4️⃣4️⃣[Introdução as APIs com C#](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/4-programacao-orientada-a-objetos-com-CSharp/4-introducao-as-APIs-com-CSharp.md)\
 -------5️⃣[Introdução a banco de dados](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/5-introducao-a-bancos-de-dados)\
-------------💪🏻[Construindo consultas relacionais no SQL Server](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/5-introducao-a-bancos-de-dados/DIO-construindo-consultas-relacionais-no-SQL-Server)\
+-------------💪🏻[Construindo consultas relacionais no SQL Server](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/5-introducao-a-bancos-de-dados/DIO-construindo-consultas-relacionais-no-SQL-Server)\
 ----------5️⃣1️⃣[Introdução a banco de dados](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/5-introducao-a-bancos-de-dados/1-introducao-a-bancos-de-dados.md)\
 ----------5️⃣2️⃣[SQL Server dominando tabelas e tipos de dados](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/5-introducao-a-bancos-de-dados/2-SQL-Server-dominando-tabelas-e-tipos-de-dados.md)\
 ----------5️⃣3️⃣[SQL Server manipulando dados](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/5-introducao-a-bancos-de-dados/3-SQL-Server-manipulando-dados.md)\
 ----------5️⃣4️⃣[Introdução aos bancos de dados MongoDB e NoSQL](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/5-introducao-a-bancos-de-dados/4-introducao-aos-bancos-de-dados-MongoDB-e-NoSQL.md)\
 -------6️⃣[Introdução a qualidade de software](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/6-introducao-a-qualidade-de-software)\
-------------💪🏻[Desafio - O dia a dia de um QA](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/6-introducao-a-qualidade-de-software/DIO-desafio-o-dia-a-dia-de-um-QA)\
+-------------💪🏻[Desafio - O dia a dia de um QA](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/6-introducao-a-qualidade-de-software/DIO-desafio-o-dia-a-dia-de-um-QA)\
 ----------6️⃣1️⃣[Introdução ao mercado de qualidade de software](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/6-introducao-a-qualidade-de-software/1-introducao-ao-mercado-de-qualidade-de-software.md)\
 ----------6️⃣2️⃣[Fundamentos de qualidade de software](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/6-introducao-a-qualidade-de-software/2-fundamentos-de-qualidade-de-software.md)\
 ----------6️⃣3️⃣[Fundamentos de automação de testes](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/6-introducao-a-qualidade-de-software/3-fundamentos-de-automa%C3%A7%C3%A3o-de-testes.md)\
