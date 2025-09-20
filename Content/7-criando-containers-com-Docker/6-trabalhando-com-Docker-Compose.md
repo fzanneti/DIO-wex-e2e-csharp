@@ -12,6 +12,8 @@
 
 ---
 
+<img src="https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/images/dockercompose.jpg" alt="Docker Compose" width="600px">
+
 ### Introdução ao Docker Compose
 
 O **Docker Compose** é uma ferramenta que permite **definir e gerenciar múltiplos contêineres** como uma única aplicação. Usamos um arquivo `docker-compose.yml` para configurar os serviços (como banco de dados, backend, frontend, etc).
