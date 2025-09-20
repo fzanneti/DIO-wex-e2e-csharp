@@ -65,7 +65,8 @@ Este repositório contém resumos, exemplos e materiais complementares organizad
 ----------7️⃣1️⃣[Conhecendo e instalando o Docker](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/7-criando-containers-com-Docker/1-conhecendo-e-instalando-o-Docker.md)\
 ----------7️⃣2️⃣[Introdução ao Docker](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/7-criando-containers-com-Docker/2-introducao-ao-docker.md)\
 ----------7️⃣3️⃣[Armazenamento de dados com Docker](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/7-criando-containers-com-Docker/3-armazenamento-de-dados-com-Docker.md)\
-----------7️⃣4️⃣[Processamento de Logs e Rede com Docker](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/7-criando-containers-com-Docker/4-processamento-de-logs-e-rede-com-Docker.md)
+----------7️⃣4️⃣[Processamento de Logs e Rede com Docker](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/7-criando-containers-com-Docker/4-processamento-de-logs-e-rede-com-Docker.md)\
+----------7️⃣5️⃣[Definindo e criando um Dockerfile](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/7-criando-containers-com-Docker/5-definindo-e-criando-um-Dockerfile.md)
    
 ---
 
