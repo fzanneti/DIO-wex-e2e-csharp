@@ -50,7 +50,7 @@ Este repositório contém resumos, exemplos e materiais complementares organizad
 ----------4️⃣3️⃣[Classes e interfaces abstratas com C#](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/4-programacao-orientada-a-objetos-com-CSharp/3-classes-e-interfaces-abstratas-com-CSharp.md)    
 ----------4️⃣4️⃣[Introdução as APIs com C#](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/4-programacao-orientada-a-objetos-com-CSharp/4-introducao-as-APIs-com-CSharp.md)     
 -------5️⃣[Introdução a banco de dados](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/5-introducao-a-bancos-de-dados)        
------------💪🏻[Construindo consultas relacionais no SQL Server](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/5-introducao-a-bancos-de-dados/DIO-construindo-consultas-relacionais-no-SQL-Server)
+-----------💪🏻[Construindo consultas relacionais no SQL Server](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/5-introducao-a-bancos-de-dados/DIO-construindo-consultas-relacionais-no-SQL-Server)       
 --------------5️⃣1️⃣[Introdução a banco de dados](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/5-introducao-a-bancos-de-dados/1-introducao-a-bancos-de-dados.md)         
 --------------5️⃣2️⃣[SQL Server dominando tabelas e tipos de dados](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/5-introducao-a-bancos-de-dados/2-SQL-Server-dominando-tabelas-e-tipos-de-dados.md)    
 --------------5️⃣3️⃣[SQL Server manipulando dados](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Content/5-introducao-a-bancos-de-dados/3-SQL-Server-manipulando-dados.md)    
