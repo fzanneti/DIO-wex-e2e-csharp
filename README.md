@@ -15,7 +15,8 @@ Repositório educacional criado para apoiar estudantes e novos profissionais que
 
 Este repositório contém resumos, exemplos e materiais complementares organizados por módulos de estudo e prática:
 
-🌐[DIO-wex-e2e-csharp](https://github.com/fzanneti/DIO-wex-e2e-csharp)\
+🌐[DIO-wex-e2e-csharp](https://github.com/fzanneti/DIO-wex-e2e-csharp)
+
 ---🗃️[Assets](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets)\
 -------📝[docs](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/docs)\
 -----------📄[pdf](https://github.com/fzanneti/DIO-wex-e2e-csharp/blob/main/Assets/docs/pdf)\
